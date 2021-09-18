@@ -1,0 +1,76 @@
+reporter: xcode
+
+warning_threshold: 15
+
+opt_in_rules:
+  - force_unwrapping
+  - force_try
+  - force_cast
+  - vertical_whitespace
+  - empty_count
+  - closure_end_indentation
+  - closure_spacing
+  - explicit_init
+  - first_where
+  - object_literal
+  - operator_usage_whitespace
+  - overridden_super_call
+  - prohibited_super_call
+  - redundant_nil_coalescing
+  - weak_delegate
+
+disabled_rules:
+- trailing_whitespace
+- nesting
+
+excluded:
+  - Pods
+  - /Incards/Resources/R.generated.swift
+  - /IncardsCore/Resources/R.generated.swift
+  - /IncardsCommon/Resources/R.generated.swift
+  - /IncardsHomeFlow/Resources/R.generated.swift
+  - /IncardsSettingsFlow/Resources/R.generated.swift
+  - /IncardsCategoriesFlow/Resources/R.generated.swift
+  - /IncardsGameFlow/Resources/R.generated.swift
+  - /IncardsLanguageFlow/Resources/R.generated.swift
+
+line_length:
+  warning: 200
+  ignores_comments: true
+
+file_length:
+  warning: 500
+
+force_unwrapping: warning
+force_try: warning
+force_cast: warning
+
+weak_delegate: error
+
+function_parameter_count:
+  warning: 10
+  error: 15
+
+function_body_length:
+  - 80
+  - 100
+
+type_name:
+  min_length:
+    warning: 2
+  max_length:
+    warning: 40
+    error: 60
+
+type_body_length:
+  warning: 400
+  error: 500
+
+identifier_name:
+  min_length:
+    warning: 1
+  max_length:
+    warning: 40
+    error: 60
+
+shorthand_operator: warning
