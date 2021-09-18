@@ -38,6 +38,7 @@
 		5BBB16B826F626820094B14C /* StringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConvertible.swift; sourceTree = "<group>"; };
 		5BBB16BC26F627500094B14C /* ConvertibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertibleTests.swift; sourceTree = "<group>"; };
 		5BBB16BE26F62D280094B14C /* BoolConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolConvertible.swift; sourceTree = "<group>"; };
+		5BBB16C026F6308E0094B14C /* AirKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AirKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		75FFCBD7E17A593605B4966B /* Pods-AirKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirKit.release.xcconfig"; path = "Target Support Files/Pods-AirKit/Pods-AirKit.release.xcconfig"; sourceTree = "<group>"; };
 		88AACB6A23D4B0F12C0B1DB5 /* Pods-AirKit-AirKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirKit-AirKitTests.release.xcconfig"; path = "Target Support Files/Pods-AirKit-AirKitTests/Pods-AirKit-AirKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		B38215B199B3343854B53902 /* Pods-AirKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirKit.debug.xcconfig"; path = "Target Support Files/Pods-AirKit/Pods-AirKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +79,7 @@
 		5B510BED26F24AB200C21CDF = {
 			isa = PBXGroup;
 			children = (
+				5BBB16C026F6308E0094B14C /* AirKit.playground */,
 				5B510BF926F24AB200C21CDF /* AirKit */,
 				5B510C3726F24D1000C21CDF /* AirKitTests */,
 				5B510BF826F24AB200C21CDF /* Products */,
@@ -571,7 +573,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 564726D0B2BCFA15FE767401 /* Pods-AirKit-AirKitTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AirKitTests/Info.plist;
@@ -592,7 +594,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 88AACB6A23D4B0F12C0B1DB5 /* Pods-AirKit-AirKitTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AirKitTests/Info.plist;
