@@ -5,8 +5,10 @@ import Nimble
 @testable import AirKit
 
 class NumberConvertibleTests: XCTestCase {
-
-    func testNumberConvertible() throws {
+    
+    // MARK: - NumberConvertible
+    
+    func testNumberConvertible() {
         // Test primitive numbers
         let number = NSNumber(value: 10)
         expect(number.toInt8()) == 10
@@ -27,24 +29,30 @@ class NumberConvertibleTests: XCTestCase {
         expect(false.toInt()) == 0
     }
     
-    func testNumberConvertiblePerformance() throws {
+    // MARK: - StringConvertible
+    
+    func testStringConvertible() {
+        // Test numbers
         let number = NSNumber(value: 10)
-        measure {
-            _ = number
-                .toInt8()
-                .toUInt8()
-                .toInt16()
-                .toUInt16()
-                .toInt32()
-                .toUInt32()
-                .toInt64()
-                .toUInt64()
-                .toInt()
-                .toUInt()
-                .toDouble()
-                .toFloat()
-                .toNumber()
-        }
+        expect(number.toString()) == "10"
+        
+        let int: Int = 123
+        expect(int.toString()) == "123"
+        
+        let double: Double = 123.45
+        expect(double.toString()) == "123.45"
+        
+        // Test bools
+        expect(true.toString()) == "true"
+        expect(false.toString()) == "false"
     }
-
+    
+    // MARK: - BoolConvertible
+    
+    func testBoolConvertible() {
+        expect(0.toBool()) == false
+        expect(1.toBool()) == true
+        expect(10.toBool()) == true
+    }
+    
 }
