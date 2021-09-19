@@ -5,19 +5,21 @@ public protocol StringConvertible {
     func toString() -> String
 }
 
-// MARK: - Default Extensions
+// MARK: - Implementations | StringProtocol
 
-public extension StringConvertible where Self: NumberConvertible {
-    func toString() -> String { toNumber().stringValue }
+extension StringConvertible where Self: StringProtocol {
+    public func toString() -> String { .init(self) }
 }
 
-// MARK: - Default Implementations
+extension String: StringConvertible { }
 
-extension String: StringConvertible {
-    public func toString() -> String { self }
+extension Substring: StringConvertible { }
+
+// MARK: - Implementations | BinaryInteger
+
+public extension StringConvertible where Self: BinaryInteger {
+    func toString() -> String { .init(self) }
 }
-
-extension NSNumber: StringConvertible { }
 
 extension Int8: StringConvertible { }
 
@@ -39,9 +41,7 @@ extension Int: StringConvertible { }
 
 extension UInt: StringConvertible { }
 
-extension Float: StringConvertible { }
-
-extension Double: StringConvertible { }
+// MARK: - Implementations | Bool
 
 extension Bool: StringConvertible {
     public func toString() -> String { description }

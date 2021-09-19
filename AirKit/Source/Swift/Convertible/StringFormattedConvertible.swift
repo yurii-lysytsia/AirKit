@@ -1,4 +1,4 @@
-import UIKit
+//  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 public protocol StringFormattedConvertible {
     /// The object's value expressed as a human-readable string.
@@ -9,6 +9,9 @@ public protocol StringFormattedConvertible {
 
 extension StringFormattedConvertible where Self: BinaryInteger & CVarArg {
     public func toString(format: String) -> String { .init(format: format, self) }
+    
+    /// The object's value expressed as a human-readable string with entered integer digits.
+    /// - Parameter integerDigits: Number of digits before the decimal separator.
     public func toString(integerDigits: Int) -> String { toString(format: "%0\(integerDigits)d") }
 }
 
@@ -36,21 +39,12 @@ extension UInt: StringFormattedConvertible { }
 
 extension StringFormattedConvertible where Self: BinaryFloatingPoint & CVarArg {
     public func toString(format: String) -> String { .init(format: format, self) }
+    
+    /// The object's value expressed as a human-readable string with entered integer digits.
+    /// - Parameter fractionDigits: Number of digits after the decimal separator.
     public func toString(fractionDigits: Int) -> String { toString(format: "%.\(fractionDigits)f") }
 }
 
 extension Float: StringFormattedConvertible { }
 
 extension Double: StringFormattedConvertible { }
-
-
-Double(123.45).toString(fractionDigits: 0)
-Double(123.45).toString(fractionDigits: 1)
-Double(123.45).toString(fractionDigits: 2)
-Double(123.45).toString(fractionDigits: 3)
-
-Int(5).toString(integerDigits: 5)
-
-let f = NumberFormatter()
-f.minimumIntegerDigits
-f.minimumFractionDigits

@@ -11,6 +11,9 @@
 		5B510BFC26F24AB200C21CDF /* AirKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B510BFA26F24AB200C21CDF /* AirKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B510C3B26F24D1000C21CDF /* AirKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B510BF726F24AB200C21CDF /* AirKit.framework */; platformFilter = ios; };
 		5B9BAFC526F74CB100731991 /* FloatConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFC426F74CB100731991 /* FloatConvertible.swift */; };
+		5B9BAFC726F74DA500731991 /* IntegerOptionalConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFC626F74DA500731991 /* IntegerOptionalConvertible.swift */; };
+		5B9BAFC926F74EAD00731991 /* FloatOptionalConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFC826F74EAD00731991 /* FloatOptionalConvertible.swift */; };
+		5B9BAFCB26F757F000731991 /* StringFormattedConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFCA26F757F000731991 /* StringFormattedConvertible.swift */; };
 		5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16B326F6237F0094B14C /* NumberConvertible.swift */; };
 		5BBB16B926F626820094B14C /* StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16B826F626820094B14C /* StringConvertible.swift */; };
 		5BBB16BD26F627500094B14C /* ConvertibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16BC26F627500094B14C /* ConvertibleTests.swift */; };
@@ -37,6 +40,9 @@
 		5B510C3626F24D1000C21CDF /* AirKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B510C3A26F24D1000C21CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B9BAFC426F74CB100731991 /* FloatConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatConvertible.swift; sourceTree = "<group>"; };
+		5B9BAFC626F74DA500731991 /* IntegerOptionalConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerOptionalConvertible.swift; sourceTree = "<group>"; };
+		5B9BAFC826F74EAD00731991 /* FloatOptionalConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatOptionalConvertible.swift; sourceTree = "<group>"; };
+		5B9BAFCA26F757F000731991 /* StringFormattedConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringFormattedConvertible.swift; sourceTree = "<group>"; };
 		5BBB16B326F6237F0094B14C /* NumberConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConvertible.swift; sourceTree = "<group>"; };
 		5BBB16B826F626820094B14C /* StringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConvertible.swift; sourceTree = "<group>"; };
 		5BBB16BC26F627500094B14C /* ConvertibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertibleTests.swift; sourceTree = "<group>"; };
@@ -149,8 +155,11 @@
 			children = (
 				5BBB16B326F6237F0094B14C /* NumberConvertible.swift */,
 				5BBB16C126F6472F0094B14C /* IntegerConvertible.swift */,
+				5B9BAFC626F74DA500731991 /* IntegerOptionalConvertible.swift */,
 				5B9BAFC426F74CB100731991 /* FloatConvertible.swift */,
+				5B9BAFC826F74EAD00731991 /* FloatOptionalConvertible.swift */,
 				5BBB16B826F626820094B14C /* StringConvertible.swift */,
+				5B9BAFCA26F757F000731991 /* StringFormattedConvertible.swift */,
 				5BBB16BE26F62D280094B14C /* BoolConvertible.swift */,
 			);
 			path = Convertible;
@@ -372,8 +381,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B9BAFC726F74DA500731991 /* IntegerOptionalConvertible.swift in Sources */,
 				5BBB16C226F6472F0094B14C /* IntegerConvertible.swift in Sources */,
+				5B9BAFCB26F757F000731991 /* StringFormattedConvertible.swift in Sources */,
 				5BBB16B926F626820094B14C /* StringConvertible.swift in Sources */,
+				5B9BAFC926F74EAD00731991 /* FloatOptionalConvertible.swift in Sources */,
 				5B9BAFC526F74CB100731991 /* FloatConvertible.swift in Sources */,
 				5BBB16BF26F62D280094B14C /* BoolConvertible.swift in Sources */,
 				5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */,
