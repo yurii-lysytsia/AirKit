@@ -14,6 +14,7 @@
 		5BBB16B926F626820094B14C /* StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16B826F626820094B14C /* StringConvertible.swift */; };
 		5BBB16BD26F627500094B14C /* ConvertibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16BC26F627500094B14C /* ConvertibleTests.swift */; };
 		5BBB16BF26F62D280094B14C /* BoolConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16BE26F62D280094B14C /* BoolConvertible.swift */; };
+		5BBB16C226F6472F0094B14C /* IntegerConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16C126F6472F0094B14C /* IntegerConvertible.swift */; };
 		F049FAF6647ABD222FBD4248 /* Pods_AirKit_AirKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C874277E2338F158395124FC /* Pods_AirKit_AirKitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		5BBB16BC26F627500094B14C /* ConvertibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertibleTests.swift; sourceTree = "<group>"; };
 		5BBB16BE26F62D280094B14C /* BoolConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolConvertible.swift; sourceTree = "<group>"; };
 		5BBB16C026F6308E0094B14C /* AirKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AirKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5BBB16C126F6472F0094B14C /* IntegerConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerConvertible.swift; sourceTree = "<group>"; };
 		75FFCBD7E17A593605B4966B /* Pods-AirKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirKit.release.xcconfig"; path = "Target Support Files/Pods-AirKit/Pods-AirKit.release.xcconfig"; sourceTree = "<group>"; };
 		88AACB6A23D4B0F12C0B1DB5 /* Pods-AirKit-AirKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirKit-AirKitTests.release.xcconfig"; path = "Target Support Files/Pods-AirKit-AirKitTests/Pods-AirKit-AirKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		B38215B199B3343854B53902 /* Pods-AirKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirKit.debug.xcconfig"; path = "Target Support Files/Pods-AirKit/Pods-AirKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				5BBB16B326F6237F0094B14C /* NumberConvertible.swift */,
+				5BBB16C126F6472F0094B14C /* IntegerConvertible.swift */,
 				5BBB16B826F626820094B14C /* StringConvertible.swift */,
 				5BBB16BE26F62D280094B14C /* BoolConvertible.swift */,
 			);
@@ -366,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BBB16C226F6472F0094B14C /* IntegerConvertible.swift in Sources */,
 				5BBB16B926F626820094B14C /* StringConvertible.swift in Sources */,
 				5BBB16BF26F62D280094B14C /* BoolConvertible.swift in Sources */,
 				5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */,

@@ -1,4 +1,4 @@
-import UIKit
+//  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 public protocol IntegerConvertible {
     /// Returns value limited within the provided `Int8` range, i.e. between `Int8.min` and `Int8.max`.
@@ -82,6 +82,7 @@ extension IntegerConvertible where Self: BinaryFloatingPoint {
     public func toUInt() -> UInt { .init(exactly: self) ?? 0 }
 }
 
+@available(iOS 14.0, *)
 extension Float16: IntegerConvertible { }
 
 extension Float80: IntegerConvertible { }
