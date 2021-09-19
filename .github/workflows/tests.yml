@@ -17,7 +17,7 @@ jobs:
     - name: Install Cocoa Pods dependencies
       run: pod install --repo-update
     
-    uses: sersoft-gmbh/xcodebuild-action@v1
+    - uses: sersoft-gmbh/xcodebuild-action@v1
       with:
         workspace: AirKit.xcworkspace
         scheme: AirKit
