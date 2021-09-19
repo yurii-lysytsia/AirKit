@@ -21,7 +21,7 @@ jobs:
       with:
         workspace: AirKit.xcworkspace
         scheme: AirKit
-        destination: platform=iOS Simulator
+        destination: platform=iOS Simulator,name:iPhone 12
         action: test
 
     # - name: Run unit tests
