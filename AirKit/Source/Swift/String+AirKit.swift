@@ -118,3 +118,17 @@ public extension String {
         Data(base64Encoded: self, options: options).flatMap { String(data: $0, encoding: encoding) }
     }
 }
+
+// MARK: - Extensions | Inits
+
+public extension String {
+    /// Create a new string in which the characters in a specified range of the receiver are replaced by a given string.
+    /// - Parameters:
+    ///   - string: Raw string.
+    ///   - range: A range of characters in the receiver.
+    ///   - replacementString: The string with which to replace the characters in range.
+    init?(string: String?, range: NSRange, replacementString: String) {
+        guard let newString = string, let newStringRange = Range(range, in: newString) else { return nil }
+        self = newString.replacingCharacters(in: newStringRange, with: replacementString)
+    }
+}
