@@ -61,3 +61,55 @@ double.toString(fractionDigits: 3) // `String(256.128)`
 // Converting to string type
 "abc+".dropLast().toString() // `String(abc)` instead `String.SubSequence`
 ```
+
+### String
+```swift
+// Triming newlines and whitelines of string
+var string = " Hello\n"
+string.trimmed // Created new instanse `String(Hello)`
+string.trim() // Modified `string` value to `String(Hello)`
+
+// New values to avoid long conditions for string
+let whitespace = " "
+whitespace.isEmpty // false
+whitespace.isBlank // true
+whitespace.notEmptyOrNil // String(" ")
+whitespace.notBlankOrNil // nil
+
+let string = "Hello world!"
+string.isBlank // false
+string.notEmptyOrNil // String("Hello world!")
+string.notBlankOrNil // String("Hello world!")
+
+// Removing components
+var string = "Hello world!"
+string.removing(characterSet: .whitespaces) // String("Helloworld!")
+string.removing(characterSet: .alphanumerics) // String(" !")
+
+string.removing(string: "Hello") // String(" world!")
+string.removing(string: "!") // String("Hello world")
+
+string.remove(characterSet: .whitespaces) // String("Helloworld!")
+string.remove(string: "world") // String("Hello!")
+
+// Truncate string
+let string = "Hello world!"
+string.truncating(to: 20) // String("Hello...")
+string.truncating(to: 5, addEllipsis: true) // String("Hello...")
+string.truncating(to: 5, addEllipsis: false) // String("Hello")
+
+// Capitalize first letter
+let string = "hello world"
+string.capitalizingFirstLetter() // String("Hello world")
+
+// Abbreviate string
+let string = "hello world how are you?"
+string.abbreviating(separator: " ", maxSplits: 20) // String("HWHAY)"
+string.abbreviating(separator: " ", maxSplits: 2, shouldUppercased: true) // String("HW")
+string.abbreviating(separator: " ", maxSplits: 2, shouldUppercased: false) // String("hw")
+
+// Base-64 encoding/decoding
+let string = "hello world!"
+let base64EncodedString = string.base64Encoding() // String("aGVsbG8gd29ybGQh")
+base64EncodedString?.base64Decoding() // String("hello world!")
+```
