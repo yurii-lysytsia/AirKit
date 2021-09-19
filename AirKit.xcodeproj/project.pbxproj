@@ -17,7 +17,6 @@
 		5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16B326F6237F0094B14C /* NumberConvertible.swift */; };
 		5BBB16B926F626820094B14C /* StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16B826F626820094B14C /* StringConvertible.swift */; };
 		5BBB16BD26F627500094B14C /* ConvertibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16BC26F627500094B14C /* ConvertibleTests.swift */; };
-		5BBB16BF26F62D280094B14C /* BoolConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16BE26F62D280094B14C /* BoolConvertible.swift */; };
 		5BBB16C226F6472F0094B14C /* IntegerConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16C126F6472F0094B14C /* IntegerConvertible.swift */; };
 		F049FAF6647ABD222FBD4248 /* Pods_AirKit_AirKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C874277E2338F158395124FC /* Pods_AirKit_AirKitTests.framework */; };
 /* End PBXBuildFile section */
@@ -46,7 +45,6 @@
 		5BBB16B326F6237F0094B14C /* NumberConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConvertible.swift; sourceTree = "<group>"; };
 		5BBB16B826F626820094B14C /* StringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConvertible.swift; sourceTree = "<group>"; };
 		5BBB16BC26F627500094B14C /* ConvertibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertibleTests.swift; sourceTree = "<group>"; };
-		5BBB16BE26F62D280094B14C /* BoolConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolConvertible.swift; sourceTree = "<group>"; };
 		5BBB16C026F6308E0094B14C /* AirKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AirKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5BBB16C126F6472F0094B14C /* IntegerConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegerConvertible.swift; sourceTree = "<group>"; };
 		75FFCBD7E17A593605B4966B /* Pods-AirKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirKit.release.xcconfig"; path = "Target Support Files/Pods-AirKit/Pods-AirKit.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,7 +158,6 @@
 				5B9BAFC826F74EAD00731991 /* FloatOptionalConvertible.swift */,
 				5BBB16B826F626820094B14C /* StringConvertible.swift */,
 				5B9BAFCA26F757F000731991 /* StringFormattedConvertible.swift */,
-				5BBB16BE26F62D280094B14C /* BoolConvertible.swift */,
 			);
 			path = Convertible;
 			sourceTree = "<group>";
@@ -387,7 +384,6 @@
 				5BBB16B926F626820094B14C /* StringConvertible.swift in Sources */,
 				5B9BAFC926F74EAD00731991 /* FloatOptionalConvertible.swift in Sources */,
 				5B9BAFC526F74CB100731991 /* FloatConvertible.swift in Sources */,
-				5BBB16BF26F62D280094B14C /* BoolConvertible.swift in Sources */,
 				5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
