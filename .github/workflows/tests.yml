@@ -24,10 +24,10 @@ jobs:
       run: pod install --repo-update
     
     - name: Build project for iOS
-      run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild build-for-testing -scheme IndexedDataStore -destination "platform=iOS Simulator,OS=latest,name=iPhone 12" | xcpretty
+      run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild build-for-testing -workspace AirKit.xcworkspace -scheme AirKit -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty
 
     - name: Run iOS tests
-      run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild test-without-building -scheme IndexedDataStore -destination "platform=iOS Simulator,OS=latest,name=iPhone 12" | xcpretty
+      run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild test-without-building -workspace AirKit.xcworkspace -scheme AirKit -destination "platform=iOS Simulator,name=iPhone 12 Pro,OS=latest" | xcpretty
 
     # - name: Run unit tests
     #   run: xcodebuild test -scheme AirKit -workspace AirKit.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty --color && exit ${PIPESTATUS[0]}
