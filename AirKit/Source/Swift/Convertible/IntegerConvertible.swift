@@ -82,11 +82,6 @@ extension IntegerConvertible where Self: BinaryFloatingPoint {
     public func toUInt() -> UInt { .init(exactly: self) ?? 0 }
 }
 
-@available(iOS 14.0, *)
-extension Float16: IntegerConvertible { }
-
-extension Float80: IntegerConvertible { }
-
 extension Float: IntegerConvertible { }
 
 extension Double: IntegerConvertible { }

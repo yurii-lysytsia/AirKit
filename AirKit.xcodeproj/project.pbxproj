@@ -10,6 +10,7 @@
 		1C73448E8EC567AE61B99FB4 /* Pods_AirKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAA5D66C87E805C883C3607 /* Pods_AirKit.framework */; };
 		5B510BFC26F24AB200C21CDF /* AirKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B510BFA26F24AB200C21CDF /* AirKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B510C3B26F24D1000C21CDF /* AirKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B510BF726F24AB200C21CDF /* AirKit.framework */; platformFilter = ios; };
+		5B9BAFC526F74CB100731991 /* FloatConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFC426F74CB100731991 /* FloatConvertible.swift */; };
 		5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16B326F6237F0094B14C /* NumberConvertible.swift */; };
 		5BBB16B926F626820094B14C /* StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16B826F626820094B14C /* StringConvertible.swift */; };
 		5BBB16BD26F627500094B14C /* ConvertibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16BC26F627500094B14C /* ConvertibleTests.swift */; };
@@ -35,6 +36,7 @@
 		5B510BFB26F24AB200C21CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B510C3626F24D1000C21CDF /* AirKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B510C3A26F24D1000C21CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B9BAFC426F74CB100731991 /* FloatConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatConvertible.swift; sourceTree = "<group>"; };
 		5BBB16B326F6237F0094B14C /* NumberConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConvertible.swift; sourceTree = "<group>"; };
 		5BBB16B826F626820094B14C /* StringConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConvertible.swift; sourceTree = "<group>"; };
 		5BBB16BC26F627500094B14C /* ConvertibleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertibleTests.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			children = (
 				5BBB16B326F6237F0094B14C /* NumberConvertible.swift */,
 				5BBB16C126F6472F0094B14C /* IntegerConvertible.swift */,
+				5B9BAFC426F74CB100731991 /* FloatConvertible.swift */,
 				5BBB16B826F626820094B14C /* StringConvertible.swift */,
 				5BBB16BE26F62D280094B14C /* BoolConvertible.swift */,
 			);
@@ -371,6 +374,7 @@
 			files = (
 				5BBB16C226F6472F0094B14C /* IntegerConvertible.swift in Sources */,
 				5BBB16B926F626820094B14C /* StringConvertible.swift in Sources */,
+				5B9BAFC526F74CB100731991 /* FloatConvertible.swift in Sources */,
 				5BBB16BF26F62D280094B14C /* BoolConvertible.swift in Sources */,
 				5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */,
 			);
