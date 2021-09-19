@@ -50,8 +50,8 @@ class ConvertibleTests: XCTestCase {
     
     func testIntegerOptionalConvertible() {
         expect("0".toInt8()) == 0
-        expect("100".toInt8()) == 123
-        expect("-100".toInt8()) == -123
+        expect("123".toInt8()) == 123
+        expect("-123".toInt8()) == -123
         expect("1000".toInt8()).to(beNil())
         expect("-1000".toInt8()).to(beNil())
         expect("a".toInt8()).to(beNil())
