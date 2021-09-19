@@ -12,53 +12,53 @@ extension NSNumber: NumberConvertible {
 }
 
 extension Int8: NumberConvertible {
-    public func toNumber() -> NSNumber { NSNumber(value: self) }
+    public func toNumber() -> NSNumber { .init(value: self) }
 }
 
 extension UInt8: NumberConvertible {
-    public func toNumber() -> NSNumber { NSNumber(value: self) }
+    public func toNumber() -> NSNumber { .init(value: self) }
 }
 
 extension Int16: NumberConvertible {
-    public func toNumber() -> NSNumber { NSNumber(value: self) }
+    public func toNumber() -> NSNumber { .init(value: self) }
 }
 
 extension UInt16: NumberConvertible {
-    public func toNumber() -> NSNumber { NSNumber(value: self) }
+    public func toNumber() -> NSNumber { .init(value: self) }
 }
 
 extension Int32: NumberConvertible {
-    public func toNumber() -> NSNumber { NSNumber(value: self) }
+    public func toNumber() -> NSNumber { .init(value: self) }
 }
 
 extension UInt32: NumberConvertible {
-    public func toNumber() -> NSNumber { NSNumber(value: self) }
+    public func toNumber() -> NSNumber { .init(value: self) }
 }
 
 extension Int64: NumberConvertible {
-    public func toNumber() -> NSNumber { NSNumber(value: self) }
+    public func toNumber() -> NSNumber { .init(value: self) }
 }
 
 extension UInt64: NumberConvertible {
-    public func toNumber() -> NSNumber { NSNumber(value: self) }
+    public func toNumber() -> NSNumber { .init(value: self) }
 }
 
 extension Int: NumberConvertible {
-    public func toNumber() -> NSNumber { NSNumber(value: self) }
+    public func toNumber() -> NSNumber { .init(value: self) }
 }
 
 extension UInt: NumberConvertible {
-    public func toNumber() -> NSNumber { NSNumber(value: self) }
+    public func toNumber() -> NSNumber { .init(value: self) }
 }
 
 extension Float: NumberConvertible {
-    public func toNumber() -> NSNumber { NSNumber(value: self) }
+    public func toNumber() -> NSNumber { .init(value: self) }
 }
 
 extension Double: NumberConvertible {
-    public func toNumber() -> NSNumber { NSNumber(value: self) }
+    public func toNumber() -> NSNumber { .init(value: self) }
 }
 
 extension Bool: NumberConvertible {
-    public func toNumber() -> NSNumber { NSNumber(value: self) }
+    public func toNumber() -> NSNumber { .init(value: self) }
 }

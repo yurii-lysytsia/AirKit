@@ -13,7 +13,6 @@
 		5B9BAFCD26F77B1D00731991 /* BinaryInteger+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */; };
 		5B9BAFCF26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFCE26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift */; };
 		5B9BAFD126F77DD300731991 /* StringProtocol+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFD026F77DD300731991 /* StringProtocol+AirKit.swift */; };
-		5B9BAFD326F780E100731991 /* Bool+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFD226F780E100731991 /* Bool+AirKit.swift */; };
 		5B9BAFD726F7881D00731991 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5B9BAFD626F7881D00731991 /* README.md */; };
 		5B9BAFD926F7888E00731991 /* FEATURES.md in Resources */ = {isa = PBXBuildFile; fileRef = 5B9BAFD826F7888E00731991 /* FEATURES.md */; };
 		5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16B326F6237F0094B14C /* NumberConvertible.swift */; };
@@ -41,7 +40,6 @@
 		5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryInteger+AirKit.swift"; sourceTree = "<group>"; };
 		5B9BAFCE26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryFloatingPoint+AirKit.swift"; sourceTree = "<group>"; };
 		5B9BAFD026F77DD300731991 /* StringProtocol+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringProtocol+AirKit.swift"; sourceTree = "<group>"; };
-		5B9BAFD226F780E100731991 /* Bool+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+AirKit.swift"; sourceTree = "<group>"; };
 		5B9BAFD426F787E000731991 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5B9BAFD526F787EC00731991 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5B9BAFD626F7881D00731991 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 				5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */,
 				5B9BAFCE26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift */,
 				5B9BAFD026F77DD300731991 /* StringProtocol+AirKit.swift */,
-				5B9BAFD226F780E100731991 /* Bool+AirKit.swift */,
 				5BBB16B726F626770094B14C /* Protocols */,
 			);
 			path = Swift;
@@ -385,7 +382,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B9BAFD126F77DD300731991 /* StringProtocol+AirKit.swift in Sources */,
-				5B9BAFD326F780E100731991 /* Bool+AirKit.swift in Sources */,
 				5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */,
 				5B9BAFCF26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift in Sources */,
 				5B9BAFCD26F77B1D00731991 /* BinaryInteger+AirKit.swift in Sources */,
