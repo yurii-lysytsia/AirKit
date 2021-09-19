@@ -16,6 +16,13 @@ jobs:
 
     - name: Install Cocoa Pods dependencies
       run: pod install --repo-update
-        
-    - name: Run unit tests
-      run: xcodebuild test -scheme AirKit -workspace AirKit.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty --color && exit ${PIPESTATUS[0]}
+    
+    uses: sersoft-gmbh/xcodebuild-action@v1
+      with:
+        workspace: AirKit.xcworkspace
+        scheme: AirKit
+        destination: platform=iOS
+        action: test
+
+    # - name: Run unit tests
+    #   run: xcodebuild test -scheme AirKit -workspace AirKit.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty --color && exit ${PIPESTATUS[0]}
