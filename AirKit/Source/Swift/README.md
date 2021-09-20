@@ -1,6 +1,7 @@
 #  Swift
 
 ## Extensions
+### - [String](String+AirKit.swift)
 
 ### BinaryInteger
 ```swift
