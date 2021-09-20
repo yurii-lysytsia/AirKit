@@ -5,6 +5,30 @@ import struct Foundation.Data
 import struct Foundation.URL
 import struct Foundation.NSRange
 
+// MARK: - Convertible | BinaryInteger
+
+public extension String {
+    /// Returns value limited within the provided `Int` range, i.e. between `Int.min` and `Int.max` or `nil`.
+    func toInt() -> Int? { .init(self) }
+}
+
+// MARK: - Convertible | BinaryFloatingPoint
+
+public extension String {
+    /// Returns value limited within the provided `Float` range or `nil`.
+    func toFloat() -> Float? { .init(self) }
+    
+    /// Returns value limited within the provided `Double` range or `nil`.
+    func toDouble() -> Double? { .init(self) }
+}
+
+// MARK: - Convertible | String.SubSequence
+
+public extension String.SubSequence {
+    /// Returns an instance of the conforming type from a string representation.
+    func toString() -> String { .init(self) }
+}
+
 // MARK: - Extensions | Trimming
 
 public extension String {
