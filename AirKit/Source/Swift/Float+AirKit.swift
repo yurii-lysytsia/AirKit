@@ -1,4 +1,4 @@
-import AirKit
+//  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 // MARK: - Convertible
 
@@ -10,7 +10,3 @@ public extension Float {
     ///
     func toDouble() -> Double { .init(self) }
 }
-
-
-let float: Float = 10.0
-float.toDouble() // Double(10.0)
