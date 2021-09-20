@@ -2,16 +2,6 @@
 
 import struct CoreGraphics.CGFloat
 
-// MARK: - Convertible | BinaryInteger
-
-public extension BinaryFloatingPoint {
-    /// Returns `Int` value.
-    func toInt() -> Int { .init(self) }
-    
-    /// Returns `CGFloat` value.
-    func toCGFloat() -> CGFloat { .init(self) }
-}
-
 // MARK: - Convertible | StringProtocol
 
 public extension BinaryFloatingPoint where Self: CVarArg {
@@ -24,4 +14,24 @@ public extension BinaryFloatingPoint where Self: CVarArg {
     ///
     /// - Parameter fractionDigits: Number of digits after the decimal separator.
     func toString(fractionDigits: Int) -> String { .init(format: "%.\(fractionDigits)f", self) }
+}
+
+// MARK: - Extensions | Degress & Radians
+
+public extension BinaryFloatingPoint {
+    /// Radian value of degree input.
+    ///
+    ///     Double(90).toRadians() // Double(1.570796326794897)
+    ///
+    func toRadians() -> Self {
+        return .pi * self / 180.0
+    }
+
+    /// Degree value of radian input.
+    ///
+    ///     Double(1.570796326794897).toDegrees() // Double(90)
+    ///
+    func toDegrees() -> Self {
+        return self * 180 / .pi
+    }
 }

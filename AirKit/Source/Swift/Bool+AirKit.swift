@@ -1,14 +1,14 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-// MARK: - Convertible | BinaryInteger
+// MARK: - Convertible | IntConvertible
 
-public extension Bool {
+extension Bool: IntConvertible {
     /// Returns `1` if `true`, or `0` if `false`.
     ///
     ///     true.toInt() // Int(1)
     ///     false.toInt() // Int(0)
     ///
-    func toInt() -> Int { self ? 1 : 0 }
+    public func toInt() -> Int { self ? 1 : 0 }
 }
 
 // MARK: - Convertible | StringProtocol
