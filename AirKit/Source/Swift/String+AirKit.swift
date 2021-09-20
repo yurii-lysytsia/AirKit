@@ -9,17 +9,17 @@ import struct Foundation.NSRange
 
 public extension String {
     /// Returns value limited within the provided `Int` range, i.e. between `Int.min` and `Int.max` or `nil`.
-    func toInt() -> Int? { .init(self) }
+    func toInt() -> Int? { Int(self) }
 }
 
 // MARK: - Convertible | BinaryFloatingPoint
 
 public extension String {
     /// Returns value limited within the provided `Float` range or `nil`.
-    func toFloat() -> Float? { .init(self) }
+    func toFloat() -> Float? { Float(self) }
     
     /// Returns value limited within the provided `Double` range or `nil`.
-    func toDouble() -> Double? { .init(self) }
+    func toDouble() -> Double? { Double(self) }
 }
 
 // MARK: - Convertible | String.SubSequence
