@@ -1,148 +1,62 @@
 import AirKit
 
-// MARK: - Extensions | URL
 
-public extension String {
-    /// Returns url host allowed escaped string.
+// MARK: - Extensions | Grouping
+
+extension String {
+    /// Returns grouped string with append `separator` after each step.
     ///
-    ///     "String to encode".urlEncoded -> "it's%20easy%20to%20encode%20strings"
+    ///     let string = "1234567890"
+    ///     string.grouping(by: 20, separator: "?") // String("1234567890")
+    ///     string.grouping(by: 4, separator: " ") // String("1234 5678 90")
+    ///     string.grouping(by: 5, separator: "-") // String("12345-67890")
     ///
-    var urlEncoded: String {
-        // `urlDecoded` to avoid multiple decoding.
-        urlDecoded.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? self
+    func grouping(by step: String.IndexDistance, separator: Character) -> String {
+        // Remove all separators to avoid multiple separation
+        let cleanedUpCopy = removing(string: String(separator))
+        return String(cleanedUpCopy.enumerated().map {
+            $0.offset % step == 0 ? [separator, $0.element] : [$0.element]
+        }.joined().dropFirst())
     }
     
-    /// Returns readable string from a url encoded string.
+    /// Returns grouped string with append `separator` after each step.
     ///
-    ///     "String%20to%20decode".urlDecoded -> "String to decode"
+    ///     let string = "1234567890"
+    ///     string.grouping(by: [1, 2, 3, 4], separator: "*") // String("1*23*456*7890")
+    ///     string.grouping(by: [3, 5], separator: "-") // String("123-45678-90")
+    ///     string.grouping(by: [1, 6, 10], separator: " ") // String("1 234567 890")
     ///
-    var urlDecoded: String { removingPercentEncoding ?? self }
-    
-    /// Creates a URL instance from current string.
-    ///
-    ///     let string = "https://www.apple.com"
-    ///     string.toUrl() // URL("https://www.apple.com")
-    ///
-    func toUrl() -> URL? { URL(string: self) }
+    func grouping(by steps: [String.IndexDistance], separator: Character) -> String {
+        let cleanedUpCopy = removing(string: String(separator))
+        var stepsCopy = steps
+        var previousStep: String.IndexDistance = 0
+        return String(cleanedUpCopy.enumerated().map { (offset, element) -> [String.Element] in
+            // Get step where need set separator and add previos step
+            // Check is not first symbol (because first step will skip)
+            guard var step = stepsCopy.first, offset != 0 else {
+                return [element]
+            }
+            step += previousStep
+            
+            // Check is step equal to offset to add separator
+            guard offset % step == 0 else {
+                return [element]
+            }
+            previousStep = step
+            stepsCopy = Array(stepsCopy.dropFirst())
+            return [separator, element]
+        }.joined())
+    }
 }
 
-
-//// MARK: - Common
-//
-//extension String {
-//
-//    /// Gets grouped string with append `separator` after each step. e.g for string `1234567890`, `step: 4` and `separator: " "`  this method will get `1234 5678 90`.
-//    func grouping(by step: String.IndexDistance, separator: Character) -> String {
-//        let cleanedUpCopy = replacingOccurrences(of: String(separator), with: "")
-//        return String(cleanedUpCopy.enumerated().map {
-//            $0.offset % step == 0 ? [separator, $0.element] : [$0.element]
-//        }.joined().dropFirst())
-//    }
-//
-//    /// Gets grouped string with append `separator` after each step.
-//    /// e.g for string `1234567890`, `steps: [1, 4, 3, 2]` and `separator: " "`  this method will get `1 2345 678 90`.
-//    func grouping(by steps: [String.IndexDistance], separator: Character) -> String {
-//        let stringCopy = replacingOccurrences(of: String(separator), with: "")
-//        var stepsCopy = steps
-//        var previousStep: String.IndexDistance = 0
-//        return String(stringCopy.enumerated().map { (offset, element) -> [String.Element] in
-//            // Get step where need set separator and add previos step
-//            // Check is not first symbol (because first step will skip)
-//            guard var step = stepsCopy.first, offset != 0 else {
-//                return [element]
-//            }
-//            step += previousStep
-//
-//            // Check is step equal to offset to add separator
-//            guard offset % step == 0 else {
-//                return [element]
-//            }
-//            previousStep = step
-//            stepsCopy = Array(stepsCopy.dropFirst())
-//            return [separator, element]
-//        }.joined())
-//    }
-//
-//}
-
-
+let string = "1234567890"
+string.grouping(by: [1, 2, 3, 4], separator: "*") // String("1*23*456*7890")
+string.grouping(by: [3, 5], separator: "-") // String("123-45678-90")
+string.grouping(by: [1, 6, 10], separator: " ") // String("1 234567 890")
 
 //// MARK: - Properties
 //
 //public extension String {
-//
-//    /// SwifterSwift: Check if string contains one or more letters.
-//    ///
-//    ///        "123abc".hasLetters -> true
-//    ///        "123".hasLetters -> false
-//    ///
-//    var hasLetters: Bool {
-//        return rangeOfCharacter(from: .letters, options: .numeric, range: nil) != nil
-//    }
-//
-//    /// SwifterSwift: Check if string contains one or more numbers.
-//    ///
-//    ///        "abcd".hasNumbers -> false
-//    ///        "123abc".hasNumbers -> true
-//    ///
-//    var hasNumbers: Bool {
-//        return rangeOfCharacter(from: .decimalDigits, options: .literal, range: nil) != nil
-//    }
-//
-//    /// SwifterSwift: Check if string contains only letters.
-//    ///
-//    ///        "abc".isAlphabetic -> true
-//    ///        "123abc".isAlphabetic -> false
-//    ///
-//    var isAlphabetic: Bool {
-//        let hasLetters = rangeOfCharacter(from: .letters, options: .numeric, range: nil) != nil
-//        let hasNumbers = rangeOfCharacter(from: .decimalDigits, options: .literal, range: nil) != nil
-//        return hasLetters && !hasNumbers
-//    }
-//
-//    /// SwifterSwift: Check if string contains at least one letter and one number.
-//    ///
-//    ///        // useful for passwords
-//    ///        "123abc".isAlphaNumeric -> true
-//    ///        "abc".isAlphaNumeric -> false
-//    ///
-//    var isAlphaNumeric: Bool {
-//        let hasLetters = rangeOfCharacter(from: .letters, options: .numeric, range: nil) != nil
-//        let hasNumbers = rangeOfCharacter(from: .decimalDigits, options: .literal, range: nil) != nil
-//        let comps = components(separatedBy: .alphanumerics)
-//        return comps.joined(separator: "").count == 0 && hasLetters && hasNumbers
-//    }
-//
-//    /// SwifterSwift: Check if string is palindrome.
-//    ///
-//    ///     "abcdcba".isPalindrome -> true
-//    ///     "Mom".isPalindrome -> true
-//    ///     "A man a plan a canal, Panama!".isPalindrome -> true
-//    ///     "Mama".isPalindrome -> false
-//    ///
-//    var isPalindrome: Bool {
-//        let letters = filter { $0.isLetter }
-//        guard !letters.isEmpty else { return false }
-//        let midIndex = letters.index(letters.startIndex, offsetBy: letters.count / 2)
-//        let firstHalf = letters[letters.startIndex..<midIndex]
-//        let secondHalf = letters[midIndex..<letters.endIndex].reversed()
-//        return !zip(firstHalf, secondHalf).contains(where: { $0.lowercased() != $1.lowercased() })
-//    }
-//
-//    #if canImport(Foundation)
-//    /// SwifterSwift: Check if string is valid email format.
-//    ///
-//    /// - Note: Note that this property does not validate the email address against an email server. It merely attempts to determine whether its format is suitable for an email address.
-//    ///
-//    ///        "john@doe.com".isValidEmail -> true
-//    ///
-//    var isValidEmail: Bool {
-//        // http://emailregex.com/
-//        let regex =
-//            "^(?:[\\p{L}0-9!#$%\\&'*+/=?\\^_`{|}~-]+(?:\\.[\\p{L}0-9!#$%\\&'*+/=?\\^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[\\p{L}0-9](?:[a-z0-9-]*[\\p{L}0-9])?\\.)+[\\p{L}0-9](?:[\\p{L}0-9-]*[\\p{L}0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[\\p{L}0-9-]*[\\p{L}0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])$"
-//        return range(of: regex, options: .regularExpression, range: nil, locale: nil) != nil
-//    }
-//    #endif
 //
 //    /// SwifterSwift: Lorem ipsum string of given length.
 //    ///
@@ -182,61 +96,6 @@ public extension String {
 //        return randomString
 //    }
 //
-//    #if canImport(Foundation)
-//    /// SwifterSwift: Convert URL string to readable string.
-//    ///
-//    ///        var str = "it's%20easy%20to%20decode%20strings"
-//    ///        str.urlDecode()
-//    ///        print(str) // prints "it's easy to decode strings"
-//    ///
-//    @discardableResult
-//    mutating func urlDecode() -> String {
-//        if let decoded = removingPercentEncoding {
-//            self = decoded
-//        }
-//        return self
-//    }
-//    #endif
-//
-//    #if canImport(Foundation)
-//    /// SwifterSwift: Escape string.
-//    ///
-//    ///        var str = "it's easy to encode strings"
-//    ///        str.urlEncode()
-//    ///        print(str) // prints "it's%20easy%20to%20encode%20strings"
-//    ///
-//    @discardableResult
-//    mutating func urlEncode() -> String {
-//        if let encoded = addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) {
-//            self = encoded
-//        }
-//        return self
-//    }
-//    #endif
-//
-//    #if canImport(Foundation)
-//    /// SwifterSwift: Verify if string matches the regex pattern.
-//    ///
-//    /// - Parameter pattern: Pattern to verify.
-//    /// - Returns: `true` if string matches the pattern.
-//    func matches(pattern: String) -> Bool {
-//        return range(of: pattern, options: .regularExpression, range: nil, locale: nil) != nil
-//    }
-//    #endif
-//
-//    #if canImport(Foundation)
-//    /// SwifterSwift: Verify if string matches the regex.
-//    ///
-//    /// - Parameters:
-//    ///   - regex: Regex to verify.
-//    ///   - options: The matching options to use.
-//    /// - Returns: `true` if string matches the regex.
-//    func matches(regex: NSRegularExpression, options: NSRegularExpression.MatchingOptions = []) -> Bool {
-//        let range = NSRange(startIndex..<endIndex, in: self)
-//        return regex.firstMatch(in: self, options: options, range: range) != nil
-//    }
-//    #endif
-//
 //    /// SwifterSwift: Removes given prefix from the string.
 //    ///
 //    ///   "Hello, World!".removingPrefix("Hello, ") -> "World!"
@@ -271,26 +130,6 @@ public extension String {
 //        return prefix + self
 //    }
 //}
-//
-//// MARK: - Initializers
-//
-//public extension String {
-//    #if canImport(Foundation)
-//    /// SwifterSwift: Create a new string from a base64 string (if applicable).
-//    ///
-//    ///        String(base64: "SGVsbG8gV29ybGQh") = "Hello World!"
-//    ///        String(base64: "hello") = nil
-//    ///
-//    /// - Parameter base64: base64 string.
-//    init?(base64: String) {
-//        guard let decodedData = Data(base64Encoded: base64) else { return nil }
-//        guard let str = String(data: decodedData, encoding: .utf8) else { return nil }
-//        self.init(str)
-//    }
-//    #endif
-//}
-
-
 
 
 
@@ -298,6 +137,102 @@ public extension String {
 
 
 public extension String {
+    
+    //    /// SwifterSwift: Check if string contains one or more letters.
+    //    ///
+    //    ///        "123abc".hasLetters -> true
+    //    ///        "123".hasLetters -> false
+    //    ///
+    //    var hasLetters: Bool {
+    //        return rangeOfCharacter(from: .letters, options: .numeric, range: nil) != nil
+    //    }
+    //
+    //    /// SwifterSwift: Check if string contains one or more numbers.
+    //    ///
+    //    ///        "abcd".hasNumbers -> false
+    //    ///        "123abc".hasNumbers -> true
+    //    ///
+    //    var hasNumbers: Bool {
+    //        return rangeOfCharacter(from: .decimalDigits, options: .literal, range: nil) != nil
+    //    }
+    //
+    //    /// SwifterSwift: Check if string contains only letters.
+    //    ///
+    //    ///        "abc".isAlphabetic -> true
+    //    ///        "123abc".isAlphabetic -> false
+    //    ///
+    //    var isAlphabetic: Bool {
+    //        let hasLetters = rangeOfCharacter(from: .letters, options: .numeric, range: nil) != nil
+    //        let hasNumbers = rangeOfCharacter(from: .decimalDigits, options: .literal, range: nil) != nil
+    //        return hasLetters && !hasNumbers
+    //    }
+    //
+    //    /// SwifterSwift: Check if string contains at least one letter and one number.
+    //    ///
+    //    ///        // useful for passwords
+    //    ///        "123abc".isAlphaNumeric -> true
+    //    ///        "abc".isAlphaNumeric -> false
+    //    ///
+    //    var isAlphaNumeric: Bool {
+    //        let hasLetters = rangeOfCharacter(from: .letters, options: .numeric, range: nil) != nil
+    //        let hasNumbers = rangeOfCharacter(from: .decimalDigits, options: .literal, range: nil) != nil
+    //        let comps = components(separatedBy: .alphanumerics)
+    //        return comps.joined(separator: "").count == 0 && hasLetters && hasNumbers
+    //    }
+    //
+    //    /// SwifterSwift: Check if string is palindrome.
+    //    ///
+    //    ///     "abcdcba".isPalindrome -> true
+    //    ///     "Mom".isPalindrome -> true
+    //    ///     "A man a plan a canal, Panama!".isPalindrome -> true
+    //    ///     "Mama".isPalindrome -> false
+    //    ///
+    //    var isPalindrome: Bool {
+    //        let letters = filter { $0.isLetter }
+    //        guard !letters.isEmpty else { return false }
+    //        let midIndex = letters.index(letters.startIndex, offsetBy: letters.count / 2)
+    //        let firstHalf = letters[letters.startIndex..<midIndex]
+    //        let secondHalf = letters[midIndex..<letters.endIndex].reversed()
+    //        return !zip(firstHalf, secondHalf).contains(where: { $0.lowercased() != $1.lowercased() })
+    //    }
+    
+    //    #if canImport(Foundation)
+    //    /// SwifterSwift: Verify if string matches the regex pattern.
+    //    ///
+    //    /// - Parameter pattern: Pattern to verify.
+    //    /// - Returns: `true` if string matches the pattern.
+    //    func matches(pattern: String) -> Bool {
+    //        return range(of: pattern, options: .regularExpression, range: nil, locale: nil) != nil
+    //    }
+    //    #endif
+    //
+    //    #if canImport(Foundation)
+    //    /// SwifterSwift: Verify if string matches the regex.
+    //    ///
+    //    /// - Parameters:
+    //    ///   - regex: Regex to verify.
+    //    ///   - options: The matching options to use.
+    //    /// - Returns: `true` if string matches the regex.
+    //    func matches(regex: NSRegularExpression, options: NSRegularExpression.MatchingOptions = []) -> Bool {
+    //        let range = NSRange(startIndex..<endIndex, in: self)
+    //        return regex.firstMatch(in: self, options: options, range: range) != nil
+    //    }
+    //    #endif
+    
+    //    #if canImport(Foundation)
+    //    /// SwifterSwift: Check if string is valid email format.
+    //    ///
+    //    /// - Note: Note that this property does not validate the email address against an email server. It merely attempts to determine whether its format is suitable for an email address.
+    //    ///
+    //    ///        "john@doe.com".isValidEmail -> true
+    //    ///
+    //    var isValidEmail: Bool {
+    //        // http://emailregex.com/
+    //        let regex =
+    //            "^(?:[\\p{L}0-9!#$%\\&'*+/=?\\^_`{|}~-]+(?:\\.[\\p{L}0-9!#$%\\&'*+/=?\\^_`{|}~-]+)*|\"(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21\\x23-\\x5b\\x5d-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])*\")@(?:(?:[\\p{L}0-9](?:[a-z0-9-]*[\\p{L}0-9])?\\.)+[\\p{L}0-9](?:[\\p{L}0-9-]*[\\p{L}0-9])?|\\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[\\p{L}0-9-]*[\\p{L}0-9]:(?:[\\x01-\\x08\\x0b\\x0c\\x0e-\\x1f\\x21-\\x5a\\x53-\\x7f]|\\\\[\\x01-\\x09\\x0b\\x0c\\x0e-\\x7f])+)\\])$"
+    //        return range(of: regex, options: .regularExpression, range: nil, locale: nil) != nil
+    //    }
+    //    #endif
     
     var email: String? {
         let validCharacters = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"

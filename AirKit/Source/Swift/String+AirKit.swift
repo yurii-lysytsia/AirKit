@@ -178,6 +178,54 @@ public extension String {
     }
 }
 
+// MARK: - Extensions | Grouping
+
+extension String {
+    /// Returns grouped string with append `separator` after each step.
+    ///
+    ///     let string = "1234567890"
+    ///     string.grouping(by: 20, separator: "?") // String("1234567890")
+    ///     string.grouping(by: 4, separator: " ") // String("1234 5678 90")
+    ///     string.grouping(by: 5, separator: "-") // String("12345-67890")
+    ///
+    func grouping(by step: String.IndexDistance, separator: Character) -> String {
+        // Remove all separators to avoid multiple separation
+        let cleanedUpCopy = removing(string: String(separator))
+        return String(cleanedUpCopy.enumerated().map {
+            $0.offset % step == 0 ? [separator, $0.element] : [$0.element]
+        }.joined().dropFirst())
+    }
+    
+    /// Returns grouped string with append `separator` after each step.
+    ///
+    ///     let string = "1234567890"
+    ///     string.grouping(by: [1, 2, 3, 4], separator: "*") // String("1*23*456*7890")
+    ///     string.grouping(by: [3, 5], separator: "-") // String("123-45678-90")
+    ///     string.grouping(by: [1, 6, 10], separator: " ") // String("1 234567 890")
+    ///
+    func grouping(by steps: [String.IndexDistance], separator: Character) -> String {
+        let cleanedUpCopy = removing(string: String(separator))
+        var stepsCopy = steps
+        var previousStep: String.IndexDistance = 0
+        return String(cleanedUpCopy.enumerated().map { (offset, element) -> [String.Element] in
+            // Get step where need set separator and add previos step
+            // Check is not first symbol (because first step will skip)
+            guard var step = stepsCopy.first, offset != 0 else {
+                return [element]
+            }
+            step += previousStep
+            
+            // Check is step equal to offset to add separator
+            guard offset % step == 0 else {
+                return [element]
+            }
+            previousStep = step
+            stepsCopy = Array(stepsCopy.dropFirst())
+            return [separator, element]
+        }.joined())
+    }
+}
+
 // MARK: - Extensions | Base64
 
 public extension String {
