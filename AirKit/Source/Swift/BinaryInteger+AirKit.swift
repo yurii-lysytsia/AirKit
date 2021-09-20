@@ -38,12 +38,10 @@ public extension BinaryInteger {
 
 public extension BinaryInteger {
     /// Returns value limited within the provided `Float` range.
-    /// - Parameter value: Will use this value by default if `init(exactly: self)` will return nil. Bu default value is `0`
-    func toFloat(or value: Float = 0) -> Float { .init(exactly: self) ?? value }
+    func toFloat() -> Float { .init(self) }
     
     /// Returns value limited within the provided `Double` range.
-    /// - Parameter value: Will use this value by default if `init(exactly: self)` will return nil. Bu default value is `0`
-    func toDouble(or value: Double = 0) -> Double { .init(exactly: self) ?? value }
+    func toDouble() -> Double { .init(self) }
 }
 
 // MARK: - Convertible | StringProtocol

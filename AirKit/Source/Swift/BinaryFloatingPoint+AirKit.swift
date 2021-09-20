@@ -5,9 +5,6 @@
 public extension BinaryFloatingPoint {
     /// Returns `Int` value.
     func toInt() -> Int { .init(self) }
-    
-    /// Returns `UInt` value.
-    func toUInt() -> UInt { .init(self) }
 }
 
 // MARK: - Convertible | BinaryFloatingPoint

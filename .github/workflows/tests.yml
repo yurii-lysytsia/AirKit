@@ -15,12 +15,6 @@ jobs:
     - uses: maxim-lobanov/setup-xcode@v1
       with:
         xcode-version: latest
-
-    - name: Install Cocoa Pods dependencies
-      run: pod install --repo-update
     
     - name: Build project for iOS
-      run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild build-for-testing -workspace AirKit.xcworkspace -scheme AirKit -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty
-
-    - name: Run iOS tests
-      run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild test-without-building -workspace AirKit.xcworkspace -scheme AirKit -destination "platform=iOS Simulator,name=iPhone 12 Pro,OS=latest" | xcpretty
+      run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild build -project AirKit.xcodeproj -scheme AirKit -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty
