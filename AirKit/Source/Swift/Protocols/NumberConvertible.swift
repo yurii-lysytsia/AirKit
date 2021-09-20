@@ -1,5 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+import class Foundation.NSNumber
+
 public protocol NumberConvertible {
     /// Returns an NSNumber object initialized to contain a current value.
     func toNumber() -> NSNumber

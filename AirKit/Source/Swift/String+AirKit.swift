@@ -1,5 +1,10 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+import struct Foundation.CharacterSet
+import struct Foundation.Data
+import struct Foundation.URL
+import struct Foundation.NSRange
+
 // MARK: - Extensions | Trimming
 
 public extension String {
@@ -72,7 +77,23 @@ public extension String {
     func contains(_ characterSet: CharacterSet) -> Bool { rangeOfCharacter(from: characterSet) != nil }
 }
 
+// MARK: - Extensions | Regex
 
+public extension String {
+    /// Check is string is valid email format
+    ///
+    ///     "john@doe.com".isValidEmailFormat // true
+    ///     "john@doe".isValidEmailFormat // false
+    ///     "john.com".isValidEmailFormat // false
+    ///
+    var isValidEmailFormat: Bool { matches(pattern: "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}") }
+    
+    /// Verify if string matches the regex pattern.
+    ///
+    /// - Parameter pattern: Regular expression pattern to verify.
+    /// - Returns: `true` if string matches the pattern.
+    func matches(pattern: String) -> Bool { range(of: pattern, options: .regularExpression) != nil }
+}
 
 // MARK: - Extensions | Removing
 
