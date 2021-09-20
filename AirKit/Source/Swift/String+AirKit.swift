@@ -43,9 +43,47 @@ public extension String {
     var notBlankOrNil: String? { isBlank ? nil : self }
 }
 
+// MARK: - Extensions | Contains
+
+public extension String {
+    /// Check is string contains one or more letters.
+    ///
+    ///     "123abc".hasLetters // true
+    ///     "123".hasLetters // false
+    ///
+    var hasLetters: Bool { contains(.letters) }
+    
+    /// Check is string contains one or more decimal digits.
+    ///
+    ///     "123abc".hasDecimalDigits // true
+    ///     "abc".hasDecimalDigits // false
+    ///
+    var hasDecimalDigits: Bool { contains(.decimalDigits) }
+    
+    /// Check is string contains one or more alphanumerics.
+    ///
+    ///     "-*=".hasAlphanumerics // false
+    ///     "123abc".hasAlphanumerics // true
+    ///     "abc".hasAlphanumerics // true
+    ///
+    var hasAlphanumerics: Bool { contains(.alphanumerics) }
+    
+    /// Returns a Boolean value indicating whether the string contains an element that satisfies the given character set.
+    func contains(_ characterSet: CharacterSet) -> Bool { rangeOfCharacter(from: characterSet) != nil }
+}
+
+
+
 // MARK: - Extensions | Removing
 
 public extension String {
+    /// Returns new string with removed all characters except letters.
+    ///
+    ///     let string = "123abCD-*=456"
+    ///     string.decimalDigitsOnly // String("abCD")
+    ///
+    var lettersOnly: String { removing(characterSet: CharacterSet.letters.inverted) }
+    
     /// Returns new string with removed all characters except digits.
     ///
     ///     let string = "123abCD-*=456"
@@ -59,13 +97,6 @@ public extension String {
     ///     string.decimalDigitsOnly // String("123abCD456")
     ///
     var alphanumericsOnly: String { removing(characterSet: CharacterSet.alphanumerics.inverted) }
-    
-    /// Returns new string with removed all characters except letters.
-    ///
-    ///     let string = "123abCD-*=456"
-    ///     string.decimalDigitsOnly // String("abCD")
-    ///
-    var lettersOnly: String { removing(characterSet: CharacterSet.letters.inverted) }
     
     /// Returns a new string removing the elements of the character set.
     ///
@@ -123,6 +154,82 @@ public extension String {
     ///   - maxLength: The maximum number of elements to return. maxLength must be greater than or equal to zero.
     ///   - addEllipsis: Ellipsis will be added if `length` less than `count` and `addEllipsis` is true.
     mutating func truncate(to maxLength: Int, addEllipsis: Bool = false) { self = truncating(to: maxLength, addEllipsis: addEllipsis) }
+}
+
+// MARK: - Extensions | Prefix
+
+public extension String {
+    /// Returns new string without given prefix from the string.
+    ///
+    ///     let string = "Hello world!"
+    ///     string.removing(prefix: "Hello ") // String("world!")
+    ///
+    /// - Parameter prefix: Prefix to remove from the string.
+    func removing(prefix: String) -> String { hasPrefix(prefix) ? dropFirst(prefix.count).toString() : self }
+    
+    /// Remove given prefix from the string.
+    ///
+    ///     var string = "Hello world!"
+    ///     string.remove(prefix: "Hello ") // string == String("world!")
+    ///
+    /// - Parameter prefix: Prefix to remove from the string.
+    mutating func remove(prefix: String) { self = removing(prefix: prefix) }
+    
+    /// Returns new string with adding given prefix to the string.
+    ///
+    ///     let string = "www.apple.com"
+    ///     string.prepending(prefix: "https://") // String("https://www.apple.com")
+    ///
+    /// - Parameter prefix: Prefix to add to the string.
+    func prepending(prefix: String) -> String {
+        hasPrefix(prefix) ? self : prefix.appending(self)
+    }
+    
+    /// Prepend given prefix to the string.
+    ///
+    ///     var string = "www.apple.com"
+    ///     string.prepend(prefix: "https://") // self == String("https://www.apple.com")
+    ///
+    /// - Parameter prefix: Prefix to add to the string.
+    mutating func prepend(prefix: String) { self = prepending(prefix: prefix) }
+}
+
+// MARK: - Extensions | Suffix
+
+public extension String {
+    /// Returns new string without given suffix from the string.
+    ///
+    ///     let string = "Hello world!"
+    ///     string.removing(suffix: " world!") // String("Hello")
+    ///
+    /// - Parameter suffix: Prefix to remove from the string.
+    func removing(suffix: String) -> String { hasSuffix(suffix) ? dropLast(suffix.count).toString() : self }
+    
+    /// Remove given suffix from the string.
+    ///
+    ///     var string = "Hello world!"
+    ///     string.remove(suffix: " world!") // self == String("Hello")
+    ///
+    /// - Parameter suffix: Prefix to remove from the string.
+    mutating func remove(suffix: String) { self = removing(suffix: suffix) }
+    
+    /// Returns new string with adding given suffix to the string.
+    ///
+    ///     let string = "https://"
+    ///     string.appending(suffix: "www.apple.com") // String("https://www.apple.com")
+    ///
+    /// - Parameter suffix: Prefix to add to the string.
+    func appending(suffix: String) -> String {
+        hasSuffix(suffix) ? self : appending(suffix)
+    }
+    
+    /// Append given suffix to the string.
+    ///
+    ///     var string = "https://"
+    ///     string.append(suffix: "www.apple.com") // String("https://www.apple.com")
+    ///
+    /// - Parameter prefix: Prefix to add to the string.
+    mutating func append(suffix: String) { self = appending(suffix: suffix) }
 }
 
 // MARK: - Extensions | Capitalize first letter
@@ -279,6 +386,22 @@ public extension String {
     ///     string.toUrl() // URL("https://www.apple.com")
     ///
     func toUrl() -> URL? { URL(string: self) }
+}
+
+// MARK: - Extensions | Lorem Ipsum
+
+public extension String {
+    /// Lorem ipsum string of given length.
+    ///
+    ///     String.loremIpsum(maxLength: 20, addEllipsis: true) // String("Lorem ipsum dolor si...")
+    ///
+    /// - Parameter maxLength: The maximum number of elements to return. maxLength must be greater than or equal to zero. Default is `445`.
+    /// - Parameter addEllipsis: Ellipsis will be added if length less than count and addEllipsis is true.
+    static func loremIpsum(maxLength: Int = 445, addEllipsis: Bool = false) -> String {
+        // swiftlint:disable:next line_length
+        let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        return text.truncating(to: maxLength, addEllipsis: addEllipsis)
+    }
 }
 
 // MARK: - Inits
