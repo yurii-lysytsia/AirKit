@@ -5,7 +5,7 @@ This is sugar framework for Swift
 See [FEATURES](FEATURES.md) for details.
 
 ## Documentation
-Documentation for all extensions, with examples, is available at [GitHub](AirKit/README.md)
+Documentation for all extensions and examples, is available in all methods and properties summary
 
 ## License
 Released under the MIT license. See [LICENSE](LICENSE) for details.
