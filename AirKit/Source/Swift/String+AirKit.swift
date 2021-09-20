@@ -207,6 +207,32 @@ public extension String {
     }
 }
 
+// MARK: - Extensions | URL
+
+public extension String {
+    /// Returns url host allowed escaped string.
+    ///
+    ///     "String to encode".urlEncoded -> "it's%20easy%20to%20encode%20strings"
+    ///
+    var urlEncoded: String {
+        // `urlDecoded` to avoid multiple decoding.
+        urlDecoded.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? self
+    }
+    
+    /// Returns readable string from a url encoded string.
+    ///
+    ///     "String%20to%20decode".urlDecoded -> "String to decode"
+    ///
+    var urlDecoded: String { removingPercentEncoding ?? self }
+    
+    /// Creates a URL instance from current string.
+    ///
+    ///     let string = "https://www.apple.com"
+    ///     string.toUrl() // URL("https://www.apple.com")
+    ///
+    func toUrl() -> URL? { URL(string: self) }
+}
+
 // MARK: - Inits
 
 public extension String {
