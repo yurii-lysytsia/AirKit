@@ -23,6 +23,7 @@
 		5B6A057626F9F6DD001A59C8 /* Collection+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057526F9F6DD001A59C8 /* Collection+AirKit.swift */; };
 		5B6A057826FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057726FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift */; };
 		5B6A057A26FA0A68001A59C8 /* Array+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057926FA0A68001A59C8 /* Array+AirKit.swift */; };
+		5B6A057C26FA29E0001A59C8 /* Comparable+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057B26FA29E0001A59C8 /* Comparable+AirKit.swift */; };
 		5B7687F926F7C08600C388C1 /* String+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7687F826F7C08600C388C1 /* String+AirKit.swift */; };
 		5B9BAFCD26F77B1D00731991 /* BinaryInteger+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */; };
 		5B9BAFCF26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFCE26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift */; };
@@ -50,6 +51,7 @@
 		5B6A057526F9F6DD001A59C8 /* Collection+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+AirKit.swift"; sourceTree = "<group>"; };
 		5B6A057726FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RangeReplaceableCollection+AirKit.swift"; sourceTree = "<group>"; };
 		5B6A057926FA0A68001A59C8 /* Array+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+AirKit.swift"; sourceTree = "<group>"; };
+		5B6A057B26FA29E0001A59C8 /* Comparable+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+AirKit.swift"; sourceTree = "<group>"; };
 		5B7687F826F7C08600C388C1 /* String+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AirKit.swift"; sourceTree = "<group>"; };
 		5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryInteger+AirKit.swift"; sourceTree = "<group>"; };
 		5B9BAFCE26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryFloatingPoint+AirKit.swift"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 		5BBB16B526F625040094B14C /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				5B6A057B26FA29E0001A59C8 /* Comparable+AirKit.swift */,
 				5B07F3DB26F8F0ED00976D89 /* Bool+AirKit.swift */,
 				5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */,
 				5B07F3F026F9038000976D89 /* Int+AirKit.swift */,
@@ -275,6 +278,7 @@
 				5B07F3E626F9001B00976D89 /* CGFloat+AirKit.swift in Sources */,
 				5B07F3F126F9038000976D89 /* Int+AirKit.swift in Sources */,
 				5B07F3EA26F901A300976D89 /* FloatConvertible.swift in Sources */,
+				5B6A057C26FA29E0001A59C8 /* Comparable+AirKit.swift in Sources */,
 				5B07F3EC26F901FC00976D89 /* DoubleConvertible.swift in Sources */,
 				5B6A057A26FA0A68001A59C8 /* Array+AirKit.swift in Sources */,
 				5B9BAFCD26F77B1D00731991 /* BinaryInteger+AirKit.swift in Sources */,
