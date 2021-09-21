@@ -26,9 +26,10 @@ jobs:
         ruby-version: 2.6
         bundler-cache: true
 
+    - name: Build project for iOS
+      run: |
+        xcodebuild build -project AirKit.xcodeproj -scheme AirKit -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty && exit ${PIPESTATUS[0]}
+
     - name: Update `podspec` xcode-version
       run: |
         bundle exec fastlane update_podspec_version
-
-    - name: Build project for iOS
-      run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild build -project AirKit.xcodeproj -scheme AirKit -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty
