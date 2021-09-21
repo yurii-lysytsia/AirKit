@@ -11,6 +11,7 @@ jobs:
   timeout-minutes: 20
   steps:
 
-  - name: Test
+  - name: Running on a pull request branch.
+    if: steps.branch-name.outputs.is_default == 'false'
     run: |
-    echo ${{ github.event }}
+      echo "Running on pr: ${{ steps.branch-name.outputs.current_branch }}"
