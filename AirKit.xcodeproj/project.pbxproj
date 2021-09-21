@@ -24,6 +24,7 @@
 		5B6A057826FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057726FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift */; };
 		5B6A057C26FA29E0001A59C8 /* Comparable+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057B26FA29E0001A59C8 /* Comparable+AirKit.swift */; };
 		5B6A057E26FA2DC9001A59C8 /* Dictionary+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057D26FA2DC9001A59C8 /* Dictionary+AirKit.swift */; };
+		5B6A058026FA65B6001A59C8 /* AirKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5B6A057F26FA65B6001A59C8 /* AirKit.podspec */; };
 		5B7687F926F7C08600C388C1 /* String+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7687F826F7C08600C388C1 /* String+AirKit.swift */; };
 		5B9BAFCD26F77B1D00731991 /* BinaryInteger+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */; };
 		5B9BAFCF26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFCE26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift */; };
@@ -52,6 +53,7 @@
 		5B6A057726FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RangeReplaceableCollection+AirKit.swift"; sourceTree = "<group>"; };
 		5B6A057B26FA29E0001A59C8 /* Comparable+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+AirKit.swift"; sourceTree = "<group>"; };
 		5B6A057D26FA2DC9001A59C8 /* Dictionary+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+AirKit.swift"; sourceTree = "<group>"; };
+		5B6A057F26FA65B6001A59C8 /* AirKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = AirKit.podspec; sourceTree = "<group>"; };
 		5B7687F826F7C08600C388C1 /* String+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AirKit.swift"; sourceTree = "<group>"; };
 		5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryInteger+AirKit.swift"; sourceTree = "<group>"; };
 		5B9BAFCE26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryFloatingPoint+AirKit.swift"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			children = (
 				5B9BAFD626F7881D00731991 /* README.md */,
 				5B9BAFD826F7888E00731991 /* FEATURES.md */,
+				5B6A057F26FA65B6001A59C8 /* AirKit.podspec */,
 				5BBB16C026F6308E0094B14C /* AirKit.playground */,
 				5B510BF926F24AB200C21CDF /* AirKit */,
 				5B510BF826F24AB200C21CDF /* Products */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B6A058026FA65B6001A59C8 /* AirKit.podspec in Resources */,
 				5B9BAFD726F7881D00731991 /* README.md in Resources */,
 				5B9BAFD926F7888E00731991 /* FEATURES.md in Resources */,
 			);
