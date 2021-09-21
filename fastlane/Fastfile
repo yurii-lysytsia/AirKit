@@ -1,24 +1,14 @@
-# This file contains the fastlane.tools configuration
-# You can find the documentation at https://docs.fastlane.tools
-#
-# For a list of all available actions, check out
-#
-#     https://docs.fastlane.tools/actions
-#
-# For a list of all available plugins, check out
-#
-#     https://docs.fastlane.tools/plugins/available-plugins
-#
-
-# Uncomment the line if you want fastlane to automatically update itself
-# update_fastlane
-
 default_platform(:ios)
 
+desc "Fetch Xcode project version and set it to podspec"
+lane :update_podspec_version do
+  	version_number = get_version_number(
+    	xcodeproj: "AirKit.xcodeproj",
+    	target: "AirKit"
+  	)
 
-desc "Description of what the lane does"
-lane :test do
-	spec = read_podspec
-	version = spec["version"]
-	puts "Using Version #{version}"
+	version_bump_podspec(
+		path: "AirKit.podspec",
+		version_number: version_number
+	)
 end
