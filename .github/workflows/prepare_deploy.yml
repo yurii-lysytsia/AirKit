@@ -12,10 +12,7 @@ jobs:
     timeout-minutes: 20
     steps:
     
-    - name: Get branch name
-      uses: tj-actions/branch-names@v5
-
     - name: Checkout pull request branch
       uses: actions/checkout@v2
       with:
-        ref: "${{ steps.branch-name.outputs.current_branch }}"
+        fetch-depth: 0
