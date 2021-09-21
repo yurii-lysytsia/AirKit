@@ -15,9 +15,10 @@
 
 default_platform(:ios)
 
-platform :ios do
-  desc "Description of what the lane does"
-  lane :custom_lane do
-    # add actions here: https://docs.fastlane.tools/actions
-  end
+
+desc "Description of what the lane does"
+lane :test do
+	spec = read_podspec
+	version = spec["version"]
+	puts "Using Version #{version}"
 end
