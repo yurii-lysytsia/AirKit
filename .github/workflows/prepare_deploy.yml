@@ -3,7 +3,6 @@ name: Prepare actions before deploy project
 on: 
   pull_request:
     branches:
-      - '0.1.4'
       - master
       
 jobs:
