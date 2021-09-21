@@ -25,7 +25,6 @@
 		5B6A057C26FA29E0001A59C8 /* Comparable+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057B26FA29E0001A59C8 /* Comparable+AirKit.swift */; };
 		5B6A057E26FA2DC9001A59C8 /* Dictionary+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057D26FA2DC9001A59C8 /* Dictionary+AirKit.swift */; };
 		5B6A058026FA65B6001A59C8 /* AirKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5B6A057F26FA65B6001A59C8 /* AirKit.podspec */; };
-		5B6A058826FA7E18001A59C8 /* AirKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A058726FA7E18001A59C8 /* AirKitTests.swift */; };
 		5B6A058A26FA7E18001A59C8 /* AirKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B510BF726F24AB200C21CDF /* AirKit.framework */; platformFilter = ios; };
 		5B6A059326FA7E44001A59C8 /* ComparableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A059226FA7E44001A59C8 /* ComparableTests.swift */; };
 		5B7687F926F7C08600C388C1 /* String+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7687F826F7C08600C388C1 /* String+AirKit.swift */; };
@@ -68,7 +67,6 @@
 		5B6A057D26FA2DC9001A59C8 /* Dictionary+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+AirKit.swift"; sourceTree = "<group>"; };
 		5B6A057F26FA65B6001A59C8 /* AirKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = AirKit.podspec; sourceTree = "<group>"; };
 		5B6A058526FA7E18001A59C8 /* AirKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B6A058726FA7E18001A59C8 /* AirKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirKitTests.swift; sourceTree = "<group>"; };
 		5B6A058926FA7E18001A59C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B6A059226FA7E44001A59C8 /* ComparableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableTests.swift; sourceTree = "<group>"; };
 		5B7687F826F7C08600C388C1 /* String+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AirKit.swift"; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				5B6A059026FA7E2A001A59C8 /* Source */,
-				5B6A058726FA7E18001A59C8 /* AirKitTests.swift */,
 				5B6A058926FA7E18001A59C8 /* Info.plist */,
 			);
 			path = AirKitTests;
@@ -378,7 +375,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B6A058826FA7E18001A59C8 /* AirKitTests.swift in Sources */,
 				5B6A059326FA7E44001A59C8 /* ComparableTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
