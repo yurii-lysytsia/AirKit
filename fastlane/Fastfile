@@ -34,15 +34,10 @@ lane :push_pod do
   	)
 
   	# Add git tag if not exist and push to remote
-  	if git_tag_exists(tag: version_number)
+  	if git_tag_exists(tag: version_number, remote: true)
   		UI.error "Tag `#{version_number}` was already exist"
   	else
   		add_git_tag(tag: version_number)
   		push_git_tags(tag: version_number.shellescape)
   	end
-
- #  	# Push new version to CocoaPods trunk based on version number
-	# pod_push(
-	# 	path: "AirKit.podspec"
-	# )
 end
