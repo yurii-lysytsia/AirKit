@@ -27,21 +27,8 @@ public extension BinaryInteger {
     /// Returns value limited within the provided `UInt64` range, i.e. between `UInt64.min` and `UInt64.max`.
     func toUInt64() -> UInt64 { .init(clamping: self) }
     
-    /// Returns value limited within the provided `Int` range, i.e. between `Int.min` and `Int.max`.
-    func toInt() -> Int { .init(clamping: self) }
-    
     /// Returns value limited within the provided `UInt` range, i.e. between `UInt.min` and `UInt.max`.
     func toUInt() -> UInt { .init(clamping: self) }
-}
-
-// MARK: - Convertible | BinaryFloatingPoint
-
-public extension BinaryInteger {
-    /// Returns value limited within the provided `Float` range.
-    func toFloat() -> Float { .init(self) }
-    
-    /// Returns value limited within the provided `Double` range.
-    func toDouble() -> Double { .init(self) }
 }
 
 // MARK: - Convertible | StringProtocol
@@ -53,6 +40,11 @@ public extension BinaryInteger {
 
 public extension BinaryInteger where Self: CVarArg {
     /// The object's value expressed as a human-readable string with entered integer digits.
+    ///
+    ///     let value = 123
+    ///     value.toString(integerDigits: 2) // String("123")
+    ///     value.toString(integerDigits: 5) // String("00123")
+    ///
     /// - Parameter integerDigits: Number of digits before the decimal separator.
     func toString(integerDigits: Int) -> String { .init(format: "%0\(integerDigits)d", self) }
 }
