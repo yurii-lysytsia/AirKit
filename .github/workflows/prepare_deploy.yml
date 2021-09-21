@@ -7,11 +7,12 @@ on:
       - master
       
 jobs:
-  runs-on: macOS-latest
-  timeout-minutes: 20
-  steps:
+  testing:
+    runs-on: macOS-latest
+    timeout-minutes: 20
+    steps:
 
-  - name: Running on a pull request branch.
-    if: steps.branch-name.outputs.is_default == 'false'
-    run: |
-      echo "Running on pr: ${{ steps.branch-name.outputs.current_branch }}"
+    - name: Running on a pull request branch.
+      if: steps.branch-name.outputs.is_default == 'false'
+      run: |
+       echo "Running on pr: ${{ steps.branch-name.outputs.current_branch }}"
