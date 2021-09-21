@@ -15,7 +15,12 @@ jobs:
     - name: Get branch name
       uses: tj-actions/branch-names@v5
 
+    - name: Checkout pull request branch
+        uses: actions/checkout@v2
+        with:
+          ref: fastlane
+
     - name: Running on a pull request branch.
       if: steps.branch-name.outputs.is_default == 'false'
       run: |
-       echo "Running on pr: ${{ steps.branch-name.outputs.current_branch }}"
+       echo "Running on pr: ${{ steps.branch-name.outputs.ref_branch }}"
