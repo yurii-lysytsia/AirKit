@@ -1,14 +1,45 @@
 default_platform(:ios)
 
-desc "Fetch Xcode project version and set it to podspec"
+desc "Get Xcode project version, set it to podspec and commit changes"
 lane :update_podspec_version do
+	# Get current project version number
   	version_number = get_version_number(
     	xcodeproj: "AirKit.xcodeproj",
     	target: "AirKit"
   	)
 
+  	# Upgrade podspec verstion number
 	version_bump_podspec(
 		path: "AirKit.podspec",
 		version_number: version_number
+	)
+
+	# Commit this changes
+	git_commit(
+		path: "AirKit.podspec",
+		message: "Updated `AirKit.podspec` version to `#{version_number}`",
+		allow_nothing_to_commit: true
+	)
+end
+
+desc "Get Xcode project version, add git tag and push changes to trunk"
+lane :push_pod do
+	# Get current project version number
+  	version_number = get_version_number(
+    	xcodeproj: "AirKit.xcodeproj",
+    	target: "AirKit"
+  	)
+
+  	# Add git tag if not exist and push to remote
+  	if git_tag_exists(tag: version_number)
+  		UI.error "Tag `#{version_number}` was already exist"
+  	else
+  		add_git_tag(tag: version_number)
+  		push_git_tags(tag: version_number.shellescape)
+  	end
+
+  	# Push new version to CocoaPods trunk based on version number
+	pod_push(
+		path: "AirKit.podspec"
 	)
 end
