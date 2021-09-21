@@ -14,15 +14,17 @@ lane :update_podspec_version do
 		version_number: version_number
 	)
 
-	# Commit podspec changes
-	git_commit(
-		path: "AirKit.podspec",
-		message: "Updated `AirKit.podspec` version to `#{version_number}`",
-		allow_nothing_to_commit: true
-	)
+	UI.error last_git_commit
+	UI.error git_branch
+	# # Commit podspec changes
+	# git_commit(
+	# 	path: "AirKit.podspec",
+	# 	message: "Updated `AirKit.podspec` version to `#{version_number}`",
+	# 	allow_nothing_to_commit: true
+	# )
 
-	# Push the commit to origin
-	push_to_git_remote()
+	# # Push the commit to origin
+	# push_to_git_remote()
 end
 
 desc "Get Xcode project version, add git tag and push changes to trunk"
