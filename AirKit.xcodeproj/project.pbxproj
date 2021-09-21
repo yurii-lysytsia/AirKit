@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,9 +22,11 @@
 		5B6A057426F9E4C9001A59C8 /* Optionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057326F9E4C9001A59C8 /* Optionable.swift */; };
 		5B6A057626F9F6DD001A59C8 /* Collection+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057526F9F6DD001A59C8 /* Collection+AirKit.swift */; };
 		5B6A057826FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057726FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift */; };
-		5B6A057A26FA0A68001A59C8 /* Array+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057926FA0A68001A59C8 /* Array+AirKit.swift */; };
 		5B6A057C26FA29E0001A59C8 /* Comparable+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057B26FA29E0001A59C8 /* Comparable+AirKit.swift */; };
 		5B6A057E26FA2DC9001A59C8 /* Dictionary+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057D26FA2DC9001A59C8 /* Dictionary+AirKit.swift */; };
+		5B6A058026FA65B6001A59C8 /* AirKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5B6A057F26FA65B6001A59C8 /* AirKit.podspec */; };
+		5B6A058A26FA7E18001A59C8 /* AirKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B510BF726F24AB200C21CDF /* AirKit.framework */; platformFilter = ios; };
+		5B6A059326FA7E44001A59C8 /* ComparableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A059226FA7E44001A59C8 /* ComparableTests.swift */; };
 		5B7687F926F7C08600C388C1 /* String+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7687F826F7C08600C388C1 /* String+AirKit.swift */; };
 		5B9BAFCD26F77B1D00731991 /* BinaryInteger+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */; };
 		5B9BAFCF26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFCE26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift */; };
@@ -32,6 +34,16 @@
 		5B9BAFD926F7888E00731991 /* FEATURES.md in Resources */ = {isa = PBXBuildFile; fileRef = 5B9BAFD826F7888E00731991 /* FEATURES.md */; };
 		5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16B326F6237F0094B14C /* NumberConvertible.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B6A058B26FA7E18001A59C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B510BEE26F24AB200C21CDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B510BF626F24AB200C21CDF;
+			remoteInfo = AirKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5B07F3DB26F8F0ED00976D89 /* Bool+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+AirKit.swift"; sourceTree = "<group>"; };
@@ -51,9 +63,12 @@
 		5B6A057326F9E4C9001A59C8 /* Optionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optionable.swift; sourceTree = "<group>"; };
 		5B6A057526F9F6DD001A59C8 /* Collection+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+AirKit.swift"; sourceTree = "<group>"; };
 		5B6A057726FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RangeReplaceableCollection+AirKit.swift"; sourceTree = "<group>"; };
-		5B6A057926FA0A68001A59C8 /* Array+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+AirKit.swift"; sourceTree = "<group>"; };
 		5B6A057B26FA29E0001A59C8 /* Comparable+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comparable+AirKit.swift"; sourceTree = "<group>"; };
 		5B6A057D26FA2DC9001A59C8 /* Dictionary+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+AirKit.swift"; sourceTree = "<group>"; };
+		5B6A057F26FA65B6001A59C8 /* AirKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = AirKit.podspec; sourceTree = "<group>"; };
+		5B6A058526FA7E18001A59C8 /* AirKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B6A058926FA7E18001A59C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B6A059226FA7E44001A59C8 /* ComparableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableTests.swift; sourceTree = "<group>"; };
 		5B7687F826F7C08600C388C1 /* String+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AirKit.swift"; sourceTree = "<group>"; };
 		5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryInteger+AirKit.swift"; sourceTree = "<group>"; };
 		5B9BAFCE26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryFloatingPoint+AirKit.swift"; sourceTree = "<group>"; };
@@ -68,6 +83,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B6A058226FA7E18001A59C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B6A058A26FA7E18001A59C8 /* AirKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,8 +119,10 @@
 			children = (
 				5B9BAFD626F7881D00731991 /* README.md */,
 				5B9BAFD826F7888E00731991 /* FEATURES.md */,
+				5B6A057F26FA65B6001A59C8 /* AirKit.podspec */,
 				5BBB16C026F6308E0094B14C /* AirKit.playground */,
 				5B510BF926F24AB200C21CDF /* AirKit */,
+				5B6A058626FA7E18001A59C8 /* AirKitTests */,
 				5B510BF826F24AB200C21CDF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -106,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				5B510BF726F24AB200C21CDF /* AirKit.framework */,
+				5B6A058526FA7E18001A59C8 /* AirKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +155,31 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		5B6A058626FA7E18001A59C8 /* AirKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B6A059026FA7E2A001A59C8 /* Source */,
+				5B6A058926FA7E18001A59C8 /* Info.plist */,
+			);
+			path = AirKitTests;
+			sourceTree = "<group>";
+		};
+		5B6A059026FA7E2A001A59C8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5B6A059126FA7E31001A59C8 /* Swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		5B6A059126FA7E31001A59C8 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				5B6A059226FA7E44001A59C8 /* ComparableTests.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
 		5BBB16B526F625040094B14C /* Swift */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,7 +194,6 @@
 				5B6A057126F9DF9C001A59C8 /* Sequence+AirKit.swift */,
 				5B6A057526F9F6DD001A59C8 /* Collection+AirKit.swift */,
 				5B6A057726FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift */,
-				5B6A057926FA0A68001A59C8 /* Array+AirKit.swift */,
 				5B6A057D26FA2DC9001A59C8 /* Dictionary+AirKit.swift */,
 				5B46AD7226F88FC8002BC409 /* Optional+AirKit.swift */,
 				5BBB16B726F626770094B14C /* Protocols */,
@@ -196,6 +246,24 @@
 			productReference = 5B510BF726F24AB200C21CDF /* AirKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		5B6A058426FA7E18001A59C8 /* AirKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B6A058D26FA7E18001A59C8 /* Build configuration list for PBXNativeTarget "AirKitTests" */;
+			buildPhases = (
+				5B6A058126FA7E18001A59C8 /* Sources */,
+				5B6A058226FA7E18001A59C8 /* Frameworks */,
+				5B6A058326FA7E18001A59C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B6A058C26FA7E18001A59C8 /* PBXTargetDependency */,
+			);
+			name = AirKitTests;
+			productName = AirKitTests;
+			productReference = 5B6A058526FA7E18001A59C8 /* AirKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,6 +277,9 @@
 					5B510BF626F24AB200C21CDF = {
 						CreatedOnToolsVersion = 12.5.1;
 						LastSwiftMigration = 1250;
+					};
+					5B6A058426FA7E18001A59C8 = {
+						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
@@ -226,6 +297,7 @@
 			projectRoot = "";
 			targets = (
 				5B510BF626F24AB200C21CDF /* AirKit */,
+				5B6A058426FA7E18001A59C8 /* AirKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,8 +307,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B6A058026FA65B6001A59C8 /* AirKit.podspec in Resources */,
 				5B9BAFD726F7881D00731991 /* README.md in Resources */,
 				5B9BAFD926F7888E00731991 /* FEATURES.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B6A058326FA7E18001A59C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +364,6 @@
 				5B07F3EA26F901A300976D89 /* FloatConvertible.swift in Sources */,
 				5B6A057C26FA29E0001A59C8 /* Comparable+AirKit.swift in Sources */,
 				5B07F3EC26F901FC00976D89 /* DoubleConvertible.swift in Sources */,
-				5B6A057A26FA0A68001A59C8 /* Array+AirKit.swift in Sources */,
 				5B9BAFCD26F77B1D00731991 /* BinaryInteger+AirKit.swift in Sources */,
 				5B07F3EF26F9024A00976D89 /* CGFloatConvertible.swift in Sources */,
 				5B6A057826FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift in Sources */,
@@ -292,7 +371,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B6A058126FA7E18001A59C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B6A059326FA7E44001A59C8 /* ComparableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B6A058C26FA7E18001A59C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 5B510BF626F24AB200C21CDF /* AirKit */;
+			targetProxy = 5B6A058B26FA7E18001A59C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		5B510BFD26F24AB200C21CDF /* Debug */ = {
@@ -434,7 +530,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.3;
+				MARKETING_VERSION = 0.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.air.kit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -462,13 +558,55 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.3;
+				MARKETING_VERSION = 0.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.air.kit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5B6A058E26FA7E18001A59C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AirKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.AirKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = "$(inherited)";
+				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
+			};
+			name = Debug;
+		};
+		5B6A058F26FA7E18001A59C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AirKitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.AirKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = "$(inherited)";
+				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
 			};
 			name = Release;
 		};
@@ -489,6 +627,15 @@
 			buildConfigurations = (
 				5B510C0026F24AB200C21CDF /* Debug */,
 				5B510C0126F24AB200C21CDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B6A058D26FA7E18001A59C8 /* Build configuration list for PBXNativeTarget "AirKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B6A058E26FA7E18001A59C8 /* Debug */,
+				5B6A058F26FA7E18001A59C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

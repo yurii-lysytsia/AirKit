@@ -1,0 +1,38 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - temp
+      - master
+      
+jobs:
+  uploading:
+    runs-on: macOS-latest
+    timeout-minutes: 30
+    steps:
+
+    - name: Checkout pull request branch
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.head.ref }}
+
+    - uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: latest
+
+    - name: Setup ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6
+        bundler-cache: true
+
+    - name: Add tag
+      run: |
+        bundle exec fastlane push_pod
+    
+    - name: Publish pod to trunk
+      env:
+        COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_PASSWORD }}
+      run: |
+        pod trunk push AirKit.podspec
