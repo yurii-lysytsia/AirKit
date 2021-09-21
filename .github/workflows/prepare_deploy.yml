@@ -11,6 +11,8 @@ jobs:
     runs-on: macOS-latest
     timeout-minutes: 5
     steps:
+
+    - name: Checkout pull request branch
       uses: actions/checkout@v2
       with:
         ref: fastlane
@@ -35,7 +37,7 @@ jobs:
     runs-on: macOS-latest
     timeout-minutes: 5
     steps:
-    
+
     - name: Setup ruby
       uses: ruby/setup-ruby@v1
       with:
