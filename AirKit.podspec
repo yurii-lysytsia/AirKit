@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AirKit"
-  spec.version      = "1.7"
+  spec.version      = "0.1.4"
   spec.summary      = "AirKit is sugar framework for Swift"
 
   # This description is used to generate tags and improve search results.
