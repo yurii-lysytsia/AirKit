@@ -24,7 +24,7 @@ jobs:
       
     - name: Build project for iOS
       run: |
-        xcodebuild build -project AirKit.xcodeproj -scheme AirKit -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty && exit ${PIPESTATUS[0]}
+        xcodebuild test -project AirKit.xcodeproj -scheme AirKit -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty && exit ${PIPESTATUS[0]}
 
     - name: Setup ruby
       uses: ruby/setup-ruby@v1
