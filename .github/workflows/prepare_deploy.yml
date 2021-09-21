@@ -34,7 +34,8 @@ jobs:
     needs: testing
     runs-on: macOS-latest
     timeout-minutes: 5
-
+    steps:
+    
     - name: Setup ruby
       uses: ruby/setup-ruby@v1
       with:
