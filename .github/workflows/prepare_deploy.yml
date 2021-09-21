@@ -18,4 +18,4 @@ jobs:
     - name: Checkout pull request branch
       uses: actions/checkout@v2
       with:
-        ref: "${{ steps.branch-name.outputs.ref_branch }}"
+        ref: "${{ steps.branch-name.outputs.current_branch }}"
