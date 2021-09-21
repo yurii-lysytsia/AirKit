@@ -11,6 +11,9 @@ jobs:
     runs-on: macOS-latest
     timeout-minutes: 20
     steps:
+    
+    - name: Get branch name
+      uses: tj-actions/branch-names@v5
 
     - name: Running on a pull request branch.
       if: steps.branch-name.outputs.is_default == 'false'
