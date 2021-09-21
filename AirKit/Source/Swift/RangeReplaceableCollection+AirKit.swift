@@ -23,6 +23,34 @@ public extension RangeReplaceableCollection {
     }
 }
 
+// MARK: - Extensions | Equatable
+
+extension RangeReplaceableCollection where Element: Equatable {
+    /// Removes first element from the collection.
+    ///
+    ///     var array = [1,2,3]
+    ///     array.removeFirst(2) // [1, 3]
+    ///
+    mutating func removeFirst(_ element: Element) {
+        guard let index = self.firstIndex(of: element) else { return }
+        self.remove(at: index)
+    }
+    
+    /// Removes all elements of from the collection.
+    ///
+    ///     var array = [1, 2, 3, 2, 1]
+    ///     array.removeAll(2) // [1, 3, 1]
+    ///
+    mutating func removeAll(_ element: Element) { removeAll { $0 == element } }
+    
+    /// Removes all elements contained in array from parameter.
+    ///
+    ///     var array = [1, 2, 3, 2, 1]
+    ///     array.removeAll([1, 2]) // [3]
+    ///
+    mutating func removeAll(_ elements: [Element]) { removeAll { elements.contains($0) } }
+}
+
 // MARK: - Extensions | Hashable
 
 public extension RangeReplaceableCollection where Element: Hashable {
@@ -34,5 +62,21 @@ public extension RangeReplaceableCollection where Element: Hashable {
     mutating func removeDuplicates() {
         var set = Set<Element>()
         removeAll { !set.insert($0).inserted }
+    }
+}
+
+// MARK: - Extensions | Index: AdditiveArithmetic
+
+public extension RangeReplaceableCollection where Index: AdditiveArithmetic {
+    /// Inserts an element at the beginning of array.
+    ///
+    ///     var intArray = [2, 3, 4, 5]
+    ///     intArray.prepend(1) // [1, 2, 3, 4, 5]
+    ///
+    ///     var stringArray = ["e", "l", "l", "o"]
+    ///     stringArray.prepend("h") // ["h", "e", "l", "l", "o"]
+    ///
+    mutating func prepend(_ newElement: Element) {
+        insert(newElement, at: .zero)
     }
 }
