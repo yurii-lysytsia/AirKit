@@ -17,21 +17,21 @@ jobs:
       with:
         ref: ${{ github.event.pull_request.head.ref }}
 
-  - name: Select lates available version of Xcode
-    uses: maxim-lobanov/setup-xcode@v1
-    with:
-      xcode-version: latest
+    - name: Select lates available version of Xcode
+      uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: latest
       
-  - name: Build project for iOS
-    run: |
-      xcodebuild build -project AirKit.xcodeproj -scheme AirKit -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty && exit ${PIPESTATUS[0]}
+    - name: Build project for iOS
+      run: |
+        xcodebuild build -project AirKit.xcodeproj -scheme AirKit -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty && exit ${PIPESTATUS[0]}
 
-  - name: Setup ruby
-    uses: ruby/setup-ruby@v1
-    with:
-      ruby-version: 2.6
-      bundler-cache: true
+    - name: Setup ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6
+        bundler-cache: true
 
-  - name: Update podspec xcode-version
-    run: |
-      bundle exec fastlane update_podspec_version
+    - name: Update podspec xcode-version
+      run: |
+        bundle exec fastlane update_podspec_version
