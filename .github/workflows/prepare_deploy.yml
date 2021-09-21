@@ -7,31 +7,33 @@ on:
       - master
       
 jobs:
-  testing:
-    runs-on: macOS-latest
-    timeout-minutes: 20
-    steps:
+  runs-on: macOS-latest
+  timeout-minutes: 20
+  steps:
 
-    - name: Checkout pull request branch
-      uses: actions/checkout@v2
-      with:
-        ref: fastlane
+  - name: Test
+    run: |
+    ${{ github.event }}
+  # - name: Checkout pull request branch
+  #   uses: actions/checkout@v2
+  #   with:
+  #     ref: fastlane
 
-    - name: Select lates available version of Xcode
-      uses: maxim-lobanov/setup-xcode@v1
-      with:
-        xcode-version: latest
-        
-    - name: Build project for iOS
-      run: |
-        xcodebuild build -project AirKit.xcodeproj -scheme AirKit -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty && exit ${PIPESTATUS[0]}
+  # - name: Select lates available version of Xcode
+  #   uses: maxim-lobanov/setup-xcode@v1
+  #   with:
+  #     xcode-version: latest
+      
+  # - name: Build project for iOS
+  #   run: |
+  #     xcodebuild build -project AirKit.xcodeproj -scheme AirKit -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty && exit ${PIPESTATUS[0]}
 
-    - name: Setup ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.6
-        bundler-cache: true
+  # - name: Setup ruby
+  #   uses: ruby/setup-ruby@v1
+  #   with:
+  #     ruby-version: 2.6
+  #     bundler-cache: true
 
-    - name: Update `podspec` xcode-version
-      run: |
-        bundle exec fastlane update_podspec_version
+  # - name: Update `podspec` xcode-version
+  #   run: |
+  #     bundle exec fastlane update_podspec_version
