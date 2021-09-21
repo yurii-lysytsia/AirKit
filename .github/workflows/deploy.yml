@@ -3,6 +3,7 @@ name: Actions after push to `master` branch and deploy to sny services
 on:
   push:
     branches:
+      - temp
       - master
       
 jobs:
