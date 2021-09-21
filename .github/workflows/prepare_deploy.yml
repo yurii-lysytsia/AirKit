@@ -15,4 +15,4 @@ jobs:
     - name: Checkout pull request branch
       uses: actions/checkout@v2
       with:
-        ref: "${GITHUB_REF}"
+        ref: ${{ github.event.pull_request.head.ref }}
