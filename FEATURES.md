@@ -2,11 +2,13 @@
 
 ## Changelog
 
-### v 0.1.x | current is 0.1.4 (extensions for Swift language)
+### v 0.1.x | current is 0.1.5 (extensions for Swift language)
 - Extensions for primitive values (`Bool`, `Int`, `Float`, `Double`, `String` etc.);
 - Extensions for collections (`Sequence`, `Collection`, `RangeReplaceableCollection` and `Dictionary`);
 - Extensions for primitive value and collection `Optional`;
 - Extensions and tests for `Comparable`;
+- Extensions for `TimeInterval`;
+- Extensions for `Codable`, `KeyedDecodingContainer`, `PropertyListDecoder` and `TopLevelDecoder`;
 - Added unit test target;
 - Added CI/CD to test project and deploy pod to trunk;
 
@@ -16,9 +18,8 @@
 - [X] Extensions for primitive values;
 - [X] Extensions for collections;
 - [X] Extensions for `Optional`;
-- [ ] Extensions for `TimeInterval`;
-- [ ] Extensions for `Result`;
-- [ ] Extensions for `Codable` and `KeyedDecodingContainer`;
+- [X] Extensions for `Result`;
+- [X] Extensions for `Codable` and `KeyedDecodingContainer`;
 - [ ] Common blocks typealias to convinient usage;
 - [ ] Multicast delegate (model which can collect multiple delegate);
 - [ ] Once (method wich is called once);
@@ -26,6 +27,7 @@
 - [ ] Write unit tests to check all extensions of this version
 
 ### v 0.2 | extensions for `Foundation`
+- [X] Extensions for `TimeInterval`;
 - [ ] Extensions for `Bundle`;
 - [ ] Extensions for `Date` and `Calendar`;
 - [ ] Extensions for `Locale`;
@@ -112,10 +114,14 @@
 - [ ] Write documentation for all extensions of this version;
 - [ ] Write unit tests to check all extensions of this version
 
-### v 1.2 | extension for Other native frameworks;
+### v 1.2 | extension for Other native frameworks
 - [ ] Extensions for `WKWebView`;
 - [ ] Extensions for `LocalAuthentication (LAContext etc.)
 - [ ] Write documentation for all extensions of this version;
 - [ ] Write unit tests to check all extensions of this version
+
+### v 1.3 | extensions for `Combine`
+- [X] Extensions for `TopLevelDecoder`;
+
 
 ##### * this is not final feature log
