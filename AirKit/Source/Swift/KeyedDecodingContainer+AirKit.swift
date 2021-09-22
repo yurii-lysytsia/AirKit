@@ -48,7 +48,7 @@ public extension KeyedDecodingContainer {
     /// - Returns: A value of the requested type, if present for the given key and convertible to the requested type.
     func decode(forKey key: KeyedDecodingContainer<K>.Key) throws -> String {
         do {
-            return try self.decode(String.self, forKey: key)
+            return try decode(String.self, forKey: key)
         } catch {
             return try decode(forKey: key, or: error)
         }
@@ -62,10 +62,6 @@ public extension KeyedDecodingContainer {
     ///         init(from decoder: Decoder) throws {
     ///             let container = try decoder.container(keyedBy: CodingKeys.self)
     ///             value = try container.decodeIfPresent(forKey: .value)
-    ///         }
-    ///
-    ///         enum CodingKeys: CodingKey {
-    ///             case value
     ///         }
     ///     }
     ///
@@ -84,15 +80,18 @@ public extension KeyedDecodingContainer {
     /// - Returns: A decoded value of the requested type, or nil if the Decoder does not have an entry associated with the given key, or if the value is a null value.
     func decodeIfPresent(forKey key: KeyedDecodingContainer<K>.Key) throws -> String? {
         do {
-            return try self.decodeIfPresent(String.self, forKey: key)
+            return try decodeIfPresent(String.self, forKey: key)
         } catch {
             return try decode(forKey: key, or: error)
         }
     }
     
     private func decode(forKey key: KeyedDecodingContainer<K>.Key, or error: Error) throws -> String {
-        if let integer = try? self.decodeIfPresent(Int.self, forKey: key) {
+        if let integer = try? decodeIfPresent(Int.self, forKey: key) {
             return String(describing: integer)
+        }
+        if let bool = try? decodeIfPresent(Bool.self, forKey: key) {
+            return bool.description
         }
         throw error
     }
@@ -126,7 +125,7 @@ public extension KeyedDecodingContainer {
     /// - Returns: A value of the requested type, if present for the given key and convertible to the requested type.
     func decode<T: Decodable>(forKey key: KeyedDecodingContainer<K>.Key) throws -> T where T: LosslessStringConvertible {
         do {
-            return try self.decode(T.self, forKey: key)
+            return try decode(T.self, forKey: key)
         } catch {
             if let value: T = try decode(forKey: key, or: error) {
                 return value
@@ -143,10 +142,6 @@ public extension KeyedDecodingContainer {
     ///         init(from decoder: Decoder) throws {
     ///             let container = try decoder.container(keyedBy: CodingKeys.self)
     ///             value = try container.decodeIfPresent(forKey: .value)
-    ///         }
-    ///
-    ///         enum CodingKeys: CodingKey {
-    ///             case value
     ///         }
     ///     }
     ///
@@ -165,14 +160,14 @@ public extension KeyedDecodingContainer {
     /// - Returns: A decoded value of the requested type, or nil if the Decoder does not have an entry associated with the given key, or if the value is a null value.
     func decodeIfPresent<T: Decodable>(forKey key: KeyedDecodingContainer<K>.Key) throws -> T? where T: LosslessStringConvertible {
         do {
-            return try self.decodeIfPresent(T.self, forKey: key)
+            return try decodeIfPresent(T.self, forKey: key)
         } catch {
             return try decode(forKey: key, or: error)
         }
     }
     
     private func decode<T: Decodable>(forKey key: KeyedDecodingContainer<K>.Key, or error: Error) throws -> T? where T: LosslessStringConvertible {
-        if let string = try? self.decodeIfPresent(String.self, forKey: key) {
+        if let string = try? decodeIfPresent(String.self, forKey: key) {
             return T(string)
         }
         throw error
@@ -208,7 +203,7 @@ public extension KeyedDecodingContainer {
     /// - Returns: A value of the requested type, if present for the given key and convertible to the requested type.
     func decode(forKey key: KeyedDecodingContainer<K>.Key) throws -> Bool {
         do {
-            return try self.decode(Bool.self, forKey: key)
+            return try decode(Bool.self, forKey: key)
         } catch {
             if let value = try decode(forKey: key, or: error) {
                 return value
@@ -225,10 +220,6 @@ public extension KeyedDecodingContainer {
     ///         init(from decoder: Decoder) throws {
     ///             let container = try decoder.container(keyedBy: CodingKeys.self)
     ///             value = try container.decodeIfPresent(forKey: .value)
-    ///         }
-    ///
-    ///         enum CodingKeys: CodingKey {
-    ///             case value
     ///         }
     ///     }
     ///
@@ -248,17 +239,17 @@ public extension KeyedDecodingContainer {
     /// - Returns: A decoded value of the requested type, or nil if the Decoder does not have an entry associated with the given key, or if the value is a null value.
     func decodeIfPresent(forKey key: KeyedDecodingContainer<K>.Key) throws -> Bool? {
         do {
-            return try self.decodeIfPresent(Bool.self, forKey: key)
+            return try decodeIfPresent(Bool.self, forKey: key)
         } catch {
             return try decode(forKey: key, or: error)
         }
     }
     
     private func decode(forKey key: KeyedDecodingContainer<K>.Key, or error: Error) throws -> Bool? {
-        if let int = try? self.decodeIfPresent(Int.self, forKey: key) {
+        if let int = try? decodeIfPresent(Int.self, forKey: key) {
             return int == 1 ? true : false
         }
-        if let string = try? self.decodeIfPresent(String.self, forKey: key) {
+        if let string = try? decodeIfPresent(String.self, forKey: key) {
             if let bool = Bool(string) {
                 return bool
             } else if let int = Int(string) {
