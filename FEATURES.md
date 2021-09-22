@@ -8,6 +8,7 @@
 - Extensions for primitive value and collection `Optional`;
 - Extensions and tests for `Comparable`;
 - Extensions for `TimeInterval`;
+- Extensions for `Codable`, `KeyedDecodingContainer`, `PropertyListDecoder` and `TopLevelDecoder`;
 - Added unit test target;
 - Added CI/CD to test project and deploy pod to trunk;
 
@@ -18,7 +19,7 @@
 - [X] Extensions for collections;
 - [X] Extensions for `Optional`;
 - [X] Extensions for `Result`;
-- [ ] Extensions for `Codable` and `KeyedDecodingContainer`;
+- [X] Extensions for `Codable` and `KeyedDecodingContainer`;
 - [ ] Common blocks typealias to convinient usage;
 - [ ] Multicast delegate (model which can collect multiple delegate);
 - [ ] Once (method wich is called once);
@@ -120,7 +121,7 @@
 - [ ] Write unit tests to check all extensions of this version
 
 ### v 1.3 | extensions for `Combine`
-- [ ] Extensions for `TopLevelDecoder`;
+- [X] Extensions for `TopLevelDecoder`;
 
 
 ##### * this is not final feature log
