@@ -2,7 +2,7 @@
 
 ## Changelog
 
-### v 0.1.x | current is 0.1.4 (extensions for Swift language)
+### v 0.1.x | current is 0.1.5 (extensions for Swift language)
 - Extensions for primitive values (`Bool`, `Int`, `Float`, `Double`, `String` etc.);
 - Extensions for collections (`Sequence`, `Collection`, `RangeReplaceableCollection` and `Dictionary`);
 - Extensions for primitive value and collection `Optional`;
