@@ -7,6 +7,7 @@
 - Extensions for collections (`Sequence`, `Collection`, `RangeReplaceableCollection` and `Dictionary`);
 - Extensions for primitive value and collection `Optional`;
 - Extensions and tests for `Comparable`;
+- Extensions for `TimeInterval`;
 - Added unit test target;
 - Added CI/CD to test project and deploy pod to trunk;
 
@@ -16,8 +17,7 @@
 - [X] Extensions for primitive values;
 - [X] Extensions for collections;
 - [X] Extensions for `Optional`;
-- [ ] Extensions for `TimeInterval`;
-- [ ] Extensions for `Result`;
+- [X] Extensions for `Result`;
 - [ ] Extensions for `Codable` and `KeyedDecodingContainer`;
 - [ ] Common blocks typealias to convinient usage;
 - [ ] Multicast delegate (model which can collect multiple delegate);
@@ -26,6 +26,7 @@
 - [ ] Write unit tests to check all extensions of this version
 
 ### v 0.2 | extensions for `Foundation`
+- [X] Extensions for `TimeInterval`;
 - [ ] Extensions for `Bundle`;
 - [ ] Extensions for `Date` and `Calendar`;
 - [ ] Extensions for `Locale`;
