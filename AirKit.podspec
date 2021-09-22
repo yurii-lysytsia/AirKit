@@ -1,7 +1,4 @@
 #
-#  Be sure to run `pod spec lint AirKit.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
-#
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
@@ -17,7 +14,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "AirKit"
   spec.version      = "0.1.5"
-  spec.summary      = "AirKit is sugar framework for Swift"
+  spec.summary      = "Many extensions to speed up your coding time!"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,12 +22,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-  It contains many different extensions for native frameworks
+  This is sugar framework that contains many different extensions for native Swift and iOS frameworks
                    DESC
 
   spec.homepage     = "https://github.com/yurii-lysytsia/AirKit"
-  # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
-
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
