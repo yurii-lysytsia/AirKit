@@ -6,8 +6,16 @@
 [![CocoaPods](https://img.shields.io/cocoapods/v/AirKit?color=red)]()
 [![Build](https://img.shields.io/github/workflow/status/yurii-lysytsia/AirKit/Prepare%20to%20deploy)]()
 
-## 🔮 Features
 This is sugar framework that contains many different extensions for native Swift and iOS frameworks
+
+- [Features](#features)
+- [Installation](#installation)
+    - [CocoaPods](#CocoaPods)
+- [Documentation](#documentation)
+- [License](#license)
+ 
+
+## 🔮 Features
 
 ### v 0.1 | extensions for `Swift language`
 - [X] Extensions for primitive values (`Bool`, `Int`, `Double`, `String`, etc.);
@@ -118,10 +126,16 @@ This is sugar framework that contains many different extensions for native Swift
 ### v 1.3 | extensions for `Combine`
 - [X] Extensions for `TopLevelDecoder`;
 
-## 🚀 Instalation
+## 🚀 Installation
+
+### CocoaPods 
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate AirKit into your Xcode project using CocoaPods, specify it in your `Podfile`:
+```ruby
+pod 'AirKit'
+```
 
 ## 📚 Documentation
-Documentation for all extensions and examples, is available in all methods and properties summary
+Documentation will be available soon. But now it available only for all extensions methods and properties summary.
 
 ## 📜 License
 Released under the MIT license. See [LICENSE](LICENSE) for details.
