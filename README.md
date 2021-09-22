@@ -8,7 +8,7 @@
 
 This is sugar framework that contains many different extensions for native Swift and iOS frameworks
 
-- [Features](#features)
+- [Features](#Features)
 - [Installation](#installation)
     - [CocoaPods](#CocoaPods)
 - [Documentation](#documentation)
