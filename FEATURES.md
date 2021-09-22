@@ -113,10 +113,14 @@
 - [ ] Write documentation for all extensions of this version;
 - [ ] Write unit tests to check all extensions of this version
 
-### v 1.2 | extension for Other native frameworks;
+### v 1.2 | extension for Other native frameworks
 - [ ] Extensions for `WKWebView`;
 - [ ] Extensions for `LocalAuthentication (LAContext etc.)
 - [ ] Write documentation for all extensions of this version;
 - [ ] Write unit tests to check all extensions of this version
+
+### v 1.3 | extensions for `Combine`
+- [ ] Extensions for `TopLevelDecoder`;
+
 
 ##### * this is not final feature log
