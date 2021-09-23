@@ -5,21 +5,17 @@
 public extension Optional where Wrapped == String {
     /// Returns `true` if the string `isBlank` or `nil` otherwise returns `false`.
     ///
-    ///     let string: String? = nil
-    ///     string?.isBlank // nil
-    ///     string.isBlankOrNil // true
+    ///     let stringNil: String? = nil
+    ///     stringNil.isBlankOrNil // true
     ///
-    ///     let string_0: String? = ""
-    ///     string_0?.isBlank // Optional(true)
-    ///     string_0.isBlankOrNil // true
+    ///     let stringBlank: String? = ""
+    ///     stringBlank.isBlankOrNil // true
     ///
-    ///     let string_1: String? = " "
-    ///     string_1?.isBlank // Optional(true)
-    ///     string_1.isBlankOrNil // true
+    ///     let stringSpace: String? = " "
+    ///     stringSpace.isBlankOrNil // true
     ///
-    ///     let string_2: String? = "abc"
-    ///     string_2?.isBlank // Optional(false)
-    ///     string_2.isBlankOrNil // false
+    ///     let string: String? = "abc"
+    ///     string.isBlankOrNil // false
     ///
     var isBlankOrNil: Bool { self?.isBlank != false }
 }
@@ -30,7 +26,7 @@ public extension Optional where Wrapped: Collection {
     /// Returns `true` if the string `isEmpty` or `nil` otherwise returns `false`.
     ///
     ///     let string: String? = nil
-    ///     string_0.isEmptyOrNil // true
+    ///     string.isEmptyOrNil // true
     ///
     ///     let array: [String]? = nil
     ///     array.isEmptyOrNil
@@ -66,7 +62,7 @@ public extension Optional {
     ///     string ??= nil // New value haven't been set because it's `nil` | string == String("Hello world!")
     ///
     ///     var dict = [String : String]()
-    ///     dict["hello"] ??= "world" // New value have been set | string == String("world")
+    ///     dict["hello"] ??= "world" // New value have been set | dict["hello"] == String("world")
     ///     dict["hello"] ??= nil // New value haven't been set because it's `nil` | dict["hello"] == Stirng("world")
     ///
     static func ??= (lhs: inout Optional, rhs: Optional) { lhs = rhs ?? lhs }
