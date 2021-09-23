@@ -34,6 +34,12 @@ public extension Sequence {
         }
         return (matching, nonMatching)
     }
+    
+    /// Returns total sum of a `AdditiveArithmetic` property of each `Element` in a `Sequence`.
+    ///
+    ///     ["James", "Wade", "Bryant"].sum { $0.count } // Int(15)
+    ///
+    func sum<T: AdditiveArithmetic>(block: (Element) -> T) -> T { reduce(.zero) { $0 + block($1) } }
 }
 
 // MARK: - Extensions | Equatable
@@ -55,8 +61,8 @@ public extension Sequence where Element: Equatable {
 public extension Sequence where Element: Hashable {
     /// Returns `true` if the sequence contains duplicates.
     ///
-    ///     [1, 2, 3].containsDuplicates() // true
-    ///     [1, 2, 3, 2, 1].containsDuplicates() // false
+    ///     [1, 2, 3].containsDuplicates() // false
+    ///     [1, 2, 3, 2, 1].containsDuplicates() // true
     ///
     func containsDuplicates() -> Bool {
         var set = Set<Element>()
@@ -82,15 +88,6 @@ public extension Sequence where Element: Hashable {
         }
         return Array(duplicates)
     }
-    
-    /// Retunrs an array with removed duplicate elements.
-    ///
-    ///     [1, 2, 1, 3, 2].removingDuplicates() // [1, 2, 3]
-    ///
-    func removingDuplicates() -> [Element] {
-        var set = Set<Element>()
-        return filter { set.insert($0).inserted }
-    }
 }
 
 // MARK: - Extensions | Optionable
@@ -107,12 +104,6 @@ public extension Sequence where Element: Optionable {
 // MARK: - Extensions | AdditiveArithmetic
 
 public extension Sequence where Element: AdditiveArithmetic {
-    /// Returns total sum of a `AdditiveArithmetic` property of each `Element` in a `Sequence`.
-    ///
-    ///     ["James", "Wade", "Bryant"].sum { $0.count } // Int(15)
-    ///
-    func sum<T: AdditiveArithmetic>(block: (Element) -> T) -> T { reduce(.zero) { $0 + block($1) } }
-    
     /// Returns total sum of all elements in the array.
     ///
     ///     [5, 10, 15].sum() // 30
