@@ -101,6 +101,19 @@ public extension Sequence where Element: Optionable {
     func compactMap() -> [Element.Wrapped] { compactMap { $0.value } }
 }
 
+// MARK: - Extensions | Sequence
+
+extension Sequence where Element: Sequence {
+    
+    /// Returns an array of element's element.
+    ///
+    ///     let array = [["A"], ["B"], ["C"], ["D"]]
+    ///     array.reduce() // ["A", "B", "C", "D"]
+    ///
+    func reduce() -> [Element.Element] { reduce([]) { $0 + $1 } }
+    
+}
+
 // MARK: - Extensions | AdditiveArithmetic
 
 public extension Sequence where Element: AdditiveArithmetic {

@@ -41,6 +41,11 @@ class SequenceTests: XCTestCase {
         XCTAssertEqual(array.compactMap(), ["Hello", "World"])
     }
     
+    func testReduce() {
+        let array = [["A"], ["B"], ["C"], ["D"]]
+        XCTAssertEqual(array.reduce(), ["A", "B", "C", "D"])
+    }
+    
     func testSum() {
         XCTAssertEqual(["James", "Wade", "Bryant"].sum(block: { $0.count }), 15)
         XCTAssertEqual([5, 10, 15].sum(), 30)
