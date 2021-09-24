@@ -24,11 +24,18 @@ class KeyedDecodingContainerTests: XCTestCase {
         XCTAssertEqual(result.double, 123.456)
         XCTAssertEqual(result.doubleString, 123.456)
         XCTAssertNil(result.doubleNull)
+        XCTAssertTrue(result.bool)
+        XCTAssertTrue(result.boolIntTrue)
+        XCTAssertFalse(result.boolIntFalse)
+        XCTAssertTrue(result.boolString)
+        XCTAssertTrue(result.boolStringIntTrue)
+        XCTAssertFalse(result.boolStringIntFalse)
+        XCTAssertNil(result.boolNull)
     }
     
     // MARK: - Helers
     
-    struct SomeModel: Decodable, Equatable {
+    struct SomeModel: Decodable {
         let string: String
         let stringInt: String
         let stringBool: String
@@ -39,6 +46,15 @@ class KeyedDecodingContainerTests: XCTestCase {
         let double: Double
         let doubleString: Double
         let doubleNull: Double?
+        let bool: Bool
+        let boolIntTrue: Bool
+        let boolIntFalse: Bool
+        let boolString: Bool
+        let boolStringIntTrue: Bool
+        let boolStringIntFalse: Bool
+        let boolNull: Bool?
+        let customDecodable: CustomDecodable
+        let customDecodableNull: CustomDecodable?
         
         init(from decoder: Decoder) throws {
             let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -53,7 +69,18 @@ class KeyedDecodingContainerTests: XCTestCase {
             
             double = try container.decode(forKey: .double)
             doubleString = try container.decode(forKey: .doubleString)
-            doubleNull = try container.decode(forKey: .doubleNull)
+            doubleNull = try container.decodeIfPresent(forKey: .doubleNull)
+            
+            bool = try container.decode(forKey: .bool)
+            boolIntTrue = try container.decode(forKey: .boolIntTrue)
+            boolIntFalse = try container.decode(forKey: .boolIntFalse)
+            boolString = try container.decode(forKey: .boolString)
+            boolStringIntTrue = try container.decode(forKey: .boolStringIntTrue)
+            boolStringIntFalse = try container.decode(forKey: .boolStringIntFalse)
+            boolNull = try container.decodeIfPresent(forKey: .boolNull)
+            
+            customDecodable = try container.decode(forKey: .customDecodable)
+            customDecodableNull = try container.decodeIfPresent(forKey: .customDecodableNull)
         }
         
         enum CodingKeys: CodingKey {
@@ -67,6 +94,19 @@ class KeyedDecodingContainerTests: XCTestCase {
             case double
             case doubleString
             case doubleNull
+            case bool
+            case boolIntTrue
+            case boolIntFalse
+            case boolString
+            case boolStringIntTrue
+            case boolStringIntFalse
+            case boolNull
+            case customDecodable
+            case customDecodableNull
+        }
+        
+        struct CustomDecodable: Decodable {
+            let id: String
         }
     }
     
