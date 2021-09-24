@@ -1,4 +1,4 @@
-name: Prepare to deploy
+name: Update Pod version
 
 on: 
   push:
