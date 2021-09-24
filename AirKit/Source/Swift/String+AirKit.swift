@@ -125,7 +125,7 @@ public extension String {
     /// Returns new string with removed all characters except letters.
     ///
     ///     let string = "123abCD-*=456"
-    ///     string.decimalDigitsOnly // String("abCD")
+    ///     string.lettersOnly // String("abCD")
     ///
     var lettersOnly: String { removing(characterSet: CharacterSet.letters.inverted) }
     
@@ -139,7 +139,7 @@ public extension String {
     /// Returns new string with removed all characters except alphanumerics.
     ///
     ///     let string = "123abCD-*=456"
-    ///     string.decimalDigitsOnly // String("123abCD456")
+    ///     string.alphanumericsOnly // String("123abCD456")
     ///
     var alphanumericsOnly: String { removing(characterSet: CharacterSet.alphanumerics.inverted) }
     
@@ -167,7 +167,7 @@ public extension String {
     /// Remove all elements similar to `string` from current string.
     ///
     ///     var string = "ABC\n123"
-    ///     string.removing(string: "ABC\n") // string == String("123")
+    ///     string.remove(string: "ABC\n") // string == String("123")
     ///
     mutating func remove<S: StringProtocol>(string: S) { self = removing(string: string) }
 }
@@ -193,7 +193,7 @@ public extension String {
     /// Truncate current string, up to the specified maximum length, containing the initial elements of the collection
     ///
     ///     var string = "Hello world!"
-    ///     string.truncating(to: 5, addEllipsis: true) // string == String("Hello...")
+    ///     string.truncate(to: 5, addEllipsis: true) // string == String("Hello...")
     ///
     /// - Parameters:
     ///   - maxLength: The maximum number of elements to return. maxLength must be greater than or equal to zero.
@@ -290,7 +290,7 @@ public extension String {
     /// Capitalize first character of current string.
     ///
     ///     var string = "hello world"
-    ///     string.capitalizingFirstLetter() // string == String("Hello world")
+    ///     string.capitalizeFirstLetter() // string == String("Hello world")
     ///
     mutating func capitalizeFirstLetter() { self = capitalizingFirstLetter() }
 }
@@ -301,7 +301,7 @@ public extension String {
     /// Returns abbreviated string, i.e first letters of words in the string based on `separator` and `maxSplits`.
     ///
     ///     let string = "hello world how are you?"
-    ///     string.abbreviating(separator: " ", maxSplits: 20) // String("HWHAY)"
+    ///     string.abbreviating(separator: " ", maxSplits: 20) // String("HWHAY")
     ///     string.abbreviating(separator: " ", maxSplits: 2, shouldUppercased: true) // String("HW")
     ///     string.abbreviating(separator: " ", maxSplits: 2, shouldUppercased: false) // String("hw")
     ///
@@ -319,7 +319,7 @@ public extension String {
     /// Abbreviate the string, i.e first letters of words in the string based on `separator` and `maxSplits`.
     ///
     ///     var string = "hello world how are you?"
-    ///     string.abbreviating(separator: " ", maxSplits: 20) // string == String("HWHAY)"
+    ///     string.abbreviating(separator: " ", maxSplits: 20) // string == String("HWHAY")
     ///
     /// - Parameters:
     ///   - separator: The element that should be split upon.
@@ -412,16 +412,13 @@ public extension String {
 public extension String {
     /// Returns url host allowed escaped string.
     ///
-    ///     "String to encode".urlEncoded -> "it's%20easy%20to%20encode%20strings"
+    ///     "String to encode".urlEncoded // String("String%20to%20encode")
     ///
-    var urlEncoded: String {
-        // `urlDecoded` to avoid multiple decoding.
-        urlDecoded.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? self
-    }
+    var urlEncoded: String { urlDecoded.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? self }
     
     /// Returns readable string from a url encoded string.
     ///
-    ///     "String%20to%20decode".urlDecoded -> "String to decode"
+    ///     "String%20to%20decode".urlDecoded // "String to decode"
     ///
     var urlDecoded: String { removingPercentEncoding ?? self }
     
