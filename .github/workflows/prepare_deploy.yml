@@ -28,3 +28,7 @@ jobs:
     - name: Build project for iOS
       run: |
         xcodebuild test -project AirKit.xcodeproj -scheme AirKit -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty && exit ${PIPESTATUS[0]}
+
+    - name: Lint
+      run: |
+        pod lib lint AirKit.podspec
