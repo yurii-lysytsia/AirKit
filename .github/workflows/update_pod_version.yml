@@ -8,7 +8,7 @@ on:
       - 'AirKit.xcodeproj/project.pbxproj'
 
 jobs:
-  testing:
+  updating:
     runs-on: macOS-latest
     timeout-minutes: 5
     steps:
