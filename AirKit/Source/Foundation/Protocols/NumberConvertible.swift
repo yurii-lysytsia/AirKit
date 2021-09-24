@@ -1,8 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+#if canImport(Foundation)
 import class Foundation.NSNumber
-
-// MARK: - Protocol | NumberConvertible
 
 public protocol NumberConvertible {
     /// Returns an NSNumber object initialized to contain a current value.
@@ -66,3 +65,4 @@ extension Double: NumberConvertible {
 extension Bool: NumberConvertible {
     public func toNumber() -> NSNumber { .init(value: self) }
 }
+#endif
