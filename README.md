@@ -13,18 +13,17 @@ This is sugar framework that contains many different extensions for native Swift
     - [CocoaPods](#CocoaPods)
 - [Documentation](#-documentation)
 - [License](#-license)
- 
 
 ## 🔮 Features
 
-### v 0.1 | Extensions for `Swift language`
+### Extensions for `Swift language`
 - [X] Extensions for primitive values (`Bool`, `Int`, `Double`, `String`, etc.);
-- [X] Extensions for collections;
+- [X] Extensions for collections (`Sequence`, `Collections`, etc.);
+- [X] Extensions for `Comparable`;
 - [X] Extensions for `Optional`;
 - [X] Extensions for `Result`;
 - [X] Extensions for `Codable` and `KeyedDecodingContainer`;
-- [ ] Write documentation for all extensions of this version;
-- [ ] Write unit tests to check all extensions of this version;
+- [X] Write unit tests to check all extensions of this version;
 
 ### v 0.2 | Extensions for `Foundation`
 - [X] Extensions for `TimeInterval`;
