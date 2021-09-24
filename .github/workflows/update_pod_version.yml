@@ -5,7 +5,7 @@ on:
     branches:
       - 'rc/**'
     paths:
-      - AirKit.xcodeproj/project.pbxproj
+      - 'AirKit.xcodeproj/project.pbxproj'
 
 jobs:
   testing:

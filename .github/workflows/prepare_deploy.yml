@@ -5,8 +5,9 @@ on:
     branches:
       - master
     paths:
-      - AirKit/**
-      - AirKitTests/**
+      - 'AirKit/Source/**'
+      - 'AirKitTests/Source/**'
+      - 'AirKitTests/Resource/**'
 
 jobs:
   testing:
@@ -27,13 +28,3 @@ jobs:
     - name: Build project for iOS
       run: |
         xcodebuild test -project AirKit.xcodeproj -scheme AirKit -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty && exit ${PIPESTATUS[0]}
-
-    - name: Setup ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.6
-        bundler-cache: true
-
-    - name: Update podspec xcode-version
-      run: |
-        bundle exec fastlane update_podspec_version
