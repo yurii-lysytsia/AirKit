@@ -32,12 +32,8 @@ This is sugar framework that contains many different extensions for native Swift
 - [ ] Extensions for `Locale`;
 - [ ] Extensions for formatters;
 - [ ] Extensions for `FileManagers`;
-- [ ] Extensions for `Measurement`;
-- [ ] Extensions for `NotificationCenter`;
 - [X] Extensions for `NSAttributedString`;
 - [ ] Extensions for `NSObject`;
-- [ ] Extensions for `NSPredicate`;
-- [ ] Extensions for `NSRegularExpression`;
 - [ ] Extensions for `URL` and `URLRequest`;
 - [ ] Extensions for `UserDefaults`;
 - [ ] Extensions for `DispatchQueue` and `DispatchGroup`;
@@ -65,6 +61,7 @@ This is sugar framework that contains many different extensions for native Swift
 - [ ] Write unit tests to check all extensions of this version;
 
 ### v 0.5 | Extensions for `CoreData`
+- [ ] Extensions for `NSPredicate`;
 - [ ] Extensions for `NSManagedObject`;
 - [ ] Write documentation for all extensions of this version;
 - [ ] Write unit tests to check all extensions of this version;
