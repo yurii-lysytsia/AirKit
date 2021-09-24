@@ -34,7 +34,7 @@ This is sugar framework that contains many different extensions for native Swift
 - [ ] Extensions for `FileManagers`;
 - [ ] Extensions for `Measurement`;
 - [ ] Extensions for `NotificationCenter`;
-- [ ] Extensions for `NSAttributedString`;
+- [X] Extensions for `NSAttributedString`;
 - [ ] Extensions for `NSObject`;
 - [ ] Extensions for `NSPredicate`;
 - [ ] Extensions for `NSRegularExpression`;

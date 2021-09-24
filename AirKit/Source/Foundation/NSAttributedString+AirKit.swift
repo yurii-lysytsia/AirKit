@@ -1,6 +1,9 @@
-import AirKit
+//  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-import Foundation
+import class Foundation.NSAttributedString
+import class Foundation.NSMutableAttributedString
+import class Foundation.NSRegularExpression
+import struct Foundation.NSRange
 
 // MARK: - Extensions | Regex | NSAttributedString
 
@@ -17,7 +20,6 @@ public extension NSAttributedString {
         result.add(attributes: attributes, pattern: pattern, options: options)
         return result
     }
-    
     
     /// Apply attributes to occurrences of a given string.
     ///
