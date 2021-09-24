@@ -23,8 +23,7 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `Optional`;
 - [X] Extensions for `Result`;
 - [X] Extensions for `Codable` and `KeyedDecodingContainer`;
-- [ ] Write documentation for all extensions of this version;
-- [ ] Write unit tests to check all extensions of this version;
+- [X] Write unit tests to check all extensions of this version;
 
 ### v 0.2 | Extensions for `Foundation`
 - [X] Extensions for `TimeInterval`;
