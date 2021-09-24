@@ -1,5 +1,6 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+#if canImport(Combine)
 import Combine
 
 @available(iOS 13.0, *)
@@ -19,3 +20,4 @@ public extension TopLevelDecoder {
         try decode(T.self, from: input)
     }
 }
+#endif
