@@ -28,12 +28,13 @@ public extension RangeReplaceableCollection {
 extension RangeReplaceableCollection where Element: Equatable {
     /// Removes first element from the collection.
     ///
-    ///     var array = [1,2,3]
-    ///     array.removeFirst(2) // [1, 3]
+    ///     var array = [1, 2, 3, 2, 1]
+    ///     array.removeFirst(2) // [1, 3, 2, 1]
     ///
-    mutating func removeFirst(_ element: Element) {
-        guard let index = self.firstIndex(of: element) else { return }
-        self.remove(at: index)
+    @discardableResult
+    mutating func removeFirst(_ element: Element) -> Element? {
+        guard let index = self.firstIndex(of: element) else { return nil }
+        return self.remove(at: index)
     }
     
     /// Removes all elements of from the collection.

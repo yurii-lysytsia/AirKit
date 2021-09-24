@@ -94,5 +94,5 @@ public extension Result where Success == Void {
     ///
     ///     let successResult: Result<Void, Error> = .success
     ///
-    static var success: Result { Self.success(()) }
+    static var success: Result { .success(()) }
 }

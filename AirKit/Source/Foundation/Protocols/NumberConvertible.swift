@@ -2,8 +2,6 @@
 
 import class Foundation.NSNumber
 
-// MARK: - Protocol | NumberConvertible
-
 public protocol NumberConvertible {
     /// Returns an NSNumber object initialized to contain a current value.
     func toNumber() -> NSNumber

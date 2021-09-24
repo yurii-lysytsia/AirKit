@@ -1,0 +1,23 @@
+{
+   "string":"123",
+   "stringInt":123,
+   "stringBool":true,
+   "stringNull":null,
+   "int":123,
+   "intString":"123",
+   "intNull":null,
+   "double":123.456,
+   "doubleString":"123.456",
+   "doubleNull":null,
+   "bool":true,
+   "boolIntTrue":1,
+   "boolIntFalse":0,
+   "boolString":"true",
+   "boolStringIntTrue":"1",
+   "boolStringIntFalse":"0",
+   "boolNull":null,
+   "customDecodable": {
+       "id":"hello"
+   },
+   "customDecodableNull": null
+}

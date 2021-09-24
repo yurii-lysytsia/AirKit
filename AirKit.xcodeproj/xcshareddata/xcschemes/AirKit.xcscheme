@@ -26,13 +26,24 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "5B510BF626F24AB200C21CDF"
+            BuildableName = "AirKit.framework"
+            BlueprintName = "AirKit"
+            ReferencedContainer = "container:AirKit.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5B510C3526F24D1000C21CDF"
+               BlueprintIdentifier = "5B6A058426FA7E18001A59C8"
                BuildableName = "AirKitTests.xctest"
                BlueprintName = "AirKitTests"
                ReferencedContainer = "container:AirKit.xcodeproj">

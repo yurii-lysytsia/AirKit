@@ -4,7 +4,11 @@ on:
   pull_request:
     branches:
       - master
-      
+    paths:
+      - 'AirKit/Source/**'
+      - 'AirKitTests/Source/**'
+      - 'AirKitTests/Resource/**'
+
 jobs:
   testing:
     runs-on: macOS-latest
@@ -25,12 +29,16 @@ jobs:
       run: |
         xcodebuild test -project AirKit.xcodeproj -scheme AirKit -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty && exit ${PIPESTATUS[0]}
 
-    - name: Setup ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.6
-        bundler-cache: true
+  checking_linter:
+    runs-on: macOS-latest
+    timeout-minutes: 5
+    steps:
 
-    - name: Update podspec xcode-version
+    - name: Checkout pull request branch
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.head.ref }}
+
+    - name: Check Pod linter
       run: |
-        bundle exec fastlane update_podspec_version
+        pod lib lint AirKit.podspec

@@ -26,10 +26,10 @@ jobs:
         ruby-version: 2.6
         bundler-cache: true
 
-    - name: Add tag
+    - name: Add git tag
       run: |
         bundle exec fastlane push_pod
-    
+
     - name: Publish pod to trunk
       env:
         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_PASSWORD }}
