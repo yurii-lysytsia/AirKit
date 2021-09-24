@@ -29,8 +29,7 @@ jobs:
       run: |
         xcodebuild test -project AirKit.xcodeproj -scheme AirKit -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty && exit ${PIPESTATUS[0]}
 
-  checking:
-    needs: testing
+  checking_linter:
     runs-on: macOS-latest
     timeout-minutes: 5
     steps:
