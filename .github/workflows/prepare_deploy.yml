@@ -5,8 +5,8 @@ on:
     branches:
       - master
     paths:
-      - AirKit/Source/**
-      - AirKitTests/Source/**
+      - AirKit/**
+      - AirKitTests/**
 
 jobs:
   testing:
