@@ -6,11 +6,11 @@ import XCTest
 class BoolTests: XCTestCase {
 
     func testConvertible() {
-        XCTAssert(true.toInt() == 1)
-        XCTAssert(false.toInt() == 0)
+        XCTAssertEqual(true.toInt(), 1)
+        XCTAssertEqual(false.toInt(), 0)
     
-        XCTAssert(true.toString() == "true")
-        XCTAssert(false.toString() == "false")
+        XCTAssertEqual(true.toString(), "true")
+        XCTAssertEqual(false.toString(), "false")
     }
 
 }

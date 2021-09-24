@@ -6,10 +6,10 @@ import XCTest
 class TimeIntervalTests: XCTestCase {
     
     func testValues() {
-        XCTAssert(TimeInterval.minutes(10) == 600)
-        XCTAssert(TimeInterval.hours(5) == 18_000)
-        XCTAssert(TimeInterval.days(3) == 259_200)
-        XCTAssert(TimeInterval.weeks(2) == 1_209_600)
+        XCTAssertEqual(TimeInterval.minutes(10), 600)
+        XCTAssertEqual(TimeInterval.hours(5), 18_000)
+        XCTAssertEqual(TimeInterval.days(3), 259_200)
+        XCTAssertEqual(TimeInterval.weeks(2), 1_209_600)
     }
     
 }

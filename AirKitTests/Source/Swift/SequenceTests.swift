@@ -7,43 +7,43 @@ class SequenceTests: XCTestCase {
     
     func testCount() {
         let stringCount = "Hello world!".count { $0.isUppercase }
-        XCTAssert(stringCount == 1)
+        XCTAssertEqual(stringCount, 1)
         
         let arrayCount = ["Hello", "World", "!"].count { $0.hasAlphanumerics }
-        XCTAssert(arrayCount == 2)
+        XCTAssertEqual(arrayCount, 2)
     }
     
     func testDivided() {
         let (even, odd) = [0, 1, 2, 3, 4, 5].divided { $0.isMultiple(of: 2) }
-        XCTAssert(even == [0, 2, 4])
-        XCTAssert(odd == [1, 3, 5])
+        XCTAssertEqual(even, [0, 2, 4])
+        XCTAssertEqual(odd, [1, 3, 5])
     }
     
     func testContainsEquatable() {
-        XCTAssert([1, 2, 3, 4, 5].contains([1, 3]) == true)
-        XCTAssert([1.2, 2.3, 3.4].contains([1.2, 4]) == false)
-        XCTAssert(["h", "e", "l", "l", "o"].contains(["l", "o"]) == true)
+        XCTAssertTrue([1, 2, 3, 4, 5].contains([1, 3]))
+        XCTAssertFalse([1.2, 2.3, 3.4].contains([1.2, 4]))
+        XCTAssertTrue(["h", "e", "l", "l", "o"].contains(["l", "o"]))
     }
     
     func testContainsDuplicates() {
-        XCTAssert([1, 2, 3].containsDuplicates() == false)
-        XCTAssert([1, 2, 3, 2, 1].containsDuplicates() == true)
+        XCTAssertFalse([1, 2, 3].containsDuplicates())
+        XCTAssertTrue([1, 2, 3, 2, 1].containsDuplicates())
     }
     
     func testDuplicates() {
-        XCTAssert([1, 2, 3].duplicates() == [])
-        XCTAssert([1, 2, 3, 2].duplicates() == [2])
-        XCTAssert(["h", "e", "l", "l", "o"].duplicates() == ["l"])
+        XCTAssertEqual([1, 2, 3].duplicates(), [])
+        XCTAssertEqual([1, 2, 3, 2].duplicates(), [2])
+        XCTAssertEqual(["h", "e", "l", "l", "o"].duplicates(), ["l"])
     }
     
     func testCompactMap() {
         let array: [String?] = ["Hello", nil, "World"]
-        XCTAssert(array.compactMap() == ["Hello", "World"])
+        XCTAssertEqual(array.compactMap(), ["Hello", "World"])
     }
     
     func testSum() {
-        XCTAssert(["James", "Wade", "Bryant"].sum(block: { $0.count }) == 15)
-        XCTAssert([5, 10, 15].sum() == 30)
+        XCTAssertEqual(["James", "Wade", "Bryant"].sum(block: { $0.count }), 15)
+        XCTAssertEqual([5, 10, 15].sum(), 30)
     }
     
 }

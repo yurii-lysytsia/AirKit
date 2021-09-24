@@ -14,16 +14,16 @@ class KeyedDecodingContainerTests: XCTestCase {
     func testDecode() throws {
         let json = try Bundle.json(filename: "swift-decode")
         let result = try decoder.decode(SomeModel.self, from: json)
-        XCTAssert(result.string == "123")
-        XCTAssert(result.stringInt == "123")
-        XCTAssert(result.stringBool == "true")
-        XCTAssert(result.stringNull == nil)
-        XCTAssert(result.int == 123)
-        XCTAssert(result.intString == 123)
-        XCTAssert(result.intNull == nil)
-        XCTAssert(result.double == 123.456)
-        XCTAssert(result.doubleString == 123.456)
-        XCTAssert(result.doubleNull == nil)
+        XCTAssertEqual(result.string, "123")
+        XCTAssertEqual(result.stringInt, "123")
+        XCTAssertEqual(result.stringBool, "true")
+        XCTAssertNil(result.stringNull)
+        XCTAssertEqual(result.int, 123)
+        XCTAssertEqual(result.intString, 123)
+        XCTAssertNil(result.intNull)
+        XCTAssertEqual(result.double, 123.456)
+        XCTAssertEqual(result.doubleString, 123.456)
+        XCTAssertNil(result.doubleNull)
     }
     
     // MARK: - Helers

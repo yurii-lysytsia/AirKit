@@ -7,9 +7,9 @@ class CGFloatTests: XCTestCase {
     
     func testConvertible() {
         let value: CGFloat = 10.5
-        XCTAssert(value.toInt() == 10)
-        XCTAssert(value.toFloat() == 10.5)
-        XCTAssert(value.toDouble() == 10.5)
+        XCTAssertEqual(value.toInt(), 10)
+        XCTAssertEqual(value.toFloat(), 10.5)
+        XCTAssertEqual(value.toDouble(), 10.5)
     }
     
 }

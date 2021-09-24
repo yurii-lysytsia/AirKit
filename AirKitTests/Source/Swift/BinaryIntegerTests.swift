@@ -5,15 +5,11 @@ import XCTest
 
 class BinaryIntegerTests: XCTestCase {
     
-    func testToInt() {
-        
-    }
-    
     func testToString() {
         let value = 123
-        XCTAssert(value.toString() == "123")
-        XCTAssert(value.toString(integerDigits: 2) == "123")
-        XCTAssert(value.toString(integerDigits: 5) == "00123")
+        XCTAssertEqual(value.toString(), "123")
+        XCTAssertEqual(value.toString(integerDigits: 2), "123")
+        XCTAssertEqual(value.toString(integerDigits: 5), "00123")
     }
     
 }
