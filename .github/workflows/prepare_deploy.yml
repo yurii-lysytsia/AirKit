@@ -29,6 +29,17 @@ jobs:
       run: |
         xcodebuild test -project AirKit.xcodeproj -scheme AirKit -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty && exit ${PIPESTATUS[0]}
 
-    - name: Lint
+  checking:
+    needs: testing
+    runs-on: macOS-latest
+    timeout-minutes: 5
+    steps:
+
+    - name: Checkout pull request branch
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.head.ref }}
+
+    - name: Check Pod linter
       run: |
         pod lib lint AirKit.podspec
