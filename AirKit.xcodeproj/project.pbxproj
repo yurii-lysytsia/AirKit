@@ -55,6 +55,7 @@
 		5B6A058A26FA7E18001A59C8 /* AirKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B510BF726F24AB200C21CDF /* AirKit.framework */; platformFilter = ios; };
 		5B6A059326FA7E44001A59C8 /* ComparableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A059226FA7E44001A59C8 /* ComparableTests.swift */; };
 		5B7687F926F7C08600C388C1 /* String+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7687F826F7C08600C388C1 /* String+AirKit.swift */; };
+		5B93EDB82700D23000A9BEDA /* DateFormatter+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B93EDB72700D23000A9BEDA /* DateFormatter+AirKit.swift */; };
 		5B9BAFCD26F77B1D00731991 /* BinaryInteger+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */; };
 		5B9BAFCF26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFCE26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift */; };
 		5B9BAFD726F7881D00731991 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5B9BAFD626F7881D00731991 /* README.md */; };
@@ -123,6 +124,7 @@
 		5B6A058926FA7E18001A59C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B6A059226FA7E44001A59C8 /* ComparableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableTests.swift; sourceTree = "<group>"; };
 		5B7687F826F7C08600C388C1 /* String+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AirKit.swift"; sourceTree = "<group>"; };
+		5B93EDB72700D23000A9BEDA /* DateFormatter+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+AirKit.swift"; sourceTree = "<group>"; };
 		5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryInteger+AirKit.swift"; sourceTree = "<group>"; };
 		5B9BAFCE26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryFloatingPoint+AirKit.swift"; sourceTree = "<group>"; };
 		5B9BAFD626F7881D00731991 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				5B09639226FB596700879AE7 /* PropertyListDecoder+AirKit.swift */,
 				5B09638926FB430800879AE7 /* TimeInterval+AirKit.swift */,
 				5B632B7826FE218500C3645D /* NSAttributedString+AirKit.swift */,
+				5B93EDB72700D23000A9BEDA /* DateFormatter+AirKit.swift */,
 				5B632B7526FDCE3400C3645D /* Protocols */,
 			);
 			path = Foundation;
@@ -508,6 +511,7 @@
 				5B07F3E626F9001B00976D89 /* CGFloat+AirKit.swift in Sources */,
 				5B07F3F126F9038000976D89 /* Int+AirKit.swift in Sources */,
 				5B07F3EA26F901A300976D89 /* FloatConvertible.swift in Sources */,
+				5B93EDB82700D23000A9BEDA /* DateFormatter+AirKit.swift in Sources */,
 				5B6A057C26FA29E0001A59C8 /* Comparable+AirKit.swift in Sources */,
 				5B07F3EC26F901FC00976D89 /* DoubleConvertible.swift in Sources */,
 				5B9BAFCD26F77B1D00731991 /* BinaryInteger+AirKit.swift in Sources */,
@@ -698,7 +702,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.air.kit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -726,7 +730,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.0;
+				MARKETING_VERSION = 0.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.air.kit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
