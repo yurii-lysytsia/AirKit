@@ -1,6 +1,8 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-import Foundation
+#if canImport(Foundation)
+import class Foundation.DateFormatter
+import struct Foundation.TimeZone
 
 // MARK: - Extensions | Init
 
@@ -27,3 +29,4 @@ public extension DateFormatter {
         self.timeZone = timeZone
     }
 }
+#endif

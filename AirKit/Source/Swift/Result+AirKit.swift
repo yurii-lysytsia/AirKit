@@ -1,6 +1,6 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-// MARK: - Extenions
+// MARK: - Extensions
 
 public extension Result {
     /// Returns success value if it exists, instead will return `nil`.

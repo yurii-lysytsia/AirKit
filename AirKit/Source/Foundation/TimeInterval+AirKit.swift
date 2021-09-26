@@ -1,5 +1,6 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+#if canImport(Foundation)
 import typealias Foundation.TimeInterval
 
 // MARK: - Extenions | Values
@@ -41,3 +42,4 @@ public extension TimeInterval {
     ///
     static func weeks(_ n: TimeInterval) -> TimeInterval { n * week }
 }
+#endif
