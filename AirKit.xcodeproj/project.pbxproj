@@ -41,6 +41,7 @@
 		5B0ED08126FCD48100473155 /* TimeIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08026FCD48100473155 /* TimeIntervalTests.swift */; };
 		5B0ED08426FCD4A400473155 /* CGFloatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08326FCD4A400473155 /* CGFloatTests.swift */; };
 		5B0ED08726FCD4C500473155 /* TopLevelDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08626FCD4C500473155 /* TopLevelDecoderTests.swift */; };
+		5B239FB52700ED790045382F /* DateFormatComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B239FB42700ED790045382F /* DateFormatComponents.swift */; };
 		5B46AD7326F88FC8002BC409 /* Optional+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B46AD7226F88FC8002BC409 /* Optional+AirKit.swift */; };
 		5B510BFC26F24AB200C21CDF /* AirKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B510BFA26F24AB200C21CDF /* AirKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B632B7926FE218500C3645D /* NSAttributedString+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B632B7826FE218500C3645D /* NSAttributedString+AirKit.swift */; };
@@ -108,6 +109,7 @@
 		5B0ED08026FCD48100473155 /* TimeIntervalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalTests.swift; sourceTree = "<group>"; };
 		5B0ED08326FCD4A400473155 /* CGFloatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatTests.swift; sourceTree = "<group>"; };
 		5B0ED08626FCD4C500473155 /* TopLevelDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelDecoderTests.swift; sourceTree = "<group>"; };
+		5B239FB42700ED790045382F /* DateFormatComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatComponents.swift; sourceTree = "<group>"; };
 		5B46AD7226F88FC8002BC409 /* Optional+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+AirKit.swift"; sourceTree = "<group>"; };
 		5B510BF726F24AB200C21CDF /* AirKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B510BFA26F24AB200C21CDF /* AirKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirKit.h; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				5B93EDB72700D23000A9BEDA /* DateFormatter+AirKit.swift */,
 				5B93EDB92700D6E500A9BEDA /* Date+AirKit.swift */,
 				5B632B7526FDCE3400C3645D /* Protocols */,
+				5B239FB32700ED720045382F /* Models */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -232,6 +235,14 @@
 				5B0ED08626FCD4C500473155 /* TopLevelDecoderTests.swift */,
 			);
 			path = Combine;
+			sourceTree = "<group>";
+		};
+		5B239FB32700ED720045382F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B239FB42700ED790045382F /* DateFormatComponents.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		5B510BED26F24AB200C21CDF = {
@@ -521,6 +532,7 @@
 				5B9BAFCD26F77B1D00731991 /* BinaryInteger+AirKit.swift in Sources */,
 				5B07F3EF26F9024A00976D89 /* CGFloatConvertible.swift in Sources */,
 				5B6A057826FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift in Sources */,
+				5B239FB52700ED790045382F /* DateFormatComponents.swift in Sources */,
 				5B09638E26FB50FC00879AE7 /* KeyedDecodingContainer+AirKit.swift in Sources */,
 				5B09639326FB596700879AE7 /* PropertyListDecoder+AirKit.swift in Sources */,
 				5B6A057226F9DF9C001A59C8 /* Sequence+AirKit.swift in Sources */,

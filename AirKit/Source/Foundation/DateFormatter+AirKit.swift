@@ -28,5 +28,14 @@ public extension DateFormatter {
         self.timeStyle = timeStyle
         self.timeZone = timeZone
     }
+    
+    /// Create a new instance of formatter with date format components
+    ///
+    ///     let formatter = DateFormatter { "\($0.year(.yyyy))-\($0.month(.mm))-\($0.day(.d))" }
+    ///     formatter.string(from: Date.current) // "2021-09-26"
+    ///
+    convenience init(block: (DateFormatComponents.Type) -> String) {
+        self.init(dateFormat: DateFormatComponents.build(block: block))
+    }
 }
 #endif

@@ -2,41 +2,70 @@ import AirKit
 
 import Foundation
 
-// MARK: - Enums
+let formatter = DateFormatter { "\($0.year(.yyyy))-\($0.month(.mm))-\($0.day(.d))" }
+formatter.string(from: Date.current) // "2021-09-26"
+formatter.string(from: Date.current - .hours(438))
+formatter.string(from: Date.current - .hours(43))
 
-//public extension Date {
-//    /// SwifterSwift: Day name format.
-//    ///
-//    /// - threeLetters: 3 letter day abbreviation of day name.
-//    /// - oneLetter: 1 letter day abbreviation of day name.
-//    /// - full: Full day name.
-//    enum DayNameStyle {
-//        /// SwifterSwift: 3 letter day abbreviation of day name.
-//        case threeLetters
-//
-//        /// SwifterSwift: 1 letter day abbreviation of day name.
-//        case oneLetter
-//
-//        /// SwifterSwift: Full day name.
-//        case full
+
+//extension DateFormatter {
+//    /// If `date` in yesterday will return "Вчора" else if `date` in today will return "Сьогодні" else if `date` in tomorrow will return "Завтра". Instead will return `string(from:)`
+//    func string(relativeFrom date: Date) -> String {
+//        let calendar = Calendar.current
+//        if calendar.isDateInYesterday(date) {
+//            return L10n.RelativeDates.yesterday
+//        } else if calendar.isDateInToday(date) {
+//            return L10n.RelativeDates.today
+//        } else if calendar.isDateInTomorrow(date) {
+//            return L10n.RelativeDates.tomorrow
+//        } else {
+//            return string(from: date)
+//        }
 //    }
 //
-//    /// SwifterSwift: Month name format.
-//    ///
-//    /// - threeLetters: 3 letter month abbreviation of month name.
-//    /// - oneLetter: 1 letter month abbreviation of month name.
-//    /// - full: Full month name.
-//    enum MonthNameStyle {
-//        /// SwifterSwift: 3 letter month abbreviation of month name.
-//        case threeLetters
+//    enum DateState {
+//        case today
+//        case tomorrow
+//        case yesterday
+//        case future
+//    }
 //
-//        /// SwifterSwift: 1 letter month abbreviation of month name.
-//        case oneLetter
-//
-//        /// SwifterSwift: Full month name.
-//        case full
+//    func getDateState(date: Date) -> DateState {
+//        let calendar = Calendar.current
+//        if calendar.isDateInYesterday(date) {
+//            return .yesterday
+//        } else if calendar.isDateInToday(date) {
+//            return .today
+//        } else if calendar.isDateInTomorrow(date) {
+//            return .tomorrow
+//        } else {
+//            return .future
+//        }
 //    }
 //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //// MARK: - Properties | CALENDAR!!!!
 //
@@ -284,28 +313,6 @@ import Foundation
 //        }
 //    }
 //}
-
-let date = Date() + 120
-
-public extension Date {
-    /// Returns a random date within the specified range.
-    ///
-    /// - Parameter range: The range in which to create a random date.
-    /// - Returns: A random date within the bounds of `range`.
-    static func random(in range: ClosedRange<Date>) -> Date { Date(timeIntervalSinceReferenceDate: .random(in: range)) }
-
-    /// Returns a random date within the specified range, using the given generator as a source for randomness.
-    ///
-    /// - Parameters:
-    ///   - range: The range in which to create a random date.
-    ///   - generator: The random number generator to use when creating the new random date.
-    /// - Returns: A random date within the bounds of `range`.
-    static func random<T: RandomNumberGenerator>(in range: ClosedRange<Date>, using generator: inout T) -> Date {
-        Date(timeIntervalSinceReferenceDate: .random(in: range, using: &generator))
-    }
-}
-    
-Date.random(in: Date()...Date.current.addingTimeInterval(3600))
     
 public extension Date {
 //    /// Check if date is within today.
@@ -709,56 +716,6 @@ public extension Date {
 //    func isInCurrent(_ component: Calendar.Component) -> Bool {
 //        return calendar.isDate(self, equalTo: Date(), toGranularity: component)
 //    }
-    
-//    /// SwifterSwift: Day name from date.
-//    ///
-//    ///     Date().dayName(ofStyle: .oneLetter) -> "T"
-//    ///     Date().dayName(ofStyle: .threeLetters) -> "Thu"
-//    ///     Date().dayName(ofStyle: .full) -> "Thursday"
-//    ///
-//    /// - Parameter Style: style of day name (default is DayNameStyle.full).
-//    /// - Returns: day name string (example: W, Wed, Wednesday).
-//    func dayName(ofStyle style: DayNameStyle = .full) -> String {
-//        // http://www.codingexplorer.com/swiftly-getting-human-readable-date-nsdateformatter/
-//        let dateFormatter = DateFormatter()
-//        var format: String {
-//            switch style {
-//            case .oneLetter:
-//                return "EEEEE"
-//            case .threeLetters:
-//                return "EEE"
-//            case .full:
-//                return "EEEE"
-//            }
-//        }
-//        dateFormatter.setLocalizedDateFormatFromTemplate(format)
-//        return dateFormatter.string(from: self)
-//    }
-
-//    /// SwifterSwift: Month name from date.
-//    ///
-//    ///     Date().monthName(ofStyle: .oneLetter) -> "J"
-//    ///     Date().monthName(ofStyle: .threeLetters) -> "Jan"
-//    ///     Date().monthName(ofStyle: .full) -> "January"
-//    ///
-//    /// - Parameter Style: style of month name (default is MonthNameStyle.full).
-//    /// - Returns: month name string (example: D, Dec, December).
-//    func monthName(ofStyle style: MonthNameStyle = .full) -> String {
-//        // http://www.codingexplorer.com/swiftly-getting-human-readable-date-nsdateformatter/
-//        let dateFormatter = DateFormatter()
-//        var format: String {
-//            switch style {
-//            case .oneLetter:
-//                return "MMMMM"
-//            case .threeLetters:
-//                return "MMM"
-//            case .full:
-//                return "MMMM"
-//            }
-//        }
-//        dateFormatter.setLocalizedDateFormatFromTemplate(format)
-//        return dateFormatter.string(from: self)
-//    }
 
 //    /// SwifterSwift: check if a date is between two other dates.
 //    ///
@@ -786,44 +743,4 @@ public extension Date {
 //        let componentValue = components.value(for: component)!
 //        return abs(componentValue) <= value
 //    }
-
-    
 }
-
-
-
-//extension DateFormatter {
-//    /// If `date` in yesterday will return "Вчора" else if `date` in today will return "Сьогодні" else if `date` in tomorrow will return "Завтра". Instead will return `string(from:)`
-//    func string(relativeFrom date: Date) -> String {
-//        let calendar = Calendar.current
-//        if calendar.isDateInYesterday(date) {
-//            return L10n.RelativeDates.yesterday
-//        } else if calendar.isDateInToday(date) {
-//            return L10n.RelativeDates.today
-//        } else if calendar.isDateInTomorrow(date) {
-//            return L10n.RelativeDates.tomorrow
-//        } else {
-//            return string(from: date)
-//        }
-//    }
-//
-//    enum DateState {
-//        case today
-//        case tomorrow
-//        case yesterday
-//        case future
-//    }
-//
-//    func getDateState(date: Date) -> DateState {
-//        let calendar = Calendar.current
-//        if calendar.isDateInYesterday(date) {
-//            return .yesterday
-//        } else if calendar.isDateInToday(date) {
-//            return .today
-//        } else if calendar.isDateInTomorrow(date) {
-//            return .tomorrow
-//        } else {
-//            return .future
-//        }
-//    }
-//}
