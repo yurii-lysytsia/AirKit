@@ -11,13 +11,16 @@ public extension Calendar {
     func isDateInWeekday(_ date: Date) -> Bool { !isDateInWeekend(date) }
     
     /// Returns `true` if date is within the current week.
-    func isDateInCurrentWeek(_ date: Date) -> Bool { isDate(date, equalTo: .current, toGranularity: .weekOfYear) }
+    func isDateInCurrentWeek(_ date: Date) -> Bool { isDate(date, inCurrent: .weekOfYear) }
     
     /// Returns `true` if date is within the current month.
-    func isDateInCurrentMonth(_ date: Date) -> Bool { isDate(date, equalTo: .current, toGranularity: .month) }
+    func isDateInCurrentMonth(_ date: Date) -> Bool { isDate(date, inCurrent: .month) }
 
     /// Returns `true` if date is within the current year.
-    func isDateInCurrentYear(_ date: Date) -> Bool { isDate(date, equalTo: .current, toGranularity: .year) }
+    func isDateInCurrentYear(_ date: Date) -> Bool { isDate(date, inCurrent: .year) }
+    
+    /// Returns `true` if date is in current given calendar component.
+    func isDate(_ date: Date, inCurrent component: Calendar.Component) -> Bool { isDate(date, equalTo: .current, toGranularity: component) }
 }
 
 // MARK: - Extensions | Nearest
