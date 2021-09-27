@@ -430,7 +430,7 @@ public extension String {
     ///
     var urlDecoded: String { removingPercentEncoding ?? self }
     
-    #if canImport(Foundaion)
+    #if canImport(Foundation)
     /// Creates a URL instance from current string.
     ///
     ///     let string = "https://www.apple.com"
