@@ -9,7 +9,7 @@ import struct Foundation.TimeInterval
 public extension Date {
     /// Returns `true` if date is in future.
     ///
-    ///     let date = Date() + 60
+    ///     let date = Date.current + 60
     ///     date.isInFuture // true
     ///
     var isInFuture: Bool {
@@ -31,7 +31,7 @@ public extension Date {
 public extension Date {
     /// Returns number of seconds between two dates.
     ///
-    ///     let date = Date() + 60
+    ///     let date = Date.current + 60
     ///     date.secondsSince(.current) // TimeInterval(60)
     ///
     /// - Parameter date: date to compare self to.
@@ -40,7 +40,7 @@ public extension Date {
 
     /// Returns number of minutes between two dates.
     ///
-    ///     let date = Date() + 120
+    ///     let date = Date.current + 120
     ///     date.minutesSince(.current) // TimeInterval(2)
     ///
     /// - Parameter date: date to compare self to.
@@ -49,7 +49,7 @@ public extension Date {
 
     /// Returns number of hours between two dates.
     ///
-    ///     let date = Date() + 1800
+    ///     let date = Date.current + 1800
     ///     date.hoursSince(.current) // TimeInterval(0.5)
     ///
     /// - Parameter date: date to compare self to.
@@ -58,7 +58,7 @@ public extension Date {
 
     /// Returns number of days between two dates.
     ///
-    ///     let date = Date() + 86400
+    ///     let date = Date.current + 86400
     ///     date.daysSince(.current) // TimeInterval(1)
     ///
     /// - Parameter date: date to compare self to.
