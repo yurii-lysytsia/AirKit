@@ -73,4 +73,22 @@ public extension Calendar {
         return self.date(from: components) ?? date
     }
 }
+
+// MARK: - Extensions | Adding
+
+public extension Calendar {
+    /// Returns yesterday's date.
+    ///
+    ///     let date = Date.current // "Oct 3, 2018, 10:57:11"
+    ///     let yesterday = date.yesterday // "Oct 2, 2018, 10:57:11"
+    ///
+    func yesterdayDate(_ date: Date) -> Date { self.date(byAdding: .day, value: -1, to: date) ?? Date() }
+    
+    /// Returns tomorrow's date.
+    ///
+    ///     let date = Date.current // "Oct 3, 2018, 10:57:11"
+    ///     let tomorrow = date.tomorrow // "Oct 4, 2018, 10:57:11"
+    ///
+    func tomorrowDate(_ date: Date) -> Date { self.date(byAdding: .day, value: 1, to: date) ?? Date() }
+}
 #endif

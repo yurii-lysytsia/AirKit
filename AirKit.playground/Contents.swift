@@ -309,123 +309,12 @@ public extension Calendar {
 //    }
 //}
 
-let calendar = Calendar.current
-(0...59).forEach {
-    let date = calendar.date(from: DateComponents(year: 2021, month: 9, day: 27, hour: 9, minute: $0))! // "09:01"
-    print("NOW is `\($0)` - `\(calendar.nearestHour(date))`" ) // "13:15"
-    print("----")
-}
 
-
-// MARK: - Extensions | Nearest
-
-public extension Calendar {
-    /// Returns a new instance of date with added or subtracted minutes to nearest five minutes of given date.
-    ///
-    ///     let date = Date.current // "09:02", "09:04", "09:08"
-    ///     calendar.nearestFiveMinutes(date) // "09:00", "09:05", "09:10"
-    ///
-    func nearestFiveMinutes(_ date: Date) -> Date { nearest(minutes: 5, date: date) }
-    
-    /// Returns a new instance of date with added or subtracted minutes to nearest ten minutes of given date.
-    ///
-    ///     let date = Date.current // "09:02", "09:08", "09:14"
-    ///     calendar.nearestTenMinutes(date) // "09:00", "09:10", "09:10"
-    ///
-    func nearestTenMinutes(_ date: Date) -> Date { nearest(minutes: 10, date: date) }
-    
-    /// Returns a new instance of date with added or subtracted minutes to nearest quearter hour of given date.
-    ///
-    ///     let date = Date.current // "09:02", "09:09", "09:34"
-    ///     calendar.nearestQuarterHour(date) // "09:00", "09:15", "09:30"
-    ///
-    func nearestQuarterHour(_ date: Date) -> Date { nearest(minutes: 15, date: date) }
-    
-    /// Returns a new instance of date with added or subtracted minutes to nearest half hour of given date.
-    ///
-    ///     let date = Date.current // "09:08", "09:17", "09:47"
-    ///     calendar.nearestHalfHour(date) // "09:00", "09:30", "10:00"
-    ///
-    func nearestHalfHour(_ date: Date) -> Date { nearest(minutes: 30, date: date) }
-    
-    /// Returns a new instance of date with added or subtracted minutes to nearest half hour of given date.
-    ///
-    ///     let date = Date.current // "09:08", "09:17", "09:37"
-    ///     calendar.nearestHour(date) // "09:00", "09:00", "10:00"
-    ///
-    func nearestHour(_ date: Date) -> Date { nearest(minutes: 60, date: date) }
-    
-    /// Returns a new instance of date with added or subtracted minutes to nearest `minutes` of given date.
-    private func nearest(minutes: Int, date: Date) -> Date {
-        var components = dateComponents([.year, .month, .day, .hour, .minute, .second, .nanosecond], from: date)
-        if let minutesComponent = components.minute {
-            if minutesComponent % minutes < (minutes.dividedUp(divisor: 2)) {
-                components.minute = minutesComponent - minutesComponent % minutes
-            } else {
-                components.minute = minutesComponent + minutes - (minutesComponent % minutes)
-            }
-            components.second = 0
-            components.nanosecond = 0
-        }
-        return self.date(from: components) ?? date
-    }
-}
-
-public extension Calendar {
-    //    /// SwifterSwift: Yesterday date.
-    //    ///
-    //    ///     let date = Date() // "Oct 3, 2018, 10:57:11"
-    //    ///     let yesterday = date.yesterday // "Oct 2, 2018, 10:57:11"
-    //    ///
-    //    var yesterday: Date {
-    //        return calendar.date(byAdding: .day, value: -1, to: self) ?? Date()
-    //    }
-    //
-    //    /// SwifterSwift: Tomorrow's date.
-    //    ///
-    //    ///     let date = Date() // "Oct 3, 2018, 10:57:11"
-    //    ///     let tomorrow = date.tomorrow // "Oct 4, 2018, 10:57:11"
-    //    ///
-    //    var tomorrow: Date {
-    //        return calendar.date(byAdding: .day, value: 1, to: self) ?? Date()
-    //    }
-}
 
 // MARK: - Methods
 
 public extension Date {
-    //    /// SwifterSwift: Date by adding multiples of calendar component.
-    //    ///
-    //    ///     let date = Date() // "Jan 12, 2017, 7:07 PM"
-    //    ///     let date2 = date.adding(.minute, value: -10) // "Jan 12, 2017, 6:57 PM"
-    //    ///     let date3 = date.adding(.day, value: 4) // "Jan 16, 2017, 7:07 PM"
-    //    ///     let date4 = date.adding(.month, value: 2) // "Mar 12, 2017, 7:07 PM"
-    //    ///     let date5 = date.adding(.year, value: 13) // "Jan 12, 2030, 7:07 PM"
-    //    ///
-    //    /// - Parameters:
-    //    ///   - component: component type.
-    //    ///   - value: multiples of components to add.
-    //    /// - Returns: original date + multiples of component added.
-    //    func adding(_ component: Calendar.Component, value: Int) -> Date {
-    //        return calendar.date(byAdding: component, value: value, to: self)!
-    //    }
-    //
-    //    /// SwifterSwift: Add calendar component to date.
-    //    ///
-    //    ///     var date = Date() // "Jan 12, 2017, 7:07 PM"
-    //    ///     date.add(.minute, value: -10) // "Jan 12, 2017, 6:57 PM"
-    //    ///     date.add(.day, value: 4) // "Jan 16, 2017, 7:07 PM"
-    //    ///     date.add(.month, value: 2) // "Mar 12, 2017, 7:07 PM"
-    //    ///     date.add(.year, value: 13) // "Jan 12, 2030, 7:07 PM"
-    //    ///
-    //    /// - Parameters:
-    //    ///   - component: component type.
-    //    ///   - value: multiples of component to add.
-    //    mutating func add(_ component: Calendar.Component, value: Int) {
-    //        if let date = calendar.date(byAdding: component, value: value, to: self) {
-    //            self = date
-    //        }
-    //    }
+
     
     //    // swiftlint:disable cyclomatic_complexity function_body_length
     //    /// SwifterSwift: Date by changing value of calendar component.
