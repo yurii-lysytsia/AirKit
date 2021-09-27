@@ -35,9 +35,9 @@ public extension Int {
     
     /// Returns rounded down and divided value based on divisor.
     ///
-    ///     5.roundedDown(divisor: 2) // Int(2)
-    ///     10.roundedDown(divisor: 6) // Int(1)
-    ///     33.roundedDown(divisor: 6) // Int(5)
+    ///     5.dividedDown(divisor: 2) // Int(2)
+    ///     10.dividedDown(divisor: 6) // Int(1)
+    ///     33.dividedDown(divisor: 6) // Int(5)
     ///
     func dividedDown(divisor: Int) -> Int { roundedDown(divisor: divisor) / divisor }
 }

@@ -54,17 +54,5 @@ public extension TimeInterval {
     static func random(in range: ClosedRange<Date>) -> TimeInterval {
         .random(in: range.lowerBound.timeIntervalSinceReferenceDate...range.upperBound.timeIntervalSinceReferenceDate)
     }
-    
-    /// Returns a random time interval within the specified date range, using the given generator as a source for randomness.
-    ///
-    /// - Parameters:
-    ///   - range: The range in which to create a random date.
-    ///   - generator: The random number generator to use when creating the new random date.
-    static func random<T: RandomNumberGenerator>(in range: ClosedRange<Date>, using generator: inout T) -> TimeInterval {
-        .random(
-            in: range.lowerBound.timeIntervalSinceReferenceDate...range.upperBound.timeIntervalSinceReferenceDate,
-            using: &generator
-        )
-    }
 }
 #endif

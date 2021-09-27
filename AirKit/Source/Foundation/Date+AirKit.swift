@@ -74,16 +74,6 @@ public extension Date {
     /// - Parameter range: The range in which to create a random date.
     /// - Returns: A random date within the bounds of `range`.
     static func random(in range: ClosedRange<Date>) -> Date { Date(timeIntervalSinceReferenceDate: .random(in: range)) }
-
-    /// Returns a random date within the specified range, using the given generator as a source for randomness.
-    ///
-    /// - Parameters:
-    ///   - range: The range in which to create a random date.
-    ///   - generator: The random number generator to use when creating the new random date.
-    /// - Returns: A random date within the bounds of `range`.
-    static func random<T: RandomNumberGenerator>(in range: ClosedRange<Date>, using generator: inout T) -> Date {
-        Date(timeIntervalSinceReferenceDate: .random(in: range, using: &generator))
-    }
 }
 
 // MARK: - Extensions | Init

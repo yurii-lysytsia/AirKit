@@ -1,9 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 /// Model that contains available date format components.
-public struct DateFormatComponents {
-    private init() { }
-    
+public enum DateFormatComponents {    
     public static func year(_ year: Year) -> String { year.rawValue }
     public static func quarter(_ quarter: Quarter) -> String { quarter.rawValue }
     public static func month(_ month: Month) -> String { month.rawValue }
