@@ -1,5 +1,6 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+#if canImport(Foundation)
 import class Foundation.PropertyListDecoder
 import struct Foundation.Data
 
@@ -19,3 +20,4 @@ public extension PropertyListDecoder {
         try decode(T.self, from: data)
     }
 }
+#endif

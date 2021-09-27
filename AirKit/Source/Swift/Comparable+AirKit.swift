@@ -1,5 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+// MARK: - Extensions
+
 public extension Comparable {
     /// Returns `true` if value is in the provided range.
     ///

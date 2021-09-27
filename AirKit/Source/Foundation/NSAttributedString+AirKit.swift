@@ -1,5 +1,6 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+#if canImport(Foundation)
 import class Foundation.NSAttributedString
 import class Foundation.NSMutableAttributedString
 import class Foundation.NSRegularExpression
@@ -81,3 +82,4 @@ public extension NSMutableAttributedString {
     /// Add a string to another attributed string.
     static func + (lhs: NSMutableAttributedString, rhs: String) -> NSMutableAttributedString { lhs + NSAttributedString(string: rhs) }
 }
+#endif

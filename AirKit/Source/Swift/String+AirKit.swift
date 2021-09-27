@@ -1,9 +1,11 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+#if canImport(Foundation)
 import struct Foundation.CharacterSet
 import struct Foundation.Data
 import struct Foundation.URL
 import struct Foundation.NSRange
+#endif
 
 // MARK: - Convertible | BinaryInteger
 
@@ -72,6 +74,7 @@ public extension String {
     var notBlankOrNil: String? { isBlank ? nil : self }
 }
 
+#if canImport(Foundation)
 // MARK: - Extensions | Contains
 
 public extension String {
@@ -100,6 +103,7 @@ public extension String {
     /// Returns a Boolean value indicating whether the string contains an element that satisfies the given character set.
     func contains(_ characterSet: CharacterSet) -> Bool { rangeOfCharacter(from: characterSet) != nil }
 }
+#endif
 
 // MARK: - Extensions | Regex
 
@@ -122,6 +126,7 @@ public extension String {
 // MARK: - Extensions | Removing
 
 public extension String {
+    #if canImport(Foundation)
     /// Returns new string with removed all characters except letters.
     ///
     ///     let string = "123abCD-*=456"
@@ -156,6 +161,7 @@ public extension String {
     ///     string.remove(characterSet: CharacterSet.newlines) // string == String("ABC123")
     ///
     mutating func remove(characterSet: CharacterSet) { self = removing(characterSet: characterSet) }
+    #endif
     
     /// Returns a new string removing all elements similar to `string`.
     ///
@@ -378,6 +384,7 @@ extension String {
     }
 }
 
+#if canImport(Foundation)
 // MARK: - Extensions | Base64
 
 public extension String {
@@ -406,6 +413,7 @@ public extension String {
         Data(base64Encoded: self, options: options).flatMap { String(data: $0, encoding: encoding) }
     }
 }
+#endif
 
 // MARK: - Extensions | URL
 
@@ -422,12 +430,14 @@ public extension String {
     ///
     var urlDecoded: String { removingPercentEncoding ?? self }
     
+    #if canImport(Foundaion)
     /// Creates a URL instance from current string.
     ///
     ///     let string = "https://www.apple.com"
     ///     string.toUrl() // URL("https://www.apple.com")
     ///
     func toUrl() -> URL? { URL(string: self) }
+    #endif
 }
 
 // MARK: - Extensions | Lorem Ipsum
@@ -446,6 +456,7 @@ public extension String {
     }
 }
 
+#if canImport(Foundation)
 // MARK: - Inits
 
 public extension String {
@@ -466,3 +477,4 @@ public extension String {
         self = newString.replacingCharacters(in: newStringRange, with: replacementString)
     }
 }
+#endif

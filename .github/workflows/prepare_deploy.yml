@@ -10,9 +10,9 @@ on:
       - 'AirKitTests/Resource/**'
 
 jobs:
-  testing:
+  testing_iOS:
     runs-on: macOS-latest
-    timeout-minutes: 20
+    timeout-minutes: 10
     steps:
     
     - name: Checkout pull request branch
@@ -28,6 +28,25 @@ jobs:
     - name: Build project for iOS
       run: |
         xcodebuild test -project AirKit.xcodeproj -scheme AirKit -destination 'platform=iOS Simulator,name=iPhone 12 Pro,OS=latest' | xcpretty && exit ${PIPESTATUS[0]}
+
+  testing_macOS:
+    runs-on: macOS-latest
+    timeout-minutes: 10
+    steps:
+    
+    - name: Checkout pull request branch
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.head.ref }}
+
+    - name: Select lates available version of Xcode
+      uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: latest
+      
+    - name: Build project for macOS
+      run: |
+        xcodebuild test -project AirKit.xcodeproj -scheme AirKit -destination 'platform=macOS' | xcpretty && exit ${PIPESTATUS[0]}
 
   checking_linter:
     runs-on: macOS-latest
