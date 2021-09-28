@@ -23,13 +23,13 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `Optional`;
 - [X] Extensions for `Result`;
 - [X] Extensions for `Codable` and `KeyedDecodingContainer`;
-- [X] Write unit tests to check all extensions of this version;
 
 ### v 0.2 | Extensions for `Foundation`
 - [X] Extensions for `NSAttributedString`;
 - [X] Extensions for `Calendar`, `Date`, `DateFormatter` and `TimeInterval`;
-- [ ] Extensions for `Bundle`;
-- [ ] Extensions for `Locale`;
+- [X] Extensions for `Data`;
+- [X] Extensions for `Bundle`;
+- [X] Extensions for `Locale`;
 - [ ] Extensions for formatters;
 - [ ] Extensions for `FileManagers`;
 - [ ] Extensions for `NSObject`;
@@ -128,7 +128,7 @@ This is sugar framework that contains many different extensions for native Swift
 ### CocoaPods 
 [CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate AirKit into your Xcode project using CocoaPods, specify it in your `Podfile`:
 ```ruby
-pod 'AirKit'
+pod 'AirKit', '~> 0.2'
 ```
 
 ## 📚 Documentation
