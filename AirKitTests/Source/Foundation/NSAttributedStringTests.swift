@@ -3,6 +3,6 @@
 import XCTest
 @testable import AirKit
 
-class NSAttributeStringTests: XCTestCase {
+class NSAttributedStringTests: XCTestCase {
     
 }

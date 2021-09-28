@@ -4,7 +4,7 @@
 import struct Foundation.Calendar
 import struct Foundation.Date
 
-// MARK: - Extensions | Conditions | Is Date
+// MARK: - Extensions | Conditions
 
 public extension Calendar {
     /// Returns `true` if date is within a weekday period.
