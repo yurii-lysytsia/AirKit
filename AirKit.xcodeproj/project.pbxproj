@@ -68,6 +68,7 @@
 		5B9D3BF927031BEB00FD822F /* Bundle+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3BF827031BEB00FD822F /* Bundle+AirKit.swift */; };
 		5B9D3BFB270326D600FD822F /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3BFA270326D600FD822F /* Version.swift */; };
 		5B9D3BFE2703304400FD822F /* Locale+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3BFD2703304400FD822F /* Locale+AirKit.swift */; };
+		5B9D3C002703322700FD822F /* Data+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3BFF2703322700FD822F /* Data+AirKit.swift */; };
 		5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16B326F6237F0094B14C /* NumberConvertible.swift */; };
 /* End PBXBuildFile section */
 
@@ -146,6 +147,7 @@
 		5B9D3BF827031BEB00FD822F /* Bundle+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+AirKit.swift"; sourceTree = "<group>"; };
 		5B9D3BFA270326D600FD822F /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		5B9D3BFD2703304400FD822F /* Locale+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+AirKit.swift"; sourceTree = "<group>"; };
+		5B9D3BFF2703322700FD822F /* Data+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+AirKit.swift"; sourceTree = "<group>"; };
 		5BBB16B326F6237F0094B14C /* NumberConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConvertible.swift; sourceTree = "<group>"; };
 		5BBB16C026F6308E0094B14C /* AirKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AirKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
@@ -191,6 +193,7 @@
 			children = (
 				5B9D3BF827031BEB00FD822F /* Bundle+AirKit.swift */,
 				5B792AE12701C1EF00CE2841 /* Calendar+AirKit.swift */,
+				5B9D3BFF2703322700FD822F /* Data+AirKit.swift */,
 				5B93EDB92700D6E500A9BEDA /* Date+AirKit.swift */,
 				5B93EDB72700D23000A9BEDA /* DateFormatter+AirKit.swift */,
 				5B9D3BFD2703304400FD822F /* Locale+AirKit.swift */,
@@ -559,6 +562,7 @@
 				5B07F3E626F9001B00976D89 /* CGFloat+AirKit.swift in Sources */,
 				5B07F3F126F9038000976D89 /* Int+AirKit.swift in Sources */,
 				5B07F3EA26F901A300976D89 /* FloatConvertible.swift in Sources */,
+				5B9D3C002703322700FD822F /* Data+AirKit.swift in Sources */,
 				5B93EDB82700D23000A9BEDA /* DateFormatter+AirKit.swift in Sources */,
 				5B6A057C26FA29E0001A59C8 /* Comparable+AirKit.swift in Sources */,
 				5B07F3EC26F901FC00976D89 /* DoubleConvertible.swift in Sources */,

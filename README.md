@@ -27,8 +27,9 @@ This is sugar framework that contains many different extensions for native Swift
 ### v 0.2 | Extensions for `Foundation`
 - [X] Extensions for `NSAttributedString`;
 - [X] Extensions for `Calendar`, `Date`, `DateFormatter` and `TimeInterval`;
+- [X] Extensions for `Data`;
 - [X] Extensions for `Bundle`;
-- [ ] Extensions for `Locale`;
+- [X] Extensions for `Locale`;
 - [ ] Extensions for formatters;
 - [ ] Extensions for `FileManagers`;
 - [ ] Extensions for `NSObject`;

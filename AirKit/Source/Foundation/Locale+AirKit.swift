@@ -3,7 +3,7 @@
 #if canImport(Foundation)
 import struct Foundation.Locale
 
-// MARK: - Extensions | Flag Emoji
+// MARK: - Extensions | Emoji
 
 public extension Locale {
     /// Returns the emoji flag for the locale region code.
