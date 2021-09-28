@@ -1,27 +1,35 @@
 default_platform(:ios)
 
-desc "Get Xcode project version, set it to podspec and commit changes"
-lane :update_podspec_version do
-	# Get current project version number
-  	version_number = get_version_number(
-    	xcodeproj: "AirKit.xcodeproj",
-    	target: "AirKit"
-  	)
+desc "Update project version and push all changes after"
+lane :update_version do
+  branch_version = git_branch.split("/").last().strip()
 
-  	# Upgrade podspec verstion number
+  if branch_version.empty?
+    UI.user_error! "Branch version is invalid. Please check your branch name. It must have `rc/<major>.<minor>.<patch>` format"
+  end
+
+  UI.success "Current branch version is `#{branch_version}`"
+
+	# Upgrade Xcode project version number with given branch version.
+  increment_version_number(
+    version_number: branch_version,
+   	xcodeproj: "AirKit.xcodeproj"
+  )
+
+  # Upgrade podspec version number with given branch version.
 	version_bump_podspec(
-		path: "AirKit.podspec",
-		version_number: version_number
+	  path: "AirKit.podspec",
+		version_number: branch_version
 	)
 
-	# Commit podspec changes
+	# Commit all changes.
 	git_commit(
-		path: "AirKit.podspec",
-		message: "Updated `AirKit.podspec` version to `#{version_number}`",
+		path: ["AirKit.podspec", "AirKit.xcodeproj/project.pbxproj", "AirKit/Info.plist", "AirKitTests/Info.plist"],
+		message: "Updated project version to `#{branch_version}`",
 		allow_nothing_to_commit: true
 	)
 
-	# Push the commit to origin
+	# Push the commit to the origin.
 	push_to_git_remote()
 end
 

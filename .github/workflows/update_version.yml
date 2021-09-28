@@ -1,11 +1,9 @@
-name: Update Pod version
+name: Update project version
 
 on: 
-  push:
+  create:
     branches:
       - 'rc/**'
-    paths:
-      - 'AirKit.xcodeproj/project.pbxproj'
 
 jobs:
   updating:
@@ -26,4 +24,4 @@ jobs:
 
     - name: Update podspec xcode-version
       run: |
-        bundle exec fastlane update_podspec_version
+        bundle exec fastlane update_version
