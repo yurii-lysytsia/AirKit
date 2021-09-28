@@ -4,15 +4,9 @@
 import struct Foundation.URL
 import struct Foundation.URLRequest
 
-// MARK: - Extensions | Inits
+// MARK: - Extensions | Values
 
 public extension URLRequest {
-    /// Create a new `URLRequest` by given `URL` string.
-    init?(string: String) {
-        guard let url = URL(string: string) else { return nil }
-        self.init(url: url)
-    }
-
     /// cURL command representation of this URL request.
     ///
     ///     var request = URLRequest(string: "https://domain.com")
@@ -49,6 +43,16 @@ public extension URLRequest {
         }
 
         return command.joined(separator: " \\\n\t")
+    }
+}
+
+// MARK: - Extensions | Inits
+
+public extension URLRequest {
+    /// Create a new `URLRequest` by given `URL` string.
+    init?(string: String) {
+        guard let url = URL(string: string) else { return nil }
+        self.init(url: url)
     }
 }
 #endif

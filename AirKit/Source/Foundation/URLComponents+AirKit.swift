@@ -3,6 +3,8 @@
 #if canImport(Foundation)
 import struct Foundation.URLComponents
 
+// MARK: - Extensions | Query
+
 public extension URLComponents {
     /// Returns a value from query elements by given key.
     ///

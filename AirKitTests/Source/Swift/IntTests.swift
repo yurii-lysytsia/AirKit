@@ -41,6 +41,17 @@ class IntTests: XCTestCase {
         XCTAssertEqual(value.toFloat(), 10)
         XCTAssertEqual(value.toDouble(), 10)
         XCTAssertEqual(value.toCGFloat(), 10)
+        
+        XCTAssertEqual(value.toInt8().toNumber(), NSNumber(value: 10))
+        XCTAssertEqual(value.toUInt8().toNumber(), NSNumber(value: 10))
+        XCTAssertEqual(value.toInt16().toNumber(), NSNumber(value: 10))
+        XCTAssertEqual(value.toUInt16().toNumber(), NSNumber(value: 10))
+        XCTAssertEqual(value.toInt32().toNumber(), NSNumber(value: 10))
+        XCTAssertEqual(value.toUInt32().toNumber(), NSNumber(value: 10))
+        XCTAssertEqual(value.toInt64().toNumber(), NSNumber(value: 10))
+        XCTAssertEqual(value.toUInt64().toNumber(), NSNumber(value: 10))
+        XCTAssertEqual(value.toNumber(), NSNumber(value: 10))
+        XCTAssertEqual(value.toUInt().toNumber(), NSNumber(value: 10))
     }
     
 }
