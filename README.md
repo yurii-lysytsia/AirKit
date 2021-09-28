@@ -16,7 +16,7 @@ This is sugar framework that contains many different extensions for native Swift
 
 ## 🔮 Features
 
-### Extensions for `Swift language`
+### Extensions for [`Swift language`](AirKit/Source/Swift)
 - [X] Extensions for primitive values (`Bool`, `Int`, `Double`, `String`, etc.);
 - [X] Extensions for collections (`Sequence`, `Collections`, etc.);
 - [X] Extensions for `Comparable`;
@@ -24,7 +24,7 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `Result`;
 - [X] Extensions for `Codable` and `KeyedDecodingContainer`;
 
-### Extensions for `Foundation`
+### Extensions for [`Foundation`](AirKit/Source/Foundation)
 - [X] Extensions for `NSAttributedString`;
 - [X] Extensions for `Calendar`, `Date`, `DateFormatter` and `TimeInterval`;
 - [X] Extensions for `URL`, `URLComponents` and `URLRequest`;
