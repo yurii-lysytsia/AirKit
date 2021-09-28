@@ -69,6 +69,16 @@
 		5B9D3BFB270326D600FD822F /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3BFA270326D600FD822F /* Version.swift */; };
 		5B9D3BFE2703304400FD822F /* Locale+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3BFD2703304400FD822F /* Locale+AirKit.swift */; };
 		5B9D3C002703322700FD822F /* Data+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3BFF2703322700FD822F /* Data+AirKit.swift */; };
+		5B9D3C022703402400FD822F /* URLComponents+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3C012703402400FD822F /* URLComponents+AirKit.swift */; };
+		5B9D3C042703411A00FD822F /* URL+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3C032703411A00FD822F /* URL+AirKit.swift */; };
+		5B9D3C0627034BAB00FD822F /* URLRequest+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3C0527034BAB00FD822F /* URLRequest+AirKit.swift */; };
+		5B9D3C0827034C2200FD822F /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3C0727034C2200FD822F /* URLTests.swift */; };
+		5B9D3C0A27034CE500FD822F /* LocaleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3C0927034CE500FD822F /* LocaleTests.swift */; };
+		5B9D3C0C27034E0F00FD822F /* DataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3C0B27034E0F00FD822F /* DataTests.swift */; };
+		5B9D3C0E27034F2600FD822F /* URLComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3C0D27034F2600FD822F /* URLComponentsTests.swift */; };
+		5B9D3C1027034F8F00FD822F /* URLRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3C0F27034F8F00FD822F /* URLRequestTests.swift */; };
+		5B9D3C12270351A500FD822F /* BundleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3C11270351A500FD822F /* BundleTests.swift */; };
+		5B9D3C152703539500FD822F /* VersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3C142703539500FD822F /* VersionTests.swift */; };
 		5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16B326F6237F0094B14C /* NumberConvertible.swift */; };
 /* End PBXBuildFile section */
 
@@ -148,6 +158,16 @@
 		5B9D3BFA270326D600FD822F /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
 		5B9D3BFD2703304400FD822F /* Locale+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+AirKit.swift"; sourceTree = "<group>"; };
 		5B9D3BFF2703322700FD822F /* Data+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+AirKit.swift"; sourceTree = "<group>"; };
+		5B9D3C012703402400FD822F /* URLComponents+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+AirKit.swift"; sourceTree = "<group>"; };
+		5B9D3C032703411A00FD822F /* URL+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+AirKit.swift"; sourceTree = "<group>"; };
+		5B9D3C0527034BAB00FD822F /* URLRequest+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+AirKit.swift"; sourceTree = "<group>"; };
+		5B9D3C0727034C2200FD822F /* URLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTests.swift; sourceTree = "<group>"; };
+		5B9D3C0927034CE500FD822F /* LocaleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleTests.swift; sourceTree = "<group>"; };
+		5B9D3C0B27034E0F00FD822F /* DataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTests.swift; sourceTree = "<group>"; };
+		5B9D3C0D27034F2600FD822F /* URLComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentsTests.swift; sourceTree = "<group>"; };
+		5B9D3C0F27034F8F00FD822F /* URLRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestTests.swift; sourceTree = "<group>"; };
+		5B9D3C11270351A500FD822F /* BundleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleTests.swift; sourceTree = "<group>"; };
+		5B9D3C142703539500FD822F /* VersionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionTests.swift; sourceTree = "<group>"; };
 		5BBB16B326F6237F0094B14C /* NumberConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConvertible.swift; sourceTree = "<group>"; };
 		5BBB16C026F6308E0094B14C /* AirKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AirKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
@@ -200,6 +220,9 @@
 				5B632B7826FE218500C3645D /* NSAttributedString+AirKit.swift */,
 				5B09639226FB596700879AE7 /* PropertyListDecoder+AirKit.swift */,
 				5B09638926FB430800879AE7 /* TimeInterval+AirKit.swift */,
+				5B9D3C032703411A00FD822F /* URL+AirKit.swift */,
+				5B9D3C012703402400FD822F /* URLComponents+AirKit.swift */,
+				5B9D3C0527034BAB00FD822F /* URLRequest+AirKit.swift */,
 				5B239FB32700ED720045382F /* Models */,
 				5B632B7526FDCE3400C3645D /* Protocols */,
 			);
@@ -234,12 +257,18 @@
 		5B0ED07D26FCD45500473155 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				5B9D3C11270351A500FD822F /* BundleTests.swift */,
 				5B9D3BF62703137600FD822F /* CalendarTests.swift */,
+				5B9D3C0B27034E0F00FD822F /* DataTests.swift */,
 				5B7FF728270234F800C28795 /* DateFormatterTests.swift */,
 				5B7FF72A270237FD00C28795 /* DateTests.swift */,
+				5B9D3C0927034CE500FD822F /* LocaleTests.swift */,
 				5B632B7A26FE28D500C3645D /* NSAttributedStringTests.swift */,
 				5B0ED07E26FCD46C00473155 /* PropertyListDecoderTests.swift */,
 				5B0ED08026FCD48100473155 /* TimeIntervalTests.swift */,
+				5B9D3C0D27034F2600FD822F /* URLComponentsTests.swift */,
+				5B9D3C0F27034F8F00FD822F /* URLRequestTests.swift */,
+				5B9D3C0727034C2200FD822F /* URLTests.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -357,6 +386,7 @@
 				5B0ED07B26FCD44600473155 /* ResultTests.swift */,
 				5B0ED07126FCCF6200473155 /* SequenceTests.swift */,
 				5B0ED07326FCD3D600473155 /* StringTests.swift */,
+				5B9D3C132703538B00FD822F /* Models */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -365,6 +395,14 @@
 			isa = PBXGroup;
 			children = (
 				5B9D3BFA270326D600FD822F /* Version.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B9D3C132703538B00FD822F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B9D3C142703539500FD822F /* VersionTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -556,6 +594,9 @@
 				5B7687F926F7C08600C388C1 /* String+AirKit.swift in Sources */,
 				5B9D3BFB270326D600FD822F /* Version.swift in Sources */,
 				5B6A057E26FA2DC9001A59C8 /* Dictionary+AirKit.swift in Sources */,
+				5B9D3C0627034BAB00FD822F /* URLRequest+AirKit.swift in Sources */,
+				5B9D3C042703411A00FD822F /* URL+AirKit.swift in Sources */,
+				5B9D3C022703402400FD822F /* URLComponents+AirKit.swift in Sources */,
 				5B9BAFCF26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift in Sources */,
 				5B792AE22701C1EF00CE2841 /* Calendar+AirKit.swift in Sources */,
 				5B6A057426F9E4C9001A59C8 /* Optionable.swift in Sources */,
@@ -583,6 +624,7 @@
 				5B0ED07A26FCD43000473155 /* IntTests.swift in Sources */,
 				5B0ED07F26FCD46C00473155 /* PropertyListDecoderTests.swift in Sources */,
 				5B0ED07026FCC80300473155 /* RangeReplaceableCollectionTests.swift in Sources */,
+				5B9D3C0E27034F2600FD822F /* URLComponentsTests.swift in Sources */,
 				5B0ED07226FCCF6200473155 /* SequenceTests.swift in Sources */,
 				5B7FF729270234F800C28795 /* DateFormatterTests.swift in Sources */,
 				5B632B7B26FE28D500C3645D /* NSAttributedStringTests.swift in Sources */,
@@ -591,10 +633,15 @@
 				5B0ED08726FCD4C500473155 /* TopLevelDecoderTests.swift in Sources */,
 				5B0ED07626FCD40C00473155 /* DoubleTests.swift in Sources */,
 				5B0963A826FB9E5200879AE7 /* ResourceGenerator.swift in Sources */,
+				5B9D3C152703539500FD822F /* VersionTests.swift in Sources */,
+				5B9D3C0A27034CE500FD822F /* LocaleTests.swift in Sources */,
+				5B9D3C1027034F8F00FD822F /* URLRequestTests.swift in Sources */,
 				5B09639E26FB989400879AE7 /* CollectionTests.swift in Sources */,
+				5B9D3C0827034C2200FD822F /* URLTests.swift in Sources */,
 				5B09639C26FB97F600879AE7 /* BoolTests.swift in Sources */,
 				5B09639926FB88FC00879AE7 /* BinaryIntegerTests.swift in Sources */,
 				5B0ED07826FCD42200473155 /* FloatTests.swift in Sources */,
+				5B9D3C12270351A500FD822F /* BundleTests.swift in Sources */,
 				5B0ED06E26FCC44E00473155 /* OptionalTests.swift in Sources */,
 				5B09639726FB873900879AE7 /* BinaryFloatingPointTests.swift in Sources */,
 				5B0963A226FB9C1900879AE7 /* KeyedDecodingContainerTests.swift in Sources */,
@@ -603,6 +650,7 @@
 				5B0ED08126FCD48100473155 /* TimeIntervalTests.swift in Sources */,
 				5B0ED07C26FCD44600473155 /* ResultTests.swift in Sources */,
 				5B0ED08426FCD4A400473155 /* CGFloatTests.swift in Sources */,
+				5B9D3C0C27034E0F00FD822F /* DataTests.swift in Sources */,
 				5B0963A026FB9A0A00879AE7 /* DictionaryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -768,7 +816,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = "${inherited}";
-				MARKETING_VERSION = 0.2.2;
+				MARKETING_VERSION = 0.2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.air.kit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -804,7 +852,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = "${inherited}";
-				MARKETING_VERSION = 0.2.2;
+				MARKETING_VERSION = 0.2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.air.kit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

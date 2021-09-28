@@ -11,6 +11,9 @@ class BoolTests: XCTestCase {
     
         XCTAssertEqual(true.toString(), "true")
         XCTAssertEqual(false.toString(), "false")
+        
+        XCTAssertEqual(true.toNumber(), NSNumber(value: 1))
+        XCTAssertEqual(false.toNumber(), NSNumber(value: 0))
     }
 
 }

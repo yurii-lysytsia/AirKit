@@ -7,7 +7,7 @@ public struct Version: Comparable {
     public let patch: Int
     
     /// Returns the common value of the version.
-    public var rawValue: Int { (major * 100) + (minor * 10) + patch }
+    public var rawValue: Int { (major * 10_000) + (minor * 100) + patch }
     
     /// Returns the version of the string representation in the format `<major>.<minor>.<patch>`.
     public var localizedDescription: String { "\(major).\(minor).\(patch)" }
@@ -18,14 +18,11 @@ public struct Version: Comparable {
     ///     Version(major: 1, minor: 2) // Version(major: 1, minor: 2, patch: 0)
     ///     Version(major: 1, minor: 2, patch: 5) // Version(major: 1, minor: 2, patch: 5)
     ///
-    /// Application will be terminated if one of the parameters are less than zero.
-    public init(major: Int, minor: Int = 0, patch: Int = 0) {
-        if major < 0 || minor < 0 || patch < 0 {
-            fatalError("\(#function) parameters (`major`, `minor` or `patch`) can not be less then zero")
-        }
-        self.major = major
-        self.minor = minor
-        self.patch = patch
+    /// - Note: Parameters must be greater than zero, otherwise the value(s) will be replaced by zero.
+    public init(major: Int = 0, minor: Int = 0, patch: Int = 0) {
+        self.major = max(major, 0)
+        self.minor = max(minor, 0)
+        self.patch = max(patch, 0)
     }
     
     /// Create a new instance of version model based on given version string, such as `1.2.3`.
