@@ -1,5 +1,6 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+#if canImport(Foundation)
 import class Foundation.NSNumber
 
 public protocol NumberConvertible {
@@ -64,3 +65,4 @@ extension Double: NumberConvertible {
 extension Bool: NumberConvertible {
     public func toNumber() -> NSNumber { .init(value: self) }
 }
+#endif

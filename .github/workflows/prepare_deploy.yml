@@ -12,7 +12,7 @@ on:
 jobs:
   testing:
     runs-on: macOS-latest
-    timeout-minutes: 20
+    timeout-minutes: 10
     steps:
     
     - name: Checkout pull request branch

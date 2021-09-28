@@ -1,5 +1,6 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+#if canImport(CoreGraphics)
 import struct CoreGraphics.CGFloat
 
 public protocol CGFloatConvertible {
@@ -18,3 +19,4 @@ extension CGFloatConvertible where Self: BinaryInteger {
 extension CGFloatConvertible where Self: BinaryFloatingPoint {
     public func toCGFloat() -> CGFloat { .init(self) }
 }
+#endif

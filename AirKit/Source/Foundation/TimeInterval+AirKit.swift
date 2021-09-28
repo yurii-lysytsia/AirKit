@@ -1,6 +1,8 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+#if canImport(Foundation)
 import typealias Foundation.TimeInterval
+import typealias Foundation.Date
 
 // MARK: - Extenions | Values
 
@@ -41,3 +43,16 @@ public extension TimeInterval {
     ///
     static func weeks(_ n: TimeInterval) -> TimeInterval { n * week }
 }
+
+// MARK: - Extenions | Random
+
+public extension TimeInterval {
+    /// Returns a random time interval within the specified date range.
+    ///
+    /// - Parameter range: The range in which to create a random date.
+    /// - Returns: A random date within the bounds of `range`.
+    static func random(in range: ClosedRange<Date>) -> TimeInterval {
+        .random(in: range.lowerBound.timeIntervalSinceReferenceDate...range.upperBound.timeIntervalSinceReferenceDate)
+    }
+}
+#endif

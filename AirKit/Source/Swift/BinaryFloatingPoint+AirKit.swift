@@ -1,7 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-import struct CoreGraphics.CGFloat
-
 // MARK: - Convertible | StringProtocol
 
 public extension BinaryFloatingPoint where Self: CVarArg {
