@@ -1,4 +1,4 @@
-import AirKit
+//  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 #if canImport(Foundation)
 import class Foundation.UserDefaults
