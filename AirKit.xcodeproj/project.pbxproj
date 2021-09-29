@@ -63,6 +63,7 @@
 		5B8C1CFF270479810021B48E /* DateComponents+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1CFE270479810021B48E /* DateComponents+AirKit.swift */; };
 		5B8C1D0127047D1C0021B48E /* FileManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1D0027047D1C0021B48E /* FileManagerTests.swift */; };
 		5B8C1D03270489360021B48E /* NumberFormatter+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1D02270489360021B48E /* NumberFormatter+AirKit.swift */; };
+		5B8C1D0527049B9E0021B48E /* DispatchQueue+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1D0427049B9E0021B48E /* DispatchQueue+AirKit.swift */; };
 		5B93EDB82700D23000A9BEDA /* DateFormatter+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B93EDB72700D23000A9BEDA /* DateFormatter+AirKit.swift */; };
 		5B93EDBA2700D6E500A9BEDA /* Date+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B93EDB92700D6E500A9BEDA /* Date+AirKit.swift */; };
 		5B9BAFCD26F77B1D00731991 /* BinaryInteger+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */; };
@@ -156,6 +157,7 @@
 		5B8C1CFE270479810021B48E /* DateComponents+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateComponents+AirKit.swift"; sourceTree = "<group>"; };
 		5B8C1D0027047D1C0021B48E /* FileManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerTests.swift; sourceTree = "<group>"; };
 		5B8C1D02270489360021B48E /* NumberFormatter+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+AirKit.swift"; sourceTree = "<group>"; };
+		5B8C1D0427049B9E0021B48E /* DispatchQueue+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+AirKit.swift"; sourceTree = "<group>"; };
 		5B93EDB72700D23000A9BEDA /* DateFormatter+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+AirKit.swift"; sourceTree = "<group>"; };
 		5B93EDB92700D6E500A9BEDA /* Date+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+AirKit.swift"; sourceTree = "<group>"; };
 		5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryInteger+AirKit.swift"; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				5B93EDB92700D6E500A9BEDA /* Date+AirKit.swift */,
 				5B8C1CFE270479810021B48E /* DateComponents+AirKit.swift */,
 				5B93EDB72700D23000A9BEDA /* DateFormatter+AirKit.swift */,
+				5B8C1D0427049B9E0021B48E /* DispatchQueue+AirKit.swift */,
 				5B8C1CFA27045FB50021B48E /* FileManager+AirKit.swift */,
 				5B9D3BFD2703304400FD822F /* Locale+AirKit.swift */,
 				5B632B7826FE218500C3645D /* NSAttributedString+AirKit.swift */,
@@ -599,6 +602,7 @@
 				5B9D3BF927031BEB00FD822F /* Bundle+AirKit.swift in Sources */,
 				5B8C1CFB27045FB50021B48E /* FileManager+AirKit.swift in Sources */,
 				5B09638C26FB47EB00879AE7 /* Result+AirKit.swift in Sources */,
+				5B8C1D0527049B9E0021B48E /* DispatchQueue+AirKit.swift in Sources */,
 				5B6A057626F9F6DD001A59C8 /* Collection+AirKit.swift in Sources */,
 				5B07F3DC26F8F0ED00976D89 /* Bool+AirKit.swift in Sources */,
 				5B09639126FB585300879AE7 /* TopLevelDecoder+AirKit.swift in Sources */,

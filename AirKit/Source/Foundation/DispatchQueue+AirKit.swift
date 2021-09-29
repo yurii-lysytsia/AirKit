@@ -1,4 +1,4 @@
-import AirKit
+//  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 #if canImport(Dispatch) && canImport(Foundation)
 import Dispatch

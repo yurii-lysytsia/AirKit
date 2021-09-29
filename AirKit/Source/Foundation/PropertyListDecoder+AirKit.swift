@@ -4,6 +4,8 @@
 import class Foundation.PropertyListDecoder
 import struct Foundation.Data
 
+// MARK: - Extensions | Decode
+
 public extension PropertyListDecoder {
     /// Decodes a top-level value of the given type from the given property list representation.
     ///
