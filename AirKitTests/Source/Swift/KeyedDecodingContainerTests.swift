@@ -12,7 +12,7 @@ class KeyedDecodingContainerTests: XCTestCase {
     // MARK: - Tests
     
     func testDecode() throws {
-        let json = try Bundle.json(filename: "swift-decode")
+        let json = try Bundle(for: KeyedDecodingContainerTests.self).data(filename: "swift-decode", withExtenson: "json")
         let result = try decoder.decode(SomeModel.self, from: json)
         XCTAssertEqual(result.string, "123")
         XCTAssertEqual(result.stringInt, "123")

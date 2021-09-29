@@ -16,7 +16,7 @@ This is sugar framework that contains many different extensions for native Swift
 
 ## 🔮 Features
 
-### Extensions for `Swift language`
+### Extensions for [`Swift language`](AirKit/Source/Swift)
 - [X] Extensions for primitive values (`Bool`, `Int`, `Double`, `String`, etc.);
 - [X] Extensions for collections (`Sequence`, `Collections`, etc.);
 - [X] Extensions for `Comparable`;
@@ -24,22 +24,18 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `Result`;
 - [X] Extensions for `Codable` and `KeyedDecodingContainer`;
 
-### v 0.2 | Extensions for `Foundation`
+### Extensions for [`Foundation`](AirKit/Source/Foundation)
 - [X] Extensions for `NSAttributedString`;
 - [X] Extensions for `Calendar`, `Date`, `DateFormatter` and `TimeInterval`;
+- [X] Extensions for `URL`, `URLComponents` and `URLRequest`;
+- [ ] Extensions for `UserDefaults` and `FileManagers`;
 - [X] Extensions for `Data`;
 - [X] Extensions for `Bundle`;
 - [X] Extensions for `Locale`;
-- [ ] Extensions for formatters;
-- [ ] Extensions for `FileManagers`;
-- [ ] Extensions for `NSObject`;
-- [ ] Extensions for `URL` and `URLRequest`;
-- [ ] Extensions for `UserDefaults`;
 - [ ] Extensions for `DispatchQueue` and `DispatchGroup`;
 - [ ] Extensions for `Operations` and `OperationsQueue`;
+- [ ] Extensions for formatters;
 - [ ] AsyncOperationQueue (model bases on `OperationsQueue` and `DispatchSemaphore` to make it async and sireal)
-- [ ] Write documentation for all extensions of this version;
-- [ ] Write unit tests to check all extensions of this version
 
 ### v 0.3 | Extensions for `CoreGraphics`
 - [X] Extensions for `CGFloat`;
@@ -111,7 +107,7 @@ This is sugar framework that contains many different extensions for native Swift
 
 ### v 1.2 | Extension for Other native frameworks
 - [ ] Extensions for `WKWebView`;
-- [ ] Extensions for `LocalAuthentication (LAContext etc.)
+- [ ] Extensions for `LocalAuthentication` (`LAContext` etc.);
 - [ ] Write documentation for all extensions of this version;
 - [ ] Write unit tests to check all extensions of this version;
 
