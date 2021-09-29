@@ -2,6 +2,29 @@
 
 #if canImport(Foundation)
 import class Foundation.Bundle
+import struct Foundation.Data
+import class Foundation.NSError
+import var Foundation.NSLocalizedDescriptionKey
+
+// MARK: - Extensions | Resources
+
+public extension Bundle {
+    /// Returns a new `Data` instance of object for the resource file identified by the specified name and extension and residing in a given bundle directory.
+    /// - Parameters:
+    ///   - filename: The name of a resource file contained in the directory specified by subpath.
+    ///   - withExtenson: The filename extension of the file to locate.
+    ///   - subdirectory: The name of the bundle subdirectory to search.
+    ///   - localization: The language ID for the localization. This parameter should correspond to the name of one of the bundle's language-specific resource directories without the .lproj extension.
+    /// - Returns: A new Data instance for the resource file or nil if the file could not be located.
+    func data(filename: String, withExtenson ext: String, subdirectory: String? = nil, localization: String? = nil) throws -> Data {
+        guard let url = url(forResource: filename, withExtension: ext, subdirectory: subdirectory, localization: localization) else {
+            throw NSError(domain: "AirKit.Bundle", code: -1, userInfo: [
+                NSLocalizedDescriptionKey: "\(#function) Any resource with filename `\(filename).\(ext)` was not found"
+            ])
+        }
+        return try Data(contentsOf: url, options: .mappedIfSafe)
+    }
+}
 
 // MARK: - Extensions | Version
 

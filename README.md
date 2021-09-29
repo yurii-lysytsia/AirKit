@@ -107,7 +107,7 @@ This is sugar framework that contains many different extensions for native Swift
 
 ### v 1.2 | Extension for Other native frameworks
 - [ ] Extensions for `WKWebView`;
-- [ ] Extensions for `LocalAuthentication (LAContext etc.)
+- [ ] Extensions for `LocalAuthentication` (`LAContext` etc.);
 - [ ] Write documentation for all extensions of this version;
 - [ ] Write unit tests to check all extensions of this version;
 
