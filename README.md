@@ -28,14 +28,13 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `NSAttributedString`;
 - [X] Extensions for `Calendar`, `Date`, `DateFormatter` and `TimeInterval`;
 - [X] Extensions for `URL`, `URLComponents` and `URLRequest`;
-- [ ] Extensions for `UserDefaults` and `FileManagers`;
+- [X] Extensions for `UserDefaults` and `FileManagers`;
+- [X] Extensions for `NumberFormatter`;
 - [X] Extensions for `Data`;
 - [X] Extensions for `Bundle`;
 - [X] Extensions for `Locale`;
 - [ ] Extensions for `DispatchQueue` and `DispatchGroup`;
 - [ ] Extensions for `Operations` and `OperationsQueue`;
-- [ ] Extensions for formatters;
-- [ ] AsyncOperationQueue (model bases on `OperationsQueue` and `DispatchSemaphore` to make it async and sireal)
 
 ### v 0.3 | Extensions for `CoreGraphics`
 - [X] Extensions for `CGFloat`;
@@ -118,6 +117,7 @@ This is sugar framework that contains many different extensions for native Swift
 - [ ] Common blocks typealias to convinient usage (simple version of https://github.com/vhesener/Closures);
 - [ ] Multicast delegate (model which can collect multiple delegate);
 - [ ] Once (method wich is called once);
+- [ ] AsyncOperationQueue (model bases on `OperationsQueue` and `DispatchSemaphore` to make it async and sireal)
 
 ## 🚀 Installation
 
