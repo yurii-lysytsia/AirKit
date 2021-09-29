@@ -20,7 +20,6 @@
 		5B09638C26FB47EB00879AE7 /* Result+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09638B26FB47EB00879AE7 /* Result+AirKit.swift */; };
 		5B09638E26FB50FC00879AE7 /* KeyedDecodingContainer+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09638D26FB50FC00879AE7 /* KeyedDecodingContainer+AirKit.swift */; };
 		5B09639126FB585300879AE7 /* TopLevelDecoder+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09639026FB585300879AE7 /* TopLevelDecoder+AirKit.swift */; };
-		5B09639326FB596700879AE7 /* PropertyListDecoder+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09639226FB596700879AE7 /* PropertyListDecoder+AirKit.swift */; };
 		5B09639726FB873900879AE7 /* BinaryFloatingPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09639626FB873900879AE7 /* BinaryFloatingPointTests.swift */; };
 		5B09639926FB88FC00879AE7 /* BinaryIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09639826FB88FC00879AE7 /* BinaryIntegerTests.swift */; };
 		5B09639C26FB97F600879AE7 /* BoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09639B26FB97F600879AE7 /* BoolTests.swift */; };
@@ -36,7 +35,6 @@
 		5B0ED07826FCD42200473155 /* FloatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED07726FCD42200473155 /* FloatTests.swift */; };
 		5B0ED07A26FCD43000473155 /* IntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED07926FCD43000473155 /* IntTests.swift */; };
 		5B0ED07C26FCD44600473155 /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED07B26FCD44600473155 /* ResultTests.swift */; };
-		5B0ED07F26FCD46C00473155 /* PropertyListDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED07E26FCD46C00473155 /* PropertyListDecoderTests.swift */; };
 		5B0ED08126FCD48100473155 /* TimeIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08026FCD48100473155 /* TimeIntervalTests.swift */; };
 		5B0ED08426FCD4A400473155 /* CGFloatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08326FCD4A400473155 /* CGFloatTests.swift */; };
 		5B0ED08726FCD4C500473155 /* TopLevelDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08626FCD4C500473155 /* TopLevelDecoderTests.swift */; };
@@ -64,6 +62,9 @@
 		5B8C1D0127047D1C0021B48E /* FileManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1D0027047D1C0021B48E /* FileManagerTests.swift */; };
 		5B8C1D03270489360021B48E /* NumberFormatter+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1D02270489360021B48E /* NumberFormatter+AirKit.swift */; };
 		5B8C1D0527049B9E0021B48E /* DispatchQueue+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1D0427049B9E0021B48E /* DispatchQueue+AirKit.swift */; };
+		5B8C1D072704A6CD0021B48E /* NumberFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1D062704A6CD0021B48E /* NumberFormatterTests.swift */; };
+		5B8C1D092704A7DB0021B48E /* DispatchQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1D082704A7DB0021B48E /* DispatchQueueTests.swift */; };
+		5B8C1D0B2704ACA10021B48E /* SwiftDecodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1D0A2704ACA10021B48E /* SwiftDecodeModel.swift */; };
 		5B93EDB82700D23000A9BEDA /* DateFormatter+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B93EDB72700D23000A9BEDA /* DateFormatter+AirKit.swift */; };
 		5B93EDBA2700D6E500A9BEDA /* Date+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B93EDB92700D6E500A9BEDA /* Date+AirKit.swift */; };
 		5B9BAFCD26F77B1D00731991 /* BinaryInteger+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */; };
@@ -110,7 +111,6 @@
 		5B09638B26FB47EB00879AE7 /* Result+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+AirKit.swift"; sourceTree = "<group>"; };
 		5B09638D26FB50FC00879AE7 /* KeyedDecodingContainer+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+AirKit.swift"; sourceTree = "<group>"; };
 		5B09639026FB585300879AE7 /* TopLevelDecoder+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TopLevelDecoder+AirKit.swift"; sourceTree = "<group>"; };
-		5B09639226FB596700879AE7 /* PropertyListDecoder+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PropertyListDecoder+AirKit.swift"; sourceTree = "<group>"; };
 		5B09639626FB873900879AE7 /* BinaryFloatingPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryFloatingPointTests.swift; sourceTree = "<group>"; };
 		5B09639826FB88FC00879AE7 /* BinaryIntegerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryIntegerTests.swift; sourceTree = "<group>"; };
 		5B09639B26FB97F600879AE7 /* BoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolTests.swift; sourceTree = "<group>"; };
@@ -126,7 +126,6 @@
 		5B0ED07726FCD42200473155 /* FloatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatTests.swift; sourceTree = "<group>"; };
 		5B0ED07926FCD43000473155 /* IntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntTests.swift; sourceTree = "<group>"; };
 		5B0ED07B26FCD44600473155 /* ResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
-		5B0ED07E26FCD46C00473155 /* PropertyListDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListDecoderTests.swift; sourceTree = "<group>"; };
 		5B0ED08026FCD48100473155 /* TimeIntervalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalTests.swift; sourceTree = "<group>"; };
 		5B0ED08326FCD4A400473155 /* CGFloatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatTests.swift; sourceTree = "<group>"; };
 		5B0ED08626FCD4C500473155 /* TopLevelDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelDecoderTests.swift; sourceTree = "<group>"; };
@@ -158,6 +157,9 @@
 		5B8C1D0027047D1C0021B48E /* FileManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerTests.swift; sourceTree = "<group>"; };
 		5B8C1D02270489360021B48E /* NumberFormatter+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+AirKit.swift"; sourceTree = "<group>"; };
 		5B8C1D0427049B9E0021B48E /* DispatchQueue+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+AirKit.swift"; sourceTree = "<group>"; };
+		5B8C1D062704A6CD0021B48E /* NumberFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatterTests.swift; sourceTree = "<group>"; };
+		5B8C1D082704A7DB0021B48E /* DispatchQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueTests.swift; sourceTree = "<group>"; };
+		5B8C1D0A2704ACA10021B48E /* SwiftDecodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDecodeModel.swift; sourceTree = "<group>"; };
 		5B93EDB72700D23000A9BEDA /* DateFormatter+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+AirKit.swift"; sourceTree = "<group>"; };
 		5B93EDB92700D6E500A9BEDA /* Date+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+AirKit.swift"; sourceTree = "<group>"; };
 		5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryInteger+AirKit.swift"; sourceTree = "<group>"; };
@@ -232,7 +234,6 @@
 				5B9D3BFD2703304400FD822F /* Locale+AirKit.swift */,
 				5B632B7826FE218500C3645D /* NSAttributedString+AirKit.swift */,
 				5B8C1D02270489360021B48E /* NumberFormatter+AirKit.swift */,
-				5B09639226FB596700879AE7 /* PropertyListDecoder+AirKit.swift */,
 				5B09638926FB430800879AE7 /* TimeInterval+AirKit.swift */,
 				5B9D3C032703411A00FD822F /* URL+AirKit.swift */,
 				5B9D3C012703402400FD822F /* URLComponents+AirKit.swift */,
@@ -264,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				5B0963A526FB9DE900879AE7 /* swift-decode.json */,
+				5B8C1D0A2704ACA10021B48E /* SwiftDecodeModel.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -276,10 +278,11 @@
 				5B9D3C0B27034E0F00FD822F /* DataTests.swift */,
 				5B7FF728270234F800C28795 /* DateFormatterTests.swift */,
 				5B7FF72A270237FD00C28795 /* DateTests.swift */,
+				5B8C1D082704A7DB0021B48E /* DispatchQueueTests.swift */,
 				5B8C1D0027047D1C0021B48E /* FileManagerTests.swift */,
 				5B9D3C0927034CE500FD822F /* LocaleTests.swift */,
 				5B632B7A26FE28D500C3645D /* NSAttributedStringTests.swift */,
-				5B0ED07E26FCD46C00473155 /* PropertyListDecoderTests.swift */,
+				5B8C1D062704A6CD0021B48E /* NumberFormatterTests.swift */,
 				5B0ED08026FCD48100473155 /* TimeIntervalTests.swift */,
 				5B9D3C0D27034F2600FD822F /* URLComponentsTests.swift */,
 				5B9D3C0F27034F8F00FD822F /* URLRequestTests.swift */,
@@ -631,7 +634,6 @@
 				5B6A057826FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift in Sources */,
 				5B239FB52700ED790045382F /* DateFormatComponents.swift in Sources */,
 				5B09638E26FB50FC00879AE7 /* KeyedDecodingContainer+AirKit.swift in Sources */,
-				5B09639326FB596700879AE7 /* PropertyListDecoder+AirKit.swift in Sources */,
 				5B6A057226F9DF9C001A59C8 /* Sequence+AirKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -641,11 +643,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B0ED07A26FCD43000473155 /* IntTests.swift in Sources */,
-				5B0ED07F26FCD46C00473155 /* PropertyListDecoderTests.swift in Sources */,
+				5B8C1D072704A6CD0021B48E /* NumberFormatterTests.swift in Sources */,
 				5B0ED07026FCC80300473155 /* RangeReplaceableCollectionTests.swift in Sources */,
 				5B9D3C0E27034F2600FD822F /* URLComponentsTests.swift in Sources */,
 				5B0ED07226FCCF6200473155 /* SequenceTests.swift in Sources */,
 				5B7FF729270234F800C28795 /* DateFormatterTests.swift in Sources */,
+				5B8C1D092704A7DB0021B48E /* DispatchQueueTests.swift in Sources */,
 				5B632B7B26FE28D500C3645D /* NSAttributedStringTests.swift in Sources */,
 				5B6A059326FA7E44001A59C8 /* ComparableTests.swift in Sources */,
 				5B7FF72B270237FD00C28795 /* DateTests.swift in Sources */,
@@ -664,6 +667,7 @@
 				5B0ED06E26FCC44E00473155 /* OptionalTests.swift in Sources */,
 				5B09639726FB873900879AE7 /* BinaryFloatingPointTests.swift in Sources */,
 				5B0963A226FB9C1900879AE7 /* KeyedDecodingContainerTests.swift in Sources */,
+				5B8C1D0B2704ACA10021B48E /* SwiftDecodeModel.swift in Sources */,
 				5B0ED07426FCD3D600473155 /* StringTests.swift in Sources */,
 				5B9D3BF72703137600FD822F /* CalendarTests.swift in Sources */,
 				5B0ED08126FCD48100473155 /* TimeIntervalTests.swift in Sources */,

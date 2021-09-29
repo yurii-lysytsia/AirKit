@@ -14,8 +14,8 @@ class BinaryFloatingPointTests: XCTestCase {
     
     func testDegressAndRadians() {
         // We need to check range because it's double and last floating number can be different
-        XCTAssert(Double(90).toRadians().isBetween(1.57...1.58))
-        XCTAssert(Double(1.570796326794897).toDegrees().isBetween(89.9...90.1))
+        XCTAssertEqual(Double(90).toRadians(), 1.57, accuracy: 0.1)
+        XCTAssertEqual(Double(1.570796326794897).toDegrees(), 90.0, accuracy: 0.1)
     }
     
 }
