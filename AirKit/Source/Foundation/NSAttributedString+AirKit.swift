@@ -64,22 +64,23 @@ public extension NSMutableAttributedString {
 
 // MARK: - Extensions | Operators
 
+public extension NSAttributedString {
+    /// Returns a new instance with added an attributed string to another attributed string.
+    static func + (lhs: NSAttributedString, rhs: NSAttributedString) -> NSMutableAttributedString {
+        let attributedString = NSMutableAttributedString(attributedString: lhs)
+        attributedString += rhs
+        return attributedString
+    }
+
+    /// Add a string to another attributed string.
+    static func + (lhs: NSAttributedString, rhs: String) -> NSMutableAttributedString { lhs + NSAttributedString(string: rhs) }
+}
+
 public extension NSMutableAttributedString {
     /// Add an attributed string to another attributed string.
     static func += (lhs: NSMutableAttributedString, rhs: NSAttributedString) { lhs.append(rhs) }
     
     /// Add a string to another attributed string.
-    static func += (lhs: NSMutableAttributedString, rhs: String) {
-        lhs += NSAttributedString(string: rhs)
-    }
-    
-    /// Returns a new instance with added an attributed string to another attributed string.
-    static func + (lhs: NSMutableAttributedString, rhs: NSAttributedString) -> NSMutableAttributedString {
-        lhs.append(rhs)
-        return lhs
-    }
-
-    /// Add a string to another attributed string.
-    static func + (lhs: NSMutableAttributedString, rhs: String) -> NSMutableAttributedString { lhs + NSAttributedString(string: rhs) }
+    static func += (lhs: NSMutableAttributedString, rhs: String) { lhs += NSAttributedString(string: rhs) }
 }
 #endif
