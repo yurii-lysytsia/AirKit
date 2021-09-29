@@ -58,7 +58,7 @@ public extension UserDefaults {
     ///     defaults.float(forKey: "hello") // Float(123.456)
     ///     defaults.floatIfPresent(forKey: "hello") // Float(123.456)
     ///
-    func floatIfPresent(forKey key: String) -> Float? { object(forKey: key) as? Float }
+    func floatIfPresent(forKey key: String) -> Float? { doubleIfPresent(forKey: key)?.toFloat() }
     
     /// Returns the Date value associated with the specified key, if present.
     ///

@@ -4,6 +4,8 @@
 import class Foundation.FileManager
 import struct Foundation.URL
 
+// MARK: - Extensions | Contents
+
 public extension FileManager {
     /// Returns `true` if a file or directory exists at a specified url path.
     func fileExists(at url: URL) -> Bool { fileExists(atPath: url.path) }

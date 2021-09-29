@@ -3,6 +3,7 @@
 #if canImport(Foundation)
 import struct Foundation.Calendar
 import struct Foundation.Date
+import struct Foundation.DateComponents
 
 // MARK: - Extensions | Conditions
 
@@ -74,6 +75,21 @@ public extension Calendar {
             components.nanosecond = 0
         }
         return self.date(from: components) ?? date
+    }
+}
+
+// MARK: - Extensions | Next
+
+public extension Calendar {
+    /// Returns a new instance of Date with given day of the week,
+    ///
+    ///     let calendar = Calendar.current
+    ///     let date = Date.current // Date("Sep 29, 2021 at 12:00 AM")
+    ///     calendar.next(weekday: .saturday, after: .current, direction: .forward) // Date("Oct 2, 2021 at 12:00 AM")
+    ///
+    func next(weekday: DateComponents.Weekday, after date: Date, direction: Calendar.SearchDirection) -> Date? {
+        let components = DateComponents(weekday: weekday.rawValue)
+        return nextDate(after: date, matching: components, matchingPolicy: .nextTime, direction: direction)
     }
 }
 

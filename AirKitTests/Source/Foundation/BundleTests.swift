@@ -8,8 +8,14 @@ class BundleTests: XCTestCase {
     // MARK: - Properties
     
     private let bundle = Bundle(identifier: "dev.lysytsia.air.kit")!
+    private let testsBundle = Bundle(identifier: "dev.lysytsia.air.kit.tests")!
     
     // MARK: - Tests
+    
+    func testResources() {
+        XCTAssertNoThrow(try testsBundle.data(filename: "swift-decode", withExtenson: "json"))
+        XCTAssertThrowsError(try bundle.data(filename: "not-found", withExtenson: "txt"))
+    }
     
     func testInfo() {
         let info = bundle.info

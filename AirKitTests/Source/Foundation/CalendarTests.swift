@@ -37,6 +37,11 @@ class CalendarTests: XCTestCase {
         XCTAssertEqual(calendar.nearestHour(date(hour: 9, minute: 37)), date(hour: 10, minute: 0))
     }
     
+    func testNext() {
+        XCTAssertEqual(calendar.next(weekday: .monday, after: date(month: 9, day: 20), direction: .forward), date(month: 9, day: 27))
+        XCTAssertEqual(calendar.next(weekday: .monday, after: date(month: 9, day: 20), direction: .backward), date(month: 9, day: 13))
+    }
+    
     func testAdding() {
         XCTAssertEqual(calendar.yesterdayDate(date(month: 9, day: 28)), date(month: 9, day: 27))
         XCTAssertEqual(calendar.tomorrowDate(date(month: 9, day: 28)), date(month: 9, day: 29))
