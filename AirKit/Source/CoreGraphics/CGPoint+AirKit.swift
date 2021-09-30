@@ -25,7 +25,7 @@ public extension CGPoint {
     static func distance(from point1: CGPoint, to point2: CGPoint) -> CGFloat { sqrt(pow(point2.x - point1.x, 2) + pow(point2.y - point1.y, 2)) }
 }
 
-// MARK: - Extensions | Operators
+// MARK: - Extensions | Operators | CGPoint
 
 public extension CGPoint {
     /// Returns result of addition of the two given points.
@@ -38,7 +38,7 @@ public extension CGPoint {
 
     /// Add a point to self.
     ///
-    ///     let point1 = CGPoint(x: 10, y: 10)
+    ///     var point1 = CGPoint(x: 10, y: 10)
     ///     let point2 = CGPoint(x: 30, y: 30)
     ///     point1 += point2 // point1 == CGPoint(x: 40, y: 40)
     ///
@@ -54,23 +54,72 @@ public extension CGPoint {
 
     /// Subtract a point from self.
     ///
-    ///     let point1 = CGPoint(x: 30, y: 10)
+    ///     var point1 = CGPoint(x: 30, y: 10)
     ///     let point2 = CGPoint(x: 10, y: 30)
     ///     point1 -= point2 // point1 == CGPoint(x: 20, y: -20)
+    ///
     static func -= (lhs: inout CGPoint, rhs: CGPoint) { lhs = lhs - rhs }
 
+    /// Returns result of the multiplication of the two given points.
+    ///
+    ///     let point1 = CGPoint(x: 5, y: 10)
+    ///     let point2 = CGPoint(x: 3, y: 4)
+    ///     point1 * point2 // CGPoint(x: 15, y: 40)
+    ///
+    static func * (lhs: CGPoint, rhs: CGPoint) -> CGPoint { CGPoint(x: lhs.x * rhs.x, y: lhs.y * rhs.y) }
+
+    /// Multiply self with a size.
+    ///
+    ///     let point1 = CGPoint(x: 5, y: 10)
+    ///     let point2 = CGPoint(x: 3, y: 4)
+    ///     point1 *= point2 // point1 == CGPoint(x: 15, y: 40)
+    ///
+    static func *= (lhs: inout CGPoint, rhs: CGPoint) { lhs = lhs * rhs }
+}
+
+// MARK: - Extensions | Operators | CGFloat
+
+public extension CGPoint {
+    /// Returns result of addition of the given point with the value.
+    ///
+    ///     let point = CGPoint(x: 10, y: 10)
+    ///     point + 5 // CGPoint(x: 15, y: 15)
+    ///
+    static func + (lhs: CGPoint, rhs: CGFloat) -> CGPoint { CGPoint(x: lhs.x + rhs, y: lhs.y + rhs) }
+
+    /// Add a value to self.
+    ///
+    ///     var point = CGPoint(x: 10, y: 10)
+    ///     point += 5 // point == CGPoint(x: 15, y: 15)
+    ///
+    static func += (lhs: inout CGPoint, rhs: CGFloat) { lhs = lhs + rhs }
+
+    /// Returns result of subtract of the given point with the value.
+    ///
+    ///     let point = CGPoint(x: 30, y: 10)
+    ///     point - 5 // CGPoint(x: 25, y: 5)
+    ///
+    static func - (lhs: CGPoint, rhs: CGFloat) -> CGPoint { CGPoint(x: lhs.x - rhs, y: lhs.y - rhs) }
+
+    /// Subtract a value from self.
+    ///
+    ///     var point = CGPoint(x: 30, y: 10)
+    ///     point -= 5 // point == CGPoint(x: 25, y: 5)
+    ///
+    static func -= (lhs: inout CGPoint, rhs: CGFloat) { lhs = lhs - rhs }
+    
     /// Returns result of multiplication of the given point with the scalar.
     ///
     ///     let point = CGPoint(x: 10, y: 10)
     ///     point * 5 // CGPoint(x: 50, y: 50)
     ///
-    static func * (point: CGPoint, scalar: CGFloat) -> CGPoint { CGPoint(x: point.x * scalar, y: point.y * scalar) }
+    static func * (lhs: CGPoint, rhs: CGFloat) -> CGPoint { CGPoint(x: lhs.x * rhs, y: lhs.y * rhs) }
 
     /// Multiply self with a scalar.
     ///
     ///     let point = CGPoint(x: 10, y: 10)
     ///     point *= 5 // point == CGPoint(x: 50, y: 50)
     ///
-    static func *= (point: inout CGPoint, scalar: CGFloat) { point = point * scalar }
+    static func *= (lhs: inout CGPoint, rhs: CGFloat) { lhs = lhs * rhs }
 }
 #endif
