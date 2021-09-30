@@ -33,10 +33,9 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `Data`;
 - [X] Extensions for `Bundle`;
 - [X] Extensions for `Locale`;
-- [ ] Extensions for `DispatchQueue` and `DispatchGroup`;
-- [ ] Extensions for `Operations` and `OperationsQueue`;
+- [X] Extensions for `DispatchQueue`;
 
-### v 0.3 | Extensions for `CoreGraphics`
+### Extensions for [`CoreGraphics`](AirKit/Source/CoreGraphics)
 - [X] Extensions for `CGFloat`;
 - [ ] Extensions for `CGAffineTransform`;
 - [ ] Extensions for `CGColor`;
@@ -121,10 +120,10 @@ This is sugar framework that contains many different extensions for native Swift
 
 ## 🚀 Installation
 
-### CocoaPods 
-[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate AirKit into your Xcode project using CocoaPods, specify it in your `Podfile`:
+### [CocoaPods](https://cocoapods.org) 
+For usage and installation instructions, visit their website. To integrate AirKit into your Xcode project using CocoaPods, specify it in your `Podfile`:
 ```ruby
-pod 'AirKit', '~> 0.2'
+pod 'AirKit', '~> 0.3'
 ```
 
 ## 📚 Documentation
