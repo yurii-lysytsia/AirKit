@@ -12,7 +12,11 @@ public extension Comparable {
     ///
     /// - Parameter range: Closed range against which the value is checked to be included.
     func isBetween(_ range: ClosedRange<Self>) -> Bool { range ~= self }
+}
 
+// MARK: - Extensions | Clamp
+
+public extension Comparable {
     /// Returns value limited within the provided range.
     ///
     ///     1.clamped(to: 3...8) // 3
@@ -30,4 +34,38 @@ public extension Comparable {
     ///     4.clamped(lowerBound: 3, upperBound: 8) // 4
     ///
     func clamped(lowerBound: Self, upperBound: Self) -> Self { max(lowerBound, min(self, upperBound)) }
+    
+    /// Modifies value limited within the provided range.
+    ///
+    ///     var value: Int = 4
+    ///     value.clamp(to: 3...8) // value == Int(4)
+    ///     value.clamp(to: 7...10) // value == Int(7)
+    ///     value.clamp(to: 1...5) // value == Int(5)
+    ///
+    mutating func clamp(to range: ClosedRange<Self>) {
+        self = clamped(to: range)
+    }
+    
+    /// Modifies value limited within the provided range.
+    ///
+    ///     var value: Int = 4
+    ///     value.clamp(lowerBound: 3, upperBound: 8) // value == Int(4)
+    ///     value.clamp(lowerBound: 7, upperBound: 10) // value == Int(7)
+    ///     value.clamp(lowerBound: 1, upperBound: 5) // value == Int(5)
+    ///
+    mutating func clamp(lowerBound: Self, upperBound: Self) {
+        self = clamped(lowerBound: lowerBound, upperBound: upperBound)
+    }
+}
+
+// MARK: - Extensions | SignedNumeric
+
+public extension Comparable where Self: SignedNumeric {
+    /// Returns the absolute value of the given number.
+    ///
+    ///     let int: Int = -10
+    ///     int.magnitude // UInt(10)
+    ///     int.absolute() // Int(10)
+    ///
+    var absolute: Self { abs(self) }
 }

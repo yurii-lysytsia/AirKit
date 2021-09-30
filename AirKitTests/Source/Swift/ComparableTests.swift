@@ -22,6 +22,35 @@ class ComparableTests: XCTestCase {
         // With bounds
         XCTAssertEqual(1.clamped(lowerBound: 3, upperBound: 8), 3)
         XCTAssertEqual(4.clamped(lowerBound: 3, upperBound: 8), 4)
+        
+        var value: Int = 0
+        value.clamp(to: 5...8)
+        XCTAssertEqual(value, 5)
+        
+        value.clamp(to: 3...8)
+        XCTAssertEqual(value, 5)
+        
+        value.clamp(to: 1...3)
+        XCTAssertEqual(value, 3)
+        
+        value.clamp(lowerBound: 5, upperBound: 8)
+        XCTAssertEqual(value, 5)
+        
+        value.clamp(lowerBound: 3, upperBound: 8)
+        XCTAssertEqual(value, 5)
+        
+        value.clamp(lowerBound: 1, upperBound: 3)
+        XCTAssertEqual(value, 3)
+    }
+    
+    func testAbsolute() {
+        let int: Int = -10
+        XCTAssertEqual(int.absolute, 10)
+        XCTAssertEqual(int.absolute.absolute, 10)
+        
+        let double: Double = -10.0
+        XCTAssertEqual(double.absolute, 10.0)
+        XCTAssertEqual(double.absolute.absolute, 10.0)
     }
 
 }
