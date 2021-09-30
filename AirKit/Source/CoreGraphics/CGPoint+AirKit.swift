@@ -22,7 +22,7 @@ public extension CGPoint {
     ///     let point2 = CGPoint(x: 20, y: 0)
     ///     CGPoint.distance(from: point2, to: point1) // CGFloat(20)
     ///
-    static func distance(from point1: CGPoint, to point2: CGPoint) -> CGFloat { (pow(point2.x - point1.x, 2) + pow(point2.y - point1.y, 2)).squareRoot() }
+    static func distance(from point1: CGPoint, to point2: CGPoint) -> CGFloat { CGFloat(pow(point2.x - point1.x, 2) + pow(point2.y - point1.y, 2)).squareRoot() }
 }
 
 // MARK: - Extensions | Operators | CGPoint
