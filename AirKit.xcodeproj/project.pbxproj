@@ -42,6 +42,9 @@
 		5B35BD172705AAFE0031AED3 /* CGPoint+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD162705AAFE0031AED3 /* CGPoint+AirKit.swift */; };
 		5B35BD192705B3010031AED3 /* CGSize+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD182705B3010031AED3 /* CGSize+AirKit.swift */; };
 		5B35BD1B2705C44C0031AED3 /* CGColor+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD1A2705C44C0031AED3 /* CGColor+AirKit.swift */; };
+		5B35BD1D2705F8220031AED3 /* CGSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD1C2705F8220031AED3 /* CGSizeTests.swift */; };
+		5B35BD1F2705FC3C0031AED3 /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD1E2705FC3C0031AED3 /* CGPointTests.swift */; };
+		5B35BD212705FD8E0031AED3 /* CGColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD202705FD8E0031AED3 /* CGColorTests.swift */; };
 		5B46AD7326F88FC8002BC409 /* Optional+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B46AD7226F88FC8002BC409 /* Optional+AirKit.swift */; };
 		5B510BFC26F24AB200C21CDF /* AirKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B510BFA26F24AB200C21CDF /* AirKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B632B7926FE218500C3645D /* NSAttributedString+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B632B7826FE218500C3645D /* NSAttributedString+AirKit.swift */; };
@@ -136,6 +139,9 @@
 		5B35BD162705AAFE0031AED3 /* CGPoint+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+AirKit.swift"; sourceTree = "<group>"; };
 		5B35BD182705B3010031AED3 /* CGSize+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+AirKit.swift"; sourceTree = "<group>"; };
 		5B35BD1A2705C44C0031AED3 /* CGColor+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGColor+AirKit.swift"; sourceTree = "<group>"; };
+		5B35BD1C2705F8220031AED3 /* CGSizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeTests.swift; sourceTree = "<group>"; };
+		5B35BD1E2705FC3C0031AED3 /* CGPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointTests.swift; sourceTree = "<group>"; };
+		5B35BD202705FD8E0031AED3 /* CGColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGColorTests.swift; sourceTree = "<group>"; };
 		5B46AD7226F88FC8002BC409 /* Optional+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+AirKit.swift"; sourceTree = "<group>"; };
 		5B510BF726F24AB200C21CDF /* AirKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B510BFA26F24AB200C21CDF /* AirKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirKit.h; sourceTree = "<group>"; };
@@ -212,10 +218,10 @@
 		5B07F3E426F9000600976D89 /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				5B35BD1A2705C44C0031AED3 /* CGColor+AirKit.swift */,
 				5B07F3E526F9001B00976D89 /* CGFloat+AirKit.swift */,
 				5B35BD162705AAFE0031AED3 /* CGPoint+AirKit.swift */,
 				5B35BD182705B3010031AED3 /* CGSize+AirKit.swift */,
-				5B35BD1A2705C44C0031AED3 /* CGColor+AirKit.swift */,
 				5B07F3ED26F9023D00976D89 /* Protocols */,
 			);
 			path = CoreGraphics;
@@ -304,7 +310,10 @@
 		5B0ED08226FCD48F00473155 /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				5B35BD202705FD8E0031AED3 /* CGColorTests.swift */,
 				5B0ED08326FCD4A400473155 /* CGFloatTests.swift */,
+				5B35BD1E2705FC3C0031AED3 /* CGPointTests.swift */,
+				5B35BD1C2705F8220031AED3 /* CGSizeTests.swift */,
 			);
 			path = CoreGraphics;
 			sourceTree = "<group>";
@@ -659,6 +668,7 @@
 				5B0ED07026FCC80300473155 /* RangeReplaceableCollectionTests.swift in Sources */,
 				5B9D3C0E27034F2600FD822F /* URLComponentsTests.swift in Sources */,
 				5B0ED07226FCCF6200473155 /* SequenceTests.swift in Sources */,
+				5B35BD212705FD8E0031AED3 /* CGColorTests.swift in Sources */,
 				5B7FF729270234F800C28795 /* DateFormatterTests.swift in Sources */,
 				5B8C1D092704A7DB0021B48E /* DispatchQueueTests.swift in Sources */,
 				5B632B7B26FE28D500C3645D /* NSAttributedStringTests.swift in Sources */,
@@ -666,6 +676,7 @@
 				5B7FF72B270237FD00C28795 /* DateTests.swift in Sources */,
 				5B0ED08726FCD4C500473155 /* TopLevelDecoderTests.swift in Sources */,
 				5B0ED07626FCD40C00473155 /* DoubleTests.swift in Sources */,
+				5B35BD1D2705F8220031AED3 /* CGSizeTests.swift in Sources */,
 				5B9D3C152703539500FD822F /* VersionTests.swift in Sources */,
 				5B9D3C0A27034CE500FD822F /* LocaleTests.swift in Sources */,
 				5B9D3C1027034F8F00FD822F /* URLRequestTests.swift in Sources */,
@@ -681,6 +692,7 @@
 				5B0963A226FB9C1900879AE7 /* KeyedDecodingContainerTests.swift in Sources */,
 				5B8C1D0B2704ACA10021B48E /* SwiftDecodeModel.swift in Sources */,
 				5B0ED07426FCD3D600473155 /* StringTests.swift in Sources */,
+				5B35BD1F2705FC3C0031AED3 /* CGPointTests.swift in Sources */,
 				5B9D3BF72703137600FD822F /* CalendarTests.swift in Sources */,
 				5B0ED08126FCD48100473155 /* TimeIntervalTests.swift in Sources */,
 				5B0ED07C26FCD44600473155 /* ResultTests.swift in Sources */,

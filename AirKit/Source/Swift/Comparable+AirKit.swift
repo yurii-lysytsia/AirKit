@@ -53,7 +53,7 @@ public extension Comparable {
     ///     value.clamp(lowerBound: 7, upperBound: 10) // value == Int(7)
     ///     value.clamp(lowerBound: 1, upperBound: 5) // value == Int(5)
     ///
-    mutating func clamped(lowerBound: Self, upperBound: Self) {
+    mutating func clamp(lowerBound: Self, upperBound: Self) {
         self = clamped(lowerBound: lowerBound, upperBound: upperBound)
     }
 }

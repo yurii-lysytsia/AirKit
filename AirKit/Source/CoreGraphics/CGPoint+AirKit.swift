@@ -75,6 +75,22 @@ public extension CGPoint {
     ///     point1 *= point2 // point1 == CGPoint(x: 15, y: 40)
     ///
     static func *= (lhs: inout CGPoint, rhs: CGPoint) { lhs = lhs * rhs }
+    
+    /// Returns result of the dividing of the two given points.
+    ///
+    ///     let point1 = CGPoint(x: 6, y: 8)
+    ///     let point2 = CGPoint(x: 3, y: 4)
+    ///     point1 / point2 // CGPoint(x: 2, y: 2)
+    ///
+    static func / (lhs: CGPoint, rhs: CGPoint) -> CGPoint { CGPoint(x: lhs.x / rhs.x, y: lhs.y / rhs.y) }
+
+    /// Divide self with a size.
+    ///
+    ///     let point1 = CGPoint(x: 6, y: 8)
+    ///     let point2 = CGPoint(x: 3, y: 4)
+    ///     point1 /= point2 // point1 == CGPoint(x: 2, y: 2)
+    ///
+    static func /= (lhs: inout CGPoint, rhs: CGPoint) { lhs = lhs / rhs }
 }
 
 // MARK: - Extensions | Operators | CGFloat
@@ -121,5 +137,19 @@ public extension CGPoint {
     ///     point *= 5 // point == CGPoint(x: 50, y: 50)
     ///
     static func *= (lhs: inout CGPoint, rhs: CGFloat) { lhs = lhs * rhs }
+    
+    /// Returns result of dividing of the given point with the scalar.
+    ///
+    ///     let point = CGPoint(x: 10, y: 10)
+    ///     point / 5 // CGPoint(x: 2, y: 2)
+    ///
+    static func / (lhs: CGPoint, rhs: CGFloat) -> CGPoint { CGPoint(x: lhs.x / rhs, y: lhs.y / rhs) }
+
+    /// Multiply self with a scalar.
+    ///
+    ///     let point = CGPoint(x: 10, y: 10)
+    ///     point /= 5 // point == CGPoint(x: 2, y: 2)
+    ///
+    static func /= (lhs: inout CGPoint, rhs: CGFloat) { lhs = lhs / rhs }
 }
 #endif

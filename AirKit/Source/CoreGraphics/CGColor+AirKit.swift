@@ -4,7 +4,7 @@
 import class UIKit.UIColor
 import class CoreGraphics.CGColor
 
-// MARK: - Extensions | Values
+// MARK: - Extensions | Convertible
 
 public extension CGColor {
     /// Creates a new color instance color object using the specified Quartz color reference.
