@@ -37,14 +37,9 @@ This is sugar framework that contains many different extensions for native Swift
 
 ### Extensions for [`CoreGraphics`](AirKit/Source/CoreGraphics)
 - [X] Extensions for `CGFloat`;
-- [ ] Extensions for `CGAffineTransform`;
-- [ ] Extensions for `CGColor`;
-- [ ] Extensions for `CGPoint`;
-- [ ] Extensions for `CGRect`;
-- [ ] Extensions for `CGSize`;
-- [ ] Extensions for `CGVector`;
-- [ ] Write documentation for all extensions of this version;
-- [ ] Write unit tests to check all extensions of this version;
+- [X] Extensions for `CGPoint`;
+- [X] Extensions for `CGSize`;
+- [X] Extensions for `CGColor`;
 
 ### v 0.4 | Extensions for `CoreAnimation`
 - [ ] Extensions for `CACornerMask`;
