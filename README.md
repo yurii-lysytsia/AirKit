@@ -42,11 +42,9 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `CGColor`;
 
 ### Extensions for [`CoreAnimation`](AirKit/Source/CoreAnimation)
-- [ ] Extensions for `CACornerMask`;
-- [ ] Extensions for `CAGradientLayer`;
-- [ ] Extensions for `CATransform3D`;
-- [ ] Write documentation for all extensions of this version;
-- [ ] Write unit tests to check all extensions of this version;
+- [X] Extensions for `CACornerMask`;
+- [X] Extensions for `CAGradientLayer`;
+- [X] Extensions for `CATransform3D`;
 
 ### v 0.5 | Extensions for `CoreData`
 - [ ] Extensions for `NSPredicate`;
