@@ -46,19 +46,17 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `CAGradientLayer`;
 - [X] Extensions for `CATransform3D`;
 
-### v 0.5 | Extensions for `CoreData`
+### Extensions for `CoreLocation`
+- [X] Extensions for `CLLocation`;
+- [X] Extensions for `CLLocationCoordinate2D`;
+
+### v 0.4 | Extensions for `CoreData`
 - [ ] Extensions for `NSPredicate`;
 - [ ] Extensions for `NSManagedObject`;
 - [ ] Write documentation for all extensions of this version;
 - [ ] Write unit tests to check all extensions of this version;
 
-### v 0.6 | Extensions for `CoreLocation`
-- [ ] Extensions for `CLLocationCoordinate2D` and `CLLocation`;
-- [ ] Extensions for `CLVisit`;
-- [ ] Write documentation for all extensions of this version;
-- [ ] Write unit tests to check all extensions of this version;
-
-### v 0.7 | Extensions for `UIKit` (Part 1)
+### v 0.5 | Extensions for `UIKit` (Part 1)
 - [ ] Extensions for `UIImage`;
 - [ ] Extensions for `UIColor`;
 - [ ] Extensions for `UIEdgeInsets`;
@@ -69,7 +67,7 @@ This is sugar framework that contains many different extensions for native Swift
 - [ ] Write documentation for all extensions of this version;
 - [ ] Write unit tests to check all extensions of this version;
 
-### v 0.8 | Extensions for `UIKit` (Part 2)
+### v 0.6 | Extensions for `UIKit` (Part 2)
 - [ ] Extensions for different `UIView` elements (will write about it later);
 - [ ] Extensions for different `UIScrollView` elements (will write about it later);
 - [ ] Actions blocks instead target for different UI elements, like button actions with blocks;
@@ -77,12 +75,12 @@ This is sugar framework that contains many different extensions for native Swift
 - [ ] Write documentation for all extensions of this version;
 - [ ] Write unit tests to check all extensions of this version;
 
-### v 0.9 | Extensions for `UIKit` (Part 3)
+### v 0.7 | Extensions for `UIKit` (Part 3)
 - [ ] Extensions for different `UIViewController` subclasses (will write about it later);
 - [ ] Write documentation for all extensions of this version;
 - [ ] Write unit tests to check all extensions of this version;
 
-### v 1.0 | Extensions for `UIKit` (Part 4)
+### v 0.8 | Extensions for `UIKit` (Part 4)
 - [ ] Extensions for `UIWindow`;
 - [ ] Extensions for `UIApplication`;
 - [ ] Extensions for keyboard observing with many helpers;
@@ -90,22 +88,22 @@ This is sugar framework that contains many different extensions for native Swift
 - [ ] Write documentation for all extensions of this version;
 - [ ] Write unit tests to check all extensions of this version;
 
-### v 1.1 | Extensions for `MapKit`
+### v 0.9 | Extensions for `MapKit`
 - [ ] Extensions for `MKMapView`;
 - [ ] Extensions for `MKPolyline`;
 - [ ] Write documentation for all extensions of this version;
 - [ ] Write unit tests to check all extensions of this version;
 
-### v 1.2 | Extension for Other native frameworks
+### v 1.0 | Extension for Other native frameworks
 - [ ] Extensions for `WKWebView`;
 - [ ] Extensions for `LocalAuthentication` (`LAContext` etc.);
 - [ ] Write documentation for all extensions of this version;
 - [ ] Write unit tests to check all extensions of this version;
 
-### v 1.3 | Extensions for `Combine`
+### v 1.1 | Extensions for `Combine`
 - [X] Extensions for `TopLevelDecoder`;
 
-### v 1.4 | Helpers
+### v 1.2 | Helpers
 - [ ] Common blocks typealias to convinient usage (simple version of https://github.com/vhesener/Closures);
 - [ ] Multicast delegate (model which can collect multiple delegate);
 - [ ] Once (method wich is called once);
@@ -116,7 +114,7 @@ This is sugar framework that contains many different extensions for native Swift
 ### [CocoaPods](https://cocoapods.org) 
 For usage and installation instructions, visit their website. To integrate AirKit into your Xcode project using CocoaPods, specify it in your `Podfile`:
 ```ruby
-pod 'AirKit', '~> 0.4'
+pod 'AirKit', '~> 0.3'
 ```
 
 ## 📚 Documentation
