@@ -2,9 +2,8 @@
 
 #if canImport(CoreLocation)
 import struct CoreLocation.CLLocationCoordinate2D
+import class CoreLocation.CLLocation
 import typealias CoreLocation.CLLocationDistance
-
-import MapKit
 
 // MARK: - Extensions | Zero
 

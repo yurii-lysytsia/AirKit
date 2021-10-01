@@ -66,6 +66,8 @@
 		5B6A059326FA7E44001A59C8 /* ComparableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A059226FA7E44001A59C8 /* ComparableTests.swift */; };
 		5B7660AC27076FF300CC0ABA /* CLLocation+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7660AB27076FF300CC0ABA /* CLLocation+AirKit.swift */; };
 		5B7660AE2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7660AD2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift */; };
+		5B7660B22707731C00CC0ABA /* CLLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7660B12707731C00CC0ABA /* CLLocationTests.swift */; };
+		5B7660B4270773B100CC0ABA /* CLLocationCoordinate2DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7660B3270773B100CC0ABA /* CLLocationCoordinate2DTests.swift */; };
 		5B7687F926F7C08600C388C1 /* String+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7687F826F7C08600C388C1 /* String+AirKit.swift */; };
 		5B792AE22701C1EF00CE2841 /* Calendar+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B792AE12701C1EF00CE2841 /* Calendar+AirKit.swift */; };
 		5B7FF729270234F800C28795 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7FF728270234F800C28795 /* DateFormatterTests.swift */; };
@@ -176,6 +178,8 @@
 		5B6A059226FA7E44001A59C8 /* ComparableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableTests.swift; sourceTree = "<group>"; };
 		5B7660AB27076FF300CC0ABA /* CLLocation+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+AirKit.swift"; sourceTree = "<group>"; };
 		5B7660AD2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+AirKit.swift"; sourceTree = "<group>"; };
+		5B7660B12707731C00CC0ABA /* CLLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationTests.swift; sourceTree = "<group>"; };
+		5B7660B3270773B100CC0ABA /* CLLocationCoordinate2DTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2DTests.swift; sourceTree = "<group>"; };
 		5B7687F826F7C08600C388C1 /* String+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AirKit.swift"; sourceTree = "<group>"; };
 		5B792AE12701C1EF00CE2841 /* Calendar+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+AirKit.swift"; sourceTree = "<group>"; };
 		5B7FF728270234F800C28795 /* DateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
@@ -377,6 +381,8 @@
 		5B19FF0627076A7900F76EBD /* CoreLocation */ = {
 			isa = PBXGroup;
 			children = (
+				5B7660B12707731C00CC0ABA /* CLLocationTests.swift */,
+				5B7660B3270773B100CC0ABA /* CLLocationCoordinate2DTests.swift */,
 			);
 			path = CoreLocation;
 			sourceTree = "<group>";
@@ -740,6 +746,7 @@
 				5B632B7B26FE28D500C3645D /* NSAttributedStringTests.swift in Sources */,
 				5B6A059326FA7E44001A59C8 /* ComparableTests.swift in Sources */,
 				5B7FF72B270237FD00C28795 /* DateTests.swift in Sources */,
+				5B7660B22707731C00CC0ABA /* CLLocationTests.swift in Sources */,
 				5B0ED08726FCD4C500473155 /* TopLevelDecoderTests.swift in Sources */,
 				5B0ED07626FCD40C00473155 /* DoubleTests.swift in Sources */,
 				5B35BD1D2705F8220031AED3 /* CGSizeTests.swift in Sources */,
@@ -768,6 +775,7 @@
 				5B9D3C0C27034E0F00FD822F /* DataTests.swift in Sources */,
 				5B0963A026FB9A0A00879AE7 /* DictionaryTests.swift in Sources */,
 				5B8C1D0127047D1C0021B48E /* FileManagerTests.swift in Sources */,
+				5B7660B4270773B100CC0ABA /* CLLocationCoordinate2DTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
