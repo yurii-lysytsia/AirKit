@@ -114,7 +114,7 @@ This is sugar framework that contains many different extensions for native Swift
 ### [CocoaPods](https://cocoapods.org) 
 For usage and installation instructions, visit their website. To integrate AirKit into your Xcode project using CocoaPods, specify it in your `Podfile`:
 ```ruby
-pod 'AirKit', '~> 0.4'
+pod 'AirKit', '~> 0.3'
 ```
 
 ## 📚 Documentation
