@@ -326,6 +326,20 @@
 			path = Combine;
 			sourceTree = "<group>";
 		};
+		5B19FEF427071A3200F76EBD /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
+		5B19FEF527071A5B00F76EBD /* CoreAnimation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreAnimation;
+			sourceTree = "<group>";
+		};
 		5B239FB32700ED720045382F /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -371,6 +385,7 @@
 				5BBB16B526F625040094B14C /* Swift */,
 				5B09638826FB42F400879AE7 /* Foundation */,
 				5B07F3E426F9000600976D89 /* CoreGraphics */,
+				5B19FEF427071A3200F76EBD /* CoreAnimation */,
 				5B09638F26FB584300879AE7 /* Combine */,
 			);
 			path = Source;
@@ -400,6 +415,7 @@
 				5B6A059126FA7E31001A59C8 /* Swift */,
 				5B0ED07D26FCD45500473155 /* Foundation */,
 				5B0ED08226FCD48F00473155 /* CoreGraphics */,
+				5B19FEF527071A5B00F76EBD /* CoreAnimation */,
 				5B0ED08526FCD4B200473155 /* Combine */,
 			);
 			path = Source;
