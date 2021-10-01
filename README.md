@@ -41,12 +41,10 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `CGSize`;
 - [X] Extensions for `CGColor`;
 
-### v 0.4 | Extensions for `CoreAnimation`
-- [ ] Extensions for `CACornerMask`;
-- [ ] Extensions for `CAGradientLayer`;
-- [ ] Extensions for `CATransform3D`;
-- [ ] Write documentation for all extensions of this version;
-- [ ] Write unit tests to check all extensions of this version;
+### Extensions for [`CoreAnimation`](AirKit/Source/CoreAnimation)
+- [X] Extensions for `CACornerMask`;
+- [X] Extensions for `CAGradientLayer`;
+- [X] Extensions for `CATransform3D`;
 
 ### v 0.5 | Extensions for `CoreData`
 - [ ] Extensions for `NSPredicate`;
@@ -118,7 +116,7 @@ This is sugar framework that contains many different extensions for native Swift
 ### [CocoaPods](https://cocoapods.org) 
 For usage and installation instructions, visit their website. To integrate AirKit into your Xcode project using CocoaPods, specify it in your `Podfile`:
 ```ruby
-pod 'AirKit', '~> 0.3'
+pod 'AirKit', '~> 0.4'
 ```
 
 ## 📚 Documentation
