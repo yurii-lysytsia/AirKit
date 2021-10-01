@@ -64,6 +64,8 @@
 		5B6A057E26FA2DC9001A59C8 /* Dictionary+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057D26FA2DC9001A59C8 /* Dictionary+AirKit.swift */; };
 		5B6A058A26FA7E18001A59C8 /* AirKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B510BF726F24AB200C21CDF /* AirKit.framework */; platformFilter = ios; };
 		5B6A059326FA7E44001A59C8 /* ComparableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A059226FA7E44001A59C8 /* ComparableTests.swift */; };
+		5B7660AC27076FF300CC0ABA /* CLLocation+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7660AB27076FF300CC0ABA /* CLLocation+AirKit.swift */; };
+		5B7660AE2707703A00CC0ABA /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7660AD2707703A00CC0ABA /* CLLocationCoordinate2D.swift */; };
 		5B7687F926F7C08600C388C1 /* String+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7687F826F7C08600C388C1 /* String+AirKit.swift */; };
 		5B792AE22701C1EF00CE2841 /* Calendar+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B792AE12701C1EF00CE2841 /* Calendar+AirKit.swift */; };
 		5B7FF729270234F800C28795 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7FF728270234F800C28795 /* DateFormatterTests.swift */; };
@@ -172,6 +174,8 @@
 		5B6A058526FA7E18001A59C8 /* AirKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6A058926FA7E18001A59C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B6A059226FA7E44001A59C8 /* ComparableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableTests.swift; sourceTree = "<group>"; };
+		5B7660AB27076FF300CC0ABA /* CLLocation+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+AirKit.swift"; sourceTree = "<group>"; };
+		5B7660AD2707703A00CC0ABA /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
 		5B7687F826F7C08600C388C1 /* String+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AirKit.swift"; sourceTree = "<group>"; };
 		5B792AE12701C1EF00CE2841 /* Calendar+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+AirKit.swift"; sourceTree = "<group>"; };
 		5B7FF728270234F800C28795 /* DateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
@@ -361,6 +365,22 @@
 			path = CoreAnimation;
 			sourceTree = "<group>";
 		};
+		5B19FF0527076A6900F76EBD /* CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				5B7660AB27076FF300CC0ABA /* CLLocation+AirKit.swift */,
+				5B7660AD2707703A00CC0ABA /* CLLocationCoordinate2D.swift */,
+			);
+			path = CoreLocation;
+			sourceTree = "<group>";
+		};
+		5B19FF0627076A7900F76EBD /* CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreLocation;
+			sourceTree = "<group>";
+		};
 		5B239FB32700ED720045382F /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,6 +427,7 @@
 				5B09638826FB42F400879AE7 /* Foundation */,
 				5B07F3E426F9000600976D89 /* CoreGraphics */,
 				5B19FEF427071A3200F76EBD /* CoreAnimation */,
+				5B19FF0527076A6900F76EBD /* CoreLocation */,
 				5B09638F26FB584300879AE7 /* Combine */,
 			);
 			path = Source;
@@ -437,6 +458,7 @@
 				5B0ED07D26FCD45500473155 /* Foundation */,
 				5B0ED08226FCD48F00473155 /* CoreGraphics */,
 				5B19FEF527071A5B00F76EBD /* CoreAnimation */,
+				5B19FF0627076A7900F76EBD /* CoreLocation */,
 				5B0ED08526FCD4B200473155 /* Combine */,
 			);
 			path = Source;
@@ -655,6 +677,7 @@
 				5B07F3E226F8F5B700976D89 /* Double+AirKit.swift in Sources */,
 				5B35BD1B2705C44C0031AED3 /* CGColor+AirKit.swift in Sources */,
 				5B8C1D03270489360021B48E /* NumberFormatter+AirKit.swift in Sources */,
+				5B7660AC27076FF300CC0ABA /* CLLocation+AirKit.swift in Sources */,
 				5B9D3BFE2703304400FD822F /* Locale+AirKit.swift in Sources */,
 				5B07F3E826F9008F00976D89 /* IntConvertible.swift in Sources */,
 				5B09638A26FB430800879AE7 /* TimeInterval+AirKit.swift in Sources */,
@@ -671,6 +694,7 @@
 				5B93EDBA2700D6E500A9BEDA /* Date+AirKit.swift in Sources */,
 				5B07F3E026F8F28300976D89 /* Float+AirKit.swift in Sources */,
 				5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */,
+				5B7660AE2707703A00CC0ABA /* CLLocationCoordinate2D.swift in Sources */,
 				5B7687F926F7C08600C388C1 /* String+AirKit.swift in Sources */,
 				5B9D3BFB270326D600FD822F /* Version.swift in Sources */,
 				5B6A057E26FA2DC9001A59C8 /* Dictionary+AirKit.swift in Sources */,
