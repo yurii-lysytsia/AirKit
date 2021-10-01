@@ -32,10 +32,9 @@ class CATransform3DTests: XCTestCase {
         transform.scaleBy(x: 2, y: 2, z: 2)
         XCTAssertEqual(transform, CATransform3D.identity.scaledBy(x: 2, y: 2, z: 2))
         
-        let angle: CGFloat = 15.toRadians()
         transform = .identity
-        transform.rotate(by: angle, x: angle, y: angle, z: angle)
-        XCTAssertEqual(transform, CATransform3D.identity.rotated(by: angle, x: angle, y: angle, z: angle))
+        transform.rotate(by: 0.25, x: 0.25, y: 0.25, z: 0.25)
+        XCTAssertEqual(transform, CATransform3D.identity.rotated(by: 0.25, x: 0.25, y: 0.25, z: 0.25))
     }
     
 }
