@@ -65,7 +65,7 @@
 		5B6A058A26FA7E18001A59C8 /* AirKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B510BF726F24AB200C21CDF /* AirKit.framework */; platformFilter = ios; };
 		5B6A059326FA7E44001A59C8 /* ComparableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A059226FA7E44001A59C8 /* ComparableTests.swift */; };
 		5B7660AC27076FF300CC0ABA /* CLLocation+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7660AB27076FF300CC0ABA /* CLLocation+AirKit.swift */; };
-		5B7660AE2707703A00CC0ABA /* CLLocationCoordinate2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7660AD2707703A00CC0ABA /* CLLocationCoordinate2D.swift */; };
+		5B7660AE2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7660AD2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift */; };
 		5B7687F926F7C08600C388C1 /* String+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7687F826F7C08600C388C1 /* String+AirKit.swift */; };
 		5B792AE22701C1EF00CE2841 /* Calendar+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B792AE12701C1EF00CE2841 /* Calendar+AirKit.swift */; };
 		5B7FF729270234F800C28795 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7FF728270234F800C28795 /* DateFormatterTests.swift */; };
@@ -175,7 +175,7 @@
 		5B6A058926FA7E18001A59C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B6A059226FA7E44001A59C8 /* ComparableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparableTests.swift; sourceTree = "<group>"; };
 		5B7660AB27076FF300CC0ABA /* CLLocation+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+AirKit.swift"; sourceTree = "<group>"; };
-		5B7660AD2707703A00CC0ABA /* CLLocationCoordinate2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2D.swift; sourceTree = "<group>"; };
+		5B7660AD2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+AirKit.swift"; sourceTree = "<group>"; };
 		5B7687F826F7C08600C388C1 /* String+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AirKit.swift"; sourceTree = "<group>"; };
 		5B792AE12701C1EF00CE2841 /* Calendar+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+AirKit.swift"; sourceTree = "<group>"; };
 		5B7FF728270234F800C28795 /* DateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
@@ -369,7 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				5B7660AB27076FF300CC0ABA /* CLLocation+AirKit.swift */,
-				5B7660AD2707703A00CC0ABA /* CLLocationCoordinate2D.swift */,
+				5B7660AD2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift */,
 			);
 			path = CoreLocation;
 			sourceTree = "<group>";
@@ -694,7 +694,7 @@
 				5B93EDBA2700D6E500A9BEDA /* Date+AirKit.swift in Sources */,
 				5B07F3E026F8F28300976D89 /* Float+AirKit.swift in Sources */,
 				5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */,
-				5B7660AE2707703A00CC0ABA /* CLLocationCoordinate2D.swift in Sources */,
+				5B7660AE2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift in Sources */,
 				5B7687F926F7C08600C388C1 /* String+AirKit.swift in Sources */,
 				5B9D3BFB270326D600FD822F /* Version.swift in Sources */,
 				5B6A057E26FA2DC9001A59C8 /* Dictionary+AirKit.swift in Sources */,

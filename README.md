@@ -47,8 +47,8 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `CATransform3D`;
 
 ### Extensions for `CoreLocation`
-- [ ] Extensions for `CLLocationCoordinate2D` and `CLLocation`;
-- [ ] Extensions for `CLVisit`;
+- [X] Extensions for `CLLocation`;
+- [X] Extensions for `CLLocationCoordinate2D`;
 
 ### v 0.4 | Extensions for `CoreData`
 - [ ] Extensions for `NSPredicate`;
