@@ -68,6 +68,8 @@
 		5B639D85270888C60028B543 /* UIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D84270888C60028B543 /* UIImageTests.swift */; };
 		5B639D87270894D80028B543 /* CIContext+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D86270894D80028B543 /* CIContext+AirKit.swift */; };
 		5B639D8927089D360028B543 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B639D8827089D350028B543 /* image.png */; };
+		5B639D8D2708A4A50028B543 /* UIColor+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D8C2708A4A50028B543 /* UIColor+AirKit.swift */; };
+		5B639D8F2708A4B00028B543 /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D8E2708A4B00028B543 /* UIColorTests.swift */; };
 		5B6A057226F9DF9C001A59C8 /* Sequence+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057126F9DF9C001A59C8 /* Sequence+AirKit.swift */; };
 		5B6A057426F9E4C9001A59C8 /* Optionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057326F9E4C9001A59C8 /* Optionable.swift */; };
 		5B6A057626F9F6DD001A59C8 /* Collection+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057526F9F6DD001A59C8 /* Collection+AirKit.swift */; };
@@ -190,6 +192,8 @@
 		5B639D84270888C60028B543 /* UIImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageTests.swift; sourceTree = "<group>"; };
 		5B639D86270894D80028B543 /* CIContext+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIContext+AirKit.swift"; sourceTree = "<group>"; };
 		5B639D8827089D350028B543 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		5B639D8C2708A4A50028B543 /* UIColor+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AirKit.swift"; sourceTree = "<group>"; };
+		5B639D8E2708A4B00028B543 /* UIColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTests.swift; sourceTree = "<group>"; };
 		5B6A057126F9DF9C001A59C8 /* Sequence+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+AirKit.swift"; sourceTree = "<group>"; };
 		5B6A057326F9E4C9001A59C8 /* Optionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optionable.swift; sourceTree = "<group>"; };
 		5B6A057526F9F6DD001A59C8 /* Collection+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+AirKit.swift"; sourceTree = "<group>"; };
@@ -563,6 +567,7 @@
 				5B639D7527086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift */,
 				5B639D7327086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift */,
 				5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */,
+				5B639D8C2708A4A50028B543 /* UIColor+AirKit.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -573,6 +578,7 @@
 				5B639D802708836A0028B543 /* UIGraphicsImageRendererFormatTests.swift */,
 				5B639D82270883FE0028B543 /* UIGraphicsImageRendererTests.swift */,
 				5B639D84270888C60028B543 /* UIImageTests.swift */,
+				5B639D8E2708A4B00028B543 /* UIColorTests.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -786,6 +792,7 @@
 				5B09639126FB585300879AE7 /* TopLevelDecoder+AirKit.swift in Sources */,
 				5B93EDBA2700D6E500A9BEDA /* Date+AirKit.swift in Sources */,
 				5B639D7427086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift in Sources */,
+				5B639D8D2708A4A50028B543 /* UIColor+AirKit.swift in Sources */,
 				5B07F3E026F8F28300976D89 /* Float+AirKit.swift in Sources */,
 				5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */,
 				5B7660AE2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift in Sources */,
@@ -854,6 +861,7 @@
 				5B09639926FB88FC00879AE7 /* BinaryIntegerTests.swift in Sources */,
 				5B19FF042707611E00F76EBD /* CAGradientLayerTests.swift in Sources */,
 				5B0ED07826FCD42200473155 /* FloatTests.swift in Sources */,
+				5B639D8F2708A4B00028B543 /* UIColorTests.swift in Sources */,
 				5B9D3C12270351A500FD822F /* BundleTests.swift in Sources */,
 				5B0ED06E26FCC44E00473155 /* OptionalTests.swift in Sources */,
 				5B09639726FB873900879AE7 /* BinaryFloatingPointTests.swift in Sources */,
