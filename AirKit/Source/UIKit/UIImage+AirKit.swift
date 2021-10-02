@@ -151,7 +151,7 @@ import UIKit
 public extension UIImage {
     /// Returns a color instance with an average color for the image.
     var averageColor: UIColor? {
-        guard let image = CIImage(image: self), let outputImage = CIFilter(category: .Reduction.areaAverage(inputImage: image))?.outputImage else { return nil }
+        guard let image = CIImage(image: self), let outputImage = CIFilter(category: CICategory.Reduction.areaAverage(inputImage: image))?.outputImage else { return nil }
         let bitmap = CIContext().rendered(
             image: outputImage,
             rowBytes: 4,
