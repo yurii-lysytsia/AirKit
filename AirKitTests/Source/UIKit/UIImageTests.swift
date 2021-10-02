@@ -25,7 +25,7 @@ class UIImageTests: XCTestCase {
     func testRotate() {
         let image = UIImage(color: .white, size: CGSize(width: 100, height: 80))
         
-        var rotatedImage = image.rotated(by: 90.toRadians())
+        var rotatedImage = image.rotated(by: CGFloat(90).toRadians())
         XCTAssertEqual(rotatedImage.size, CGSize(width: image.size.height, height: image.size.width))
         XCTAssertNotEqual(image, rotatedImage)
         
@@ -43,7 +43,7 @@ class UIImageTests: XCTestCase {
     }
     
     func testInits() {
-        XCTAssertNotNil(UIImage(category: .Generator.qrCode(inputMessage: "Hello world!")))
+        XCTAssertNotNil(UIImage(category: CICategory.Generator.qrCode(inputMessage: "Hello world!")))
     }
     
 }
