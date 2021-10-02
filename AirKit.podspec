@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AirKit"
-  spec.version      = "0.3.2"
+  spec.version      = "0.4.0"
   spec.summary      = "Many extensions to speed up your coding time!"
 
   # This description is used to generate tags and improve search results.
@@ -56,7 +56,7 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  spec.ios.deployment_target = "9.0"
+  spec.ios.deployment_target = "10.0"
   spec.swift_versions = '5.0'
   
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

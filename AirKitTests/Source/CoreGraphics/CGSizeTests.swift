@@ -18,9 +18,11 @@ class CGSizeTests: XCTestCase {
         let size = CGSize(width: 1920, height: 1080)
         XCTAssertEqual(size.aspectRatio, 16/9, accuracy: 0.1)
         
-        let boundingSize = CGSize(width: 120, height: 160)
-        XCTAssertEqual(size.aspectFitted(to: boundingSize), CGSize(width: 120, height: 67.5))
-        XCTAssertEqual(size.aspectFilled(to: boundingSize), CGSize(width: 120, height: 160))
+        let fittingSize = CGSize(width: 120, height: 160)
+        XCTAssertEqual(size.aspectFitted(to: fittingSize), CGSize(width: 120, height: 67.5))
+        
+        let fillingSize = CGSize(width: 40, height: 20)
+        XCTAssertEqual(size.aspectFilled(to: fillingSize), CGSize(width: 40, height: 22.5))
     }
     
     func testOperators() {

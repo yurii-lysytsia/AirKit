@@ -56,6 +56,18 @@
 		5B510BFC26F24AB200C21CDF /* AirKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B510BFA26F24AB200C21CDF /* AirKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B632B7926FE218500C3645D /* NSAttributedString+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B632B7826FE218500C3645D /* NSAttributedString+AirKit.swift */; };
 		5B632B7B26FE28D500C3645D /* NSAttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B632B7A26FE28D500C3645D /* NSAttributedStringTests.swift */; };
+		5B639D6B27084CEC0028B543 /* UIImage+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */; };
+		5B639D6E270868C30028B543 /* CICategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D6D270868C30028B543 /* CICategory.swift */; };
+		5B639D71270869B00028B543 /* CIFilter+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D70270869B00028B543 /* CIFilter+AirKit.swift */; };
+		5B639D7427086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D7327086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift */; };
+		5B639D7627086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D7527086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift */; };
+		5B639D7A27087CBD0028B543 /* CIFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D7927087CBD0028B543 /* CIFilterTests.swift */; };
+		5B639D7C27087DB50028B543 /* CICategoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D7B27087DB50028B543 /* CICategoryTests.swift */; };
+		5B639D812708836A0028B543 /* UIGraphicsImageRendererFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D802708836A0028B543 /* UIGraphicsImageRendererFormatTests.swift */; };
+		5B639D83270883FE0028B543 /* UIGraphicsImageRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D82270883FE0028B543 /* UIGraphicsImageRendererTests.swift */; };
+		5B639D85270888C60028B543 /* UIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D84270888C60028B543 /* UIImageTests.swift */; };
+		5B639D87270894D80028B543 /* CIContext+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D86270894D80028B543 /* CIContext+AirKit.swift */; };
+		5B639D8927089D360028B543 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B639D8827089D350028B543 /* image.png */; };
 		5B6A057226F9DF9C001A59C8 /* Sequence+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057126F9DF9C001A59C8 /* Sequence+AirKit.swift */; };
 		5B6A057426F9E4C9001A59C8 /* Optionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057326F9E4C9001A59C8 /* Optionable.swift */; };
 		5B6A057626F9F6DD001A59C8 /* Collection+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057526F9F6DD001A59C8 /* Collection+AirKit.swift */; };
@@ -166,6 +178,18 @@
 		5B510BFB26F24AB200C21CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B632B7826FE218500C3645D /* NSAttributedString+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+AirKit.swift"; sourceTree = "<group>"; };
 		5B632B7A26FE28D500C3645D /* NSAttributedStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringTests.swift; sourceTree = "<group>"; };
+		5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+AirKit.swift"; sourceTree = "<group>"; };
+		5B639D6D270868C30028B543 /* CICategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CICategory.swift; sourceTree = "<group>"; };
+		5B639D70270869B00028B543 /* CIFilter+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIFilter+AirKit.swift"; sourceTree = "<group>"; };
+		5B639D7327086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGraphicsImageRendererFormat+AirKit.swift"; sourceTree = "<group>"; };
+		5B639D7527086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGraphicsImageRenderer+AirKit.swift"; sourceTree = "<group>"; };
+		5B639D7927087CBD0028B543 /* CIFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIFilterTests.swift; sourceTree = "<group>"; };
+		5B639D7B27087DB50028B543 /* CICategoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CICategoryTests.swift; sourceTree = "<group>"; };
+		5B639D802708836A0028B543 /* UIGraphicsImageRendererFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGraphicsImageRendererFormatTests.swift; sourceTree = "<group>"; };
+		5B639D82270883FE0028B543 /* UIGraphicsImageRendererTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGraphicsImageRendererTests.swift; sourceTree = "<group>"; };
+		5B639D84270888C60028B543 /* UIImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageTests.swift; sourceTree = "<group>"; };
+		5B639D86270894D80028B543 /* CIContext+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIContext+AirKit.swift"; sourceTree = "<group>"; };
+		5B639D8827089D350028B543 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		5B6A057126F9DF9C001A59C8 /* Sequence+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+AirKit.swift"; sourceTree = "<group>"; };
 		5B6A057326F9E4C9001A59C8 /* Optionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optionable.swift; sourceTree = "<group>"; };
 		5B6A057526F9F6DD001A59C8 /* Collection+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+AirKit.swift"; sourceTree = "<group>"; };
@@ -294,6 +318,7 @@
 		5B0963A326FB9D7C00879AE7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5B639D8827089D350028B543 /* image.png */,
 				5B0963A426FB9D8C00879AE7 /* Swift */,
 			);
 			path = Resources;
@@ -432,8 +457,10 @@
 				5BBB16B526F625040094B14C /* Swift */,
 				5B09638826FB42F400879AE7 /* Foundation */,
 				5B07F3E426F9000600976D89 /* CoreGraphics */,
+				5B639D6C270868A50028B543 /* CoreImage */,
 				5B19FEF427071A3200F76EBD /* CoreAnimation */,
 				5B19FF0527076A6900F76EBD /* CoreLocation */,
+				5B7660B5270778C000CC0ABA /* UIKit */,
 				5B09638F26FB584300879AE7 /* Combine */,
 			);
 			path = Source;
@@ -445,6 +472,41 @@
 				5BBB16B326F6237F0094B14C /* NumberConvertible.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5B639D6C270868A50028B543 /* CoreImage */ = {
+			isa = PBXGroup;
+			children = (
+				5B639D86270894D80028B543 /* CIContext+AirKit.swift */,
+				5B639D70270869B00028B543 /* CIFilter+AirKit.swift */,
+				5B639D7227086A3B0028B543 /* Models */,
+			);
+			path = CoreImage;
+			sourceTree = "<group>";
+		};
+		5B639D6F270868E30028B543 /* CoreImage */ = {
+			isa = PBXGroup;
+			children = (
+				5B639D7927087CBD0028B543 /* CIFilterTests.swift */,
+				5B639D7D27087DB80028B543 /* Models */,
+			);
+			path = CoreImage;
+			sourceTree = "<group>";
+		};
+		5B639D7227086A3B0028B543 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B639D6D270868C30028B543 /* CICategory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B639D7D27087DB80028B543 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B639D7B27087DB50028B543 /* CICategoryTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		5B6A058626FA7E18001A59C8 /* AirKitTests */ = {
@@ -463,8 +525,10 @@
 				5B6A059126FA7E31001A59C8 /* Swift */,
 				5B0ED07D26FCD45500473155 /* Foundation */,
 				5B0ED08226FCD48F00473155 /* CoreGraphics */,
+				5B639D6F270868E30028B543 /* CoreImage */,
 				5B19FEF527071A5B00F76EBD /* CoreAnimation */,
 				5B19FF0627076A7900F76EBD /* CoreLocation */,
+				5B7660B6270778C900CC0ABA /* UIKit */,
 				5B0ED08526FCD4B200473155 /* Combine */,
 			);
 			path = Source;
@@ -491,6 +555,26 @@
 				5B9D3C132703538B00FD822F /* Models */,
 			);
 			path = Swift;
+			sourceTree = "<group>";
+		};
+		5B7660B5270778C000CC0ABA /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5B639D7527086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift */,
+				5B639D7327086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift */,
+				5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		5B7660B6270778C900CC0ABA /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5B639D802708836A0028B543 /* UIGraphicsImageRendererFormatTests.swift */,
+				5B639D82270883FE0028B543 /* UIGraphicsImageRendererTests.swift */,
+				5B639D84270888C60028B543 /* UIImageTests.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 		5B9D3BFC270326FE00FD822F /* Models */ = {
@@ -646,6 +730,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B0963A626FB9DE900879AE7 /* swift-decode.json in Resources */,
+				5B639D8927089D360028B543 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,6 +770,7 @@
 				5B8C1D03270489360021B48E /* NumberFormatter+AirKit.swift in Sources */,
 				5B7660AC27076FF300CC0ABA /* CLLocation+AirKit.swift in Sources */,
 				5B9D3BFE2703304400FD822F /* Locale+AirKit.swift in Sources */,
+				5B639D87270894D80028B543 /* CIContext+AirKit.swift in Sources */,
 				5B07F3E826F9008F00976D89 /* IntConvertible.swift in Sources */,
 				5B09638A26FB430800879AE7 /* TimeInterval+AirKit.swift in Sources */,
 				5B632B7926FE218500C3645D /* NSAttributedString+AirKit.swift in Sources */,
@@ -692,12 +778,14 @@
 				5B9D3BF927031BEB00FD822F /* Bundle+AirKit.swift in Sources */,
 				5B8C1CFB27045FB50021B48E /* FileManager+AirKit.swift in Sources */,
 				5B19FEF927071F8C00F76EBD /* CAGradientLayer+AirKit.swift in Sources */,
+				5B639D71270869B00028B543 /* CIFilter+AirKit.swift in Sources */,
 				5B09638C26FB47EB00879AE7 /* Result+AirKit.swift in Sources */,
 				5B8C1D0527049B9E0021B48E /* DispatchQueue+AirKit.swift in Sources */,
 				5B6A057626F9F6DD001A59C8 /* Collection+AirKit.swift in Sources */,
 				5B07F3DC26F8F0ED00976D89 /* Bool+AirKit.swift in Sources */,
 				5B09639126FB585300879AE7 /* TopLevelDecoder+AirKit.swift in Sources */,
 				5B93EDBA2700D6E500A9BEDA /* Date+AirKit.swift in Sources */,
+				5B639D7427086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift in Sources */,
 				5B07F3E026F8F28300976D89 /* Float+AirKit.swift in Sources */,
 				5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */,
 				5B7660AE2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift in Sources */,
@@ -712,8 +800,10 @@
 				5B6A057426F9E4C9001A59C8 /* Optionable.swift in Sources */,
 				5B07F3E626F9001B00976D89 /* CGFloat+AirKit.swift in Sources */,
 				5B07F3F126F9038000976D89 /* Int+AirKit.swift in Sources */,
+				5B639D7627086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift in Sources */,
 				5B07F3EA26F901A300976D89 /* FloatConvertible.swift in Sources */,
 				5B9D3C002703322700FD822F /* Data+AirKit.swift in Sources */,
+				5B639D6B27084CEC0028B543 /* UIImage+AirKit.swift in Sources */,
 				5B93EDB82700D23000A9BEDA /* DateFormatter+AirKit.swift in Sources */,
 				5B6A057C26FA29E0001A59C8 /* Comparable+AirKit.swift in Sources */,
 				5B07F3EC26F901FC00976D89 /* DoubleConvertible.swift in Sources */,
@@ -723,6 +813,7 @@
 				5B07F3EF26F9024A00976D89 /* CGFloatConvertible.swift in Sources */,
 				5B6A057826FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift in Sources */,
 				5B239FB52700ED790045382F /* DateFormatComponents.swift in Sources */,
+				5B639D6E270868C30028B543 /* CICategory.swift in Sources */,
 				5B19FEFB270721C400F76EBD /* CATransform3D+AirKit.swift in Sources */,
 				5B09638E26FB50FC00879AE7 /* KeyedDecodingContainer+AirKit.swift in Sources */,
 				5B35BD192705B3010031AED3 /* CGSize+AirKit.swift in Sources */,
@@ -735,6 +826,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B0ED07A26FCD43000473155 /* IntTests.swift in Sources */,
+				5B639D7C27087DB50028B543 /* CICategoryTests.swift in Sources */,
 				5B8C1D072704A6CD0021B48E /* NumberFormatterTests.swift in Sources */,
 				5B0ED07026FCC80300473155 /* RangeReplaceableCollectionTests.swift in Sources */,
 				5B19FF0227075C0F00F76EBD /* CATransform3DTests.swift in Sources */,
@@ -749,6 +841,7 @@
 				5B7660B22707731C00CC0ABA /* CLLocationTests.swift in Sources */,
 				5B0ED08726FCD4C500473155 /* TopLevelDecoderTests.swift in Sources */,
 				5B0ED07626FCD40C00473155 /* DoubleTests.swift in Sources */,
+				5B639D85270888C60028B543 /* UIImageTests.swift in Sources */,
 				5B35BD1D2705F8220031AED3 /* CGSizeTests.swift in Sources */,
 				5B9D3C152703539500FD822F /* VersionTests.swift in Sources */,
 				5B9D3C0A27034CE500FD822F /* LocaleTests.swift in Sources */,
@@ -756,6 +849,7 @@
 				5B09639E26FB989400879AE7 /* CollectionTests.swift in Sources */,
 				5B8C1CFD270460AC0021B48E /* UserDefaultsTests.swift in Sources */,
 				5B9D3C0827034C2200FD822F /* URLTests.swift in Sources */,
+				5B639D83270883FE0028B543 /* UIGraphicsImageRendererTests.swift in Sources */,
 				5B09639C26FB97F600879AE7 /* BoolTests.swift in Sources */,
 				5B09639926FB88FC00879AE7 /* BinaryIntegerTests.swift in Sources */,
 				5B19FF042707611E00F76EBD /* CAGradientLayerTests.swift in Sources */,
@@ -775,6 +869,8 @@
 				5B9D3C0C27034E0F00FD822F /* DataTests.swift in Sources */,
 				5B0963A026FB9A0A00879AE7 /* DictionaryTests.swift in Sources */,
 				5B8C1D0127047D1C0021B48E /* FileManagerTests.swift in Sources */,
+				5B639D7A27087CBD0028B543 /* CIFilterTests.swift in Sources */,
+				5B639D812708836A0028B543 /* UIGraphicsImageRendererFormatTests.swift in Sources */,
 				5B7660B4270773B100CC0ABA /* CLLocationCoordinate2DTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -843,7 +939,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -904,7 +1000,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -932,7 +1028,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AirKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = "${inherited}";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -968,7 +1064,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AirKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = "${inherited}";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
