@@ -61,7 +61,13 @@
 		5B639D71270869B00028B543 /* CIFilter+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D70270869B00028B543 /* CIFilter+AirKit.swift */; };
 		5B639D7427086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D7327086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift */; };
 		5B639D7627086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D7527086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift */; };
-		5B639D782708744E0028B543 /* CIImage+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D772708744E0028B543 /* CIImage+AirKit.swift */; };
+		5B639D7A27087CBD0028B543 /* CIFilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D7927087CBD0028B543 /* CIFilterTests.swift */; };
+		5B639D7C27087DB50028B543 /* CICategoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D7B27087DB50028B543 /* CICategoryTests.swift */; };
+		5B639D812708836A0028B543 /* UIGraphicsImageRendererFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D802708836A0028B543 /* UIGraphicsImageRendererFormatTests.swift */; };
+		5B639D83270883FE0028B543 /* UIGraphicsImageRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D82270883FE0028B543 /* UIGraphicsImageRendererTests.swift */; };
+		5B639D85270888C60028B543 /* UIImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D84270888C60028B543 /* UIImageTests.swift */; };
+		5B639D87270894D80028B543 /* CIContext+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D86270894D80028B543 /* CIContext+AirKit.swift */; };
+		5B639D8927089D360028B543 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B639D8827089D350028B543 /* image.png */; };
 		5B6A057226F9DF9C001A59C8 /* Sequence+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057126F9DF9C001A59C8 /* Sequence+AirKit.swift */; };
 		5B6A057426F9E4C9001A59C8 /* Optionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057326F9E4C9001A59C8 /* Optionable.swift */; };
 		5B6A057626F9F6DD001A59C8 /* Collection+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057526F9F6DD001A59C8 /* Collection+AirKit.swift */; };
@@ -177,7 +183,13 @@
 		5B639D70270869B00028B543 /* CIFilter+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIFilter+AirKit.swift"; sourceTree = "<group>"; };
 		5B639D7327086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGraphicsImageRendererFormat+AirKit.swift"; sourceTree = "<group>"; };
 		5B639D7527086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGraphicsImageRenderer+AirKit.swift"; sourceTree = "<group>"; };
-		5B639D772708744E0028B543 /* CIImage+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIImage+AirKit.swift"; sourceTree = "<group>"; };
+		5B639D7927087CBD0028B543 /* CIFilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIFilterTests.swift; sourceTree = "<group>"; };
+		5B639D7B27087DB50028B543 /* CICategoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CICategoryTests.swift; sourceTree = "<group>"; };
+		5B639D802708836A0028B543 /* UIGraphicsImageRendererFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGraphicsImageRendererFormatTests.swift; sourceTree = "<group>"; };
+		5B639D82270883FE0028B543 /* UIGraphicsImageRendererTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGraphicsImageRendererTests.swift; sourceTree = "<group>"; };
+		5B639D84270888C60028B543 /* UIImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageTests.swift; sourceTree = "<group>"; };
+		5B639D86270894D80028B543 /* CIContext+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIContext+AirKit.swift"; sourceTree = "<group>"; };
+		5B639D8827089D350028B543 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		5B6A057126F9DF9C001A59C8 /* Sequence+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+AirKit.swift"; sourceTree = "<group>"; };
 		5B6A057326F9E4C9001A59C8 /* Optionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optionable.swift; sourceTree = "<group>"; };
 		5B6A057526F9F6DD001A59C8 /* Collection+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+AirKit.swift"; sourceTree = "<group>"; };
@@ -306,6 +318,7 @@
 		5B0963A326FB9D7C00879AE7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5B639D8827089D350028B543 /* image.png */,
 				5B0963A426FB9D8C00879AE7 /* Swift */,
 			);
 			path = Resources;
@@ -464,8 +477,8 @@
 		5B639D6C270868A50028B543 /* CoreImage */ = {
 			isa = PBXGroup;
 			children = (
+				5B639D86270894D80028B543 /* CIContext+AirKit.swift */,
 				5B639D70270869B00028B543 /* CIFilter+AirKit.swift */,
-				5B639D772708744E0028B543 /* CIImage+AirKit.swift */,
 				5B639D7227086A3B0028B543 /* Models */,
 			);
 			path = CoreImage;
@@ -474,6 +487,8 @@
 		5B639D6F270868E30028B543 /* CoreImage */ = {
 			isa = PBXGroup;
 			children = (
+				5B639D7927087CBD0028B543 /* CIFilterTests.swift */,
+				5B639D7D27087DB80028B543 /* Models */,
 			);
 			path = CoreImage;
 			sourceTree = "<group>";
@@ -482,6 +497,14 @@
 			isa = PBXGroup;
 			children = (
 				5B639D6D270868C30028B543 /* CICategory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B639D7D27087DB80028B543 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B639D7B27087DB50028B543 /* CICategoryTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -537,9 +560,9 @@
 		5B7660B5270778C000CC0ABA /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */,
-				5B639D7327086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift */,
 				5B639D7527086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift */,
+				5B639D7327086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift */,
+				5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -547,6 +570,9 @@
 		5B7660B6270778C900CC0ABA /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				5B639D802708836A0028B543 /* UIGraphicsImageRendererFormatTests.swift */,
+				5B639D82270883FE0028B543 /* UIGraphicsImageRendererTests.swift */,
+				5B639D84270888C60028B543 /* UIImageTests.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -704,6 +730,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B0963A626FB9DE900879AE7 /* swift-decode.json in Resources */,
+				5B639D8927089D360028B543 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -743,6 +770,7 @@
 				5B8C1D03270489360021B48E /* NumberFormatter+AirKit.swift in Sources */,
 				5B7660AC27076FF300CC0ABA /* CLLocation+AirKit.swift in Sources */,
 				5B9D3BFE2703304400FD822F /* Locale+AirKit.swift in Sources */,
+				5B639D87270894D80028B543 /* CIContext+AirKit.swift in Sources */,
 				5B07F3E826F9008F00976D89 /* IntConvertible.swift in Sources */,
 				5B09638A26FB430800879AE7 /* TimeInterval+AirKit.swift in Sources */,
 				5B632B7926FE218500C3645D /* NSAttributedString+AirKit.swift in Sources */,
@@ -780,7 +808,6 @@
 				5B6A057C26FA29E0001A59C8 /* Comparable+AirKit.swift in Sources */,
 				5B07F3EC26F901FC00976D89 /* DoubleConvertible.swift in Sources */,
 				5B9BAFCD26F77B1D00731991 /* BinaryInteger+AirKit.swift in Sources */,
-				5B639D782708744E0028B543 /* CIImage+AirKit.swift in Sources */,
 				5B19FEFD27072B0F00F76EBD /* CGAffineTransform+AirKit.swift in Sources */,
 				5B8C1CFF270479810021B48E /* DateComponents+AirKit.swift in Sources */,
 				5B07F3EF26F9024A00976D89 /* CGFloatConvertible.swift in Sources */,
@@ -799,6 +826,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B0ED07A26FCD43000473155 /* IntTests.swift in Sources */,
+				5B639D7C27087DB50028B543 /* CICategoryTests.swift in Sources */,
 				5B8C1D072704A6CD0021B48E /* NumberFormatterTests.swift in Sources */,
 				5B0ED07026FCC80300473155 /* RangeReplaceableCollectionTests.swift in Sources */,
 				5B19FF0227075C0F00F76EBD /* CATransform3DTests.swift in Sources */,
@@ -813,6 +841,7 @@
 				5B7660B22707731C00CC0ABA /* CLLocationTests.swift in Sources */,
 				5B0ED08726FCD4C500473155 /* TopLevelDecoderTests.swift in Sources */,
 				5B0ED07626FCD40C00473155 /* DoubleTests.swift in Sources */,
+				5B639D85270888C60028B543 /* UIImageTests.swift in Sources */,
 				5B35BD1D2705F8220031AED3 /* CGSizeTests.swift in Sources */,
 				5B9D3C152703539500FD822F /* VersionTests.swift in Sources */,
 				5B9D3C0A27034CE500FD822F /* LocaleTests.swift in Sources */,
@@ -820,6 +849,7 @@
 				5B09639E26FB989400879AE7 /* CollectionTests.swift in Sources */,
 				5B8C1CFD270460AC0021B48E /* UserDefaultsTests.swift in Sources */,
 				5B9D3C0827034C2200FD822F /* URLTests.swift in Sources */,
+				5B639D83270883FE0028B543 /* UIGraphicsImageRendererTests.swift in Sources */,
 				5B09639C26FB97F600879AE7 /* BoolTests.swift in Sources */,
 				5B09639926FB88FC00879AE7 /* BinaryIntegerTests.swift in Sources */,
 				5B19FF042707611E00F76EBD /* CAGradientLayerTests.swift in Sources */,
@@ -839,6 +869,8 @@
 				5B9D3C0C27034E0F00FD822F /* DataTests.swift in Sources */,
 				5B0963A026FB9A0A00879AE7 /* DictionaryTests.swift in Sources */,
 				5B8C1D0127047D1C0021B48E /* FileManagerTests.swift in Sources */,
+				5B639D7A27087CBD0028B543 /* CIFilterTests.swift in Sources */,
+				5B639D812708836A0028B543 /* UIGraphicsImageRendererFormatTests.swift in Sources */,
 				5B7660B4270773B100CC0ABA /* CLLocationCoordinate2DTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

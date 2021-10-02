@@ -15,6 +15,13 @@ public struct CICategory {
     /// A list of key-value pairs to set as input values to the filter
     public let parameters: [String: Any]?
     
+    // MARK: - Inits
+    
+    public init(name: String, parameters: [String: Any]? = nil) {
+        self.name = name
+        self.parameters = parameters
+    }
+    
     // MARK: - Subcategories
     
     public enum Generator { }

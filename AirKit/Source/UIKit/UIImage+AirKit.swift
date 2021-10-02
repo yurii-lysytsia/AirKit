@@ -12,6 +12,7 @@ import struct CoreGraphics.CGPoint
 import struct CoreGraphics.CGFloat
 import struct CoreGraphics.CGAffineTransform
 #if canImport(CoreImage)
+import class CoreImage.CIContext
 import class CoreImage.CIFilter
 import class CoreImage.CIImage
 #endif
@@ -128,7 +129,7 @@ public extension UIImage {
 }
 
 #if canImport(CoreImage)
-// MARK: - Extensions | CoreImage
+// MARK: - Extensions | CoreImage | Inits
 
 public extension UIImage {
     /// Create a new image instance from core image filter.
@@ -142,11 +143,28 @@ public extension UIImage {
         guard let filter = CIFilter(category: category) else { return nil }
         self.init(filter: filter)
     }
-    
+}
+
+// MARK: - Extensions | CoreImage | Average
+import UIKit
+
+public extension UIImage {
     /// Returns a color instance with an average color for the image.
-    func averageColor() -> UIColor? {
-        guard let ciImage = ciImage ?? CIImage(image: self), let ciColor = ciImage.averageColor() else { return nil }
-        return UIColor(ciColor: ciColor)
+    var averageColor: UIColor? {
+        guard let image = CIImage(image: self), let outputImage = CIFilter(category: .Reduction.areaAverage(inputImage: image))?.outputImage else { return nil }
+        let bitmap = CIContext().rendered(
+            image: outputImage,
+            rowBytes: 4,
+            bounds: CGRect(x: 0, y: 0, width: 1, height: 1),
+            format: .RGBA8,
+            colorSpace: outputImage.colorSpace
+        )
+        return UIColor(
+            red: CGFloat(bitmap[0]) / 255,
+            green: CGFloat(bitmap[1]) / 255.0,
+            blue: CGFloat(bitmap[2]) / 255.0,
+            alpha: CGFloat(bitmap[3]) / 255.0
+        )
     }
 }
 #endif
