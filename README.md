@@ -51,7 +51,7 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `CLLocationCoordinate2D`;
 
 ### Extensions for [`UIKit`](AirKit/Source/UIKit)
-- [ ] Extensions for `UIImage`;
+- [X] Extensions for `UIImage`;
 - [ ] Extensions for `UIColor`;
 - [ ] Extensions for `UIEdgeInsets`;
 - [ ] Extensions for `UIBezierPath`;
@@ -96,8 +96,10 @@ This is sugar framework that contains many different extensions for native Swift
 - [ ] Once (method wich is called once);
 - [ ] AsyncOperationQueue (model bases on `OperationsQueue` and `DispatchSemaphore` to make it async and sireal)
 
-### v 1.3 | CoreImage
-- [ ] Extensions for `CIFilter` (https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference);
+### v 1.3 | Extensions for  [`CoreImage`](AirKit/Source/CoreImage)
+- [X] Extensions for `CIImage`;
+- [X] Extensions for `CIFilter`;
+- [ ] `CICategory` (https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference);
 
 ## 🚀 Installation
 
