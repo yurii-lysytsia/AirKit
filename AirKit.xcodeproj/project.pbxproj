@@ -57,7 +57,8 @@
 		5B632B7926FE218500C3645D /* NSAttributedString+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B632B7826FE218500C3645D /* NSAttributedString+AirKit.swift */; };
 		5B632B7B26FE28D500C3645D /* NSAttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B632B7A26FE28D500C3645D /* NSAttributedStringTests.swift */; };
 		5B639D6B27084CEC0028B543 /* UIImage+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */; };
-		5B639D6E270868C30028B543 /* CICategory+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D6D270868C30028B543 /* CICategory+AirKit.swift */; };
+		5B639D6E270868C30028B543 /* CICategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D6D270868C30028B543 /* CICategory.swift */; };
+		5B639D71270869B00028B543 /* CIFilter+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D70270869B00028B543 /* CIFilter+AirKit.swift */; };
 		5B6A057226F9DF9C001A59C8 /* Sequence+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057126F9DF9C001A59C8 /* Sequence+AirKit.swift */; };
 		5B6A057426F9E4C9001A59C8 /* Optionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057326F9E4C9001A59C8 /* Optionable.swift */; };
 		5B6A057626F9F6DD001A59C8 /* Collection+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057526F9F6DD001A59C8 /* Collection+AirKit.swift */; };
@@ -169,7 +170,8 @@
 		5B632B7826FE218500C3645D /* NSAttributedString+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+AirKit.swift"; sourceTree = "<group>"; };
 		5B632B7A26FE28D500C3645D /* NSAttributedStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringTests.swift; sourceTree = "<group>"; };
 		5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+AirKit.swift"; sourceTree = "<group>"; };
-		5B639D6D270868C30028B543 /* CICategory+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CICategory+AirKit.swift"; sourceTree = "<group>"; };
+		5B639D6D270868C30028B543 /* CICategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CICategory.swift; sourceTree = "<group>"; };
+		5B639D70270869B00028B543 /* CIFilter+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIFilter+AirKit.swift"; sourceTree = "<group>"; };
 		5B6A057126F9DF9C001A59C8 /* Sequence+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+AirKit.swift"; sourceTree = "<group>"; };
 		5B6A057326F9E4C9001A59C8 /* Optionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optionable.swift; sourceTree = "<group>"; };
 		5B6A057526F9F6DD001A59C8 /* Collection+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+AirKit.swift"; sourceTree = "<group>"; };
@@ -456,7 +458,8 @@
 		5B639D6C270868A50028B543 /* CoreImage */ = {
 			isa = PBXGroup;
 			children = (
-				5B639D6D270868C30028B543 /* CICategory+AirKit.swift */,
+				5B639D70270869B00028B543 /* CIFilter+AirKit.swift */,
+				5B639D7227086A3B0028B543 /* Models */,
 			);
 			path = CoreImage;
 			sourceTree = "<group>";
@@ -466,6 +469,14 @@
 			children = (
 			);
 			path = CoreImage;
+			sourceTree = "<group>";
+		};
+		5B639D7227086A3B0028B543 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B639D6D270868C30028B543 /* CICategory.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		5B6A058626FA7E18001A59C8 /* AirKitTests */ = {
@@ -730,6 +741,7 @@
 				5B9D3BF927031BEB00FD822F /* Bundle+AirKit.swift in Sources */,
 				5B8C1CFB27045FB50021B48E /* FileManager+AirKit.swift in Sources */,
 				5B19FEF927071F8C00F76EBD /* CAGradientLayer+AirKit.swift in Sources */,
+				5B639D71270869B00028B543 /* CIFilter+AirKit.swift in Sources */,
 				5B09638C26FB47EB00879AE7 /* Result+AirKit.swift in Sources */,
 				5B8C1D0527049B9E0021B48E /* DispatchQueue+AirKit.swift in Sources */,
 				5B6A057626F9F6DD001A59C8 /* Collection+AirKit.swift in Sources */,
@@ -762,7 +774,7 @@
 				5B07F3EF26F9024A00976D89 /* CGFloatConvertible.swift in Sources */,
 				5B6A057826FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift in Sources */,
 				5B239FB52700ED790045382F /* DateFormatComponents.swift in Sources */,
-				5B639D6E270868C30028B543 /* CICategory+AirKit.swift in Sources */,
+				5B639D6E270868C30028B543 /* CICategory.swift in Sources */,
 				5B19FEFB270721C400F76EBD /* CATransform3D+AirKit.swift in Sources */,
 				5B09638E26FB50FC00879AE7 /* KeyedDecodingContainer+AirKit.swift in Sources */,
 				5B35BD192705B3010031AED3 /* CGSize+AirKit.swift in Sources */,
