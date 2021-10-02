@@ -7,8 +7,8 @@ import class CoreImage.CIFilter
 
 public extension CIFilter {
     /// Creates a new instance of filter object for a specific kind of filter category.
-    convenience init(category: CICategory) {
-        self.init(name: category.name, parameters: category.parameters)!
+    convenience init?(category: CICategory) {
+        self.init(name: category.name, parameters: category.parameters)
     }
 }
 #endif

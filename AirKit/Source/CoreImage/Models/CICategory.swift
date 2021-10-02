@@ -12,11 +12,6 @@ public struct CICategory {
     /// A list of key-value pairs to set as input values to the filter
     public let parameters: [String: Any]?
     
-    init(name: String, parameters: [String: Any]?) {
-        self.name = name
-        self.parameters = parameters
-    }
-    
     public enum Generator {
         /// Returns generated an output image representing the input data according to the ISO/IEC 18004:2006 standard.
         /// The width and height of each module (square dot) of the code in the output image is one point.

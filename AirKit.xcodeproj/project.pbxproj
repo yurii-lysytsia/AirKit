@@ -59,6 +59,8 @@
 		5B639D6B27084CEC0028B543 /* UIImage+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */; };
 		5B639D6E270868C30028B543 /* CICategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D6D270868C30028B543 /* CICategory.swift */; };
 		5B639D71270869B00028B543 /* CIFilter+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D70270869B00028B543 /* CIFilter+AirKit.swift */; };
+		5B639D7427086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D7327086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift */; };
+		5B639D7627086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D7527086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift */; };
 		5B6A057226F9DF9C001A59C8 /* Sequence+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057126F9DF9C001A59C8 /* Sequence+AirKit.swift */; };
 		5B6A057426F9E4C9001A59C8 /* Optionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057326F9E4C9001A59C8 /* Optionable.swift */; };
 		5B6A057626F9F6DD001A59C8 /* Collection+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057526F9F6DD001A59C8 /* Collection+AirKit.swift */; };
@@ -172,6 +174,8 @@
 		5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+AirKit.swift"; sourceTree = "<group>"; };
 		5B639D6D270868C30028B543 /* CICategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CICategory.swift; sourceTree = "<group>"; };
 		5B639D70270869B00028B543 /* CIFilter+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIFilter+AirKit.swift"; sourceTree = "<group>"; };
+		5B639D7327086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGraphicsImageRendererFormat+AirKit.swift"; sourceTree = "<group>"; };
+		5B639D7527086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGraphicsImageRenderer+AirKit.swift"; sourceTree = "<group>"; };
 		5B6A057126F9DF9C001A59C8 /* Sequence+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+AirKit.swift"; sourceTree = "<group>"; };
 		5B6A057326F9E4C9001A59C8 /* Optionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optionable.swift; sourceTree = "<group>"; };
 		5B6A057526F9F6DD001A59C8 /* Collection+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+AirKit.swift"; sourceTree = "<group>"; };
@@ -531,6 +535,8 @@
 			isa = PBXGroup;
 			children = (
 				5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */,
+				5B639D7327086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift */,
+				5B639D7527086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -748,6 +754,7 @@
 				5B07F3DC26F8F0ED00976D89 /* Bool+AirKit.swift in Sources */,
 				5B09639126FB585300879AE7 /* TopLevelDecoder+AirKit.swift in Sources */,
 				5B93EDBA2700D6E500A9BEDA /* Date+AirKit.swift in Sources */,
+				5B639D7427086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift in Sources */,
 				5B07F3E026F8F28300976D89 /* Float+AirKit.swift in Sources */,
 				5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */,
 				5B7660AE2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift in Sources */,
@@ -762,6 +769,7 @@
 				5B6A057426F9E4C9001A59C8 /* Optionable.swift in Sources */,
 				5B07F3E626F9001B00976D89 /* CGFloat+AirKit.swift in Sources */,
 				5B07F3F126F9038000976D89 /* Int+AirKit.swift in Sources */,
+				5B639D7627086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift in Sources */,
 				5B07F3EA26F901A300976D89 /* FloatConvertible.swift in Sources */,
 				5B9D3C002703322700FD822F /* Data+AirKit.swift in Sources */,
 				5B639D6B27084CEC0028B543 /* UIImage+AirKit.swift in Sources */,
@@ -984,7 +992,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AirKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = "${inherited}";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1020,7 +1028,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AirKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = "${inherited}";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
