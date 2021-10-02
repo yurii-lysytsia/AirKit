@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AirKit"
-  spec.version      = "0.4.0"
+  spec.version      = "0.4.1"
   spec.summary      = "Many extensions to speed up your coding time!"
 
   # This description is used to generate tags and improve search results.
