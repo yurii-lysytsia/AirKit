@@ -56,6 +56,8 @@
 		5B510BFC26F24AB200C21CDF /* AirKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B510BFA26F24AB200C21CDF /* AirKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B632B7926FE218500C3645D /* NSAttributedString+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B632B7826FE218500C3645D /* NSAttributedString+AirKit.swift */; };
 		5B632B7B26FE28D500C3645D /* NSAttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B632B7A26FE28D500C3645D /* NSAttributedStringTests.swift */; };
+		5B639D6B27084CEC0028B543 /* UIImage+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */; };
+		5B639D6E270868C30028B543 /* CICategory+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D6D270868C30028B543 /* CICategory+AirKit.swift */; };
 		5B6A057226F9DF9C001A59C8 /* Sequence+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057126F9DF9C001A59C8 /* Sequence+AirKit.swift */; };
 		5B6A057426F9E4C9001A59C8 /* Optionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057326F9E4C9001A59C8 /* Optionable.swift */; };
 		5B6A057626F9F6DD001A59C8 /* Collection+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A057526F9F6DD001A59C8 /* Collection+AirKit.swift */; };
@@ -166,6 +168,8 @@
 		5B510BFB26F24AB200C21CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B632B7826FE218500C3645D /* NSAttributedString+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+AirKit.swift"; sourceTree = "<group>"; };
 		5B632B7A26FE28D500C3645D /* NSAttributedStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringTests.swift; sourceTree = "<group>"; };
+		5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+AirKit.swift"; sourceTree = "<group>"; };
+		5B639D6D270868C30028B543 /* CICategory+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CICategory+AirKit.swift"; sourceTree = "<group>"; };
 		5B6A057126F9DF9C001A59C8 /* Sequence+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+AirKit.swift"; sourceTree = "<group>"; };
 		5B6A057326F9E4C9001A59C8 /* Optionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Optionable.swift; sourceTree = "<group>"; };
 		5B6A057526F9F6DD001A59C8 /* Collection+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+AirKit.swift"; sourceTree = "<group>"; };
@@ -432,6 +436,7 @@
 				5BBB16B526F625040094B14C /* Swift */,
 				5B09638826FB42F400879AE7 /* Foundation */,
 				5B07F3E426F9000600976D89 /* CoreGraphics */,
+				5B639D6C270868A50028B543 /* CoreImage */,
 				5B19FEF427071A3200F76EBD /* CoreAnimation */,
 				5B19FF0527076A6900F76EBD /* CoreLocation */,
 				5B7660B5270778C000CC0ABA /* UIKit */,
@@ -446,6 +451,21 @@
 				5BBB16B326F6237F0094B14C /* NumberConvertible.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5B639D6C270868A50028B543 /* CoreImage */ = {
+			isa = PBXGroup;
+			children = (
+				5B639D6D270868C30028B543 /* CICategory+AirKit.swift */,
+			);
+			path = CoreImage;
+			sourceTree = "<group>";
+		};
+		5B639D6F270868E30028B543 /* CoreImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreImage;
 			sourceTree = "<group>";
 		};
 		5B6A058626FA7E18001A59C8 /* AirKitTests */ = {
@@ -464,6 +484,7 @@
 				5B6A059126FA7E31001A59C8 /* Swift */,
 				5B0ED07D26FCD45500473155 /* Foundation */,
 				5B0ED08226FCD48F00473155 /* CoreGraphics */,
+				5B639D6F270868E30028B543 /* CoreImage */,
 				5B19FEF527071A5B00F76EBD /* CoreAnimation */,
 				5B19FF0627076A7900F76EBD /* CoreLocation */,
 				5B7660B6270778C900CC0ABA /* UIKit */,
@@ -498,6 +519,7 @@
 		5B7660B5270778C000CC0ABA /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -730,6 +752,7 @@
 				5B07F3F126F9038000976D89 /* Int+AirKit.swift in Sources */,
 				5B07F3EA26F901A300976D89 /* FloatConvertible.swift in Sources */,
 				5B9D3C002703322700FD822F /* Data+AirKit.swift in Sources */,
+				5B639D6B27084CEC0028B543 /* UIImage+AirKit.swift in Sources */,
 				5B93EDB82700D23000A9BEDA /* DateFormatter+AirKit.swift in Sources */,
 				5B6A057C26FA29E0001A59C8 /* Comparable+AirKit.swift in Sources */,
 				5B07F3EC26F901FC00976D89 /* DoubleConvertible.swift in Sources */,
@@ -739,6 +762,7 @@
 				5B07F3EF26F9024A00976D89 /* CGFloatConvertible.swift in Sources */,
 				5B6A057826FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift in Sources */,
 				5B239FB52700ED790045382F /* DateFormatComponents.swift in Sources */,
+				5B639D6E270868C30028B543 /* CICategory+AirKit.swift in Sources */,
 				5B19FEFB270721C400F76EBD /* CATransform3D+AirKit.swift in Sources */,
 				5B09638E26FB50FC00879AE7 /* KeyedDecodingContainer+AirKit.swift in Sources */,
 				5B35BD192705B3010031AED3 /* CGSize+AirKit.swift in Sources */,

@@ -96,6 +96,9 @@ This is sugar framework that contains many different extensions for native Swift
 - [ ] Once (method wich is called once);
 - [ ] AsyncOperationQueue (model bases on `OperationsQueue` and `DispatchSemaphore` to make it async and sireal)
 
+### v 1.3 | CoreImage
+- [ ] Extensions for `CIFilter` (https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference);
+
 ## 🚀 Installation
 
 ### [CocoaPods](https://cocoapods.org) 
