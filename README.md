@@ -56,12 +56,12 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `UIEdgeInsets`;
 - [X] Extensions for `UIBezierPath`;
 - [X] Extensions for `UILayoutPriority`;
+- [ ] Extensions for `UIBarButtonItem`;
+- [ ] Extensions for `UIButton`;
 
 ### v 0.5 | Extensions for `UIKit` (Part 2)
 - [ ] Extensions for different `UIView` elements (will write about it later);
 - [ ] Extensions for different `UIScrollView` elements (will write about it later);
-- [ ] Actions blocks instead target for different UI elements, like button actions with blocks;
-- [ ] Then, like https://github.com/devxoul/Then;
 
 ### v 0.6 | Extensions for `UIKit` (Part 3)
 - [ ] Extensions for different `UIViewController` subclasses (will write about it later);
@@ -89,10 +89,12 @@ This is sugar framework that contains many different extensions for native Swift
 
 ### v 1.2 | Helpers
 - [ ] Common blocks typealias to convinient usage;
+- [ ] Actions blocks instead target for different UI elements, like button actions with blocks;
 - [ ] Closures for different components with old target (simple version of https://github.com/vhesener/Closures);
 - [ ] Multicast delegate (model which can collect multiple delegate);
 - [ ] Once (method wich is called once);
 - [ ] AsyncOperationQueue (model bases on `OperationsQueue` and `DispatchSemaphore` to make it async and sireal)
+- [ ] Then, like https://github.com/devxoul/Then;
 
 ### v 1.3 | Extensions for  [`CoreImage`](AirKit/Source/CoreImage)
 - [X] Extensions for `CIContext`;
