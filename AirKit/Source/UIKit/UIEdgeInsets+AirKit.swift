@@ -127,10 +127,10 @@ public extension UIEdgeInsets {
     ///
     static func / (lhs: UIEdgeInsets, rhs: UIEdgeInsets) -> UIEdgeInsets {
         UIEdgeInsets(
-            top: lhs.top * rhs.top,
-            left: lhs.left * rhs.left,
-            bottom: lhs.bottom * rhs.bottom,
-            right: lhs.right * rhs.right
+            top: lhs.top / rhs.top,
+            left: lhs.left / rhs.left,
+            bottom: lhs.bottom / rhs.bottom,
+            right: lhs.right / rhs.right
         )
     }
 
@@ -139,7 +139,7 @@ public extension UIEdgeInsets {
     ///     var insets = UIEdgeInsets(top: 4, left: 4, bottom: 6, right: 8)
     ///     insets /= UIEdgeInsets(top: 1, left: 2, bottom: 3, right: 4) // insets == UIEdgeInsets(top: 4, left: 2, bottom: 2, right: 2)
     ///
-    static func /= (lhs: inout UIEdgeInsets, rhs: UIEdgeInsets) { lhs = lhs * rhs }
+    static func /= (lhs: inout UIEdgeInsets, rhs: UIEdgeInsets) { lhs = lhs / rhs }
 }
 
 // MARK: - Extensions | Operators | CGFloat
