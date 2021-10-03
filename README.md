@@ -53,8 +53,8 @@ This is sugar framework that contains many different extensions for native Swift
 ### Extensions for [`UIKit`](AirKit/Source/UIKit)
 - [X] Extensions for `UIGraphicsImageRenderer`, `UIGraphicsImageRendererFormat` and `UIImage`;
 - [X] Extensions for `UIColor`;
-- [ ] Extensions for `UIEdgeInsets`;
-- [ ] Extensions for `UIBezierPath`;
+- [X] Extensions for `UIEdgeInsets`;
+- [X] Extensions for `UIBezierPath`;
 - [ ] Extensions for `UIFont`;
 - [ ] Extensions for `UIGestureRecognizer`;
 - [ ] Extensions for `UILayoutPriority`;
