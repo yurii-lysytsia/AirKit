@@ -55,7 +55,6 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `UIColor`;
 - [X] Extensions for `UIEdgeInsets`;
 - [X] Extensions for `UIBezierPath`;
-- [ ] Extensions for `UIFont`;
 - [ ] Extensions for `UIGestureRecognizer`;
 - [ ] Extensions for `UILayoutPriority`;
 

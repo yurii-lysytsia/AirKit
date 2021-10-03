@@ -19,21 +19,12 @@ opt_in_rules:
   - redundant_nil_coalescing
   - weak_delegate
 
+# Disables rules
 disabled_rules:
 - trailing_whitespace
 - nesting
 
-excluded:
-  - Pods
-  - /Incards/Resources/R.generated.swift
-  - /IncardsCore/Resources/R.generated.swift
-  - /IncardsCommon/Resources/R.generated.swift
-  - /IncardsHomeFlow/Resources/R.generated.swift
-  - /IncardsSettingsFlow/Resources/R.generated.swift
-  - /IncardsCategoriesFlow/Resources/R.generated.swift
-  - /IncardsGameFlow/Resources/R.generated.swift
-  - /IncardsLanguageFlow/Resources/R.generated.swift
-
+# Custom configurations
 line_length:
   warning: 200
   ignores_comments: true
@@ -74,3 +65,25 @@ identifier_name:
     error: 60
 
 shorthand_operator: warning
+
+# Custom rules
+custom_rules:
+  comments_space:
+    name: "Space After Comment"
+    regex: '(^ *//\w+)'
+    message: "There should be a space after //"
+    severity: warning
+
+  empty_closure_params:
+    included: ".*.swift"
+    name: "Empty closure params"
+    regex: '\{ (\(\) -> Void in)$'
+    message: "`() -> Void in` should be avoided"
+    severity: warning
+
+  final_class:
+    included: ".*.swift"
+    name: "Final class requrement"
+    regex: '^class'
+    message: "All classes must be final or nonfinal"
+    saverity: error
