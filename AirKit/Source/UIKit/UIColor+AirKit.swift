@@ -216,15 +216,22 @@ public extension UIColor {
     ///     UIColor.systemRed.hexString(allowsShort: true) // "#FF3B30"
     ///
     /// - Parameter allowsShort: Returns short hex version if `true` and if it is possible.
-    func hexString(allowsShort: Bool = false) -> String {
+    func hexString(includeAlpha: Bool = false, allowsShort: Bool = false) -> String {
         let components = rgba255Components
         
-        var hex = String(format: "#%02X%02X%02X", components.red, components.green, components.blue)
+        // Create hex string value with 6 or 8 (with alpha) digits.
+        var hex = String(format: "%02X%02X%02X", components.red, components.green, components.blue)
+        if includeAlpha {
+            hex.prepend(prefix: String(format: "%02X", components.alpha))
+        }
         
+        // Remove second value in each group if the digits the same.
         if allowsShort {
-            let chars = Array(hex)
-            guard allowsShort, hex.count == 7, chars[1] == chars[2], chars[3] == chars[4], chars[5] == chars[6] else { return hex }
-            hex = "#\(chars[1])\(chars[3])\(chars[5])"
+            let hexArray = Array(hex).grouping(by: 2)
+            // Check is digits the same and take only first digit from each group
+            if hexArray.allSatisfy({ $0.first == $0.last }) {
+                hex = String(hexArray.compactMap({ $0.first }))
+            }
         }
         
         return hex
@@ -237,8 +244,6 @@ public extension UIColor {
     }
     
     /// Creates a new color object using the hexadecimal value with alpha.
-    ///
-    /// - Note: `alpha` component will ignore if `hex` has 8 digits format and contais alpha.
     convenience init(argb hex: Int) {
         let components = RGBA255Components(argb: hex)
         self.init(components: components)

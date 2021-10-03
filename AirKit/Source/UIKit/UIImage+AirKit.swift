@@ -146,7 +146,6 @@ public extension UIImage {
 }
 
 // MARK: - Extensions | CoreImage | Average
-import UIKit
 
 public extension UIImage {
     /// Returns a color instance with an average color for the image.
