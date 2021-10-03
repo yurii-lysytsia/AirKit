@@ -58,6 +58,7 @@
 		5B60C4B22709B62500D2E190 /* UIEdgeInsetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60C4B12709B62500D2E190 /* UIEdgeInsetsTests.swift */; };
 		5B60C4B4270A0A2300D2E190 /* UIBezierPath+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60C4B3270A0A2300D2E190 /* UIBezierPath+AirKit.swift */; };
 		5B60C4B6270A0A3600D2E190 /* UIBezierPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60C4B5270A0A3600D2E190 /* UIBezierPathTests.swift */; };
+		5B60C4BC270A1A2400D2E190 /* UILayoutPriority+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60C4BB270A1A2400D2E190 /* UILayoutPriority+AirKit.swift */; };
 		5B632B7926FE218500C3645D /* NSAttributedString+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B632B7826FE218500C3645D /* NSAttributedString+AirKit.swift */; };
 		5B632B7B26FE28D500C3645D /* NSAttributedStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B632B7A26FE28D500C3645D /* NSAttributedStringTests.swift */; };
 		5B639D6B27084CEC0028B543 /* UIImage+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */; };
@@ -186,6 +187,7 @@
 		5B60C4B12709B62500D2E190 /* UIEdgeInsetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEdgeInsetsTests.swift; sourceTree = "<group>"; };
 		5B60C4B3270A0A2300D2E190 /* UIBezierPath+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+AirKit.swift"; sourceTree = "<group>"; };
 		5B60C4B5270A0A3600D2E190 /* UIBezierPathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierPathTests.swift; sourceTree = "<group>"; };
+		5B60C4BB270A1A2400D2E190 /* UILayoutPriority+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILayoutPriority+AirKit.swift"; sourceTree = "<group>"; };
 		5B632B7826FE218500C3645D /* NSAttributedString+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+AirKit.swift"; sourceTree = "<group>"; };
 		5B632B7A26FE28D500C3645D /* NSAttributedStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringTests.swift; sourceTree = "<group>"; };
 		5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+AirKit.swift"; sourceTree = "<group>"; };
@@ -578,6 +580,7 @@
 				5B639D7527086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift */,
 				5B639D7327086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift */,
 				5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */,
+				5B60C4BB270A1A2400D2E190 /* UILayoutPriority+AirKit.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -825,6 +828,7 @@
 				5B07F3EA26F901A300976D89 /* FloatConvertible.swift in Sources */,
 				5B9D3C002703322700FD822F /* Data+AirKit.swift in Sources */,
 				5B639D6B27084CEC0028B543 /* UIImage+AirKit.swift in Sources */,
+				5B60C4BC270A1A2400D2E190 /* UILayoutPriority+AirKit.swift in Sources */,
 				5B93EDB82700D23000A9BEDA /* DateFormatter+AirKit.swift in Sources */,
 				5B6A057C26FA29E0001A59C8 /* Comparable+AirKit.swift in Sources */,
 				5B07F3EC26F901FC00976D89 /* DoubleConvertible.swift in Sources */,
