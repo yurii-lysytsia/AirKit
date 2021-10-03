@@ -15,10 +15,14 @@ class UIColorTests: XCTestCase {
         let components_0 = UIColor.systemRed.grayscaleComponents
         XCTAssertEqual(components_0.white, 0.54, accuracy: 0.01)
         XCTAssertEqual(components_0.alpha, 1, accuracy: 0.01)
+        XCTAssertEqual(components_0.description, "GrayscaleComponents(white: \(components_0.white), alpha: \(components_0.alpha))")
+        XCTAssertEqual(components_0.debugDescription, components_0.description)
         
         let components_1 = UIColor.gray.withAlphaComponent(0.75).grayscaleComponents
         XCTAssertEqual(components_1.white, 0.5, accuracy: 0.01)
         XCTAssertEqual(components_1.alpha, 0.75, accuracy: 0.01)
+        XCTAssertEqual(components_1.description, "GrayscaleComponents(white: \(components_1.white), alpha: \(components_1.alpha))")
+        XCTAssertEqual(components_1.debugDescription, components_1.description)
     }
  
     func testRGBAComponents() {
@@ -29,6 +33,9 @@ class UIColorTests: XCTestCase {
         XCTAssertEqual(components.alpha, 1, accuracy: 0.01)
         
         XCTAssertEqual(UIColor(components: components).rgbaComponents, components)
+        
+        XCTAssertEqual(components.description, "RGBAComponents(red: \(components.red), green: \(components.green), blue: \(components.blue), alpha: \(components.alpha))")
+        XCTAssertEqual(components.debugDescription, components.description)
     }
     
     func testRGBA255Components() {
@@ -40,6 +47,9 @@ class UIColorTests: XCTestCase {
         
         XCTAssertEqual(UIColor(components: components).rgba255Components, components)
         XCTAssertEqual(UIColor(red: 255, green: 59, blue: 48, alpha: 1).rgba255Components, components)
+        
+        XCTAssertEqual(components.description, "RGBA255Components(red: \(components.red), green: \(components.green), blue: \(components.blue), alpha: \(components.alpha))")
+        XCTAssertEqual(components.debugDescription, components.description)
     }
     
     func testHSBAComponents() {
@@ -50,6 +60,9 @@ class UIColorTests: XCTestCase {
         XCTAssertEqual(components.alpha, 1, accuracy: 0.01)
         
         XCTAssertEqual(UIColor(components: components).hsbaComponents, components)
+        
+        XCTAssertEqual(components.description, "HSBAComponents(hue: \(components.hue), saturation: \(components.saturation), brightness: \(components.brightness), alpha: \(components.alpha))")
+        XCTAssertEqual(components.debugDescription, components.description)
     }
     
     func testHexComponents() {

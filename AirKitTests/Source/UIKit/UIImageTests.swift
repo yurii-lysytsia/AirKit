@@ -46,4 +46,16 @@ class UIImageTests: XCTestCase {
         XCTAssertNotNil(UIImage(category: CICategory.Generator.qrCode(inputMessage: "Hello world!")))
     }
     
+    func testAverage() {
+        let image = UIImage(named: "image", in: Bundle(for: UIImageTests.self), compatibleWith: nil)
+        XCTAssertNotNil(image)
+        let color = image!.averageColor
+        XCTAssertNotNil(color)
+        let components = color!.rgbaComponents
+        XCTAssertEqual(components.red, 0.224, accuracy: 0.001)
+        XCTAssertEqual(components.green, 0.012, accuracy: 0.001)
+        XCTAssertEqual(components.blue, 0.047, accuracy: 0.001)
+        XCTAssertEqual(components.alpha, 1)
+    }
+    
 }

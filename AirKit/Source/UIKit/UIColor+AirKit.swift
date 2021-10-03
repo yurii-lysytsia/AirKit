@@ -42,8 +42,11 @@ public extension UIColor {
     }
     
     /// Represented grayscale components values as `CGFloat` numbers between 0 and 1.
-    struct GrayscaleComponents: Equatable {
+    struct GrayscaleComponents: Equatable, CustomStringConvertible, CustomDebugStringConvertible {
         public let white, alpha: CGFloat
+        
+        public var description: String { "\(GrayscaleComponents.self)(white: \(white), alpha: \(alpha))" }
+        public var debugDescription: String { "\(GrayscaleComponents.self)(white: \(white), alpha: \(alpha))" }
     }
 }
 
@@ -73,8 +76,11 @@ public extension UIColor {
     }
     
     /// Represented RGBA components values as `CGFloat` numbers between 0 and 1.
-    struct RGBAComponents: Equatable {
+    struct RGBAComponents: Equatable, CustomStringConvertible, CustomDebugStringConvertible {
         public let red, green, blue, alpha: CGFloat
+        
+        public var description: String { "\(RGBAComponents.self)(red: \(red), green: \(green), blue: \(blue), alpha: \(alpha))" }
+        public var debugDescription: String { "\(RGBAComponents.self)(red: \(red), green: \(green), blue: \(blue), alpha: \(alpha))" }
         
         public init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
             self.red = red.clamped(lowerBound: 0, upperBound: 1)
@@ -119,9 +125,12 @@ public extension UIColor {
     }
     
     /// Represented RGBA(255) components values as `Int` numbers between 0 and 255.
-    struct RGBA255Components: Equatable {
+    struct RGBA255Components: Equatable, CustomStringConvertible, CustomDebugStringConvertible {
         public let red, green, blue: Int
         public let alpha: CGFloat
+        
+        public var description: String { "\(RGBA255Components.self)(red: \(red), green: \(green), blue: \(blue), alpha: \(alpha))" }
+        public var debugDescription: String { "\(RGBA255Components.self)(red: \(red), green: \(green), blue: \(blue), alpha: \(alpha))" }
         
         public init(red: Int, green: Int, blue: Int, alpha: CGFloat) {
             self.red = red.clamped(lowerBound: 0, upperBound: RGBA255Components.colorDivider.toInt())
@@ -188,8 +197,11 @@ public extension UIColor {
     }
     
     /// Represented HSBA components values as `CGFloat` numbers between 0 and 1.
-    struct HSBAComponents: Equatable {
+    struct HSBAComponents: Equatable, CustomStringConvertible, CustomDebugStringConvertible {
         public let hue, saturation, brightness, alpha: CGFloat
+        
+        public var description: String { "\(HSBAComponents.self)(hue: \(hue), saturation: \(saturation), brightness: \(brightness), alpha: \(alpha))" }
+        public var debugDescription: String { "\(HSBAComponents.self)(hue: \(hue), saturation: \(saturation), brightness: \(brightness), alpha: \(alpha))" }
     }
 }
 
