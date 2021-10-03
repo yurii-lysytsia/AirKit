@@ -8,7 +8,7 @@ import struct CoreGraphics.CGFloat
 
 public extension UIColor {
     /// Returns a new random color with given alpha.
-    static func random(alpha: CGFloat) -> UIColor {
+    static func random(alpha: CGFloat = 1) -> UIColor {
         UIColor(
             red: CGFloat.random(in: 0...1),
             green: CGFloat.random(in: 0...1),
@@ -113,7 +113,7 @@ public extension UIColor {
     }
     
     /// Create a new color object using the specified opacity and RGB (255) component values.
-    convenience init?(red: Int, green: Int, blue: Int, alpha: CGFloat = 1) {
+    convenience init(red: Int, green: Int, blue: Int, alpha: CGFloat = 1) {
         let components = RGBA255Components(red: red, green: green, blue: blue, alpha: alpha)
         self.init(components: components)
     }
@@ -196,47 +196,6 @@ public extension UIColor {
 // MARK: - Extensions | HEX
 
 public extension UIColor {
-    /// Returns hexadecimal value representation of the color.
-    func hexValue(includeAlpha: Bool = false) -> Int {
-        let components = rgba255Components
-        var hexValue: Int = 0
-        hexValue += Int(components.alpha * RGBA255Components.colorDivider) << 24
-        hexValue += components.red << 16
-        hexValue += components.green << 8
-        hexValue += components.blue
-        return hexValue
-    }
-    
-    /// Returns hexadecimal value string.
-    ///
-    ///     UIColor.white.hexString() // "#FFFFFF"
-    ///     UIColor.white.hexString(allowsShort: true) // "#FFF"
-    ///
-    ///     UIColor.systemRed.hexString() // "#FF3B30"
-    ///     UIColor.systemRed.hexString(allowsShort: true) // "#FF3B30"
-    ///
-    /// - Parameter allowsShort: Returns short hex version if `true` and if it is possible.
-    func hexString(includeAlpha: Bool = false, allowsShort: Bool = false) -> String {
-        let components = rgba255Components
-        
-        // Create hex string value with 6 or 8 (with alpha) digits.
-        var hex = String(format: "%02X%02X%02X", components.red, components.green, components.blue)
-        if includeAlpha {
-            hex.prepend(prefix: String(format: "%02X", components.alpha))
-        }
-        
-        // Remove second value in each group if the digits the same.
-        if allowsShort {
-            let hexArray = Array(hex).grouping(by: 2)
-            // Check is digits the same and take only first digit from each group
-            if hexArray.allSatisfy({ $0.first == $0.last }) {
-                hex = String(hexArray.compactMap({ $0.first }))
-            }
-        }
-        
-        return hex
-    }
-    
     /// Creates a new color object using the hexadecimal value with alpha.
     convenience init(hex: Int, alpha: CGFloat = 1) {
         let components = RGBA255Components(hex: hex, alpha: alpha)
@@ -271,15 +230,62 @@ public extension UIColor {
             self.init(hex: hexValue, alpha: alpha)
         }
     }
+    
+    /// Returns hexadecimal value representation of the color.
+    func hexValue(includeAlpha: Bool = false) -> Int {
+        let components = rgba255Components
+        var hexValue: Int = 0
+        if includeAlpha {
+            hexValue += Int(components.alpha * RGBA255Components.colorDivider) << 24
+        }
+        hexValue += components.red << 16
+        hexValue += components.green << 8
+        hexValue += components.blue
+        return hexValue
+    }
+    
+    /// Returns hexadecimal value string.
+    ///
+    ///     UIColor.white.hexString() // "#FFFFFF"
+    ///     UIColor.white.hexString(allowsShort: true) // "#FFF"
+    ///
+    ///     UIColor.systemRed.hexString() // "#FF3B30"
+    ///     UIColor.systemRed.hexString(allowsShort: true) // "#FF3B30"
+    ///
+    /// - Parameter allowsShort: Returns short hex version if `true` and if it is possible.
+    func hexString(includeAlpha: Bool = false, allowsShort: Bool = false) -> String {
+        let components = rgba255Components
+        
+        // Create hex string value with 6 or 8 (with alpha) digits.
+        var hex = String(format: "%02X%02X%02X", components.red, components.green, components.blue)
+        if includeAlpha {
+            let alpha = String(format: "%02X", (components.alpha * RGBA255Components.colorDivider).toInt())
+            hex = alpha.appending(hex)
+        }
+        
+        // Remove second value in each group if the digits the same.
+        if allowsShort {
+            let hexArray = Array(hex).grouping(by: 2)
+            // Check is digits the same and take only first digit from each group
+            if hexArray.allSatisfy({ $0.first == $0.last }) {
+                hex = String(hexArray.compactMap({ $0.first }))
+            }
+        }
+        
+        return hex.prepending(prefix: "#")
+    }
 }
 
 // MARK: - Extensions | Inits
 
 public extension UIColor {
     /// Create a new color with different colors for light and dark mode.
-    @available(iOS 13.0, *)
     convenience init(light: UIColor, dark: UIColor) {
-        self.init(dynamicProvider: { $0.userInterfaceStyle == .dark ? dark : light })
+        if #available(iOS 13.0, *) {
+            self.init(dynamicProvider: { $0.userInterfaceStyle == .dark ? dark : light })
+        } else {
+            self.init(cgColor: light.cgColor)
+        }
     }
 }
 #endif
