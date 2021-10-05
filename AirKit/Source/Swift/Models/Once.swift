@@ -27,4 +27,3 @@ public final class Once {
         try block?()
     }
 }
-

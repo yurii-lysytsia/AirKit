@@ -1,7 +1,11 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import UIKit
+#if canImport(UIKit) && canImport(CoreGraphics) && canImport(QuartzCore) && canImport(ObjectiveC)
+import class UIKit.UIView
+import struct CoreGraphics.CGFloat
+import struct QuartzCore.CACornerMask
+import func ObjectiveC.objc_getAssociatedObject
+import func ObjectiveC.objc_setAssociatedObject
 
 // MARK: - Extensions | Subviews
 
