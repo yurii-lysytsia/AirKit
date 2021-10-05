@@ -102,5 +102,78 @@ public extension UIView {
         }
         return nil
     }
+    
+    /// Add an array of subviews to the view.
+    func addSubviews(_ subviews: [UIView]) {
+        subviews.forEach { addSubview($0) }
+    }
+}
+
+// MARK: - Extensions | Layer | Corner Radius
+
+extension UIView {
+    /// Corner radius of view's layer.
+    var layerCornerRadius: CGFloat {
+        get { layer.cornerRadius }
+        set { roundCorners(cornerRadius: newValue) }
+    }
+    
+    /// Set layer corner radius and masked corners.
+    ///
+    /// - Note: `cornerRadius` must be greater than `0` otherwise view will remove corner radius.
+    func roundCorners(_ maskedCorners: CACornerMask = .allCorners, cornerRadius: CGFloat) {
+        layer.maskedCorners = maskedCorners
+        layer.cornerRadius = max(cornerRadius, 0) // ?? frame.size.minDimension / 2
+        layer.masksToBounds = cornerRadius > 0
+    }
+}
+
+// MARK: - Extensions | Layer | Circle
+
+public extension UIView {
+    private static var isCircledAssociatedKey = "dev.lysytsia.air.kit.UIView.isCircled"
+    
+    /// A Boolean value that determines whether the view is permanently circled. Default is `false`.
+    ///
+    /// Corner radius is updated when `layoutSubviews()` method called if this value is `true`.
+    ///
+    /// - Note: To use this you have to use method swizzling.
+    var isCircled: Bool {
+        get { objc_getAssociatedObject(self, &UIView.isCircledAssociatedKey) as? Bool ?? false }
+        set {
+            newValue ? roundCornersToCircle() : roundCorners(cornerRadius: 0)
+            objc_setAssociatedObject(self, &UIView.isCircledAssociatedKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    
+    /// Set once layer corner radius equal to half of view's size minimal dimension.
+    func roundCornersToCircle() { layerCornerRadius = frame.size.minDimension / 2 }
+}
+
+// MARK: - Extensions | Swizzling
+
+extension UIView {
+    /// Alternative to `class func initialize()`.
+    private static let initialization = Once {
+        try Swizzle.swizzleInstanceMethod(
+            classType: UIView.self,
+            original: #selector(layoutSubviews),
+            swizzled: #selector(swizzledLayoutSubviews)
+        )
+    }
+    
+    /// Swizzle needed methods.
+    ///
+    /// 1. `layoutSubviews()` method for `isCircled`.
+    static func swizzle() throws {
+        try initialization.run()
+    }
+
+    @objc private func swizzledLayoutSubviews() {
+        swizzledLayoutSubviews()
+        if isCircled {
+            roundCornersToCircle()
+        }
+    }
 }
 #endif
