@@ -2,6 +2,7 @@
 
 #if canImport(UIKit) && canImport(CoreGraphics) && canImport(QuartzCore) && canImport(ObjectiveC)
 import class UIKit.UIView
+import class UIKit.UIColor
 import struct CoreGraphics.CGFloat
 import struct QuartzCore.CACornerMask
 import func ObjectiveC.objc_getAssociatedObject
@@ -116,7 +117,7 @@ public extension UIView {
 // MARK: - Extensions | Layer | Corner Radius
 
 public extension UIView {
-    /// Corner radius of view's layer.
+    /// The corner radius of view's layer.
     var layerCornerRadius: CGFloat {
         get { layer.cornerRadius }
         set { roundCorners(cornerRadius: newValue) }
@@ -151,6 +152,30 @@ public extension UIView {
     
     /// Set once layer corner radius equal to half of view's size minimal dimension.
     func roundCornersToCircle() { layerCornerRadius = frame.size.minDimension / 2 }
+}
+
+// MARK: - Extensions | Layer | Border
+
+extension UIView {
+    /// The color of the layer’s border.
+    var layerBorderColor: UIColor? {
+        get { layer.borderColor.map { .init(cgColor: $0) } }
+        set { layer.borderColor = newValue?.cgColor }
+    }
+
+    /// The width of the layer’s border.
+    var layerBorderWidth: CGFloat {
+        get { layer.borderWidth }
+        set { layer.borderWidth = newValue }
+    }
+    
+    /// Set layer border color and width corners
+    ///
+    /// - Note: Layer border removes if color will be `nil`.
+    func setLayerBorder(color: UIColor?, width: CGFloat) {
+        layerBorderColor = color
+        layerBorderWidth = color != nil ? max(width, 0) : 0
+    }
 }
 
 // MARK: - Extensions | Swizzling
