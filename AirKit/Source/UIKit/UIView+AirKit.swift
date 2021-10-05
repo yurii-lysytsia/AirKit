@@ -117,7 +117,7 @@ public extension UIView {
 // MARK: - Extensions | Layer | Corner Radius
 
 public extension UIView {
-    /// The corner radius of view's layer.
+    /// The radius to use when drawing rounded corners for the layer’s background.
     var layerCornerRadius: CGFloat {
         get { layer.cornerRadius }
         set { roundCorners(cornerRadius: newValue) }
@@ -156,7 +156,7 @@ public extension UIView {
 
 // MARK: - Extensions | Layer | Border
 
-extension UIView {
+public extension UIView {
     /// The color of the layer’s border.
     var layerBorderColor: UIColor? {
         get { layer.borderColor.map { .init(cgColor: $0) } }
@@ -175,6 +175,42 @@ extension UIView {
     func setLayerBorder(color: UIColor?, width: CGFloat) {
         layerBorderColor = color
         layerBorderWidth = color != nil ? max(width, 0) : 0
+    }
+}
+
+// MARK: - Extensions | Layer | Shadows
+
+public extension UIView {
+    /// The color of the layer’s shadow.
+    var layerShadowColor: UIColor? {
+        get { layer.shadowColor.map { .init(cgColor: $0) } }
+        set { layer.shadowColor = newValue?.cgColor }
+    }
+
+    /// The offset (in points) of the layer’s shadow.
+    var layerShadowOffset: CGSize {
+        get { layer.shadowOffset }
+        set { layer.shadowOffset = newValue }
+    }
+
+    /// The opacity of the layer’s shadow.
+    var layerShadowOpacity: Float {
+        get { layer.shadowOpacity }
+        set { layer.shadowOpacity = newValue }
+    }
+
+    /// The blur radius (in points) used to render the layer’s shadow.
+    var layerShadowRadius: CGFloat {
+        get { layer.shadowRadius }
+        set { layer.shadowRadius = newValue }
+    }
+    
+    /// Configure layer's shadow with given parameters.
+    func setLayerShadow(color: UIColor, radius: CGFloat, offset: CGSize, opacity: Float) {
+        layerShadowColor = color
+        layerShadowRadius = radius
+        layerShadowOffset = offset
+        layerShadowOpacity = opacity
     }
 }
 
