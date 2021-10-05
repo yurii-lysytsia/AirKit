@@ -23,6 +23,7 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `Optional`;
 - [X] Extensions for `Result`;
 - [X] Extensions for `Codable` and `KeyedDecodingContainer`;
+- [X] Extensions for `KeyPath`;
 - [X] `Once` - class than manages only one execution block of code;
 
 ### Extensions for [`Foundation`](AirKit/Source/Foundation)

@@ -128,7 +128,6 @@ public extension UIView {
     func roundCorners(_ maskedCorners: CACornerMask = .allCorners, cornerRadius: CGFloat) {
         layer.maskedCorners = maskedCorners
         layer.cornerRadius = max(cornerRadius, 0)
-        layer.masksToBounds = cornerRadius > 0
     }
 }
 

@@ -127,6 +127,7 @@
 		5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16B326F6237F0094B14C /* NumberConvertible.swift */; };
 		5BD4AE76270B66ED00D65DBC /* UIView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */; };
 		5BD4AE79270B66FE00D65DBC /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4AE78270B66FE00D65DBC /* UIViewTests.swift */; };
+		5BF095DB270CAC7D006DF13C /* KeyPath+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF095DA270CAC7D006DF13C /* KeyPath+AirKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -266,6 +267,7 @@
 		5BBB16C026F6308E0094B14C /* AirKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AirKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AirKit.swift"; sourceTree = "<group>"; };
 		5BD4AE78270B66FE00D65DBC /* UIViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTests.swift; sourceTree = "<group>"; };
+		5BF095DA270CAC7D006DF13C /* KeyPath+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyPath+AirKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -653,6 +655,7 @@
 				5B07F3DF26F8F28300976D89 /* Float+AirKit.swift */,
 				5B07F3F026F9038000976D89 /* Int+AirKit.swift */,
 				5B09638D26FB50FC00879AE7 /* KeyedDecodingContainer+AirKit.swift */,
+				5BF095DA270CAC7D006DF13C /* KeyPath+AirKit.swift */,
 				5B46AD7226F88FC8002BC409 /* Optional+AirKit.swift */,
 				5B6A057726FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift */,
 				5B09638B26FB47EB00879AE7 /* Result+AirKit.swift */,
@@ -827,6 +830,7 @@
 				5B8C1CFB27045FB50021B48E /* FileManager+AirKit.swift in Sources */,
 				5B19FEF927071F8C00F76EBD /* CAGradientLayer+AirKit.swift in Sources */,
 				5B639D71270869B00028B543 /* CIFilter+AirKit.swift in Sources */,
+				5BF095DB270CAC7D006DF13C /* KeyPath+AirKit.swift in Sources */,
 				5B09638C26FB47EB00879AE7 /* Result+AirKit.swift in Sources */,
 				5B8C1D0527049B9E0021B48E /* DispatchQueue+AirKit.swift in Sources */,
 				5B6A057626F9F6DD001A59C8 /* Collection+AirKit.swift in Sources */,
