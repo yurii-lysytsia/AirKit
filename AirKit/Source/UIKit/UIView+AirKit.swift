@@ -115,7 +115,7 @@ public extension UIView {
 
 // MARK: - Extensions | Layer | Corner Radius
 
-extension UIView {
+public extension UIView {
     /// Corner radius of view's layer.
     var layerCornerRadius: CGFloat {
         get { layer.cornerRadius }
@@ -127,7 +127,7 @@ extension UIView {
     /// - Note: `cornerRadius` must be greater than `0` otherwise view will remove corner radius.
     func roundCorners(_ maskedCorners: CACornerMask = .allCorners, cornerRadius: CGFloat) {
         layer.maskedCorners = maskedCorners
-        layer.cornerRadius = max(cornerRadius, 0) // ?? frame.size.minDimension / 2
+        layer.cornerRadius = max(cornerRadius, 0)
         layer.masksToBounds = cornerRadius > 0
     }
 }
