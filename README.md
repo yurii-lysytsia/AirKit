@@ -23,6 +23,7 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `Optional`;
 - [X] Extensions for `Result`;
 - [X] Extensions for `Codable` and `KeyedDecodingContainer`;
+- [X] `Once` - class than manages only one execution block of code;
 
 ### Extensions for [`Foundation`](AirKit/Source/Foundation)
 - [X] Extensions for `NSAttributedString`;
@@ -93,9 +94,10 @@ This is sugar framework that contains many different extensions for native Swift
 - [ ] Actions blocks instead target for different UI elements, like button actions with blocks;
 - [ ] Closures for different components with old target (simple version of https://github.com/vhesener/Closures);
 - [ ] Multicast delegate (model which can collect multiple delegate);
-- [ ] Once (method wich is called once);
+- [ ] Convenience swizzling methods;
 - [ ] AsyncOperationQueue (model bases on `OperationsQueue` and `DispatchSemaphore` to make it async and sireal)
 - [ ] Then, like https://github.com/devxoul/Then;
+- [ ] Extensions for `UIView` and `NSLayoutConstraint`;
 
 ### v 1.3 | Extensions for  [`CoreImage`](AirKit/Source/CoreImage)
 - [X] Extensions for `CIContext`;

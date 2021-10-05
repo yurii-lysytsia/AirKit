@@ -48,4 +48,27 @@ public extension DispatchQueue {
         return DispatchQueue.getSpecific(key: key) != nil
     }
 }
+
+// MARK: - Extensions | Dispatch Once
+
+public extension DispatchQueue {
+    /// Queue to synchronize once tracker.
+    private static let synchronizeQueue = DispatchQueue(label: "dev.lysytsia.air.kit.DispatchQueue.synchronizeQueue")
+    
+    /// Tokens of block of code.
+    private static var onceTracker = Set<String>()
+
+    /// Executes a block of code, associated with a unique token, only once.
+    /// The code is thread safe and will only execute the code once even in the presence of multithreaded calls.
+    /// - Parameters:
+    ///   - token: A unique token name such as `<domain>.<name>` or a GUID.
+    ///   - block: Block to execute once
+    class func once(token: String, block: () -> Void) {
+        synchronizeQueue.sync {
+            if onceTracker.contains(token) { return }
+            onceTracker.insert(token)
+            block()
+        }
+    }
+}
 #endif
