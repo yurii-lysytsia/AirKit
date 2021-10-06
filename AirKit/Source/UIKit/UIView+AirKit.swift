@@ -8,9 +8,11 @@ import class UIKit.UIGraphicsImageRenderer
 import struct CoreGraphics.CGSize
 import struct CoreGraphics.CGFloat
 import struct QuartzCore.CACornerMask
+import class QuartzCore.CATransaction
 import func ObjectiveC.objc_getAssociatedObject
 import func ObjectiveC.objc_setAssociatedObject
 import class Foundation.Bundle
+import struct Foundation.TimeInterval
 
 // MARK: - Extensions | Subviews
 
@@ -218,6 +220,38 @@ public extension UIView {
     }
 }
 
+// MARK: - Extensions | Animate
+
+public extension UIView {
+    /// Toogle the view’s alpha value animated.
+    /// - Parameters:
+    ///   - hidden: A Boolean value that determines whether the view is hidden at the end.
+    ///   - duration: Animation duration in seconds. Default is `CATransaction.animationDuration()`.
+    ///   - delay: The amount of time (measured in seconds) to wait before beginning the animations. Specify a value of 0 to begin the animations immediately
+    ///   - curve: Curve to perform the animations
+    ///   - completion: A block object to be executed when the animation sequence ends.
+    func setHidden(_ hidden: Bool, duration: TimeInterval = CATransaction.animationDuration(), delay: TimeInterval = 0, curve: AnimationCurve = .linear, completion: BoolBlock? = nil) {
+        // Don't execute if `isHidden` value is the same as `hidden` (new value).
+        if isHidden == hidden {
+            completion?(true)
+            return
+        }
+        
+        // When new value is `false` and the view is hidden. Fade in effect only.
+        if isHidden && !hidden {
+            isHidden = false
+        }
+        
+        // Animate the view to new hidden value.
+        UIView.animate(withDuration: duration, delay: delay, options: .init(curve: curve), animations: {
+            self.alpha = hidden ? 0 : 1
+        }, completion: { (finished) in
+            self.isHidden = hidden
+            completion?(finished)
+        })
+    }
+}
+
 // MARK: - Extensions | Snapshot
 
 public extension UIView {
@@ -251,6 +285,26 @@ extension UIView {
         swizzledLayoutSubviews()
         if isCircled {
             roundCornersToCircle()
+        }
+    }
+}
+
+// MARK: - Extensions | AnimationOptions | Inits
+
+public extension UIView.AnimationOptions {
+    /// Creates a new animation options with specifies the supported animation curves.
+    init(curve: UIView.AnimationCurve) {
+        switch curve {
+        case .easeIn:
+            self = .curveEaseIn
+        case .easeOut:
+            self = .curveEaseOut
+        case .easeInOut:
+            self = .curveEaseInOut
+        case .linear:
+            self = .curveLinear
+        @unknown default:
+            self = .curveLinear
         }
     }
 }

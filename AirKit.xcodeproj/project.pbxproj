@@ -38,6 +38,7 @@
 		5B0ED08126FCD48100473155 /* TimeIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08026FCD48100473155 /* TimeIntervalTests.swift */; };
 		5B0ED08426FCD4A400473155 /* CGFloatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08326FCD4A400473155 /* CGFloatTests.swift */; };
 		5B0ED08726FCD4C500473155 /* TopLevelDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08626FCD4C500473155 /* TopLevelDecoderTests.swift */; };
+		5B188342270D808200CC2F3C /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B188341270D808200CC2F3C /* Blocks.swift */; };
 		5B19FEF727071B6100F76EBD /* CACornerMask+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEF627071B6100F76EBD /* CACornerMask+AirKit.swift */; };
 		5B19FEF927071F8C00F76EBD /* CAGradientLayer+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEF827071F8C00F76EBD /* CAGradientLayer+AirKit.swift */; };
 		5B19FEFB270721C400F76EBD /* CATransform3D+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEFA270721C400F76EBD /* CATransform3D+AirKit.swift */; };
@@ -172,6 +173,7 @@
 		5B0ED08026FCD48100473155 /* TimeIntervalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalTests.swift; sourceTree = "<group>"; };
 		5B0ED08326FCD4A400473155 /* CGFloatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatTests.swift; sourceTree = "<group>"; };
 		5B0ED08626FCD4C500473155 /* TopLevelDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelDecoderTests.swift; sourceTree = "<group>"; };
+		5B188341270D808200CC2F3C /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
 		5B19FEF627071B6100F76EBD /* CACornerMask+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CACornerMask+AirKit.swift"; sourceTree = "<group>"; };
 		5B19FEF827071F8C00F76EBD /* CAGradientLayer+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+AirKit.swift"; sourceTree = "<group>"; };
 		5B19FEFA270721C400F76EBD /* CATransform3D+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CATransform3D+AirKit.swift"; sourceTree = "<group>"; };
@@ -630,6 +632,7 @@
 			children = (
 				5B9D3BFA270326D600FD822F /* Version.swift */,
 				5B1B388B270C63E300D9215B /* Once.swift */,
+				5B188341270D808200CC2F3C /* Blocks.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -851,6 +854,7 @@
 				5B9D3C022703402400FD822F /* URLComponents+AirKit.swift in Sources */,
 				5B9BAFCF26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift in Sources */,
 				5B792AE22701C1EF00CE2841 /* Calendar+AirKit.swift in Sources */,
+				5B188342270D808200CC2F3C /* Blocks.swift in Sources */,
 				5B6A057426F9E4C9001A59C8 /* Optionable.swift in Sources */,
 				5B07F3E626F9001B00976D89 /* CGFloat+AirKit.swift in Sources */,
 				5B60C4B4270A0A2300D2E190 /* UIBezierPath+AirKit.swift in Sources */,
