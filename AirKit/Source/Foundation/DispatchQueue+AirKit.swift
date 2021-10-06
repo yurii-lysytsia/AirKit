@@ -2,6 +2,7 @@
 
 #if canImport(Dispatch) && canImport(Foundation)
 import Dispatch
+import class Foundation.Bundle
 import typealias Foundation.TimeInterval
 
 // MARK: - Extensions | Async
@@ -53,7 +54,7 @@ public extension DispatchQueue {
 
 public extension DispatchQueue {
     /// Queue to synchronize once tracker.
-    private static let synchronizeQueue = DispatchQueue(label: "dev.lysytsia.air.kit.DispatchQueue.synchronizeQueue")
+    private static let synchronizeQueue = DispatchQueue(label: "\(Bundle.main.info.identifier).DispatchQueue.synchronizeQueue")
     
     /// Tokens of block of code.
     private static var onceTracker = Set<String>()

@@ -1,12 +1,16 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit) && canImport(CoreGraphics) && canImport(QuartzCore) && canImport(ObjectiveC)
+#if canImport(UIKit) && canImport(CoreGraphics) && canImport(QuartzCore) && canImport(ObjectiveC) && canImport(Foundation)
 import class UIKit.UIView
+import class UIKit.UIImage
 import class UIKit.UIColor
+import class UIKit.UIGraphicsImageRenderer
+import struct CoreGraphics.CGSize
 import struct CoreGraphics.CGFloat
 import struct QuartzCore.CACornerMask
 import func ObjectiveC.objc_getAssociatedObject
 import func ObjectiveC.objc_setAssociatedObject
+import class Foundation.Bundle
 
 // MARK: - Extensions | Subviews
 
@@ -135,7 +139,7 @@ public extension UIView {
 // MARK: - Extensions | Layer | Circle
 
 public extension UIView {
-    private static var isCircledAssociatedKey = "dev.lysytsia.air.kit.UIView.isCircled"
+    private static var isCircledAssociatedKey = "\(Bundle.main.info.identifier).UIView.isCircled"
     
     /// A Boolean value that determines whether the view is permanently circled. Default is `false`.
     ///
@@ -211,6 +215,16 @@ public extension UIView {
         layerShadowRadius = radius
         layerShadowOffset = offset
         layerShadowOpacity = opacity
+    }
+}
+
+// MARK: - Extensions | Snapshot
+
+public extension UIView {
+    /// Returns taken screenshot of view.
+    var snapshotImage: UIImage {
+        let renderer = UIGraphicsImageRenderer(size: layer.frame.size, scale: layer.contentsScale)
+        return renderer.image { layer.render(in: $0.cgContext) }
     }
 }
 
