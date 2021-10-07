@@ -54,7 +54,7 @@ public extension DispatchQueue {
 
 public extension DispatchQueue {
     /// Queue to synchronize once tracker.
-    private static let synchronizeQueue = DispatchQueue(label: "\(Bundle.main.info.identifier).DispatchQueue.synchronizeQueue")
+    private static let synchronizeQueue = DispatchQueue(label: "\(Bundle.main.info.identifier).\(DispatchQueue.self).synchronizeQueue")
     
     /// Tokens of block of code.
     private static var onceTracker = Set<String>()

@@ -6,9 +6,14 @@ import class UIKit.UIImage
 import class UIKit.UIColor
 import class UIKit.UIGraphicsImageRenderer
 import struct CoreGraphics.CGSize
+import struct CoreGraphics.CGPoint
 import struct CoreGraphics.CGFloat
+import class QuartzCore.CALayer
 import struct QuartzCore.CACornerMask
 import class QuartzCore.CATransaction
+import class QuartzCore.CABasicAnimation
+import class QuartzCore.CAMediaTimingFunction
+import struct QuartzCore.CAMediaTimingFunctionName
 import func ObjectiveC.objc_getAssociatedObject
 import func ObjectiveC.objc_setAssociatedObject
 import class Foundation.Bundle
@@ -141,7 +146,7 @@ public extension UIView {
 // MARK: - Extensions | Layer | Circle
 
 public extension UIView {
-    private static var isCircledAssociatedKey = "\(Bundle.main.info.identifier).UIView.isCircled"
+    private static var isCircledAssociatedKey = "\(Bundle.main.info.identifier).\(UIView.self).isCircled"
     
     /// A Boolean value that determines whether the view is permanently circled. Default is `false`.
     ///
@@ -249,6 +254,52 @@ public extension UIView {
             self.isHidden = hidden
             completion?(finished)
         })
+    }
+}
+
+// MARK: - Extensions | Layer | Shake
+
+public extension UIView {
+    /// Key for define `shake` animation.
+    private static let shakeAnimationKey = "\(Bundle.main.info.identifier).\(UIView.self).shake"
+    
+    /// Prepares and make shake animation for the view.
+    func addShakeAnimation(
+        duration: TimeInterval = CATransaction.animationDuration() / 4,
+        direction: ShakeDirection = .horizontal,
+        offset: CGFloat = 20,
+        repeatCount: Int = 2,
+        curve: CAMediaTimingFunctionName = .easeOut,
+        completion: VoidBlock? = nil
+    ) {
+        let animation = CABasicAnimation(keyPath: #keyPath(CALayer.position))
+        animation.duration = duration
+        animation.repeatCount = repeatCount.toFloat()
+        animation.autoreverses = true
+        animation.timingFunction = CAMediaTimingFunction(name: curve)
+        animation.fromValue = CGPoint(
+            x: direction == .horizontal ? frame.midX - offset : frame.midX,
+            y: direction == .vertical ? frame.midY - offset : frame.midY
+        )
+        animation.toValue = CGPoint(
+            x: direction == .horizontal ? frame.midX + offset : frame.midX,
+            y: direction == .vertical ? frame.midY + offset : frame.midY
+        )
+        layer.add(animation, forKey: UIView.shakeAnimationKey)
+    }
+    
+    /// Removes the view's shake animation.
+    func removeShakeAnimation() {
+        layer.removeAnimation(forKey: UIView.shakeAnimationKey)
+    }
+    
+    /// Shake directions of a view.
+    enum ShakeDirection {
+        /// Shake left and right.
+        case horizontal
+        
+        /// Shake up and down.
+        case vertical
     }
 }
 
