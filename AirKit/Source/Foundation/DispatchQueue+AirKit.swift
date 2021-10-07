@@ -2,6 +2,7 @@
 
 #if canImport(Dispatch) && canImport(Foundation)
 import Dispatch
+import class Foundation.Bundle
 import typealias Foundation.TimeInterval
 
 // MARK: - Extensions | Async
@@ -14,7 +15,7 @@ public extension DispatchQueue {
     ///   - qos: Quality of service at which the work item should be executed.
     ///   - flags: Flags that control the execution environment of the work item.
     ///   - work: The closure to run after certain time interval.
-    func asyncAfter(delay: TimeInterval, qos: DispatchQoS = .unspecified, flags: DispatchWorkItemFlags = [], execute work: @escaping () -> Void) {
+    func asyncAfter(delay: TimeInterval, qos: DispatchQoS = .unspecified, flags: DispatchWorkItemFlags = [], execute work: @escaping VoidBlock) {
         asyncAfter(deadline: DispatchTime.now() + delay, qos: qos, flags: flags, execute: work)
     }
 }
@@ -46,6 +47,29 @@ public extension DispatchQueue {
         
         queue.setSpecific(key: key, value: ())
         return DispatchQueue.getSpecific(key: key) != nil
+    }
+}
+
+// MARK: - Extensions | Dispatch Once
+
+public extension DispatchQueue {
+    /// Queue to synchronize once tracker.
+    private static let synchronizeQueue = DispatchQueue(label: "\(Bundle.main.info.identifier).\(DispatchQueue.self).synchronizeQueue")
+    
+    /// Tokens of block of code.
+    private static var onceTracker = Set<String>()
+
+    /// Executes a block of code, associated with a unique token, only once.
+    /// The code is thread safe and will only execute the code once even in the presence of multithreaded calls.
+    /// - Parameters:
+    ///   - token: A unique token name such as `<domain>.<name>` or a GUID.
+    ///   - block: Block to execute once
+    class func once(token: String, block: VoidThrowsBlock) rethrows {
+        try synchronizeQueue.sync {
+            if onceTracker.contains(token) { return }
+            onceTracker.insert(token)
+            try block()
+        }
     }
 }
 #endif
