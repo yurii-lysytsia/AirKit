@@ -46,7 +46,7 @@ public enum Swizzle {
 }
 
 /// An error that occurs during the swizzling of methods
-enum SwizzleError: String, LocalizedError {
+public enum SwizzleError: String, LocalizedError {
     case invalidClassType
     case invalidOriginalMethod
     case invalidSwizzledMethod
