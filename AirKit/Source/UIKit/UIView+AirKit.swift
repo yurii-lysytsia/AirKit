@@ -5,6 +5,7 @@ import class UIKit.UIView
 import class UIKit.UIImage
 import class UIKit.UIColor
 import class UIKit.UIGraphicsImageRenderer
+import class UIKit.UIGestureRecognizer
 import struct CoreGraphics.CGSize
 import struct CoreGraphics.CGPoint
 import struct CoreGraphics.CGFloat
@@ -122,6 +123,30 @@ public extension UIView {
     /// Add an array of subviews to the view.
     func addSubviews(_ subviews: [UIView]) {
         subviews.forEach { addSubview($0) }
+    }
+    
+    /// Returns the first view of the recursively hierarchy subviews (include current view) for the view that satisfies the given predicate Recursively find the first responder of the view.
+    func firstRecursiveResponder() -> UIView? {
+        isFirstResponder ? self : firstRecursiveSubview { $0.isFirstResponder }
+    }
+}
+
+// MARK: - Extensions | Gesture Recognizers
+
+public extension UIView {
+    /// Attaches gesture recognizers to the view.
+    func addGestureRecognizers(_ gestureRecognizers: [UIGestureRecognizer]) {
+        gestureRecognizers.forEach(addGestureRecognizer)
+    }
+    
+    /// Detaches gesture recognizers from the receiving view.
+    func removeGestureRecognizers(_ gestureRecognizers: [UIGestureRecognizer]) {
+        gestureRecognizers.forEach(removeGestureRecognizer)
+    }
+    
+    /// Detaches all gesture recognizers from the view.
+    func removeAllGestureRecognizers() {
+        gestureRecognizers?.forEach(removeGestureRecognizer)
     }
 }
 
@@ -310,6 +335,15 @@ public extension UIView {
     var snapshotImage: UIImage {
         let renderer = UIGraphicsImageRenderer(size: layer.frame.size, scale: layer.contentsScale)
         return renderer.image { layer.render(in: $0.cgContext) }
+    }
+}
+
+// MARK: - Extensions | LayoutDirection
+
+public extension UIView {
+    /// Returns `true` if user interface layout direction appropriate for arranging the immediate content of the view is in RTL (right to left) format.
+    var isRightToLeft: Bool {
+        effectiveUserInterfaceLayoutDirection == .rightToLeft
     }
 }
 

@@ -113,6 +113,31 @@ For usage and installation instructions, visit their website. To integrate AirKi
 pod 'AirKit', '~> 0.5'
 ```
 
+## 💻 Usage 
+
+### 1. Swizzle (not mandatory)
+Some features of `AirKit` are needed of method swizzling. So you can use code below to swizzle easily.
+
+```swift
+import AirKit
+
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    ...
+    do {
+        try AirKit.swizzle()
+    } catch {
+        // Catch some error of `AirKit` swizzling if needed.
+        // You can use `try? AirKit.swizzle()` if you don't need catch error
+    }
+    ...
+}
+```
+
+### 2. Import `AirKit` to the file and use extensions that you need.
+```swift
+import AirKit
+```
+
 ## 📚 Documentation
 Documentation will be available soon. But now it available only for all extensions methods and properties summary.
 
