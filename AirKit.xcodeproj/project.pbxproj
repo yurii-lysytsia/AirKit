@@ -38,6 +38,7 @@
 		5B0ED08126FCD48100473155 /* TimeIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08026FCD48100473155 /* TimeIntervalTests.swift */; };
 		5B0ED08426FCD4A400473155 /* CGFloatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08326FCD4A400473155 /* CGFloatTests.swift */; };
 		5B0ED08726FCD4C500473155 /* TopLevelDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08626FCD4C500473155 /* TopLevelDecoderTests.swift */; };
+		5B14C698270F34490093C881 /* Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14C696270F34310093C881 /* Swizzle.swift */; };
 		5B188342270D808200CC2F3C /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B188341270D808200CC2F3C /* Blocks.swift */; };
 		5B19FEF727071B6100F76EBD /* CACornerMask+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEF627071B6100F76EBD /* CACornerMask+AirKit.swift */; };
 		5B19FEF927071F8C00F76EBD /* CAGradientLayer+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEF827071F8C00F76EBD /* CAGradientLayer+AirKit.swift */; };
@@ -47,7 +48,6 @@
 		5B19FF0227075C0F00F76EBD /* CATransform3DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FF0127075C0F00F76EBD /* CATransform3DTests.swift */; };
 		5B19FF042707611E00F76EBD /* CAGradientLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FF032707611E00F76EBD /* CAGradientLayerTests.swift */; };
 		5B1B388C270C63E300D9215B /* Once.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1B388B270C63E300D9215B /* Once.swift */; };
-		5B1B3890270C65C100D9215B /* Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1B388F270C65C100D9215B /* Swizzle.swift */; };
 		5B1B3895270C9D0700D9215B /* AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1B3894270C9D0700D9215B /* AirKit.swift */; };
 		5B239FB52700ED790045382F /* DateFormatComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B239FB42700ED790045382F /* DateFormatComponents.swift */; };
 		5B35BD172705AAFE0031AED3 /* CGPoint+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD162705AAFE0031AED3 /* CGPoint+AirKit.swift */; };
@@ -173,6 +173,7 @@
 		5B0ED08026FCD48100473155 /* TimeIntervalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalTests.swift; sourceTree = "<group>"; };
 		5B0ED08326FCD4A400473155 /* CGFloatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatTests.swift; sourceTree = "<group>"; };
 		5B0ED08626FCD4C500473155 /* TopLevelDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelDecoderTests.swift; sourceTree = "<group>"; };
+		5B14C696270F34310093C881 /* Swizzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swizzle.swift; sourceTree = "<group>"; };
 		5B188341270D808200CC2F3C /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
 		5B19FEF627071B6100F76EBD /* CACornerMask+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CACornerMask+AirKit.swift"; sourceTree = "<group>"; };
 		5B19FEF827071F8C00F76EBD /* CAGradientLayer+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+AirKit.swift"; sourceTree = "<group>"; };
@@ -182,7 +183,6 @@
 		5B19FF0127075C0F00F76EBD /* CATransform3DTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATransform3DTests.swift; sourceTree = "<group>"; };
 		5B19FF032707611E00F76EBD /* CAGradientLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAGradientLayerTests.swift; sourceTree = "<group>"; };
 		5B1B388B270C63E300D9215B /* Once.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Once.swift; sourceTree = "<group>"; };
-		5B1B388F270C65C100D9215B /* Swizzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swizzle.swift; sourceTree = "<group>"; };
 		5B1B3894270C9D0700D9215B /* AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirKit.swift; sourceTree = "<group>"; };
 		5B239FB42700ED790045382F /* DateFormatComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatComponents.swift; sourceTree = "<group>"; };
 		5B35BD162705AAFE0031AED3 /* CGPoint+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+AirKit.swift"; sourceTree = "<group>"; };
@@ -381,7 +381,6 @@
 				5B9D3C0F27034F8F00FD822F /* URLRequestTests.swift */,
 				5B9D3C0727034C2200FD822F /* URLTests.swift */,
 				5B8C1CFC270460AC0021B48E /* UserDefaultsTests.swift */,
-				5B1B388E270C65B500D9215B /* Models */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -443,17 +442,10 @@
 			path = CoreLocation;
 			sourceTree = "<group>";
 		};
-		5B1B388E270C65B500D9215B /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				5B1B388F270C65C100D9215B /* Swizzle.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		5B239FB32700ED720045382F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5B14C696270F34310093C881 /* Swizzle.swift */,
 				5B239FB42700ED790045382F /* DateFormatComponents.swift */,
 			);
 			path = Models;
@@ -824,7 +816,6 @@
 				5B7660AC27076FF300CC0ABA /* CLLocation+AirKit.swift in Sources */,
 				5B9D3BFE2703304400FD822F /* Locale+AirKit.swift in Sources */,
 				5B639D87270894D80028B543 /* CIContext+AirKit.swift in Sources */,
-				5B1B3890270C65C100D9215B /* Swizzle.swift in Sources */,
 				5B07F3E826F9008F00976D89 /* IntConvertible.swift in Sources */,
 				5B09638A26FB430800879AE7 /* TimeInterval+AirKit.swift in Sources */,
 				5B632B7926FE218500C3645D /* NSAttributedString+AirKit.swift in Sources */,
@@ -853,6 +844,7 @@
 				5B9D3C022703402400FD822F /* URLComponents+AirKit.swift in Sources */,
 				5B9BAFCF26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift in Sources */,
 				5B792AE22701C1EF00CE2841 /* Calendar+AirKit.swift in Sources */,
+				5B14C698270F34490093C881 /* Swizzle.swift in Sources */,
 				5B188342270D808200CC2F3C /* Blocks.swift in Sources */,
 				5B6A057426F9E4C9001A59C8 /* Optionable.swift in Sources */,
 				5B07F3E626F9001B00976D89 /* CGFloat+AirKit.swift in Sources */,
