@@ -10,7 +10,8 @@ This is sugar framework that contains many different extensions for native Swift
 
 - [Features](#-features)
 - [Installation](#-installation)
-    - [CocoaPods](#CocoaPods)
+    - [CocoaPods](#cocoapods)
+- [Usage](#-usage)
 - [Documentation](#-documentation)
 - [License](#-license)
 
@@ -59,8 +60,13 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `UIBezierPath`;
 - [X] Extensions for `UILayoutPriority`;
 - [X] Extensions for `UIView`;
-- [ ] Extensions for `UIBarButtonItem`;
+- [ ] Extensions for `UIStackView`;
 - [ ] Extensions for `UIButton`;
+- [ ] Extensions for `UIImageView`;
+- [ ] Extensions for `UILabel`;
+- [ ] Extensions for `UISegmentedControl`;
+- [ ] Extensions for `UISlider`;
+- [ ] Extensions for `UISwitch`;
 
 ### v 0.5 | Extensions for `UIKit` (Part 2)
 - [ ] Extensions for different `UIView` elements (will write about it later);
