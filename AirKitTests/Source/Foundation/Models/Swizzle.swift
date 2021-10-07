@@ -35,12 +35,12 @@ public enum Swizzle {
     }
     
     /// Swizzle original instance method.
-    static func swizzleInstanceMethod<T: AnyObject>(classType: T.Type, original originalSelector: Selector, swizzled swizzledSelector: Selector) throws {
+    public static func swizzleInstanceMethod<T: AnyObject>(classType: T.Type, original originalSelector: Selector, swizzled swizzledSelector: Selector) throws {
         try swizzleMethod(classType: T.self, original: originalSelector, swizzled: swizzledSelector, isClassMethod: false)
     }
 
     /// Swizzle original class method.
-    static func swizzleClassMethod<T: AnyObject>(classType: T.Type, original originalSelector: Selector, swizzled swizzledSelector: Selector) throws {
+    public static func swizzleClassMethod<T: AnyObject>(classType: T.Type, original originalSelector: Selector, swizzled swizzledSelector: Selector) throws {
         try swizzleMethod(classType: T.self, original: originalSelector, swizzled: swizzledSelector, isClassMethod: true)
     }
 }
