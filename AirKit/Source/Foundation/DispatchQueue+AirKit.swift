@@ -64,11 +64,11 @@ public extension DispatchQueue {
     /// - Parameters:
     ///   - token: A unique token name such as `<domain>.<name>` or a GUID.
     ///   - block: Block to execute once
-    class func once(token: String, block: VoidBlock) {
-        synchronizeQueue.sync {
+    class func once(token: String, block: VoidThrowsBlock) rethrows {
+        try synchronizeQueue.sync {
             if onceTracker.contains(token) { return }
             onceTracker.insert(token)
-            block()
+            try block()
         }
     }
 }

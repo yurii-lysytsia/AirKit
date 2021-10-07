@@ -32,4 +32,24 @@ class DispatchQueueTests: XCTestCase {
         XCTAssertFalse(DispatchQueue.isCurrent(queue))
     }
     
+    func testOnce() {
+        var test1 = false
+        var test2 = false
+        
+        // Call `test-1`
+        DispatchQueue.once(token: "test-1") { test1.toggle() }
+        XCTAssertTrue(test1)
+        XCTAssertFalse(test2)
+        
+        // Call `test-2`
+        DispatchQueue.once(token: "test-2") { test2.toggle() }
+        XCTAssertTrue(test1)
+        XCTAssertTrue(test2)
+        
+        // Call `test-2` second time
+        DispatchQueue.once(token: "test-2") { test2.toggle() }
+        XCTAssertTrue(test1)
+        XCTAssertTrue(test2)
+    }
+    
 }

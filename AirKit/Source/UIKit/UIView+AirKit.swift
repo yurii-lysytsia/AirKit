@@ -156,16 +156,21 @@ public extension UIView {
     /// The radius to use when drawing rounded corners for the layer’s background.
     var layerCornerRadius: CGFloat {
         get { layer.cornerRadius }
-        set { roundCorners(cornerRadius: newValue) }
+        set {
+            if isCircled { return }
+            layer.cornerRadius = max(newValue, 0)
+        }
     }
     
     /// Set layer corner radius and masked corners.
     ///
     /// - Note: `cornerRadius` must be greater than `0` otherwise view will remove corner radius.
     func roundCorners(_ maskedCorners: CACornerMask = .allCorners, cornerRadius: CGFloat) {
+        if isCircled { return }
+        layerCornerRadius = cornerRadius
         layer.maskedCorners = maskedCorners
-        layer.cornerRadius = max(cornerRadius, 0)
     }
+    
 }
 
 // MARK: - Extensions | Layer | Circle
@@ -181,13 +186,16 @@ public extension UIView {
     var isCircled: Bool {
         get { objc_getAssociatedObject(self, &UIView.isCircledAssociatedKey) as? Bool ?? false }
         set {
-            newValue ? roundCornersToCircle() : roundCorners(cornerRadius: 0)
             objc_setAssociatedObject(self, &UIView.isCircledAssociatedKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            newValue ? roundCornersToCircle() : roundCorners(cornerRadius: 0)
         }
     }
     
     /// Set once layer corner radius equal to half of view's size minimal dimension.
-    func roundCornersToCircle() { layerCornerRadius = frame.size.minDimension / 2 }
+    func roundCornersToCircle() {
+        layer.cornerRadius = max(frame.size.minDimension / 2, 0)
+        layer.maskedCorners = .allCorners
+    }
 }
 
 // MARK: - Extensions | Layer | Border
@@ -198,23 +206,27 @@ public extension UIView {
         get { layer.borderColor.map { .init(cgColor: $0) } }
         set { layer.borderColor = newValue?.cgColor }
     }
-
+    
     /// The width of the layer’s border.
     var layerBorderWidth: CGFloat {
         get { layer.borderWidth }
         set { layer.borderWidth = newValue }
     }
     
-    /// Set layer border color and width corners
-    ///
-    /// - Note: Layer border removes if color will be `nil`.
-    func setLayerBorder(color: UIColor?, width: CGFloat) {
+    /// Set layer border color and width corners.
+    func setLayerBorder(color: UIColor, width: CGFloat) {
         layerBorderColor = color
-        layerBorderWidth = color != nil ? max(width, 0) : 0
+        layerBorderWidth = width.clamped(lowerBound: 0, upperBound: frame.size.minDimension)
+    }
+    
+    /// Removes layer border color and width corner.
+    func removeLayerBorder() {
+        layerBorderColor = nil
+        layerBorderWidth = 0
     }
 }
 
-// MARK: - Extensions | Layer | Shadows
+// MARK: - Extensions | Layer | Shadow
 
 public extension UIView {
     /// The color of the layer’s shadow.
@@ -222,23 +234,23 @@ public extension UIView {
         get { layer.shadowColor.map { .init(cgColor: $0) } }
         set { layer.shadowColor = newValue?.cgColor }
     }
-
+    
+    /// The blur radius (in points) used to render the layer’s shadow.
+    var layerShadowRadius: CGFloat {
+        get { layer.shadowRadius }
+        set { layer.shadowRadius = newValue }
+    }
+    
     /// The offset (in points) of the layer’s shadow.
     var layerShadowOffset: CGSize {
         get { layer.shadowOffset }
         set { layer.shadowOffset = newValue }
     }
-
+    
     /// The opacity of the layer’s shadow.
     var layerShadowOpacity: Float {
         get { layer.shadowOpacity }
         set { layer.shadowOpacity = newValue }
-    }
-
-    /// The blur radius (in points) used to render the layer’s shadow.
-    var layerShadowRadius: CGFloat {
-        get { layer.shadowRadius }
-        set { layer.shadowRadius = newValue }
     }
     
     /// Configure layer's shadow with given parameters.
@@ -247,6 +259,14 @@ public extension UIView {
         layerShadowRadius = radius
         layerShadowOffset = offset
         layerShadowOpacity = opacity
+    }
+    
+    /// Configure layer's shadow to the default parameters.
+    func removeLayerShadow() {
+        layerShadowColor = nil
+        layerShadowRadius = 3
+        layerShadowOffset = CGSize(width: 0, height: -3)
+        layerShadowOpacity = 0
     }
 }
 
@@ -365,7 +385,7 @@ extension UIView {
     static func swizzle() throws {
         try initialization.run()
     }
-
+    
     @objc private func swizzledLayoutSubviews() {
         swizzledLayoutSubviews()
         if isCircled {

@@ -11,11 +11,11 @@ public final class Once {
     // MARK: - Private properties
     
     /// Execution block of code.
-    private var block: (() throws -> Void)?
+    private var block: VoidThrowsBlock?
     
     // MARK: - Life cycle
     
-    public init(execute block: @escaping () throws -> Void) {
+    public init(execute block: @escaping VoidThrowsBlock) {
         self.block = block
     }
     
