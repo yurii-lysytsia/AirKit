@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class DispatchQueueTests: XCTestCase {
+final class DispatchQueueTests: XCTestCase {
     
     // MARK: - Properties
     

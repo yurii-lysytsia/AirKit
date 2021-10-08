@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class DateTests: XCTestCase {
+final class DateTests: XCTestCase {
     
     func testValues() {
         let futureDate = Date.current + 60

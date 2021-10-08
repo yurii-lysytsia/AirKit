@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class IntTests: XCTestCase {
+final class IntTests: XCTestCase {
     
     func testRounded() {
         XCTAssertEqual(5.roundedUp(divisor: 2), 6)

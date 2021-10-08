@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class ResultTests: XCTestCase {
+final class ResultTests: XCTestCase {
     
     func testValues() {
         let successResult: Result<Int, Error> = .success(10)

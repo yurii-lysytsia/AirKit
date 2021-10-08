@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class ComparableTests: XCTestCase {
+final class ComparableTests: XCTestCase {
 
     func testIsBetween() {
         XCTAssertFalse(1.isBetween(5...7))

@@ -1,24 +1,37 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit) && canImport(CoreGraphics) && canImport(QuartzCore) && canImport(ObjectiveC) && canImport(Foundation)
+#if canImport(UIKit)
 import class UIKit.UIView
 import class UIKit.UIImage
 import class UIKit.UIColor
 import class UIKit.UIGraphicsImageRenderer
 import class UIKit.UIGestureRecognizer
-import struct CoreGraphics.CGSize
-import struct CoreGraphics.CGPoint
-import struct CoreGraphics.CGFloat
-import class QuartzCore.CALayer
-import struct QuartzCore.CACornerMask
-import class QuartzCore.CATransaction
-import class QuartzCore.CABasicAnimation
-import class QuartzCore.CAMediaTimingFunction
-import struct QuartzCore.CAMediaTimingFunctionName
-import func ObjectiveC.objc_getAssociatedObject
-import func ObjectiveC.objc_setAssociatedObject
-import class Foundation.Bundle
-import struct Foundation.TimeInterval
+import struct UIKit.CGSize
+import struct UIKit.CGPoint
+import struct UIKit.CGFloat
+import class UIKit.CALayer
+import struct UIKit.CACornerMask
+import class UIKit.CATransaction
+import class UIKit.CABasicAnimation
+import class UIKit.CAMediaTimingFunction
+import struct UIKit.CAMediaTimingFunctionName
+import func UIKit.objc_getAssociatedObject
+import func UIKit.objc_setAssociatedObject
+import class UIKit.Bundle
+import struct UIKit.TimeInterval
+
+// MARK: - Extensions | Static Values
+
+public extension UIView {
+    /// Returns a new view with clear background color and the lowest hugging priority.
+    static var spacingView: UIView {
+        let view = UIView()
+        view.backgroundColor = UIColor.clear
+        view.setContentHuggingPriority(.defaultLow, for: .horizontal)
+        view.setContentHuggingPriority(.defaultLow, for: .vertical)
+        return view
+    }
+}
 
 // MARK: - Extensions | Subviews
 
@@ -382,7 +395,7 @@ extension UIView {
     /// Swizzle needed methods.
     ///
     /// 1. `layoutSubviews()` method for `isCircled`.
-    static func swizzle() throws {
+    static func swizzleView() throws {
         try initialization.run()
     }
     

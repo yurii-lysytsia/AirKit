@@ -1,8 +1,8 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit) && canImport(CoreGraphics)
+#if canImport(UIKit)
 import class UIKit.UIColor
-import struct CoreGraphics.CGFloat
+import struct UIKit.CGFloat
 
 // MARK: - Extensions | Random
 

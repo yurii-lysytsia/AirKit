@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class LocaleTests: XCTestCase {
+final class LocaleTests: XCTestCase {
     
     func testEmojiFlag() {
         XCTAssertNil(Locale(identifier: "US").emojiFlag)

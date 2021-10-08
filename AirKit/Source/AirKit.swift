@@ -2,11 +2,15 @@
 
 #if canImport(UIKit)
 import class UIKit.UIView
+import class UIKit.UIButton
+#endif
 
 public enum AirKit {
     /// Swizzle all needed instance and class methods.
     public static func swizzle() throws {
-        try UIView.swizzle()
+        #if canImport(UIKit)
+        try UIView.swizzleView()
+        try UIButton.swizzleButton()
+        #endif
     }
 }
-#endif

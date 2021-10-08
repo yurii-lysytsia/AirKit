@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class URLRequestTests: XCTestCase {
+final class URLRequestTests: XCTestCase {
 
     func testValues() {
         var postRequest = URLRequest(string: "https://domain.com")!

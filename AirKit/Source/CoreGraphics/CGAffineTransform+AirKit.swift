@@ -1,7 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(CoreGraphics) && canImport(QuartzCore)
-import struct CoreGraphics.CGAffineTransform
+#if canImport(QuartzCore)
+import struct QuartzCore.CGAffineTransform
 import struct QuartzCore.CATransform3D
 import func QuartzCore.CATransform3DMakeAffineTransform
 

@@ -1,6 +1,6 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(QuartzCore) && canImport(CoreGraphics)
+#if canImport(QuartzCore)
 import struct QuartzCore.CATransform3D
 import func QuartzCore.CATransform3DIsIdentity
 import var QuartzCore.CATransform3DIdentity
@@ -15,8 +15,8 @@ import func QuartzCore.CATransform3DConcat
 import func QuartzCore.CATransform3DEqualToTransform
 import func QuartzCore.CATransform3DIsAffine
 import func QuartzCore.CATransform3DGetAffineTransform
-import struct CoreGraphics.CGAffineTransform
-import struct CoreGraphics.CGFloat
+import struct QuartzCore.CGAffineTransform
+import struct QuartzCore.CGFloat
 
 // MARK: - Extensions | Identity
 

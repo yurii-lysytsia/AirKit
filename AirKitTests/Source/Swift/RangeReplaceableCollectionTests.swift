@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class RangeReplaceableCollectionTests: XCTestCase {
+final class RangeReplaceableCollectionTests: XCTestCase {
     
     func testRemoveFirst() {
         var string = "Hello"

@@ -6,7 +6,14 @@ import XCTest
 class UIViewTests: XCTestCase {
 
     override class func setUp() {
-        try! UIView.swizzle()
+        try! UIView.swizzleView()
+    }
+    
+    func testStaticValues() {
+        let spacingView = UIView.spacingView
+        XCTAssertEqual(spacingView.backgroundColor, .clear)
+        XCTAssertEqual(spacingView.contentHuggingPriority(for: .horizontal), .defaultLow)
+        XCTAssertEqual(spacingView.contentHuggingPriority(for: .vertical), .defaultLow)
     }
     
     func testSubviews() {

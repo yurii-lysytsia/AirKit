@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class TimeIntervalTests: XCTestCase {
+final class TimeIntervalTests: XCTestCase {
     
     func testValues() {
         XCTAssertEqual(TimeInterval.minutes(10), 600)

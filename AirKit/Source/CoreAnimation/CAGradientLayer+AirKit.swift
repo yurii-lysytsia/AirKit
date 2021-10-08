@@ -1,9 +1,9 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(QuartzCore) && canImport(CoreGraphics) && canImport(UIKit)
-import class QuartzCore.CAGradientLayer
-import struct QuartzCore.CAGradientLayerType
-import struct CoreGraphics.CGPoint
+#if canImport(UIKit)
+import class UIKit.CAGradientLayer
+import struct UIKit.CAGradientLayerType
+import struct UIKit.CGPoint
 import class UIKit.UIColor
 
 public extension CAGradientLayer {

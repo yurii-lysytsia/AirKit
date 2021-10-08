@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class FloatTests: XCTestCase {
+final class FloatTests: XCTestCase {
     
     func testConvertible() {
         let value: Float = 10.5
