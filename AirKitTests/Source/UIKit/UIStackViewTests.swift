@@ -43,7 +43,7 @@ final class UIStackViewTests: XCTestCase {
         XCTAssertTrue(stackView.arrangedSubviews.contains(view))
         XCTAssertEqual(stackView.customSpacing(after: view), 20)
         
-        stackView.addArrangedSubviews([(spacingView, 0), (button, nil)])
+        stackView.addArrangedSubviews([(spacingView, CGFloat(0)), (button, nil)])
         XCTAssertTrue(stackView.arrangedSubviews.contains([spacingView, button]))
         XCTAssertEqual(stackView.customSpacing(after: spacingView), 0)
         
