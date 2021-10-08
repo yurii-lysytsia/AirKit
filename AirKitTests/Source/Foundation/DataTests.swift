@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class DataTests: XCTestCase {
+final class DataTests: XCTestCase {
     
     func testBytes() {
         let data = "Hello world!".data(using: .utf8)!

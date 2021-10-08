@@ -1,25 +1,21 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit) && canImport(CoreGraphics)
+#if canImport(UIKit)
 import class UIKit.UIImage
 import class UIKit.UIGraphicsImageRenderer
 import class UIKit.UIBezierPath
 import class UIKit.UIColor
 import func UIKit.UIRectFill
-import struct CoreGraphics.CGRect
-import struct CoreGraphics.CGSize
-import struct CoreGraphics.CGPoint
-import struct CoreGraphics.CGFloat
-import struct CoreGraphics.CGAffineTransform
-#if canImport(CoreImage)
-import class CoreImage.CIContext
-import class CoreImage.CIFilter
-import class CoreImage.CIImage
-#endif
-#if canImport(Foundation)
-import struct Foundation.Measurement
-import class Foundation.UnitAngle
-#endif
+import struct UIKit.CGRect
+import struct UIKit.CGSize
+import struct UIKit.CGPoint
+import struct UIKit.CGFloat
+import struct UIKit.CGAffineTransform
+import class UIKit.CIContext
+import class UIKit.CIFilter
+import class UIKit.CIImage
+import struct UIKit.Measurement
+import class UIKit.UnitAngle
 
 // MARK: - Extensions | Rendering
 
@@ -86,13 +82,11 @@ public extension UIImage {
         }
     }
     
-    #if canImport(Foundation)
     /// Returns a new image rotated by the given angle.
     func rotated(by angle: Measurement<UnitAngle>) -> UIImage {
         let radians = CGFloat(angle.converted(to: .radians).value)
         return rotated(by: radians)
     }
-    #endif
 }
 
 // MARK: - Extensions | Rounded Corners
@@ -128,7 +122,6 @@ public extension UIImage {
     }
 }
 
-#if canImport(CoreImage)
 // MARK: - Extensions | CoreImage | Inits
 
 public extension UIImage {
@@ -166,5 +159,4 @@ public extension UIImage {
         )
     }
 }
-#endif
 #endif

@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class DateFormatterTests: XCTestCase {
+final class DateFormatterTests: XCTestCase {
     
     func testInit() {
         let timeZone = TimeZone(identifier: "Europe/Kiev")!

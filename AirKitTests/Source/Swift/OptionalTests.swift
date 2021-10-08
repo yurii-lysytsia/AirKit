@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class OptionalTests: XCTestCase {
+final class OptionalTests: XCTestCase {
 
     func testString() {
         let stringNil: String? = nil

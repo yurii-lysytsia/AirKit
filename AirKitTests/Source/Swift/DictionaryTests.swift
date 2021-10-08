@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class DictionaryTests: XCTestCase {
+final class DictionaryTests: XCTestCase {
     
     func testRemoveAll() {
         var dict = ["key1" : "value1", "key2" : "value2", "key3" : "value3"]

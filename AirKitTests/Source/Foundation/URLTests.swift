@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class URLTests: XCTestCase {
+final class URLTests: XCTestCase {
     
     func testPathComponents() {
         let url = URL(string: "https://domain.com/path/other")!

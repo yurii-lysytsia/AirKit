@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class NSAttributedStringTests: XCTestCase {
+final class NSAttributedStringTests: XCTestCase {
     
     func testOperators() {
         let resultAttributedString = NSAttributedString(string: "Hello world!")

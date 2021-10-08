@@ -2,7 +2,7 @@
 
 import XCTest
 
-class CalendarTests: XCTestCase {
+final class CalendarTests: XCTestCase {
     
     // MARK: - Properties
     

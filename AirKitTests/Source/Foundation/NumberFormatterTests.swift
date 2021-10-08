@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class NumberFormatterTests: XCTestCase {
+final class NumberFormatterTests: XCTestCase {
 
     func testNumberConvertible() {
         let formatter = NumberFormatter(numberStyle: .decimal)

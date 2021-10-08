@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class DoubleTests: XCTestCase {
+final class DoubleTests: XCTestCase {
     
     func testConvertible() {
         let value: Double = 10.5

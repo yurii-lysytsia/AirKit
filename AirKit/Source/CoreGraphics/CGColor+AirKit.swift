@@ -1,8 +1,8 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(CoreGraphics) && canImport(UIKit)
+#if canImport(UIKit)
 import class UIKit.UIColor
-import class CoreGraphics.CGColor
+import class UIKit.CGColor
 
 // MARK: - Extensions | Convertible
 

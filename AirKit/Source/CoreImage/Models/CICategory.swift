@@ -1,8 +1,9 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(CoreImage) && canImport(Foundation)
-import struct Foundation.Data
-import CoreImage
+#if canImport(CoreImage)
+import struct CoreImage.Data
+import class CoreImage.CIImage
+import class CoreImage.CIVector
 
 // MARK: - CICategory
 

@@ -1,10 +1,10 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit) && canImport(CoreGraphics)
+#if canImport(UIKit)
 import class UIKit.UIBezierPath
-import struct CoreGraphics.CGPoint
-import struct CoreGraphics.CGSize
-import struct CoreGraphics.CGRect
+import struct UIKit.CGPoint
+import struct UIKit.CGSize
+import struct UIKit.CGRect
 
 // MARK: - Extensions | Inits
 

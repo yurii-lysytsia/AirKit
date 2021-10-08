@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class URLComponentsTests: XCTestCase {
+final class URLComponentsTests: XCTestCase {
     
     func testQuery() {
         let components = URLComponents(string: "https://site.com?code=12345&name=Air")!

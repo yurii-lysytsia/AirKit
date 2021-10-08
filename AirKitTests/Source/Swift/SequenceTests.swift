@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class SequenceTests: XCTestCase {
+final class SequenceTests: XCTestCase {
     
     func testCount() {
         let stringCount = "Hello world!".count { $0.isUppercase }

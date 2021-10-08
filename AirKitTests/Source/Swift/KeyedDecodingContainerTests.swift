@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class KeyedDecodingContainerTests: XCTestCase {
+final class KeyedDecodingContainerTests: XCTestCase {
     
     // MARK: - Properties
     

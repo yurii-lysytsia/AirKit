@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class BinaryFloatingPointTests: XCTestCase {
+final class BinaryFloatingPointTests: XCTestCase {
     
     func testToString() {
         let value = 123.456

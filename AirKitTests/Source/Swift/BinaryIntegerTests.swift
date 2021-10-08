@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class BinaryIntegerTests: XCTestCase {
+final class BinaryIntegerTests: XCTestCase {
     
     func testToString() {
         let value = 123

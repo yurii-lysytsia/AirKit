@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class BoolTests: XCTestCase {
+final class BoolTests: XCTestCase {
 
     func testConvertible() {
         XCTAssertEqual(true.toInt(), 1)

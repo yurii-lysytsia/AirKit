@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class StringTests: XCTestCase {
+final class StringTests: XCTestCase {
     
     func testConvertible() {
         XCTAssertEqual("123".toInt(), 123)

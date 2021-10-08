@@ -1,11 +1,11 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit) && canImport(CoreGraphics)
+#if canImport(UIKit)
 import class UIKit.UIGraphicsImageRenderer
 import class UIKit.UIGraphicsImageRendererFormat
-import struct CoreGraphics.CGRect
-import struct CoreGraphics.CGSize
-import struct CoreGraphics.CGFloat
+import struct UIKit.CGRect
+import struct UIKit.CGSize
+import struct UIKit.CGFloat
 
 public extension UIGraphicsImageRenderer {
     /// Ceate a new instance if a set of drawing attributes that represents the configuration of an image renderer context.

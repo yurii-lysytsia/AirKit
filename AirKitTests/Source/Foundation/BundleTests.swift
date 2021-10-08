@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class BundleTests: XCTestCase {
+final class BundleTests: XCTestCase {
     
     // MARK: - Properties
     

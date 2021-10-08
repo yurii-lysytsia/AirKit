@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class VersionTests: XCTestCase {
+final class VersionTests: XCTestCase {
     
     func testValues() {
         XCTAssertEqual(Version().localizedDescription, "0.0.0")

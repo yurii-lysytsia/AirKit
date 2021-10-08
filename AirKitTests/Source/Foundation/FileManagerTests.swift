@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class FileManagerTests: XCTestCase {
+final class FileManagerTests: XCTestCase {
     
     // MARK: - Properties
     
