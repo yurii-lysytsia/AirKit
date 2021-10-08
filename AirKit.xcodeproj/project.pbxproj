@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5B0273A3271033CF00DAA072 /* UIStackView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0273A2271033CF00DAA072 /* UIStackView+AirKit.swift */; };
+		5B0273A7271040D800DAA072 /* UIButton+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0273A6271040D800DAA072 /* UIButton+AirKit.swift */; };
 		5B07F3DC26F8F0ED00976D89 /* Bool+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F3DB26F8F0ED00976D89 /* Bool+AirKit.swift */; };
 		5B07F3E026F8F28300976D89 /* Float+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F3DF26F8F28300976D89 /* Float+AirKit.swift */; };
 		5B07F3E226F8F5B700976D89 /* Double+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F3E126F8F5B700976D89 /* Double+AirKit.swift */; };
@@ -144,6 +145,7 @@
 
 /* Begin PBXFileReference section */
 		5B0273A2271033CF00DAA072 /* UIStackView+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+AirKit.swift"; sourceTree = "<group>"; };
+		5B0273A6271040D800DAA072 /* UIButton+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+AirKit.swift"; sourceTree = "<group>"; };
 		5B07F3DB26F8F0ED00976D89 /* Bool+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+AirKit.swift"; sourceTree = "<group>"; };
 		5B07F3DF26F8F28300976D89 /* Float+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+AirKit.swift"; sourceTree = "<group>"; };
 		5B07F3E126F8F5B700976D89 /* Double+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+AirKit.swift"; sourceTree = "<group>"; };
@@ -603,6 +605,7 @@
 				5B60C4BB270A1A2400D2E190 /* UILayoutPriority+AirKit.swift */,
 				5B0273A2271033CF00DAA072 /* UIStackView+AirKit.swift */,
 				5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */,
+				5B0273A6271040D800DAA072 /* UIButton+AirKit.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -852,6 +855,7 @@
 				5B6A057426F9E4C9001A59C8 /* Optionable.swift in Sources */,
 				5B07F3E626F9001B00976D89 /* CGFloat+AirKit.swift in Sources */,
 				5B60C4B4270A0A2300D2E190 /* UIBezierPath+AirKit.swift in Sources */,
+				5B0273A7271040D800DAA072 /* UIButton+AirKit.swift in Sources */,
 				5B07F3F126F9038000976D89 /* Int+AirKit.swift in Sources */,
 				5BD4AE76270B66ED00D65DBC /* UIView+AirKit.swift in Sources */,
 				5B1B3895270C9D0700D9215B /* AirKit.swift in Sources */,

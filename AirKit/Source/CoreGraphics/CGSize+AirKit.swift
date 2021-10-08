@@ -57,6 +57,15 @@ public extension CGSize {
     }
 }
 
+// MARK: - Extensions | Inits
+
+public extension CGSize {
+    /// Creates a new size with the same width and haight.
+    init(_ size: CGFloat) {
+        self.init(width: size, height: size)
+    }
+}
+
 // MARK: - Extensions | Operators | CGSize
 
 public extension CGSize {

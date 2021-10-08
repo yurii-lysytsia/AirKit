@@ -395,7 +395,7 @@ extension UIView {
     /// Swizzle needed methods.
     ///
     /// 1. `layoutSubviews()` method for `isCircled`.
-    static func swizzle() throws {
+    static func swizzleView() throws {
         try initialization.run()
     }
     
