@@ -55,6 +55,7 @@
 		5B2ADD422710CAE2003D4C1C /* UIButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2ADD412710CAE2003D4C1C /* UIButtonTests.swift */; };
 		5B2ADD442710D595003D4C1C /* UIStackViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2ADD432710D595003D4C1C /* UIStackViewTests.swift */; };
 		5B3408062714A82500BC79E8 /* UISwitch+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3408052714A82500BC79E8 /* UISwitch+AirKit.swift */; };
+		5B3408082714AA9200BC79E8 /* UISearchBar+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3408072714AA9200BC79E8 /* UISearchBar+AirKit.swift */; };
 		5B35BD172705AAFE0031AED3 /* CGPoint+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD162705AAFE0031AED3 /* CGPoint+AirKit.swift */; };
 		5B35BD192705B3010031AED3 /* CGSize+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD182705B3010031AED3 /* CGSize+AirKit.swift */; };
 		5B35BD1B2705C44C0031AED3 /* CGColor+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD1A2705C44C0031AED3 /* CGColor+AirKit.swift */; };
@@ -195,6 +196,7 @@
 		5B2ADD412710CAE2003D4C1C /* UIButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonTests.swift; sourceTree = "<group>"; };
 		5B2ADD432710D595003D4C1C /* UIStackViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewTests.swift; sourceTree = "<group>"; };
 		5B3408052714A82500BC79E8 /* UISwitch+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+AirKit.swift"; sourceTree = "<group>"; };
+		5B3408072714AA9200BC79E8 /* UISearchBar+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+AirKit.swift"; sourceTree = "<group>"; };
 		5B35BD162705AAFE0031AED3 /* CGPoint+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+AirKit.swift"; sourceTree = "<group>"; };
 		5B35BD182705B3010031AED3 /* CGSize+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+AirKit.swift"; sourceTree = "<group>"; };
 		5B35BD1A2705C44C0031AED3 /* CGColor+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGColor+AirKit.swift"; sourceTree = "<group>"; };
@@ -603,16 +605,17 @@
 			isa = PBXGroup;
 			children = (
 				5B60C4B3270A0A2300D2E190 /* UIBezierPath+AirKit.swift */,
+				5B0273A6271040D800DAA072 /* UIButton+AirKit.swift */,
 				5B639D8C2708A4A50028B543 /* UIColor+AirKit.swift */,
 				5B60C4AF2709B61A00D2E190 /* UIEdgeInsets+AirKit.swift */,
 				5B639D7527086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift */,
 				5B639D7327086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift */,
 				5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */,
 				5B60C4BB270A1A2400D2E190 /* UILayoutPriority+AirKit.swift */,
+				5B3408072714AA9200BC79E8 /* UISearchBar+AirKit.swift */,
 				5B0273A2271033CF00DAA072 /* UIStackView+AirKit.swift */,
-				5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */,
-				5B0273A6271040D800DAA072 /* UIButton+AirKit.swift */,
 				5B3408052714A82500BC79E8 /* UISwitch+AirKit.swift */,
+				5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -854,6 +857,7 @@
 				5B7660AE2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift in Sources */,
 				5B7687F926F7C08600C388C1 /* String+AirKit.swift in Sources */,
 				5B9D3BFB270326D600FD822F /* Version.swift in Sources */,
+				5B3408082714AA9200BC79E8 /* UISearchBar+AirKit.swift in Sources */,
 				5B6A057E26FA2DC9001A59C8 /* Dictionary+AirKit.swift in Sources */,
 				5B9D3C0627034BAB00FD822F /* URLRequest+AirKit.swift in Sources */,
 				5B9D3C042703411A00FD822F /* URL+AirKit.swift in Sources */,
