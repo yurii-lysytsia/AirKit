@@ -57,6 +57,7 @@
 		5B3408062714A82500BC79E8 /* UISwitch+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3408052714A82500BC79E8 /* UISwitch+AirKit.swift */; };
 		5B3408082714AA9200BC79E8 /* UISearchBar+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3408072714AA9200BC79E8 /* UISearchBar+AirKit.swift */; };
 		5B34080A2714AC9900BC79E8 /* UIBarButtonItem+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3408092714AC9900BC79E8 /* UIBarButtonItem+AirKit.swift */; };
+		5B34080C2714B21300BC79E8 /* UITextView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B34080B2714B21300BC79E8 /* UITextView+AirKit.swift */; };
 		5B35BD172705AAFE0031AED3 /* CGPoint+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD162705AAFE0031AED3 /* CGPoint+AirKit.swift */; };
 		5B35BD192705B3010031AED3 /* CGSize+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD182705B3010031AED3 /* CGSize+AirKit.swift */; };
 		5B35BD1B2705C44C0031AED3 /* CGColor+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD1A2705C44C0031AED3 /* CGColor+AirKit.swift */; };
@@ -199,6 +200,7 @@
 		5B3408052714A82500BC79E8 /* UISwitch+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+AirKit.swift"; sourceTree = "<group>"; };
 		5B3408072714AA9200BC79E8 /* UISearchBar+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+AirKit.swift"; sourceTree = "<group>"; };
 		5B3408092714AC9900BC79E8 /* UIBarButtonItem+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+AirKit.swift"; sourceTree = "<group>"; };
+		5B34080B2714B21300BC79E8 /* UITextView+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+AirKit.swift"; sourceTree = "<group>"; };
 		5B35BD162705AAFE0031AED3 /* CGPoint+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+AirKit.swift"; sourceTree = "<group>"; };
 		5B35BD182705B3010031AED3 /* CGSize+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+AirKit.swift"; sourceTree = "<group>"; };
 		5B35BD1A2705C44C0031AED3 /* CGColor+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGColor+AirKit.swift"; sourceTree = "<group>"; };
@@ -618,6 +620,7 @@
 				5B3408072714AA9200BC79E8 /* UISearchBar+AirKit.swift */,
 				5B0273A2271033CF00DAA072 /* UIStackView+AirKit.swift */,
 				5B3408052714A82500BC79E8 /* UISwitch+AirKit.swift */,
+				5B34080B2714B21300BC79E8 /* UITextView+AirKit.swift */,
 				5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */,
 			);
 			path = UIKit;
@@ -892,6 +895,7 @@
 				5B07F3EF26F9024A00976D89 /* CGFloatConvertible.swift in Sources */,
 				5B6A057826FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift in Sources */,
 				5B239FB52700ED790045382F /* DateFormatComponents.swift in Sources */,
+				5B34080C2714B21300BC79E8 /* UITextView+AirKit.swift in Sources */,
 				5B639D6E270868C30028B543 /* CICategory.swift in Sources */,
 				5B19FEFB270721C400F76EBD /* CATransform3D+AirKit.swift in Sources */,
 				5B09638E26FB50FC00879AE7 /* KeyedDecodingContainer+AirKit.swift in Sources */,
