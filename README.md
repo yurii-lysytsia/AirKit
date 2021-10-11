@@ -62,6 +62,7 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `UIView`;
 - [X] Extensions for `UIStackView`;
 - [X] Extensions for `UIButton`;
+- [X] Extensions for `UISwitch`;
 
 ### v 0.5 | Extensions for `UIKit` (Part 2)
 - [ ] Extensions for different `UIScrollView` elements (will write about it later);
