@@ -12,6 +12,7 @@
 		5B06BF612715908B00CDB5C9 /* UIBarButtonItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B06BF602715908B00CDB5C9 /* UIBarButtonItemTests.swift */; };
 		5B06BF63271591FB00CDB5C9 /* UISwitchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B06BF62271591FB00CDB5C9 /* UISwitchTests.swift */; };
 		5B06BF652715925F00CDB5C9 /* UISearchBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B06BF642715925F00CDB5C9 /* UISearchBarTests.swift */; };
+		5B06BF672715A16600CDB5C9 /* UIScrollView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B06BF662715A16600CDB5C9 /* UIScrollView+AirKit.swift */; };
 		5B07F3DC26F8F0ED00976D89 /* Bool+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F3DB26F8F0ED00976D89 /* Bool+AirKit.swift */; };
 		5B07F3E026F8F28300976D89 /* Float+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F3DF26F8F28300976D89 /* Float+AirKit.swift */; };
 		5B07F3E226F8F5B700976D89 /* Double+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F3E126F8F5B700976D89 /* Double+AirKit.swift */; };
@@ -158,6 +159,7 @@
 		5B06BF602715908B00CDB5C9 /* UIBarButtonItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemTests.swift; sourceTree = "<group>"; };
 		5B06BF62271591FB00CDB5C9 /* UISwitchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISwitchTests.swift; sourceTree = "<group>"; };
 		5B06BF642715925F00CDB5C9 /* UISearchBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBarTests.swift; sourceTree = "<group>"; };
+		5B06BF662715A16600CDB5C9 /* UIScrollView+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+AirKit.swift"; sourceTree = "<group>"; };
 		5B07F3DB26F8F0ED00976D89 /* Bool+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+AirKit.swift"; sourceTree = "<group>"; };
 		5B07F3DF26F8F28300976D89 /* Float+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+AirKit.swift"; sourceTree = "<group>"; };
 		5B07F3E126F8F5B700976D89 /* Double+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+AirKit.swift"; sourceTree = "<group>"; };
@@ -623,6 +625,7 @@
 				5B639D7327086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift */,
 				5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */,
 				5B60C4BB270A1A2400D2E190 /* UILayoutPriority+AirKit.swift */,
+				5B06BF662715A16600CDB5C9 /* UIScrollView+AirKit.swift */,
 				5B3408072714AA9200BC79E8 /* UISearchBar+AirKit.swift */,
 				5B0273A2271033CF00DAA072 /* UIStackView+AirKit.swift */,
 				5B3408052714A82500BC79E8 /* UISwitch+AirKit.swift */,
@@ -843,6 +846,7 @@
 				5B35BD172705AAFE0031AED3 /* CGPoint+AirKit.swift in Sources */,
 				5B8C1CF9270454660021B48E /* UserDefaults+AirKit.swift in Sources */,
 				5B19FEF727071B6100F76EBD /* CACornerMask+AirKit.swift in Sources */,
+				5B06BF672715A16600CDB5C9 /* UIScrollView+AirKit.swift in Sources */,
 				5B3408062714A82500BC79E8 /* UISwitch+AirKit.swift in Sources */,
 				5B07F3E226F8F5B700976D89 /* Double+AirKit.swift in Sources */,
 				5B35BD1B2705C44C0031AED3 /* CGColor+AirKit.swift in Sources */,
