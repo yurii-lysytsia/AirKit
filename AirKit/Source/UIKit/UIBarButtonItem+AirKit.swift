@@ -9,11 +9,17 @@ import struct UIKit.CGFloat
 public extension UIBarButtonItem {
     /// Creates a new flexible space item.
     static var flexibleSpace: UIBarButtonItem {
-        UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        if #available(iOS 14.0, *) {
+            return UIBarButtonItem.flexibleSpace()
+        }
+        return UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
     }
     
-    /// Creates a fixed space item with a specific width.
+    /// Creates a new fixed space item using the width.
     static func fixedSpace(width: CGFloat) -> UIBarButtonItem {
+        if #available(iOS 14.0, *) {
+            return UIBarButtonItem.fixedSpace(width)
+        }
         let item = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
         item.width = width
         return item
