@@ -38,13 +38,13 @@ public extension UITableView {
             return nil
         }
         // Check does section contains any items
-        let numberOfItems = numberOfRows(inSection: section)
-        guard numberOfItems > 0 else {
+        let rowsCount = numberOfRows(inSection: section)
+        guard rowsCount > 0 else {
             return nil
         }
         
         // Return index path
-        return IndexPath(item: numberOfItems - 1, section: section)
+        return IndexPath(item: rowsCount - 1, section: section)
     }
 }
 

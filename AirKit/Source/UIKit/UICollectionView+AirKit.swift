@@ -34,13 +34,13 @@ public extension UICollectionView {
         }
         
         // Check does section contains any items
-        let numberOfItems = numberOfItems(inSection: section)
-        guard numberOfItems > 0 else {
+        let itemsCount = numberOfItems(inSection: section)
+        guard itemsCount > 0 else {
             return nil
         }
         
         // Return index path
-        return IndexPath(item: numberOfItems - 1, section: section)
+        return IndexPath(item: itemsCount - 1, section: section)
     }
 }
 

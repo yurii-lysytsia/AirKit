@@ -141,6 +141,7 @@
 		5BAD26972716ED1F00AE9E4F /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD26962716ED1F00AE9E4F /* NibLoadableView.swift */; };
 		5BAD26992716F04B00AE9E4F /* UICollectionView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD26982716F04B00AE9E4F /* UICollectionView+AirKit.swift */; };
 		5BAD269B27170E0700AE9E4F /* UITableView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD269A27170E0700AE9E4F /* UITableView+AirKit.swift */; };
+		5BAD269E27171AED00AE9E4F /* ReusableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD269D27171AED00AE9E4F /* ReusableViewTests.swift */; };
 		5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16B326F6237F0094B14C /* NumberConvertible.swift */; };
 		5BD4AE76270B66ED00D65DBC /* UIView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */; };
 		5BD4AE79270B66FE00D65DBC /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4AE78270B66FE00D65DBC /* UIViewTests.swift */; };
@@ -297,6 +298,7 @@
 		5BAD26962716ED1F00AE9E4F /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		5BAD26982716F04B00AE9E4F /* UICollectionView+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+AirKit.swift"; sourceTree = "<group>"; };
 		5BAD269A27170E0700AE9E4F /* UITableView+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+AirKit.swift"; sourceTree = "<group>"; };
+		5BAD269D27171AED00AE9E4F /* ReusableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewTests.swift; sourceTree = "<group>"; };
 		5BBB16B326F6237F0094B14C /* NumberConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConvertible.swift; sourceTree = "<group>"; };
 		5BBB16C026F6308E0094B14C /* AirKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AirKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AirKit.swift"; sourceTree = "<group>"; };
@@ -671,6 +673,7 @@
 				5B2ADD432710D595003D4C1C /* UIStackViewTests.swift */,
 				5B06BF62271591FB00CDB5C9 /* UISwitchTests.swift */,
 				5BD4AE78270B66FE00D65DBC /* UIViewTests.swift */,
+				5BAD269C27171ADF00AE9E4F /* Protocols */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -692,6 +695,14 @@
 				5B9D3C142703539500FD822F /* VersionTests.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5BAD269C27171ADF00AE9E4F /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5BAD269D27171AED00AE9E4F /* ReusableViewTests.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		5BBB16B526F625040094B14C /* Swift */ = {
@@ -966,6 +977,7 @@
 				5B639D85270888C60028B543 /* UIImageTests.swift in Sources */,
 				5B35BD1D2705F8220031AED3 /* CGSizeTests.swift in Sources */,
 				5B2ADD422710CAE2003D4C1C /* UIButtonTests.swift in Sources */,
+				5BAD269E27171AED00AE9E4F /* ReusableViewTests.swift in Sources */,
 				5B9D3C152703539500FD822F /* VersionTests.swift in Sources */,
 				5B9D3C0A27034CE500FD822F /* LocaleTests.swift in Sources */,
 				5B9D3C1027034F8F00FD822F /* URLRequestTests.swift in Sources */,
