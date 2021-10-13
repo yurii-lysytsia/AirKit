@@ -6,6 +6,44 @@ import class UIKit.UICollectionViewCell
 import class UIKit.UICollectionReusableView
 import struct UIKit.IndexPath
 
+// MARK: - Extensions | Index Paths
+
+public extension UICollectionView {
+    /// Returns index of the last section in collection view if exists, otherwise remove `nil`.
+    ///
+    ///     collectionView.numberOfSections // Int(3)
+    ///     collectionView.lastSectionIndex // Int(2)
+    ///
+    ///     collectionView.numberOfSections // Int(0)
+    ///     collectionView.lastSectionIndex // nil
+    ///
+    var lastSectionIndex: Int? {
+        numberOfSections > 0 ? numberOfSections - 1 : nil
+    }
+    
+    /// Returns index path for the last section's item in collection view if exists, otherwise remove `nil`.
+    var lastIndexPath: IndexPath? {
+        lastSectionIndex.flatMap { lastIndexPath(inSection: $0) }
+    }
+    
+    /// Returns index path for the last item in section if exists, otherwise remove `nil`.
+    func lastIndexPath(inSection section: Int) -> IndexPath? {
+        // Check does collection view contains the section.
+        guard section.isBetween(0..<numberOfSections) else {
+            return nil
+        }
+        
+        // Check does section contains any items
+        let numberOfItems = numberOfItems(inSection: section)
+        guard numberOfItems > 0 else {
+            return nil
+        }
+        
+        // Return index path
+        return IndexPath(item: numberOfItems - 1, section: section)
+    }
+}
+
 // MARK: - Extensions | Dequeue Reusable Cell
 
 public extension UICollectionView {
