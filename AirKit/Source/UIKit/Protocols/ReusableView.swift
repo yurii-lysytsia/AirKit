@@ -1,10 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UICollectionViewCell
-import class UIKit.UICollectionReusableView
-#endif
-
 /// Protocol is needed for implement reusable view class identifier and defines only one property `reuseIdentifier`.
 public protocol ReusableView: AnyObject {
     /// Returns unique view class identefier.
@@ -19,11 +14,3 @@ public extension ReusableView {
         String(describing: self)
     }
 }
-
-#if canImport(UIKit)
-// MARK: - Extensions | Implementations
-
-extension UICollectionViewCell: ReusableView { }
-
-extension UICollectionReusableView: ReusableView { }
-#endif

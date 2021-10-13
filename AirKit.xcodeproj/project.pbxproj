@@ -140,6 +140,7 @@
 		5B9D3C152703539500FD822F /* VersionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3C142703539500FD822F /* VersionTests.swift */; };
 		5BAD26972716ED1F00AE9E4F /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD26962716ED1F00AE9E4F /* NibLoadableView.swift */; };
 		5BAD26992716F04B00AE9E4F /* UICollectionView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD26982716F04B00AE9E4F /* UICollectionView+AirKit.swift */; };
+		5BAD269B27170E0700AE9E4F /* UITableView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD269A27170E0700AE9E4F /* UITableView+AirKit.swift */; };
 		5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16B326F6237F0094B14C /* NumberConvertible.swift */; };
 		5BD4AE76270B66ED00D65DBC /* UIView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */; };
 		5BD4AE79270B66FE00D65DBC /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4AE78270B66FE00D65DBC /* UIViewTests.swift */; };
@@ -295,6 +296,7 @@
 		5B9D3C142703539500FD822F /* VersionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionTests.swift; sourceTree = "<group>"; };
 		5BAD26962716ED1F00AE9E4F /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		5BAD26982716F04B00AE9E4F /* UICollectionView+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+AirKit.swift"; sourceTree = "<group>"; };
+		5BAD269A27170E0700AE9E4F /* UITableView+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+AirKit.swift"; sourceTree = "<group>"; };
 		5BBB16B326F6237F0094B14C /* NumberConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConvertible.swift; sourceTree = "<group>"; };
 		5BBB16C026F6308E0094B14C /* AirKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AirKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AirKit.swift"; sourceTree = "<group>"; };
@@ -645,6 +647,7 @@
 				5B3408072714AA9200BC79E8 /* UISearchBar+AirKit.swift */,
 				5B0273A2271033CF00DAA072 /* UIStackView+AirKit.swift */,
 				5B3408052714A82500BC79E8 /* UISwitch+AirKit.swift */,
+				5BAD269A27170E0700AE9E4F /* UITableView+AirKit.swift */,
 				5B34080B2714B21300BC79E8 /* UITextView+AirKit.swift */,
 				5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */,
 				5B06BF682715B16400CDB5C9 /* Protocols */,
@@ -910,6 +913,7 @@
 				5B07F3F126F9038000976D89 /* Int+AirKit.swift in Sources */,
 				5BD4AE76270B66ED00D65DBC /* UIView+AirKit.swift in Sources */,
 				5B1B3895270C9D0700D9215B /* AirKit.swift in Sources */,
+				5BAD269B27170E0700AE9E4F /* UITableView+AirKit.swift in Sources */,
 				5B1B388C270C63E300D9215B /* Once.swift in Sources */,
 				5B639D7627086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift in Sources */,
 				5B07F3EA26F901A300976D89 /* FloatConvertible.swift in Sources */,

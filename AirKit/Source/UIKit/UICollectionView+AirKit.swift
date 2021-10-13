@@ -48,7 +48,7 @@ public extension UICollectionView {
 
 public extension UICollectionView {
     /// Registers a class for use in creating new collection view cells.
-    func register<T: UICollectionViewCell>(cellClass: T.Type) {
+    func register<T: UICollectionViewCell>(cellClass: T.Type) where T: ReusableView {
         register(T.self, forCellWithReuseIdentifier: cellClass.reuseIdentifier)
     }
     
@@ -62,7 +62,7 @@ public extension UICollectionView {
     ///     let cell = collectionView.dequeueReusableCell(cellClass: SomeCollectionViewCell.self, for: indexPath)
     ///     cell is SomeCollectionViewCell // true
     ///
-    func dequeueReusableCell<T: UICollectionViewCell>(cellClass: T.Type, for indexPath: IndexPath) -> T {
+    func dequeueReusableCell<T: UICollectionViewCell>(cellClass: T.Type, for indexPath: IndexPath) -> T where T: ReusableView {
         guard let cell = dequeueReusableCell(withReuseIdentifier: cellClass.reuseIdentifier, for: indexPath) as? T else {
             fatalError("\(#function) - dequeue reusable cell with reuse identifier `\(cellClass.reuseIdentifier)` wasn't found. Make sure the cell is registered with collection view")
         }
@@ -74,7 +74,7 @@ public extension UICollectionView {
     ///     let cell: SomeCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
     ///     cell is SomeCollectionViewCell // true
     ///
-    func dequeueReusableCell<T: UICollectionViewCell>(for indexPath: IndexPath) -> T {
+    func dequeueReusableCell<T: UICollectionViewCell>(for indexPath: IndexPath) -> T where T: ReusableView {
         dequeueReusableCell(cellClass: T.self, for: indexPath)
     }
 }
@@ -83,7 +83,7 @@ public extension UICollectionView {
 
 public extension UICollectionView {
     /// Registers a class for use in creating supplementary views for the collection view.
-    func register<T: UICollectionReusableView>(kind: ElementKindSection, viewClass: T.Type) {
+    func register<T: UICollectionReusableView>(kind: ElementKindSection, viewClass: T.Type) where T: ReusableView {
         register(viewClass.self, forSupplementaryViewOfKind: kind.rawValue, withReuseIdentifier: viewClass.reuseIdentifier)
     }
 
@@ -93,7 +93,7 @@ public extension UICollectionView {
     }
 
     /// Registers a class for use in creating supplementary header views for the collection view.
-    func registerHeader<T: UICollectionReusableView>(viewClass: T.Type) {
+    func registerHeader<T: UICollectionReusableView>(viewClass: T.Type) where T: ReusableView {
         register(kind: .header, viewClass: viewClass)
     }
     
@@ -103,7 +103,7 @@ public extension UICollectionView {
     }
 
     /// Registers a class for use in creating supplementary footer views for the collection view.
-    func registerFooter<T: UICollectionReusableView>(viewClass: T.Type) {
+    func registerFooter<T: UICollectionReusableView>(viewClass: T.Type) where T: ReusableView {
         register(kind: .footer, viewClass: viewClass)
     }
     
@@ -120,7 +120,7 @@ public extension UICollectionView {
     ///     let footerView = collectionView.dequeueReusableSupplementaryView(of: .footer, viewClass: SomeFooterView.self, for: indexPath)
     ///     footerView is SomeFooterView // true
     ///
-    func dequeueReusableSupplementaryView<T: UICollectionReusableView>(of kind: ElementKindSection, viewClass: T.Type, for indexPath: IndexPath) -> T {
+    func dequeueReusableSupplementaryView<T: UICollectionReusableView>(of kind: ElementKindSection, viewClass: T.Type, for indexPath: IndexPath) -> T where T: ReusableView {
         guard let view = dequeueReusableSupplementaryView(ofKind: kind.rawValue, withReuseIdentifier: viewClass.reuseIdentifier, for: indexPath) as? T else {
             fatalError("\(#function) - dequeue reusable supplementary view with reuse identifier `\(viewClass.reuseIdentifier)` wasn't found. Make sure the view is registered with collection view")
         }
@@ -135,7 +135,7 @@ public extension UICollectionView {
     ///     let footerView: SomeFooterView = collectionView.dequeueReusableSupplementaryView(of: .footer, for: indexPath)
     ///     footerView is SomeFooterView // true
     ///
-    func dequeueReusableSupplementaryView<T: UICollectionReusableView>(of kind: ElementKindSection, for indexPath: IndexPath) -> T {
+    func dequeueReusableSupplementaryView<T: UICollectionReusableView>(of kind: ElementKindSection, for indexPath: IndexPath) -> T where T: ReusableView {
         dequeueReusableSupplementaryView(of: kind, viewClass: T.self, for: indexPath)
     }
     
@@ -144,7 +144,7 @@ public extension UICollectionView {
     ///     let headerView = collectionView.dequeueReusableHeaderView(viewClass: SomeHeaderView.self, for: indexPath)
     ///     headerView is SomeHeaderView // true
     ///
-    func dequeueReusableHeaderView<T: UICollectionReusableView>(viewClass: T.Type, for indexPath: IndexPath) -> T {
+    func dequeueReusableHeaderView<T: UICollectionReusableView>(viewClass: T.Type, for indexPath: IndexPath) -> T where T: ReusableView {
         dequeueReusableSupplementaryView(of: .header, viewClass: viewClass, for: indexPath)
     }
     
@@ -153,7 +153,7 @@ public extension UICollectionView {
     ///     let headerView: SomeHeaderView = collectionView.dequeueReusableHeaderView(for: indexPath)
     ///     headerView is SomeHeaderView // true
     ///
-    func dequeueReusableHeaderView<T: UICollectionReusableView>(for indexPath: IndexPath) -> T {
+    func dequeueReusableHeaderView<T: UICollectionReusableView>(for indexPath: IndexPath) -> T where T: ReusableView {
         dequeueReusableHeaderView(viewClass: T.self, for: indexPath)
     }
     
@@ -162,7 +162,7 @@ public extension UICollectionView {
     ///     let footerView = collectionView.dequeueReusableFooterView(viewClass: SomeFooterView.self, for: indexPath)
     ///     footerView is SomeFooterView // true
     ///
-    func dequeueReusableFooterView<T: UICollectionReusableView>(viewClass: T.Type, for indexPath: IndexPath) -> T {
+    func dequeueReusableFooterView<T: UICollectionReusableView>(viewClass: T.Type, for indexPath: IndexPath) -> T where T: ReusableView {
         dequeueReusableSupplementaryView(of: .footer, viewClass: viewClass, for: indexPath)
     }
     
@@ -171,7 +171,7 @@ public extension UICollectionView {
     ///     let footerView: SomeFooterView = collectionView.dequeueReusableFooterView(for: indexPath)
     ///     footerView is SomeFooterView // true
     ///
-    func dequeueReusableFooterView<T: UICollectionReusableView>(for indexPath: IndexPath) -> T {
+    func dequeueReusableFooterView<T: UICollectionReusableView>(for indexPath: IndexPath) -> T where T: ReusableView {
         dequeueReusableFooterView(viewClass: T.self, for: indexPath)
     }
     
