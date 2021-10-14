@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class UIImageTests: XCTestCase {
+final class UIImageTests: XCTestCase {
     
     func testRendering() {
         let image = UIImage(color: .white, size: CGSize(width: 5, height: 5))

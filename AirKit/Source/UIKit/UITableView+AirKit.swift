@@ -42,7 +42,6 @@ public extension UITableView {
         guard rowsCount > 0 else {
             return nil
         }
-        
         // Return index path
         return IndexPath(item: rowsCount - 1, section: section)
     }

@@ -7,25 +7,6 @@ import struct UIKit.CGSize
 import struct UIKit.CGRect
 import struct UIKit.CGFloat
 
-// MARK: - Extensions | Content Size
-
-public extension UIScrollView {
-    /// Returns currently visible region of the scroll view.
-    var visibleRect: CGRect {
-        let size = CGSize(
-            width: min(bounds.size.width, contentSize.width),
-            height: min(bounds.size.height, contentSize.height)
-        )
-        return CGRect(
-            origin: contentOffset,
-            size: CGSize(
-                width: min(size.width, contentSize.width - contentOffset.x),
-                height: min(size.height, contentSize.height - contentOffset.y)
-            )
-        )
-    }
-}
-
 // MARK: - Extensions | Scrolls
 
 public extension UIScrollView {

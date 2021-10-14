@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class UIBezierPathTests: XCTestCase {
+final class UIBezierPathTests: XCTestCase {
     
     func testInits() {
         XCTAssertEqual(UIBezierPath(points: []), UIBezierPath())
