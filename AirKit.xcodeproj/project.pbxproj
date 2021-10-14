@@ -128,6 +128,7 @@
 		5B96CA0C2718278700261CFE /* UITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96CA0B2718278700261CFE /* UITableViewTests.swift */; };
 		5B96CA0E27182B7C00261CFE /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96CA0D27182B7C00261CFE /* UICollectionViewTests.swift */; };
 		5B96CA1027182CF200261CFE /* UITextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96CA0F27182CF200261CFE /* UITextViewTests.swift */; };
+		5B96CA1227182FA100261CFE /* AirKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96CA1127182FA100261CFE /* AirKitTests.swift */; };
 		5B9BAFCD26F77B1D00731991 /* BinaryInteger+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */; };
 		5B9BAFCF26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFCE26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift */; };
 		5B9D3BF72703137600FD822F /* CalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3BF62703137600FD822F /* CalendarTests.swift */; };
@@ -291,6 +292,7 @@
 		5B96CA0B2718278700261CFE /* UITableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewTests.swift; sourceTree = "<group>"; };
 		5B96CA0D27182B7C00261CFE /* UICollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewTests.swift; sourceTree = "<group>"; };
 		5B96CA0F27182CF200261CFE /* UITextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewTests.swift; sourceTree = "<group>"; };
+		5B96CA1127182FA100261CFE /* AirKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirKitTests.swift; sourceTree = "<group>"; };
 		5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryInteger+AirKit.swift"; sourceTree = "<group>"; };
 		5B9BAFCE26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryFloatingPoint+AirKit.swift"; sourceTree = "<group>"; };
 		5B9BAFD626F7881D00731991 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -612,6 +614,7 @@
 		5B6A059026FA7E2A001A59C8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				5B96CA1127182FA100261CFE /* AirKitTests.swift */,
 				5B6A059126FA7E31001A59C8 /* Swift */,
 				5B0ED07D26FCD45500473155 /* Foundation */,
 				5B0ED08226FCD48F00473155 /* CoreGraphics */,
@@ -1030,6 +1033,7 @@
 				5B09639C26FB97F600879AE7 /* BoolTests.swift in Sources */,
 				5B09639926FB88FC00879AE7 /* BinaryIntegerTests.swift in Sources */,
 				5BD4AE79270B66FE00D65DBC /* UIViewTests.swift in Sources */,
+				5B96CA1227182FA100261CFE /* AirKitTests.swift in Sources */,
 				5B19FF042707611E00F76EBD /* CAGradientLayerTests.swift in Sources */,
 				5B0ED07826FCD42200473155 /* FloatTests.swift in Sources */,
 				5B06BF63271591FB00CDB5C9 /* UISwitchTests.swift in Sources */,
