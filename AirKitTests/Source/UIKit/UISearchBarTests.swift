@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class UISearchBarTests: XCTestCase {
+final class UISearchBarTests: XCTestCase {
     
     func testTextField() {
         let searchBar = UISearchBar()

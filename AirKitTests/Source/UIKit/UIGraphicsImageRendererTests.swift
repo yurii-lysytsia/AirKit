@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class UIGraphicsImageRendererTests: XCTestCase {
+final class UIGraphicsImageRendererTests: XCTestCase {
     
     func testInits() {
         let renderer_0 = UIGraphicsImageRenderer(size: CGSize(width: 5, height: 5), scale: 3, opaque: true)

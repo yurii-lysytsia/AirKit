@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class UIColorTests: XCTestCase {
+final class UIColorTests: XCTestCase {
     
     func testRandomAndAlpha() {
         XCTAssertEqual(UIColor.random(alpha: 1).alpha, 1, accuracy: 0.1)

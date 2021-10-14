@@ -66,9 +66,9 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `UISearchBar`;
 - [X] Extensions for `UIBarButtonItem`;
 - [X] Extensions for `UITextView`;
-
-### v 0.5 | Extensions for `UIKit` (Part 2)
-- [ ] Extensions for different `UIScrollView` elements (will write about it later);
+- [X] Extensions for `UIScrollView`;
+- [X] Extensions for `UICollectionView`;
+- [X] Extensions for `UITableView`;
 
 ### v 0.6 | Extensions for `UIKit` (Part 3)
 - [ ] Extensions for different `UIViewController` subclasses (will write about it later);

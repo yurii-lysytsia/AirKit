@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class UISwitchTests: XCTestCase {
+final class UISwitchTests: XCTestCase {
     
     func testToogleOn() {
         let element = UISwitch()

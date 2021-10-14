@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class UIViewTests: XCTestCase {
+final class UIViewTests: XCTestCase {
 
     override class func setUp() {
         try! UIView.swizzleView()
@@ -224,6 +224,13 @@ class UIViewTests: XCTestCase {
         
         XCTAssertEqual(view.layerShadowOpacity, view.layer.shadowOpacity)
         XCTAssertEqual(view.layerShadowOpacity, 0)
+    }
+    
+    func testAnimationOptions() {
+        XCTAssertEqual(UIView.AnimationOptions(curve: .linear), UIView.AnimationOptions.curveLinear)
+        XCTAssertEqual(UIView.AnimationOptions(curve: .easeIn), UIView.AnimationOptions.curveEaseIn)
+        XCTAssertEqual(UIView.AnimationOptions(curve: .easeOut), UIView.AnimationOptions.curveEaseOut)
+        XCTAssertEqual(UIView.AnimationOptions(curve: .easeInOut), UIView.AnimationOptions.curveEaseInOut)
     }
     
 }

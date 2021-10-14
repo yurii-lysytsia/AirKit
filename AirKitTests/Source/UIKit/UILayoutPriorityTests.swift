@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class UILayoutPriorityTests: XCTestCase {
+final class UILayoutPriorityTests: XCTestCase {
     
     func test() {
         let constraint = NSLayoutConstraint()

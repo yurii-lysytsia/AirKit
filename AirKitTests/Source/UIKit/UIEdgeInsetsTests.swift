@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class UIEdgeInsetsTests: XCTestCase {
+final class UIEdgeInsetsTests: XCTestCase {
 
     func testValues() {
         let insets = UIEdgeInsets(top: 20, left: 15, bottom: 15, right: 20)

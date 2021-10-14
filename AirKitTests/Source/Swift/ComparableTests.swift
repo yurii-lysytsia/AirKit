@@ -10,6 +10,11 @@ final class ComparableTests: XCTestCase {
         XCTAssertTrue(7.isBetween(6...12))
         XCTAssertTrue("c".isBetween("a"..."d"))
         XCTAssertTrue(0.32.isBetween(0.31...0.33))
+        
+        XCTAssertFalse(1.isBetween(5..<7))
+        XCTAssertTrue(7.isBetween(6..<12))
+        XCTAssertTrue("c".isBetween("a"..<"d"))
+        XCTAssertTrue(0.32.isBetween(0.31..<0.33))
     }
     
     func testClamped() {

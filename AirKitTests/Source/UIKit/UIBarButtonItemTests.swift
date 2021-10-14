@@ -3,7 +3,7 @@
 import XCTest
 @testable import AirKit
 
-class UIBarButtonItemTests: XCTestCase {
+final class UIBarButtonItemTests: XCTestCase {
     
     func testStaticValues() {
         XCTAssertEqual(UIBarButtonItem.flexibleSpace, UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil))
