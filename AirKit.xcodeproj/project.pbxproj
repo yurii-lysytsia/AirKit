@@ -129,6 +129,8 @@
 		5B96CA0E27182B7C00261CFE /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96CA0D27182B7C00261CFE /* UICollectionViewTests.swift */; };
 		5B96CA1027182CF200261CFE /* UITextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96CA0F27182CF200261CFE /* UITextViewTests.swift */; };
 		5B96CA1227182FA100261CFE /* AirKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96CA1127182FA100261CFE /* AirKitTests.swift */; };
+		5B96CA14271832C900261CFE /* UINavigationController+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96CA13271832C900261CFE /* UINavigationController+AirKit.swift */; };
+		5B96CA162718371800261CFE /* UINavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96CA152718371800261CFE /* UINavigationControllerTests.swift */; };
 		5B9BAFCD26F77B1D00731991 /* BinaryInteger+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */; };
 		5B9BAFCF26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFCE26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift */; };
 		5B9D3BF72703137600FD822F /* CalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3BF62703137600FD822F /* CalendarTests.swift */; };
@@ -293,6 +295,8 @@
 		5B96CA0D27182B7C00261CFE /* UICollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewTests.swift; sourceTree = "<group>"; };
 		5B96CA0F27182CF200261CFE /* UITextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewTests.swift; sourceTree = "<group>"; };
 		5B96CA1127182FA100261CFE /* AirKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirKitTests.swift; sourceTree = "<group>"; };
+		5B96CA13271832C900261CFE /* UINavigationController+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+AirKit.swift"; sourceTree = "<group>"; };
+		5B96CA152718371800261CFE /* UINavigationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerTests.swift; sourceTree = "<group>"; };
 		5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryInteger+AirKit.swift"; sourceTree = "<group>"; };
 		5B9BAFCE26F77BC000731991 /* BinaryFloatingPoint+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryFloatingPoint+AirKit.swift"; sourceTree = "<group>"; };
 		5B9BAFD626F7881D00731991 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -659,6 +663,7 @@
 				5BAD26982716F04B00AE9E4F /* UICollectionView+AirKit.swift */,
 				5B639D8C2708A4A50028B543 /* UIColor+AirKit.swift */,
 				5B60C4AF2709B61A00D2E190 /* UIEdgeInsets+AirKit.swift */,
+				5B96CA13271832C900261CFE /* UINavigationController+AirKit.swift */,
 				5B639D7527086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift */,
 				5B639D7327086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift */,
 				5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */,
@@ -688,6 +693,7 @@
 				5B639D82270883FE0028B543 /* UIGraphicsImageRendererTests.swift */,
 				5B639D84270888C60028B543 /* UIImageTests.swift */,
 				5B60C4BD270A1C0B00D2E190 /* UILayoutPriorityTests.swift */,
+				5B96CA152718371800261CFE /* UINavigationControllerTests.swift */,
 				5B96CA09271823CA00261CFE /* UIScrollViewTests.swift */,
 				5B06BF642715925F00CDB5C9 /* UISearchBarTests.swift */,
 				5B2ADD432710D595003D4C1C /* UIStackViewTests.swift */,
@@ -917,6 +923,7 @@
 			files = (
 				5B35BD172705AAFE0031AED3 /* CGPoint+AirKit.swift in Sources */,
 				5B8C1CF9270454660021B48E /* UserDefaults+AirKit.swift in Sources */,
+				5B96CA14271832C900261CFE /* UINavigationController+AirKit.swift in Sources */,
 				5B19FEF727071B6100F76EBD /* CACornerMask+AirKit.swift in Sources */,
 				5B06BF672715A16600CDB5C9 /* UIScrollView+AirKit.swift in Sources */,
 				5B3408062714A82500BC79E8 /* UISwitch+AirKit.swift in Sources */,
@@ -1054,6 +1061,7 @@
 				5B0ED08126FCD48100473155 /* TimeIntervalTests.swift in Sources */,
 				5B0ED07C26FCD44600473155 /* ResultTests.swift in Sources */,
 				5B60C4BE270A1C0B00D2E190 /* UILayoutPriorityTests.swift in Sources */,
+				5B96CA162718371800261CFE /* UINavigationControllerTests.swift in Sources */,
 				5B06BF612715908B00CDB5C9 /* UIBarButtonItemTests.swift in Sources */,
 				5B19FEFF27072F2C00F76EBD /* CGAffineTransformTests.swift in Sources */,
 				5B0ED08426FCD4A400473155 /* CGFloatTests.swift in Sources */,
