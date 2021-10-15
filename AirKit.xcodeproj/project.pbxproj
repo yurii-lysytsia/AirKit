@@ -156,6 +156,7 @@
 		5BD4AE76270B66ED00D65DBC /* UIView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */; };
 		5BD4AE79270B66FE00D65DBC /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4AE78270B66FE00D65DBC /* UIViewTests.swift */; };
 		5BDC3CE4270F0BE2006DC5A0 /* OnceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDC3CE3270F0BE2006DC5A0 /* OnceTests.swift */; };
+		5BEAB5B82719A88C007E74E1 /* UIPageViewController+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEAB5B72719A88C007E74E1 /* UIPageViewController+AirKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -324,6 +325,7 @@
 		5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AirKit.swift"; sourceTree = "<group>"; };
 		5BD4AE78270B66FE00D65DBC /* UIViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTests.swift; sourceTree = "<group>"; };
 		5BDC3CE3270F0BE2006DC5A0 /* OnceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnceTests.swift; sourceTree = "<group>"; };
+		5BEAB5B72719A88C007E74E1 /* UIPageViewController+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPageViewController+AirKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -674,6 +676,7 @@
 				5B3408052714A82500BC79E8 /* UISwitch+AirKit.swift */,
 				5BAD269A27170E0700AE9E4F /* UITableView+AirKit.swift */,
 				5B34080B2714B21300BC79E8 /* UITextView+AirKit.swift */,
+				5BEAB5B72719A88C007E74E1 /* UIPageViewController+AirKit.swift */,
 				5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */,
 				5B06BF682715B16400CDB5C9 /* Protocols */,
 			);
@@ -986,6 +989,7 @@
 				5B9BAFCD26F77B1D00731991 /* BinaryInteger+AirKit.swift in Sources */,
 				5B19FEFD27072B0F00F76EBD /* CGAffineTransform+AirKit.swift in Sources */,
 				5BAD26972716ED1F00AE9E4F /* NibLoadableView.swift in Sources */,
+				5BEAB5B82719A88C007E74E1 /* UIPageViewController+AirKit.swift in Sources */,
 				5B8C1CFF270479810021B48E /* DateComponents+AirKit.swift in Sources */,
 				5B07F3EF26F9024A00976D89 /* CGFloatConvertible.swift in Sources */,
 				5B6A057826FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift in Sources */,

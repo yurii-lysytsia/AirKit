@@ -70,8 +70,7 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `UICollectionView`;
 - [X] Extensions for `UITableView`;
 - [X] Extensions for `UINavigationViewController`;
-- [ ] Extensions for `UIAlertViewController`;
-- [ ] Extensions for `UIPageViewController`;
+- [X] Extensions for `UIPageViewController`;
 - [ ] Extensions for `UIViewController`;
 
 ### v 0.7 | Extensions for `UIKit` (Part 4)
