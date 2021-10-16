@@ -74,7 +74,7 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `UIPageViewController`;
 - [X] Extensions for `UIViewController`;
 - [X] Extensions for `UIWindow`;
-- [ ] Extensions for `UIApplication`;
+- [X] Extensions for `UIApplication`;
 
 ### v 0.8 | Extensions for `CoreData`
 - [ ] Extensions for `NSPredicate`;
@@ -102,8 +102,9 @@ This is sugar framework that contains many different extensions for native Swift
 - [ ] Extensions for `UIView` and `NSLayoutConstraint`;
 - [ ] Extensions for keyboard observing with many helpers;
 - [ ] Extensions for change screen on multitasking;
+- [ ] Extensions for `UIApplication` to open schemes, such as `mailto` or popular apps;
 
-### v 1.3 | Extensions for  [`CoreImage`](AirKit/Source/CoreImage)
+### v 1.3 | Extensions for [`CoreImage`](AirKit/Source/CoreImage)
 - [X] Extensions for `CIContext`;
 - [X] Extensions for `CIFilter`;
 - [ ] `CICategory` (https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference);

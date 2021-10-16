@@ -102,7 +102,10 @@ public extension UIWindow {
             transitionOptions.insert(UIView.AnimationOptions(curve: transition.curve))
             // Make transition between view controllers
             UIView.transition(with: self, duration: transition.duration, options: transitionOptions, animations: {
+                let oldState = UIView.areAnimationsEnabled
+                UIView.setAnimationsEnabled(false)
                 self.rootViewController = viewController
+                UIView.setAnimationsEnabled(oldState)
             }, completion: completion)
             
         case .fromLeft, .fromRight, .fromTop, .fromBottom:
