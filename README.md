@@ -69,9 +69,9 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `UIScrollView`;
 - [X] Extensions for `UICollectionView`;
 - [X] Extensions for `UITableView`;
-
-### v 0.6 | Extensions for `UIKit` (Part 3)
-- [ ] Extensions for different `UIViewController` subclasses (will write about it later);
+- [X] Extensions for `UINavigationViewController`;
+- [X] Extensions for `UIPageViewController`;
+- [X] Extensions for `UIViewController`;
 
 ### v 0.7 | Extensions for `UIKit` (Part 4)
 - [ ] Extensions for `UIWindow`;
@@ -114,7 +114,7 @@ This is sugar framework that contains many different extensions for native Swift
 ### [CocoaPods](https://cocoapods.org) 
 For usage and installation instructions, visit their website. To integrate AirKit into your Xcode project using CocoaPods, specify it in your `Podfile`:
 ```ruby
-pod 'AirKit', '~> 0.5'
+pod 'AirKit', '~> 0.6'
 ```
 
 ## 💻 Usage 
