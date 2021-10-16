@@ -61,4 +61,44 @@ public extension Bundle {
         public let executable: String
     }
 }
+
+// MARK: - Extension | Environment
+
+public extension Bundle {
+    /// Application running environment.
+    enum Environment {
+        /// Application is running in debug mode.
+        case debug
+        /// Application is installed from the Test Flight.
+        case testFlight
+        /// Application is installed from the App Store.
+        case appStore
+    }
+
+    /// Return the current inferred app environment.
+    var currentEnvironment: Environment {
+        // If flag is `DEBUG` or app was runned on simulator
+        #if DEBUG || targetEnvironment(simulator)
+        return .debug
+        #else
+        if path(forResource: "embedded", ofType: "mobileprovision") != nil {
+            return .testFlight
+        }
+
+        guard let appStoreReceiptUrl = appStoreReceiptURL else {
+            return .debug
+        }
+
+        if appStoreReceiptUrl.lastPathComponent.lowercased() == "sandboxreceipt" {
+            return .testFlight
+        }
+        
+        if appStoreReceiptUrl.path.lowercased().contains("simulator") {
+            return .debug
+        }
+
+        return .appStore
+        #endif
+    }
+}
 #endif

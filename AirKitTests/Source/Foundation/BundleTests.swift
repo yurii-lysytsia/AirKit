@@ -28,4 +28,8 @@ final class BundleTests: XCTestCase {
         XCTAssertEqual(bundle.infoBuildVersion.localizedDescription, info.buildVersionShort)
     }
     
+    func testEnvironment() {
+        XCTAssertEqual(bundle.currentEnvironment, .debug)
+    }
+    
 }
