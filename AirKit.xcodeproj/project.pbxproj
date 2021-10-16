@@ -155,6 +155,9 @@
 		5BAD269E27171AED00AE9E4F /* ReusableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD269D27171AED00AE9E4F /* ReusableViewTests.swift */; };
 		5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16B326F6237F0094B14C /* NumberConvertible.swift */; };
 		5BBC9FCD271AB3600025828C /* UIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBC9FCC271AB3600025828C /* UIViewControllerTests.swift */; };
+		5BBC9FCF271AD32F0025828C /* UIWindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBC9FCE271AD32F0025828C /* UIWindowTests.swift */; };
+		5BBC9FD1271AD3500025828C /* UIWindow+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBC9FD0271AD3500025828C /* UIWindow+AirKit.swift */; };
+		5BBC9FD3271AD3760025828C /* CAMediaTimingFunction+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBC9FD2271AD3760025828C /* CAMediaTimingFunction+AirKit.swift */; };
 		5BD4AE76270B66ED00D65DBC /* UIView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */; };
 		5BD4AE79270B66FE00D65DBC /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4AE78270B66FE00D65DBC /* UIViewTests.swift */; };
 		5BDC3CE4270F0BE2006DC5A0 /* OnceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDC3CE3270F0BE2006DC5A0 /* OnceTests.swift */; };
@@ -327,6 +330,9 @@
 		5BBB16B326F6237F0094B14C /* NumberConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConvertible.swift; sourceTree = "<group>"; };
 		5BBB16C026F6308E0094B14C /* AirKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AirKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5BBC9FCC271AB3600025828C /* UIViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerTests.swift; sourceTree = "<group>"; };
+		5BBC9FCE271AD32F0025828C /* UIWindowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowTests.swift; sourceTree = "<group>"; };
+		5BBC9FD0271AD3500025828C /* UIWindow+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+AirKit.swift"; sourceTree = "<group>"; };
+		5BBC9FD2271AD3760025828C /* CAMediaTimingFunction+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAMediaTimingFunction+AirKit.swift"; sourceTree = "<group>"; };
 		5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AirKit.swift"; sourceTree = "<group>"; };
 		5BD4AE78270B66FE00D65DBC /* UIViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTests.swift; sourceTree = "<group>"; };
 		5BDC3CE3270F0BE2006DC5A0 /* OnceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnceTests.swift; sourceTree = "<group>"; };
@@ -482,6 +488,7 @@
 			children = (
 				5B19FEF627071B6100F76EBD /* CACornerMask+AirKit.swift */,
 				5B19FEF827071F8C00F76EBD /* CAGradientLayer+AirKit.swift */,
+				5BBC9FD2271AD3760025828C /* CAMediaTimingFunction+AirKit.swift */,
 				5B19FEFA270721C400F76EBD /* CATransform3D+AirKit.swift */,
 			);
 			path = CoreAnimation;
@@ -671,20 +678,21 @@
 				5BAD26982716F04B00AE9E4F /* UICollectionView+AirKit.swift */,
 				5B639D8C2708A4A50028B543 /* UIColor+AirKit.swift */,
 				5B60C4AF2709B61A00D2E190 /* UIEdgeInsets+AirKit.swift */,
-				5B96CA13271832C900261CFE /* UINavigationController+AirKit.swift */,
 				5B639D7527086D790028B543 /* UIGraphicsImageRenderer+AirKit.swift */,
 				5B639D7327086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift */,
 				5B639D6A27084CEC0028B543 /* UIImage+AirKit.swift */,
-				5B361EEB2719ED00005803BE /* UIViewController+AirKit.swift */,
 				5B60C4BB270A1A2400D2E190 /* UILayoutPriority+AirKit.swift */,
+				5B96CA13271832C900261CFE /* UINavigationController+AirKit.swift */,
+				5BEAB5B72719A88C007E74E1 /* UIPageViewController+AirKit.swift */,
 				5B06BF662715A16600CDB5C9 /* UIScrollView+AirKit.swift */,
 				5B3408072714AA9200BC79E8 /* UISearchBar+AirKit.swift */,
 				5B0273A2271033CF00DAA072 /* UIStackView+AirKit.swift */,
 				5B3408052714A82500BC79E8 /* UISwitch+AirKit.swift */,
 				5BAD269A27170E0700AE9E4F /* UITableView+AirKit.swift */,
 				5B34080B2714B21300BC79E8 /* UITextView+AirKit.swift */,
-				5BEAB5B72719A88C007E74E1 /* UIPageViewController+AirKit.swift */,
 				5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */,
+				5B361EEB2719ED00005803BE /* UIViewController+AirKit.swift */,
+				5BBC9FD0271AD3500025828C /* UIWindow+AirKit.swift */,
 				5B06BF682715B16400CDB5C9 /* Protocols */,
 			);
 			path = UIKit;
@@ -713,6 +721,7 @@
 				5B96CA0F27182CF200261CFE /* UITextViewTests.swift */,
 				5BBC9FCC271AB3600025828C /* UIViewControllerTests.swift */,
 				5BD4AE78270B66FE00D65DBC /* UIViewTests.swift */,
+				5BBC9FCE271AD32F0025828C /* UIWindowTests.swift */,
 				5BAD269C27171ADF00AE9E4F /* Protocols */,
 			);
 			path = UIKit;
@@ -954,7 +963,9 @@
 				5B19FEF927071F8C00F76EBD /* CAGradientLayer+AirKit.swift in Sources */,
 				5B639D71270869B00028B543 /* CIFilter+AirKit.swift in Sources */,
 				5B09638C26FB47EB00879AE7 /* Result+AirKit.swift in Sources */,
+				5BBC9FD1271AD3500025828C /* UIWindow+AirKit.swift in Sources */,
 				5B8C1D0527049B9E0021B48E /* DispatchQueue+AirKit.swift in Sources */,
+				5BBC9FD3271AD3760025828C /* CAMediaTimingFunction+AirKit.swift in Sources */,
 				5B6A057626F9F6DD001A59C8 /* Collection+AirKit.swift in Sources */,
 				5B60C4B02709B61A00D2E190 /* UIEdgeInsets+AirKit.swift in Sources */,
 				5B07F3DC26F8F0ED00976D89 /* Bool+AirKit.swift in Sources */,
@@ -1028,6 +1039,7 @@
 				5B19FF0227075C0F00F76EBD /* CATransform3DTests.swift in Sources */,
 				5B9D3C0E27034F2600FD822F /* URLComponentsTests.swift in Sources */,
 				5B0ED07226FCCF6200473155 /* SequenceTests.swift in Sources */,
+				5BBC9FCF271AD32F0025828C /* UIWindowTests.swift in Sources */,
 				5B35BD212705FD8E0031AED3 /* CGColorTests.swift in Sources */,
 				5B7FF729270234F800C28795 /* DateFormatterTests.swift in Sources */,
 				5B8C1D092704A7DB0021B48E /* DispatchQueueTests.swift in Sources */,

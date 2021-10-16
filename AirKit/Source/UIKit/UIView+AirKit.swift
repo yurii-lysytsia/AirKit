@@ -6,8 +6,10 @@ import class UIKit.UIImage
 import class UIKit.UIColor
 import class UIKit.UIGraphicsImageRenderer
 import class UIKit.UIGestureRecognizer
+import func UIKit.UIRectClip
 import struct UIKit.CGSize
 import struct UIKit.CGPoint
+import struct UIKit.CGRect
 import struct UIKit.CGFloat
 import class UIKit.CALayer
 import struct UIKit.CACornerMask
@@ -364,10 +366,17 @@ public extension UIView {
 // MARK: - Extensions | Snapshot
 
 public extension UIView {
-    /// Returns taken screenshot of view.
-    var snapshotImage: UIImage {
+    /// Returns the captured screenshot of the view cropped by the specified area. The snapshot will not be cropped if `frame` is nil.
+    func snapshotImage(croppedTo frame: CGRect? = nil) -> UIImage {
         let renderer = UIGraphicsImageRenderer(size: layer.frame.size, scale: layer.contentsScale)
-        return renderer.image { layer.render(in: $0.cgContext) }
+        return renderer.image {
+            let context = $0.cgContext
+            if let frame = frame {
+                context.saveGState()
+                UIRectClip(frame)
+            }
+            layer.render(in: context)
+        }
     }
 }
 
