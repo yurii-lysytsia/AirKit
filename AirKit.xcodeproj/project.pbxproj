@@ -47,6 +47,8 @@
 		5B0ED08726FCD4C500473155 /* TopLevelDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08626FCD4C500473155 /* TopLevelDecoderTests.swift */; };
 		5B1016FB271C6FA2005C9BE4 /* MKPolygon+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1016FA271C6FA2005C9BE4 /* MKPolygon+AirKit.swift */; };
 		5B1016FD271C704D005C9BE4 /* MKPolygonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1016FC271C704D005C9BE4 /* MKPolygonTests.swift */; };
+		5B101706271C8AC0005C9BE4 /* LAContext+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B101705271C8AC0005C9BE4 /* LAContext+AirKit.swift */; };
+		5B101709271C8AE8005C9BE4 /* LAContextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B101708271C8AE8005C9BE4 /* LAContextTests.swift */; };
 		5B14C698270F34490093C881 /* Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14C696270F34310093C881 /* Swizzle.swift */; };
 		5B188342270D808200CC2F3C /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B188341270D808200CC2F3C /* Blocks.swift */; };
 		5B19FEF727071B6100F76EBD /* CACornerMask+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEF627071B6100F76EBD /* CACornerMask+AirKit.swift */; };
@@ -225,6 +227,8 @@
 		5B0ED08626FCD4C500473155 /* TopLevelDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelDecoderTests.swift; sourceTree = "<group>"; };
 		5B1016FA271C6FA2005C9BE4 /* MKPolygon+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPolygon+AirKit.swift"; sourceTree = "<group>"; };
 		5B1016FC271C704D005C9BE4 /* MKPolygonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKPolygonTests.swift; sourceTree = "<group>"; };
+		5B101705271C8AC0005C9BE4 /* LAContext+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LAContext+AirKit.swift"; sourceTree = "<group>"; };
+		5B101708271C8AE8005C9BE4 /* LAContextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LAContextTests.swift; sourceTree = "<group>"; };
 		5B14C696270F34310093C881 /* Swizzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swizzle.swift; sourceTree = "<group>"; };
 		5B188341270D808200CC2F3C /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
 		5B19FEF627071B6100F76EBD /* CACornerMask+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CACornerMask+AirKit.swift"; sourceTree = "<group>"; };
@@ -501,6 +505,22 @@
 			path = Combine;
 			sourceTree = "<group>";
 		};
+		5B101704271C8AB1005C9BE4 /* LocalAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				5B101705271C8AC0005C9BE4 /* LAContext+AirKit.swift */,
+			);
+			path = LocalAuthentication;
+			sourceTree = "<group>";
+		};
+		5B101707271C8ADD005C9BE4 /* LocalAuthentication */ = {
+			isa = PBXGroup;
+			children = (
+				5B101708271C8AE8005C9BE4 /* LAContextTests.swift */,
+			);
+			path = LocalAuthentication;
+			sourceTree = "<group>";
+		};
 		5B19FEF427071A3200F76EBD /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -593,6 +613,7 @@
 				5B7660B5270778C000CC0ABA /* UIKit */,
 				5BD0FB4A271C5C2300DA3C5C /* MapKit */,
 				5B09638F26FB584300879AE7 /* Combine */,
+				5B101704271C8AB1005C9BE4 /* LocalAuthentication */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -663,6 +684,7 @@
 				5B7660B6270778C900CC0ABA /* UIKit */,
 				5BD0FB4B271C5C2D00DA3C5C /* MapKit */,
 				5B0ED08526FCD4B200473155 /* Combine */,
+				5B101707271C8ADD005C9BE4 /* LocalAuthentication */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -1037,6 +1059,7 @@
 				5B188342270D808200CC2F3C /* Blocks.swift in Sources */,
 				5B6A057426F9E4C9001A59C8 /* Optionable.swift in Sources */,
 				5B07F3E626F9001B00976D89 /* CGFloat+AirKit.swift in Sources */,
+				5B101706271C8AC0005C9BE4 /* LAContext+AirKit.swift in Sources */,
 				5B60C4B4270A0A2300D2E190 /* UIBezierPath+AirKit.swift in Sources */,
 				5B0273A7271040D800DAA072 /* UIButton+AirKit.swift in Sources */,
 				5B07F3F126F9038000976D89 /* Int+AirKit.swift in Sources */,
@@ -1121,6 +1144,7 @@
 				5B19FF042707611E00F76EBD /* CAGradientLayerTests.swift in Sources */,
 				5BBC9FCD271AB3600025828C /* UIViewControllerTests.swift in Sources */,
 				5B0ED07826FCD42200473155 /* FloatTests.swift in Sources */,
+				5B101709271C8AE8005C9BE4 /* LAContextTests.swift in Sources */,
 				5B06BF63271591FB00CDB5C9 /* UISwitchTests.swift in Sources */,
 				5B639D8F2708A4B00028B543 /* UIColorTests.swift in Sources */,
 				5B2ADD442710D595003D4C1C /* UIStackViewTests.swift in Sources */,

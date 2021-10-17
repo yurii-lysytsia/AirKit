@@ -46,9 +46,9 @@ public extension Optional {
     ///     string.run { print("String is \($0)") } // Printed `"String is Some text"`
     ///
     /// - Parameter block: A block to run if self is not nil.
-    func run(block: (Wrapped) -> Void) {
+    func run(block: (Wrapped) throws -> Void) rethrows {
         guard let value = self else { return }
-        block(value)
+        try block(value)
     }
 }
 
