@@ -44,6 +44,10 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `CGSize`;
 - [X] Extensions for `CGColor`;
 
+### Extensions for [`CoreImage`](AirKit/Source/CoreImage)
+- [X] Extensions for `CIContext`;
+- [X] Extensions for `CIFilter`;
+
 ### Extensions for [`CoreAnimation`](AirKit/Source/CoreAnimation)
 - [X] Extensions for `CACornerMask`;
 - [X] Extensions for `CAGradientLayer`;
@@ -83,17 +87,20 @@ This is sugar framework that contains many different extensions for native Swift
 ### Extensions for [`WebKit`](AirKit/Source/WebKit)
 - [X] Extensions for `WKWebView`;
 
-### v 1.0 | Extension for Other native frameworks
-- [ ] Extensions for `LocalAuthentication` (`LAContext` etc.);
+### Extensions for [`LocalAuthentication`](AirKit/Source/LocalAuthentication)
+- [X] Extensions for `LAContext`;
 
-### v 0.9 | Extensions for `CoreData`
+### Extensions for `Combine`
+- [X] Extensions for `TopLevelDecoder`;
+
+### v 0.8 | Extensions for `CoreData`
 - [ ] Extensions for `NSPredicate`;
 - [ ] Extensions for `NSManagedObject`;
 
-### v 1.1 | Extensions for `Combine`
-- [X] Extensions for `TopLevelDecoder`;
+### v 0.9 | Extensions for [`CoreImage`](AirKit/Source/CoreImage)
+- [ ] `CICategory` (https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference);
 
-### v 1.2 | Helpers
+### v 1.X | Helpers
 - [ ] Common blocks typealias to convinient usage;
 - [ ] Actions blocks instead target for different UI elements, like button actions with blocks;
 - [ ] Closures for different components with old target (simple version of https://github.com/vhesener/Closures);
@@ -105,11 +112,6 @@ This is sugar framework that contains many different extensions for native Swift
 - [ ] Extensions for keyboard observing with many helpers;
 - [ ] Extensions for change screen on multitasking;
 - [ ] Extensions for `UIApplication` to open schemes, such as `mailto` or popular apps;
-
-### v 1.3 | Extensions for [`CoreImage`](AirKit/Source/CoreImage)
-- [X] Extensions for `CIContext`;
-- [X] Extensions for `CIFilter`;
-- [ ] `CICategory` (https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference);
 
 ## 🚀 Installation
 
