@@ -76,17 +76,18 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `UIWindow`;
 - [X] Extensions for `UIApplication`;
 
-### v 0.8 | Extensions for `CoreData`
-- [ ] Extensions for `NSPredicate`;
-- [ ] Extensions for `NSManagedObject`;
-
-### v 0.9 | Extensions for `MapKit`
-- [ ] Extensions for `MKMapView`;
+### Extensions for [`MapKit`](AirKit/Source/MapKit)
+- [X] Extensions for `MKMapView`;
 - [ ] Extensions for `MKPolyline`;
 
 ### v 1.0 | Extension for Other native frameworks
 - [ ] Extensions for `WKWebView`;
 - [ ] Extensions for `LocalAuthentication` (`LAContext` etc.);
+
+
+### v 0.9 | Extensions for `CoreData`
+- [ ] Extensions for `NSPredicate`;
+- [ ] Extensions for `NSManagedObject`;
 
 ### v 1.1 | Extensions for `Combine`
 - [X] Extensions for `TopLevelDecoder`;
