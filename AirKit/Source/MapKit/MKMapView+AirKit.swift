@@ -69,8 +69,8 @@ public extension MKMapView {
     ///   - span: The horizontal and vertical span representing the amount of map to display.
     func zoom(to coordinates: [CLLocationCoordinate2D], span: MKCoordinateSpan? = nil, animated: Bool) {
         if coordinates.isEmpty { return }
-
-        let polygon = MKPolygon(coordinates: coordinates, count: coordinates.count)
+        
+        let polygon = MKPolygon(coordinates: coordinates)
         var region = MKCoordinateRegion(polygon.boundingMapRect)
         region.span ??= span
         setRegion(region, animated: animated)
