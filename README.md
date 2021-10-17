@@ -78,12 +78,13 @@ This is sugar framework that contains many different extensions for native Swift
 
 ### Extensions for [`MapKit`](AirKit/Source/MapKit)
 - [X] Extensions for `MKMapView`;
-- [ ] Extensions for `MKPolyline`;
+- [X] Extensions for `MKPolyline`;
+
+### Extensions for [`WebKit`](AirKit/Source/WebKit)
+- [X] Extensions for `WKWebView`;
 
 ### v 1.0 | Extension for Other native frameworks
-- [ ] Extensions for `WKWebView`;
 - [ ] Extensions for `LocalAuthentication` (`LAContext` etc.);
-
 
 ### v 0.9 | Extensions for `CoreData`
 - [ ] Extensions for `NSPredicate`;
@@ -115,7 +116,7 @@ This is sugar framework that contains many different extensions for native Swift
 ### [CocoaPods](https://cocoapods.org) 
 For usage and installation instructions, visit their website. To integrate AirKit into your Xcode project using CocoaPods, specify it in your `Podfile`:
 ```ruby
-pod 'AirKit', '~> 0.6'
+pod 'AirKit', '~> 0.7'
 ```
 
 ## 💻 Usage 
