@@ -33,7 +33,7 @@ final class OptionalTests: XCTestCase {
         XCTAssertFalse(array.isEmptyOrNil)
     }
     
-    func testLet() {
+    func testGuardLetRun() {
         let stringNil: String? = nil
         var stringNilTested = true
         stringNil.run { _ in stringNilTested = false }

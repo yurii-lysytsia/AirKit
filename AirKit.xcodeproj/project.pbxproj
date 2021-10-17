@@ -45,6 +45,8 @@
 		5B0ED08126FCD48100473155 /* TimeIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08026FCD48100473155 /* TimeIntervalTests.swift */; };
 		5B0ED08426FCD4A400473155 /* CGFloatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08326FCD4A400473155 /* CGFloatTests.swift */; };
 		5B0ED08726FCD4C500473155 /* TopLevelDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08626FCD4C500473155 /* TopLevelDecoderTests.swift */; };
+		5B1016FB271C6FA2005C9BE4 /* MKPolygon+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1016FA271C6FA2005C9BE4 /* MKPolygon+AirKit.swift */; };
+		5B1016FD271C704D005C9BE4 /* MKPolygonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1016FC271C704D005C9BE4 /* MKPolygonTests.swift */; };
 		5B14C698270F34490093C881 /* Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B14C696270F34310093C881 /* Swizzle.swift */; };
 		5B188342270D808200CC2F3C /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B188341270D808200CC2F3C /* Blocks.swift */; };
 		5B19FEF727071B6100F76EBD /* CACornerMask+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEF627071B6100F76EBD /* CACornerMask+AirKit.swift */; };
@@ -161,6 +163,10 @@
 		5BBCA005271AFD4B0025828C /* UIApplication+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCA004271AFD4B0025828C /* UIApplication+AirKit.swift */; };
 		5BBCA007271AFEDA0025828C /* CAMediaTimingFunctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCA006271AFEDA0025828C /* CAMediaTimingFunctionTests.swift */; };
 		5BBCA009271AFF5E0025828C /* UIApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCA008271AFF5E0025828C /* UIApplicationTests.swift */; };
+		5BD0FB4D271C66D400DA3C5C /* MKMapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0FB4C271C66D400DA3C5C /* MKMapViewTests.swift */; };
+		5BD0FB4F271C68BF00DA3C5C /* MKMapView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0FB4E271C68BF00DA3C5C /* MKMapView+AirKit.swift */; };
+		5BD0FB51271C6DDD00DA3C5C /* MKPolyline+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0FB50271C6DDD00DA3C5C /* MKPolyline+AirKit.swift */; };
+		5BD0FB53271C6E0600DA3C5C /* MKPolylineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0FB52271C6E0600DA3C5C /* MKPolylineTests.swift */; };
 		5BD4AE76270B66ED00D65DBC /* UIView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */; };
 		5BD4AE79270B66FE00D65DBC /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4AE78270B66FE00D65DBC /* UIViewTests.swift */; };
 		5BDC3CE4270F0BE2006DC5A0 /* OnceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDC3CE3270F0BE2006DC5A0 /* OnceTests.swift */; };
@@ -217,6 +223,8 @@
 		5B0ED08026FCD48100473155 /* TimeIntervalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalTests.swift; sourceTree = "<group>"; };
 		5B0ED08326FCD4A400473155 /* CGFloatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatTests.swift; sourceTree = "<group>"; };
 		5B0ED08626FCD4C500473155 /* TopLevelDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLevelDecoderTests.swift; sourceTree = "<group>"; };
+		5B1016FA271C6FA2005C9BE4 /* MKPolygon+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPolygon+AirKit.swift"; sourceTree = "<group>"; };
+		5B1016FC271C704D005C9BE4 /* MKPolygonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKPolygonTests.swift; sourceTree = "<group>"; };
 		5B14C696270F34310093C881 /* Swizzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swizzle.swift; sourceTree = "<group>"; };
 		5B188341270D808200CC2F3C /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
 		5B19FEF627071B6100F76EBD /* CACornerMask+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CACornerMask+AirKit.swift"; sourceTree = "<group>"; };
@@ -339,6 +347,10 @@
 		5BBCA004271AFD4B0025828C /* UIApplication+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+AirKit.swift"; sourceTree = "<group>"; };
 		5BBCA006271AFEDA0025828C /* CAMediaTimingFunctionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAMediaTimingFunctionTests.swift; sourceTree = "<group>"; };
 		5BBCA008271AFF5E0025828C /* UIApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationTests.swift; sourceTree = "<group>"; };
+		5BD0FB4C271C66D400DA3C5C /* MKMapViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewTests.swift; sourceTree = "<group>"; };
+		5BD0FB4E271C68BF00DA3C5C /* MKMapView+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+AirKit.swift"; sourceTree = "<group>"; };
+		5BD0FB50271C6DDD00DA3C5C /* MKPolyline+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPolyline+AirKit.swift"; sourceTree = "<group>"; };
+		5BD0FB52271C6E0600DA3C5C /* MKPolylineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKPolylineTests.swift; sourceTree = "<group>"; };
 		5BD4AE75270B66ED00D65DBC /* UIView+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AirKit.swift"; sourceTree = "<group>"; };
 		5BD4AE78270B66FE00D65DBC /* UIViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTests.swift; sourceTree = "<group>"; };
 		5BDC3CE3270F0BE2006DC5A0 /* OnceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnceTests.swift; sourceTree = "<group>"; };
@@ -579,6 +591,7 @@
 				5B19FEF427071A3200F76EBD /* CoreAnimation */,
 				5B19FF0527076A6900F76EBD /* CoreLocation */,
 				5B7660B5270778C000CC0ABA /* UIKit */,
+				5BD0FB4A271C5C2300DA3C5C /* MapKit */,
 				5B09638F26FB584300879AE7 /* Combine */,
 			);
 			path = Source;
@@ -648,6 +661,7 @@
 				5B19FEF527071A5B00F76EBD /* CoreAnimation */,
 				5B19FF0627076A7900F76EBD /* CoreLocation */,
 				5B7660B6270778C900CC0ABA /* UIKit */,
+				5BD0FB4B271C5C2D00DA3C5C /* MapKit */,
 				5B0ED08526FCD4B200473155 /* Combine */,
 			);
 			path = Source;
@@ -816,6 +830,26 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		5BD0FB4A271C5C2300DA3C5C /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				5BD0FB4E271C68BF00DA3C5C /* MKMapView+AirKit.swift */,
+				5B1016FA271C6FA2005C9BE4 /* MKPolygon+AirKit.swift */,
+				5BD0FB50271C6DDD00DA3C5C /* MKPolyline+AirKit.swift */,
+			);
+			path = MapKit;
+			sourceTree = "<group>";
+		};
+		5BD0FB4B271C5C2D00DA3C5C /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				5BD0FB4C271C66D400DA3C5C /* MKMapViewTests.swift */,
+				5B1016FC271C704D005C9BE4 /* MKPolygonTests.swift */,
+				5BD0FB52271C6E0600DA3C5C /* MKPolylineTests.swift */,
+			);
+			path = MapKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -952,6 +986,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B35BD172705AAFE0031AED3 /* CGPoint+AirKit.swift in Sources */,
+				5BD0FB51271C6DDD00DA3C5C /* MKPolyline+AirKit.swift in Sources */,
 				5B8C1CF9270454660021B48E /* UserDefaults+AirKit.swift in Sources */,
 				5B96CA14271832C900261CFE /* UINavigationController+AirKit.swift in Sources */,
 				5B19FEF727071B6100F76EBD /* CACornerMask+AirKit.swift in Sources */,
@@ -979,6 +1014,7 @@
 				5B60C4B02709B61A00D2E190 /* UIEdgeInsets+AirKit.swift in Sources */,
 				5B07F3DC26F8F0ED00976D89 /* Bool+AirKit.swift in Sources */,
 				5B09639126FB585300879AE7 /* TopLevelDecoder+AirKit.swift in Sources */,
+				5BD0FB4F271C68BF00DA3C5C /* MKMapView+AirKit.swift in Sources */,
 				5B93EDBA2700D6E500A9BEDA /* Date+AirKit.swift in Sources */,
 				5B639D7427086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift in Sources */,
 				5B639D8D2708A4A50028B543 /* UIColor+AirKit.swift in Sources */,
@@ -991,6 +1027,7 @@
 				5B06BF6A2715B16A00CDB5C9 /* ReusableView.swift in Sources */,
 				5B6A057E26FA2DC9001A59C8 /* Dictionary+AirKit.swift in Sources */,
 				5B361EEC2719ED00005803BE /* UIViewController+AirKit.swift in Sources */,
+				5B1016FB271C6FA2005C9BE4 /* MKPolygon+AirKit.swift in Sources */,
 				5B9D3C0627034BAB00FD822F /* URLRequest+AirKit.swift in Sources */,
 				5B9D3C042703411A00FD822F /* URL+AirKit.swift in Sources */,
 				5B9D3C022703402400FD822F /* URLComponents+AirKit.swift in Sources */,
@@ -1048,6 +1085,7 @@
 				5B0ED07026FCC80300473155 /* RangeReplaceableCollectionTests.swift in Sources */,
 				5B19FF0227075C0F00F76EBD /* CATransform3DTests.swift in Sources */,
 				5B9D3C0E27034F2600FD822F /* URLComponentsTests.swift in Sources */,
+				5BD0FB4D271C66D400DA3C5C /* MKMapViewTests.swift in Sources */,
 				5BBCA009271AFF5E0025828C /* UIApplicationTests.swift in Sources */,
 				5B0ED07226FCCF6200473155 /* SequenceTests.swift in Sources */,
 				5BBC9FCF271AD32F0025828C /* UIWindowTests.swift in Sources */,
@@ -1077,6 +1115,7 @@
 				5B09639C26FB97F600879AE7 /* BoolTests.swift in Sources */,
 				5B09639926FB88FC00879AE7 /* BinaryIntegerTests.swift in Sources */,
 				5BD4AE79270B66FE00D65DBC /* UIViewTests.swift in Sources */,
+				5B1016FD271C704D005C9BE4 /* MKPolygonTests.swift in Sources */,
 				5BEAB5BA2719AB06007E74E1 /* UIPageViewControllerTests.swift in Sources */,
 				5B96CA1227182FA100261CFE /* AirKitTests.swift in Sources */,
 				5B19FF042707611E00F76EBD /* CAGradientLayerTests.swift in Sources */,
@@ -1108,6 +1147,7 @@
 				5B9D3C0C27034E0F00FD822F /* DataTests.swift in Sources */,
 				5B0963A026FB9A0A00879AE7 /* DictionaryTests.swift in Sources */,
 				5B8C1D0127047D1C0021B48E /* FileManagerTests.swift in Sources */,
+				5BD0FB53271C6E0600DA3C5C /* MKPolylineTests.swift in Sources */,
 				5B639D7A27087CBD0028B543 /* CIFilterTests.swift in Sources */,
 				5B60C4B6270A0A3600D2E190 /* UIBezierPathTests.swift in Sources */,
 				5B639D812708836A0028B543 /* UIGraphicsImageRendererFormatTests.swift in Sources */,

@@ -14,10 +14,6 @@ final class CalendarTests: XCTestCase {
         XCTAssertFalse(calendar.isDateInWeekday(date(month: 9, day: 25)))
         XCTAssertTrue(calendar.isDateInWeekday(date(month: 9, day: 28)))
         
-        let mondayDate = calendar.next(weekday: .monday, after: Date.current, direction: .backward)
-        XCTAssertNotNil(mondayDate)
-        XCTAssertTrue(calendar.isDateInCurrentWeek(mondayDate!))
-        
         var firstDayOfMonthComponents = calendar.dateComponents([.year, .month, .day], from: Date.current)
         firstDayOfMonthComponents.day = 1
         let firstDayOfMonth = calendar.date(from: firstDayOfMonthComponents)

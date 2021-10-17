@@ -46,7 +46,10 @@ public extension Optional {
     ///     string.run { print("String is \($0)") } // Printed `"String is Some text"`
     ///
     /// - Parameter block: A block to run if self is not nil.
-    func run(block: (Wrapped) -> Void) { if let value = self { block(value) } }
+    func run(block: (Wrapped) -> Void) {
+        guard let value = self else { return }
+        block(value)
+    }
 }
 
 // MARK: - Operators
@@ -54,19 +57,21 @@ public extension Optional {
 infix operator ??=: AssignmentPrecedence
 infix operator ?=: AssignmentPrecedence
 
-public extension Optional {
-    /// Assign an optional value to a variable only if the value is not nil.
-    ///
-    ///     var string: String? = nil
-    ///     string ??= "Hello world!" // New value have been set | string == String("Hello world!")
-    ///     string ??= nil // New value haven't been set because it's `nil` | string == String("Hello world!")
-    ///
-    ///     var dict = [String : String]()
-    ///     dict["hello"] ??= "world" // New value have been set | dict["hello"] == String("world")
-    ///     dict["hello"] ??= nil // New value haven't been set because it's `nil` | dict["hello"] == Stirng("world")
-    ///
-    static func ??= (lhs: inout Optional, rhs: Optional) { lhs = rhs ?? lhs }
+/// Assign an optional value to a variable only if the value is not nil.
+///
+///     var string: String? = nil
+///     string ??= "Hello world!" // New value have been set | string == String("Hello world!")
+///     string ??= nil // New value haven't been set because it's `nil` | string == String("Hello world!")
+///
+///     var dict = [String : String]()
+///     dict["hello"] ??= "world" // New value have been set | dict["hello"] == String("world")
+///     dict["hello"] ??= nil // New value haven't been set because it's `nil` | dict["hello"] == Stirng("world")
+///
+public func ??= <T>(lhs: inout T, rhs: T?) {
+    rhs.run { lhs = $0 }
+}
 
+public extension Optional {
     /// Assign an optional value to a variable only if the variable is nil.
     ///
     ///     var string: String? = nil
@@ -74,8 +79,7 @@ public extension Optional {
     ///     string ?= "World" // New value haven't been set because it's not nil | string == String("Hello")
     ///
     static func ?= (lhs: inout Optional, rhs: @autoclosure () -> Optional) {
-        if lhs == nil {
-            lhs = rhs()
-        }
+        guard lhs == nil else { return }
+        lhs = rhs()
     }
 }

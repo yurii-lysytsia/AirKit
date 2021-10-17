@@ -51,6 +51,18 @@ final class UITableViewTests: XCTestCase {
         XCTAssertEqual(emptyRowsTableView.lastIndexPath(inSection: 1), nil)
     }
     
+    func testReusableCell() {
+        tableView.register(cellClass: SomeTableViewCell.self)
+        let cell: SomeTableViewCell = tableView.dequeueReusableCell(for: IndexPath())
+        XCTAssertNotNil(cell)
+    }
+    
+    func testReusableHeaderFooterView() {
+        tableView.register(viewClass: SomeTableViewHeaderFooterView.self)
+        let view: SomeTableViewHeaderFooterView = tableView.dequeueReusableHeaderFooterView()
+        XCTAssertNotNil(view)
+    }
+    
 }
 
 // MARK: - UITableViewTestsSource
@@ -80,4 +92,12 @@ private class UITableViewTestsSource: NSObject, UITableViewDataSource, UITableVi
         cell.textLabel?.text = "\(indexPath)"
         return cell
     }
+}
+
+private final class SomeTableViewCell: UITableViewCell, ReusableView {
+    
+}
+
+private final class SomeTableViewHeaderFooterView: UITableViewHeaderFooterView, ReusableView {
+    
 }
