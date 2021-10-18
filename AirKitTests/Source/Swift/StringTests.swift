@@ -116,6 +116,32 @@ final class StringTests: XCTestCase {
         XCTAssertEqual(string, "HWHAY")
     }
     
+    func testPalindrome() {
+        let palindromeString = "a nut for a jar of tuna".removing(characterSet: .whitespaces)
+        XCTAssertTrue(palindromeString.isPalindrome)
+        
+        let nonPalindromeString = "hello world".removing(characterSet: .whitespaces)
+        XCTAssertFalse(nonPalindromeString.isPalindrome)
+    }
+    
+    func testPalindromeWithErrors() {
+        let palindromeString = "a nut for a jar of tuna".removing(characterSet: .whitespaces)
+        let palindromeResult = palindromeString.isPalindromeWithErrors
+        XCTAssertTrue(palindromeResult.palindrome)
+        XCTAssertTrue(palindromeResult.errors.isEmpty)
+        
+        let palindromeWithErrorsString = "a 1nut for a 2jar of 3tuna".removing(characterSet: .whitespaces)
+        let palindromeWithErrorsResult = palindromeWithErrorsString.isPalindromeWithErrors
+        XCTAssertTrue(palindromeWithErrorsResult.palindrome)
+        XCTAssertEqual(palindromeWithErrorsResult.errors.count, 3)
+        XCTAssertTrue(palindromeWithErrorsResult.errors.map { palindromeWithErrorsString[$0] }.contains(["1", "2", "3"]))
+
+        let nonPalindromeString = "hello world".removing(characterSet: .whitespaces)
+        let nonPalindromeResult = nonPalindromeString.isPalindromeWithErrors
+        XCTAssertFalse(nonPalindromeResult.palindrome)
+        XCTAssertTrue(nonPalindromeResult.errors.isEmpty)
+    }
+    
     func testGrouping() {
         let string = "1234567890"
         XCTAssertEqual(string.grouping(by: 20, separator: "?"), "1234567890")

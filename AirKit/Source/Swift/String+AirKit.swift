@@ -336,6 +336,86 @@ public extension String {
     }
 }
 
+// MARK: - Extensions | Palindrome
+
+extension String {
+    /// Returns `true` if the current string is palindrome
+    ///
+    ///     let palindromeString = "a nut for a jar of tuna".removing(characterSet: .whitespaces)
+    ///     palindromeString.isPalindrome // true
+    ///
+    ///     let nonPalindromeString = "hello world".removing(characterSet: .whitespaces)
+    ///     nonPalindromeString.isPalindrome // false
+    ///
+    var isPalindrome: Bool {
+        // Predefine first and last indexes
+        var startIndex = startIndex
+        var endIndex = index(before: endIndex)
+        
+        // Check first and last indexes
+        // Move to the center and check each index
+        while startIndex < endIndex {
+            if self[startIndex] != self[endIndex] {
+                return false
+            }
+            startIndex = index(after: startIndex)
+            endIndex = index(before: endIndex)
+        }
+        
+        // Return true because it's palindrome
+        return true
+    }
+    
+    /// Returns `true` if the current string is palindrome and it may contains array of wrong character indexes to get valid palindrome. Otherwise will return `false` and empty array.
+    ///
+    ///     let palindromeString = "a nut for a jar of tuna".removing(characterSet: .whitespaces)
+    ///     let palindromeResult = palindromeString.isPalindromeWithErrors
+    ///     palindromeResult.palindrome // true
+    ///     palindromeResult.errors.isEmpty // true
+    ///
+    ///     let palindromeString = "a 1nut for a 3jar of 2tuna".removing(characterSet: .whitespaces)
+    ///     let palindromeStringResult = palindromeString.isPalindromeWithErrors
+    ///     palindromeStringResult.palindrome // true
+    ///     palindromeStringResult.errors.map { palindromeString[$0] } // ["1", "2", "3"]
+    ///
+    ///     let nonPalindromeString = "hello world".removing(characterSet: .whitespaces)
+    ///     let nonPalindromeResult = nonPalindromeString.isPalindromeWithErrors
+    ///     nonPalindromeResult.palindrome // false
+    ///     nonPalindromeResult.errors.isEmpty // true
+    ///
+    var isPalindromeWithErrors: (palindrome: Bool, wrongIndexes: [String.Index]) {
+        // Predefine first and last indexes
+        var startIndex = startIndex
+        var endIndex = index(before: endIndex)
+        
+        var wrongIndexes = [String.Index]()
+        
+        // Check first and last indexes
+        // Move to the center and check each index
+        while startIndex < endIndex {
+            if self[startIndex] == self[endIndex] {
+                // Charcters the same. Do nothing
+                startIndex = index(after: startIndex)
+                endIndex = index(before: endIndex)
+            } else if self[index(after: startIndex)] == self[endIndex] {
+                // Next character from the start the same. Add wrong index.
+                wrongIndexes.append(startIndex)
+                startIndex = index(after: startIndex)
+            } else if self[startIndex] == self[index(before: endIndex)] {
+                // Previous character from the end the same. Add wrong index
+                wrongIndexes.append(endIndex)
+                endIndex = index(before: endIndex)
+            } else {
+                // No one nearest chars are equal
+                return (false, [])
+            }
+        }
+        
+        // Return true because it's palindrome
+        return (true, wrongIndexes)
+    }
+}
+
 // MARK: - Extensions | Grouping
 
 extension String {
