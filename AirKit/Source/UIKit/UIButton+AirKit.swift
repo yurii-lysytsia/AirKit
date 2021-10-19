@@ -55,6 +55,12 @@ public extension UIButton {
     private static let initialization = Once {
         try Swizzle.swizzleInstanceMethod(
             classType: UIButton.self,
+            original: #selector(layoutSubviews),
+            swizzled: #selector(swizzledLayoutSubviews)
+        )
+        
+        try Swizzle.swizzleInstanceMethod(
+            classType: UIButton.self,
             original: #selector(setter: UIButton.semanticContentAttribute),
             swizzled: #selector(swizzledSetSemanticContentAttribute)
         )
@@ -62,9 +68,17 @@ public extension UIButton {
     
     /// Swizzle needed methods.
     ///
-    /// 1. `setSemanticContentAttribute(_:)` method for `setImageSpacing(_:)`.
+    /// 1. `layoutSubviews()` method for `isCircled`.
+    /// 2. `setSemanticContentAttribute(_:)` method for `setImageSpacing(_:)`.
     static func swizzleButton() throws {
         try initialization.run()
+    }
+    
+    @objc private func swizzledLayoutSubviews() {
+        swizzledLayoutSubviews()
+        if isCircled {
+            roundCornersToCircle()
+        }
     }
     
     @objc private func swizzledSetSemanticContentAttribute(_ semanticContentAttribute: UISemanticContentAttribute) {
