@@ -55,14 +55,14 @@ public extension UIButton {
     private static let initialization = Once {
         try Swizzle.swizzleInstanceMethod(
             classType: UIButton.self,
-            original: #selector(layoutSubviews),
-            swizzled: #selector(swizzledLayoutSubviews)
+            original: #selector(UIButton.layoutSubviews),
+            swizzled: #selector(UIButton.swizzledButtonLayoutSubviews)
         )
         
         try Swizzle.swizzleInstanceMethod(
             classType: UIButton.self,
             original: #selector(setter: UIButton.semanticContentAttribute),
-            swizzled: #selector(swizzledSetSemanticContentAttribute)
+            swizzled: #selector(UIButton.swizzledSetSemanticContentAttribute)
         )
     }
     
@@ -74,8 +74,9 @@ public extension UIButton {
         try initialization.run()
     }
     
-    @objc private func swizzledLayoutSubviews() {
-        swizzledLayoutSubviews()
+    @objc private func swizzledButtonLayoutSubviews() {
+        // `UIView` swizzling doesn't work. So it needs to make own swizzling
+        swizzledButtonLayoutSubviews()
         if isCircled {
             roundCornersToCircle()
         }
