@@ -349,8 +349,8 @@ extension String {
     ///
     var isPalindrome: Bool {
         // Predefine first and last indexes
-        var startIndex = startIndex
-        var endIndex = index(before: endIndex)
+        var startIndex = self.startIndex
+        var endIndex = index(before: self.endIndex)
         
         // Check first and last indexes
         // Move to the center and check each index
@@ -385,8 +385,8 @@ extension String {
     ///
     var isPalindromeWithErrors: (palindrome: Bool, wrongIndexes: [String.Index]) {
         // Predefine first and last indexes
-        var startIndex = startIndex
-        var endIndex = index(before: endIndex)
+        var startIndex = self.startIndex
+        var endIndex = index(before: self.endIndex)
         
         var wrongIndexes = [String.Index]()
         

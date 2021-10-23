@@ -128,18 +128,18 @@ final class StringTests: XCTestCase {
         let palindromeString = "a nut for a jar of tuna".removing(characterSet: .whitespaces)
         let palindromeResult = palindromeString.isPalindromeWithErrors
         XCTAssertTrue(palindromeResult.palindrome)
-        XCTAssertTrue(palindromeResult.errors.isEmpty)
+        XCTAssertTrue(palindromeResult.wrongIndexes.isEmpty)
         
         let palindromeWithErrorsString = "a 1nut for a 2jar of 3tuna".removing(characterSet: .whitespaces)
         let palindromeWithErrorsResult = palindromeWithErrorsString.isPalindromeWithErrors
         XCTAssertTrue(palindromeWithErrorsResult.palindrome)
-        XCTAssertEqual(palindromeWithErrorsResult.errors.count, 3)
-        XCTAssertTrue(palindromeWithErrorsResult.errors.map { palindromeWithErrorsString[$0] }.contains(["1", "2", "3"]))
+        XCTAssertEqual(palindromeWithErrorsResult.wrongIndexes.count, 3)
+        XCTAssertTrue(palindromeWithErrorsResult.wrongIndexes.map { palindromeWithErrorsString[$0] }.contains(["1", "2", "3"]))
 
         let nonPalindromeString = "hello world".removing(characterSet: .whitespaces)
         let nonPalindromeResult = nonPalindromeString.isPalindromeWithErrors
         XCTAssertFalse(nonPalindromeResult.palindrome)
-        XCTAssertTrue(nonPalindromeResult.errors.isEmpty)
+        XCTAssertTrue(nonPalindromeResult.wrongIndexes.isEmpty)
     }
     
     func testGrouping() {
