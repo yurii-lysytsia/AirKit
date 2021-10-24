@@ -1,0 +1,15 @@
+// Copyright © 2021 Yurii Lysytsia. All rights reserved.
+
+#if canImport(UIKit)
+import class UIKit.UISegmentedControl
+
+public extension UISegmentedControl {
+    /// Removes all segments and insert a new segments.
+    func replace(segments: [String], animated: Bool) {
+        removeAllSegments()
+        segments.forEach { segment in
+            insertSegment(withTitle: segment, at: numberOfSegments, animated: animated)
+        }
+    }
+}
+#endif

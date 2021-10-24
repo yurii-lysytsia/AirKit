@@ -159,6 +159,7 @@
 		5BAD26992716F04B00AE9E4F /* UICollectionView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD26982716F04B00AE9E4F /* UICollectionView+AirKit.swift */; };
 		5BAD269B27170E0700AE9E4F /* UITableView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD269A27170E0700AE9E4F /* UITableView+AirKit.swift */; };
 		5BAD269E27171AED00AE9E4F /* ReusableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAD269D27171AED00AE9E4F /* ReusableViewTests.swift */; };
+		5BB703A82725A54200DD1777 /* UISegmentedControl+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB703A72725A54200DD1777 /* UISegmentedControl+AirKit.swift */; };
 		5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB16B326F6237F0094B14C /* NumberConvertible.swift */; };
 		5BBC9FCD271AB3600025828C /* UIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBC9FCC271AB3600025828C /* UIViewControllerTests.swift */; };
 		5BBC9FCF271AD32F0025828C /* UIWindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBC9FCE271AD32F0025828C /* UIWindowTests.swift */; };
@@ -346,6 +347,7 @@
 		5BAD26982716F04B00AE9E4F /* UICollectionView+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+AirKit.swift"; sourceTree = "<group>"; };
 		5BAD269A27170E0700AE9E4F /* UITableView+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+AirKit.swift"; sourceTree = "<group>"; };
 		5BAD269D27171AED00AE9E4F /* ReusableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewTests.swift; sourceTree = "<group>"; };
+		5BB703A72725A54200DD1777 /* UISegmentedControl+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+AirKit.swift"; sourceTree = "<group>"; };
 		5BBB16B326F6237F0094B14C /* NumberConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConvertible.swift; sourceTree = "<group>"; };
 		5BBB16C026F6308E0094B14C /* AirKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AirKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5BBC9FCC271AB3600025828C /* UIViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerTests.swift; sourceTree = "<group>"; };
@@ -760,6 +762,7 @@
 				5BEAB5B72719A88C007E74E1 /* UIPageViewController+AirKit.swift */,
 				5B06BF662715A16600CDB5C9 /* UIScrollView+AirKit.swift */,
 				5B3408072714AA9200BC79E8 /* UISearchBar+AirKit.swift */,
+				5BB703A72725A54200DD1777 /* UISegmentedControl+AirKit.swift */,
 				5B0273A2271033CF00DAA072 /* UIStackView+AirKit.swift */,
 				5B3408052714A82500BC79E8 /* UISwitch+AirKit.swift */,
 				5BAD269A27170E0700AE9E4F /* UITableView+AirKit.swift */,
@@ -1073,6 +1076,7 @@
 				5B07F3E026F8F28300976D89 /* Float+AirKit.swift in Sources */,
 				5BBB16B426F6237F0094B14C /* NumberConvertible.swift in Sources */,
 				5B7660AE2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift in Sources */,
+				5BB703A82725A54200DD1777 /* UISegmentedControl+AirKit.swift in Sources */,
 				5B7687F926F7C08600C388C1 /* String+AirKit.swift in Sources */,
 				5B9D3BFB270326D600FD822F /* Version.swift in Sources */,
 				5B3408082714AA9200BC79E8 /* UISearchBar+AirKit.swift in Sources */,
