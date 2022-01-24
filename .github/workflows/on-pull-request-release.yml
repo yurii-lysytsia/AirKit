@@ -42,3 +42,25 @@ jobs:
     - name: Check Pod linter
       run: |
         pod lib lint AirKit.podspec
+        
+  updating:
+    runs-on: macOS-latest
+    timeout-minutes: 5
+    steps:
+    
+    - name: Checkout pull request branch
+      uses: actions/checkout@v2
+      with:
+        ref: ${{ github.event.pull_request.head.ref }}
+
+    - name: Setup ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6
+        bundler-cache: true
+
+    - name: Update podspec xcode-version
+      run: |
+        bundle exec fastlane update_version git_branch:${BASE_BRANCH}
+      env:
+        BASE_BRANCH: ${{ github.event.pull_request.base.ref }}
