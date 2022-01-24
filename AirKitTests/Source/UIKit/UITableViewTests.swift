@@ -52,13 +52,13 @@ final class UITableViewTests: XCTestCase {
     }
     
     func testReusableCell() {
-        tableView.register(cellClass: SomeTableViewCell.self)
+        tableView.register(SomeTableViewCell.self)
         let cell: SomeTableViewCell = tableView.dequeueReusableCell(for: IndexPath())
         XCTAssertNotNil(cell)
     }
     
     func testReusableHeaderFooterView() {
-        tableView.register(viewClass: SomeTableViewHeaderFooterView.self)
+        tableView.register(SomeTableViewHeaderFooterView.self)
         let view: SomeTableViewHeaderFooterView = tableView.dequeueReusableHeaderFooterView()
         XCTAssertNotNil(view)
     }

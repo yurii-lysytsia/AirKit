@@ -21,16 +21,14 @@ opt_in_rules:
 
 # Disables rules
 disabled_rules:
-- trailing_whitespace
-- nesting
+  - file_length
+  - trailing_whitespace
+  - nesting
 
 # Custom configurations
 line_length:
   warning: 200
   ignores_comments: true
-
-file_length:
-  warning: 500
 
 force_unwrapping: warning
 force_try: warning

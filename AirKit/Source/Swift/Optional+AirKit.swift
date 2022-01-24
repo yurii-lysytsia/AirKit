@@ -50,6 +50,19 @@ public extension Optional {
         guard let value = self else { return }
         try block(value)
     }
+    
+    /// Runs a block to wrapped value if not nil. Alias of `run(block:)` method.
+    ///
+    ///     var string: String? = nil
+    ///     string.iflet { print("String is \($0)") } // Block didn't call because `string` is `nil`
+    ///
+    ///     string = "Some text"
+    ///     string.iflet { print("String is \($0)") } // Printed `"String is Some text"`
+    ///
+    /// - Parameter block: A block to run if self is not nil.
+    func iflet(block: (Wrapped) throws -> Void) rethrows {
+        try run(block: block)
+    }
 }
 
 // MARK: - Operators

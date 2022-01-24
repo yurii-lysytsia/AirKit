@@ -79,6 +79,7 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `UIViewController`;
 - [X] Extensions for `UIWindow`;
 - [X] Extensions for `UIApplication`;
+- [X] Extensions for `UIFont`;
 
 ### Extensions for [`MapKit`](AirKit/Source/MapKit)
 - [X] Extensions for `MKMapView`;
@@ -90,12 +91,12 @@ This is sugar framework that contains many different extensions for native Swift
 ### Extensions for [`LocalAuthentication`](AirKit/Source/LocalAuthentication)
 - [X] Extensions for `LAContext`;
 
-### Extensions for `Combine`
-- [X] Extensions for `TopLevelDecoder`;
-
-### v 0.8 | Extensions for `CoreData`
+### Extensions for [`CoreData`](AirKit/Source/CoreData)
 - [ ] Extensions for `NSPredicate`;
 - [ ] Extensions for `NSManagedObject`;
+
+### Extensions for `Combine`
+- [X] Extensions for `TopLevelDecoder`;
 
 ### v 0.9 | Extensions for [`CoreImage`](AirKit/Source/CoreImage)
 - [ ] `CICategory` (https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference);
@@ -112,13 +113,14 @@ This is sugar framework that contains many different extensions for native Swift
 - [ ] Extensions for keyboard observing with many helpers;
 - [ ] Extensions for change screen on multitasking;
 - [ ] Extensions for `UIApplication` to open schemes, such as `mailto` or popular apps;
+- [ ] Nibless view in the independent module 
 
 ## 🚀 Installation
 
 ### [CocoaPods](https://cocoapods.org) 
 For usage and installation instructions, visit their website. To integrate AirKit into your Xcode project using CocoaPods, specify it in your `Podfile`:
 ```ruby
-pod 'AirKit', '~> 0.7'
+pod 'AirKit', '~> 0.8'
 ```
 
 ## 💻 Usage 
