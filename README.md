@@ -79,6 +79,7 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `UIViewController`;
 - [X] Extensions for `UIWindow`;
 - [X] Extensions for `UIApplication`;
+- [X] Extensions for `UIFont`;
 
 ### Extensions for [`MapKit`](AirKit/Source/MapKit)
 - [X] Extensions for `MKMapView`;

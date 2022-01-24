@@ -5,7 +5,7 @@ PROJECT_FILE = "#{PROJECT_NAME}.xcodeproj"
 POSPEC_FILE = "#{PROJECT_NAME}.podspec"
 
 desc "Update project version and push all changes after"
-lane :update_version do
+lane :update_version do |options|
   # Get base branch name
   branch = options[:git_branch]
 
