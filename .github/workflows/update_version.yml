@@ -1,7 +1,7 @@
 name: Update project version
 
 on: 
-  create:
+  pull_request:
     branches:
       - 'rc/**'
 
