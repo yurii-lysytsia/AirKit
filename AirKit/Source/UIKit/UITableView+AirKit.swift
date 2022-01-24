@@ -51,12 +51,12 @@ public extension UITableView {
 
 public extension UITableView {
     /// Registers a class for use in creating new table view cells.
-    func register<T: UITableViewCell>(cellClass: T.Type) where T: ReusableView {
+    func register<T: UITableViewCell>(_ cellClass: T.Type) where T: ReusableView {
         register(cellClass, forCellReuseIdentifier: cellClass.reuseIdentifier)
     }
     
     /// Registers a nib file for use in creating new table view cells.
-    func register<T: UITableViewCell>(cellClass: T.Type) where T: NibLoadableView {
+    func register<T: UITableViewCell>(_ cellClass: T.Type) where T: NibLoadableView {
         register(cellClass.viewNib, forCellReuseIdentifier: cellClass.reuseIdentifier)
     }
     
@@ -65,7 +65,7 @@ public extension UITableView {
     ///     let cell = collectionView.dequeueReusableCell(cellClass: SomeCollectionViewCell.self, for: indexPath)
     ///     cell is SomeCollectionViewCell // true
     ///
-    func dequeueReusableCell<T: UITableViewCell>(cellClass: T.Type, for indexPath: IndexPath) -> T where T: ReusableView {
+    func dequeueReusableCell<T: UITableViewCell>(_ cellClass: T.Type, for indexPath: IndexPath) -> T where T: ReusableView {
         guard let cell = dequeueReusableCell(withIdentifier: cellClass.reuseIdentifier, for: indexPath) as? T else {
             fatalError("\(#function) - dequeue reusable cell with reuse identifier `\(cellClass.reuseIdentifier)` wasn't found. Make sure the cell is registered with table view")
         }
@@ -78,7 +78,7 @@ public extension UITableView {
     ///     cell is SomeCollectionViewCell // true
     ///
     func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T where T: ReusableView {
-        dequeueReusableCell(cellClass: T.self, for: indexPath)
+        dequeueReusableCell(T.self, for: indexPath)
     }
 }
 
@@ -86,12 +86,12 @@ public extension UITableView {
 
 public extension UITableView {
     /// Registers a class to use in creating new table header or footer views.
-    func register<T: UITableViewHeaderFooterView>(viewClass: T.Type) where T: ReusableView {
+    func register<T: UITableViewHeaderFooterView>(_ viewClass: T.Type) where T: ReusableView {
         register(viewClass, forHeaderFooterViewReuseIdentifier: viewClass.reuseIdentifier)
     }
     
     /// Registers a nib object that contains a header or footer views for the table view.
-    func register<T: UITableViewHeaderFooterView>(viewClass: T.Type) where T: NibLoadableView {
+    func register<T: UITableViewHeaderFooterView>(_ viewClass: T.Type) where T: NibLoadableView {
         register(viewClass.viewNib, forHeaderFooterViewReuseIdentifier: viewClass.reuseIdentifier)
     }
     
@@ -100,7 +100,7 @@ public extension UITableView {
     ///     let headerView = tableView.dequeueReusableHeaderFooterView(viewClass: SomeHeaderView.self)
     ///     headerView is SomeHeaderView // true
     ///
-    func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>(viewClass: T.Type) -> T where T: ReusableView {
+    func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>(_ viewClass: T.Type) -> T where T: ReusableView {
         guard let view = dequeueReusableHeaderFooterView(withIdentifier: viewClass.reuseIdentifier) as? T else {
             fatalError("\(#function) - dequeue reusable header or footer view with reuse identifier `\(viewClass.reuseIdentifier)` wasn't found. Make sure the view is registered with table view")
         }
@@ -113,7 +113,7 @@ public extension UITableView {
     ///     headerView is SomeHeaderView // true
     ///
     func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>() -> T where T: ReusableView {
-        dequeueReusableHeaderFooterView(viewClass: T.self)
+        dequeueReusableHeaderFooterView(T.self)
     }
 }
 
@@ -167,7 +167,7 @@ public extension UITableView {
     
     /// Resize table header view to the optimal size of the view based on its constraints and the specified fitting priorities.
     /// - Parameter additionalConstant: Additional view's height.
-    func fitHeaderTableViewHeight(additionalConstant: CGFloat? = nil) {
+    func fitHeaderViewHeight(additionalConstant: CGFloat? = nil) {
         guard let headerView = resizeView(tableHeaderView, additionalConstant: additionalConstant) else {
             return
         }
