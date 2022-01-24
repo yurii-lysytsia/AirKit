@@ -62,8 +62,8 @@ public extension UITableView {
     
     /// Dequeues a reusable cell object located by its identifier using class `reuseIdentifier`.
     ///
-    ///     let cell = collectionView.dequeueReusableCell(cellClass: SomeCollectionViewCell.self, for: indexPath)
-    ///     cell is SomeCollectionViewCell // true
+    ///     let cell = tableView.dequeueReusableCell(SomeTableViewCell.self, for: indexPath)
+    ///     cell is SomeTableViewCell // true
     ///
     func dequeueReusableCell<T: UITableViewCell>(_ cellClass: T.Type, for indexPath: IndexPath) -> T where T: ReusableView {
         guard let cell = dequeueReusableCell(withIdentifier: cellClass.reuseIdentifier, for: indexPath) as? T else {
@@ -74,11 +74,31 @@ public extension UITableView {
     
     /// Dequeues a reusable cell object located by its identifier using class `reuseIdentifier`.
     ///
-    ///     let cell: SomeCollectionViewCell = collectionView.dequeueReusableCell(for: indexPath)
-    ///     cell is SomeCollectionViewCell // true
+    ///     let cell = tableView.dequeueReusableCell(SomeTableViewCell.self, for: indexPath)
+    ///     cell is SomeTableViewCell // true
     ///
     func dequeueReusableCell<T: UITableViewCell>(for indexPath: IndexPath) -> T where T: ReusableView {
         dequeueReusableCell(T.self, for: indexPath)
+    }
+    
+    /// Dequeues a reusable cell object located by its identifier using class `reuseIdentifier`. Cell will be configured with a given `viewModel`.
+    ///
+    ///     let cell = tableView.dequeueReusableCell(SomeTableViewCell.self, viewModel: someViewModel, for: indexPath)
+    ///     cell is SomeTableViewCell // true
+    ///
+    func dequeueReusableCell<T: UITableViewCell>(_ className: T.Type, viewModel: T.ViewModel, for indexPath: IndexPath) -> T where T: ReusableView & ConfigurableView {
+      let cell: T = dequeueReusableCell(for: indexPath)
+      cell.configure(viewModel: viewModel)
+      return cell
+    }
+    
+    /// Dequeues a reusable cell object located by its identifier using class `reuseIdentifier`. Cell will be configured with a given `viewModel`.
+    ///
+    ///     let cell: SomeTableViewCell = tableView.dequeueReusableCell(viewModel: someViewModel, for: indexPath)
+    ///     cell is SomeTableViewCell // true
+    ///
+    func dequeueReusableCell<T: UITableViewCell>(viewModel: T.ViewModel, for indexPath: IndexPath) -> T where T: ReusableView & ConfigurableView {
+        dequeueReusableCell(T.self, viewModel: viewModel, for: indexPath)
     }
 }
 
@@ -97,7 +117,7 @@ public extension UITableView {
     
     /// Returns a reusable header or footer view after locating it by its class.
     ///
-    ///     let headerView = tableView.dequeueReusableHeaderFooterView(viewClass: SomeHeaderView.self)
+    ///     let headerView = tableView.dequeueReusableHeaderFooterView(SomeHeaderView.self)
     ///     headerView is SomeHeaderView // true
     ///
     func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>(_ viewClass: T.Type) -> T where T: ReusableView {
@@ -114,6 +134,26 @@ public extension UITableView {
     ///
     func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>() -> T where T: ReusableView {
         dequeueReusableHeaderFooterView(T.self)
+    }
+    
+    /// Returns a reusable header or footer view after locating it by its class. View will be configured with a given `viewModel`.
+    ///
+    ///     let headerView = tableView.dequeueReusableHeaderFooterView(SomeHeaderView.self, viewModel: someViewModel)
+    ///     headerView is SomeHeaderView // true
+    ///
+    func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>(_ className: T.Type, viewModel: T.ViewModel) -> T where T: ReusableView & ConfigurableView {
+      let view: T = dequeueReusableHeaderFooterView()
+      view.configure(viewModel: viewModel)
+      return view
+    }
+    
+    /// Returns a reusable header or footer view after locating it by its class. View will be configured with a given `viewModel`.
+    ///
+    ///     let headerView: SomeHeaderView = tableView.dequeueReusableHeaderFooterView()
+    ///     headerView is SomeHeaderView // true
+    ///
+    func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>(viewModel: T.ViewModel) -> T where T: ReusableView & ConfigurableView {
+        dequeueReusableHeaderFooterView(T.self, viewModel: viewModel)
     }
 }
 
