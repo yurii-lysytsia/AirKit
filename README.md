@@ -113,6 +113,7 @@ This is sugar framework that contains many different extensions for native Swift
 - [ ] Extensions for keyboard observing with many helpers;
 - [ ] Extensions for change screen on multitasking;
 - [ ] Extensions for `UIApplication` to open schemes, such as `mailto` or popular apps;
+- [ ] Nibless view in the independent module 
 
 ## 🚀 Installation
 
