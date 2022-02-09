@@ -231,7 +231,7 @@ public extension UIView {
     /// Set layer border color and width corners.
     func setLayerBorder(color: UIColor, width: CGFloat) {
         layerBorderColor = color
-        layerBorderWidth = width.clamped(lowerBound: 0, upperBound: frame.size.minDimension)
+        layerBorderWidth = width
     }
     
     /// Removes layer border color and width corner.
