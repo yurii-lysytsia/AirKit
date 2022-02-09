@@ -1,4 +1,4 @@
-name: Prepare to deploy
+name: On push
 
 on: 
   push:
