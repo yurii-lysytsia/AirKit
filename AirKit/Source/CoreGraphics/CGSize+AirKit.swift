@@ -60,7 +60,7 @@ public extension CGSize {
 // MARK: - Extensions | Inits
 
 public extension CGSize {
-    /// Creates a new size with the same width and haight.
+    /// Creates a new size with the same width and height.
     init(_ size: CGFloat) {
         self.init(width: size, height: size)
     }
@@ -134,63 +134,20 @@ public extension CGSize {
     static func /= (lhs: inout CGSize, rhs: CGSize) { lhs = lhs / rhs }
 }
 
-// MARK: - Extensions | Operators | CGFloat
+// MARK: - ExpressibleByFloatLiteral
 
-public extension CGSize {
-    /// Returns result of addition of the given point with the value.
-    ///
-    ///     let size = CGSize(width: 10, height: 10)
-    ///     size + 5 // CGSize(width: 15, height: 15)
-    ///
-    static func + (lhs: CGSize, rhs: CGFloat) -> CGSize { CGSize(width: lhs.width + rhs, height: lhs.height + rhs) }
-
-    /// Add a value to self.
-    ///
-    ///     var size = CGSize(width: 10, height: 10)
-    ///     size += 5 // size == CGSize(width: 15, height: 15)
-    ///
-    static func += (lhs: inout CGSize, rhs: CGFloat) { lhs = lhs + rhs }
-
-    /// Returns result of subtract of the given point with the value.
-    ///
-    ///     let size = CGSize(width: 30, height: 10)
-    ///     size - 5 // CGSize(width: 25, height: 5)
-    ///
-    static func - (lhs: CGSize, rhs: CGFloat) -> CGSize { CGSize(width: lhs.width - rhs, height: lhs.height - rhs) }
-
-    /// Subtract a value from self.
-    ///
-    ///     var size = CGSize(width: 30, height: 10)
-    ///     size -= 5 // size == CGSize(width: 25, height: 5)
-    ///
-    static func -= (lhs: inout CGSize, rhs: CGFloat) { lhs = lhs - rhs }
-    
-    /// Returns result of multiplication of the given point with the scalar.
-    ///
-    ///     let size = CGSize(width: 10, height: 10)
-    ///     size * 5 // CGSize(width: 50, height: 50)
-    ///
-    static func * (lhs: CGSize, rhs: CGFloat) -> CGSize { CGSize(width: lhs.width * rhs, height: lhs.height * rhs) }
-
-    /// Multiply self with a scalar.
-    ///
-    ///     let size = CGSize(width: 10, height: 10)
-    ///     size *= 5 // size == CGSize(width: 50, height: 50)
-    ///
-    static func *= (lhs: inout CGSize, rhs: CGFloat) { lhs = lhs * rhs }
-    
-    /// Returns result of the divided of the two given sizes.
-    ///
-    ///     let size = CGSize(width: 10, height: 10)
-    ///     size / 5 // CGSize(width: 2, height: 2)
-    ///
-    static func / (lhs: CGSize, rhs: CGFloat) -> CGSize { CGSize(width: lhs.width / rhs, height: lhs.height / rhs) }
-
-    /// Divide self with a size.
-    ///
-    ///     var size = CGSize(width: 6, height: 8)
-    ///     size /= 2 // size == CGSize(width: 3, height: 4)
-    ///
-    static func /= (lhs: inout CGSize, rhs: CGFloat) { lhs = lhs / rhs }
+extension CGSize: ExpressibleByFloatLiteral {
+    public init(floatLiteral value: Float) {
+        self.init(value.toCGFloat())
+    }
 }
+
+// MARK: - ExpressibleByIntegerLiteral
+
+extension CGSize: ExpressibleByIntegerLiteral {
+    public init(integerLiteral value: IntegerLiteralType) {
+        self.init(value.toCGFloat())
+    }
+}
+
 #endif

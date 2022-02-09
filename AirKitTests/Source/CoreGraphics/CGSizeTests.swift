@@ -54,4 +54,16 @@ class CGSizeTests: XCTestCase {
         XCTAssertEqual(source, CGSize(width: 3, height: 6))
     }
     
+    func testExpressibleByFloatLiteral() {
+        let source: CGSize = 20.0
+        XCTAssertEqual(source.width, 20)
+        XCTAssertEqual(source.height, 20)
+    }
+    
+    func testExpressibleByIntegerLiteral() {
+        let source: CGSize = 10
+        XCTAssertEqual(source.width, 10)
+        XCTAssertEqual(source.height, 10)
+    }
+    
 }
