@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -170,6 +170,8 @@
 		5BBCA009271AFF5E0025828C /* UIApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCA008271AFF5E0025828C /* UIApplicationTests.swift */; };
 		5BC747DF279F177C007F02CA /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC747DE279F177C007F02CA /* ConfigurableView.swift */; };
 		5BC747E1279F1982007F02CA /* UIFont+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC747E0279F1982007F02CA /* UIFont+AirKit.swift */; };
+		5BCC641227B41A6000C29E01 /* NSDirectionalEdgeInsets+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC641127B41A6000C29E01 /* NSDirectionalEdgeInsets+AirKit.swift */; };
+		5BCC641427B41B1A00C29E01 /* NSDirectionalEdgeInsetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC641327B41B1A00C29E01 /* NSDirectionalEdgeInsetsTests.swift */; };
 		5BD0FB4D271C66D400DA3C5C /* MKMapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0FB4C271C66D400DA3C5C /* MKMapViewTests.swift */; };
 		5BD0FB4F271C68BF00DA3C5C /* MKMapView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0FB4E271C68BF00DA3C5C /* MKMapView+AirKit.swift */; };
 		5BD0FB51271C6DDD00DA3C5C /* MKPolyline+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0FB50271C6DDD00DA3C5C /* MKPolyline+AirKit.swift */; };
@@ -361,6 +363,8 @@
 		5BBCA008271AFF5E0025828C /* UIApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationTests.swift; sourceTree = "<group>"; };
 		5BC747DE279F177C007F02CA /* ConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
 		5BC747E0279F1982007F02CA /* UIFont+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+AirKit.swift"; sourceTree = "<group>"; };
+		5BCC641127B41A6000C29E01 /* NSDirectionalEdgeInsets+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDirectionalEdgeInsets+AirKit.swift"; sourceTree = "<group>"; };
+		5BCC641327B41B1A00C29E01 /* NSDirectionalEdgeInsetsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSDirectionalEdgeInsetsTests.swift; sourceTree = "<group>"; };
 		5BD0FB4C271C66D400DA3C5C /* MKMapViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewTests.swift; sourceTree = "<group>"; };
 		5BD0FB4E271C68BF00DA3C5C /* MKMapView+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+AirKit.swift"; sourceTree = "<group>"; };
 		5BD0FB50271C6DDD00DA3C5C /* MKPolyline+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPolyline+AirKit.swift"; sourceTree = "<group>"; };
@@ -752,6 +756,7 @@
 		5B7660B5270778C000CC0ABA /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				5BCC641127B41A6000C29E01 /* NSDirectionalEdgeInsets+AirKit.swift */,
 				5BBCA004271AFD4B0025828C /* UIApplication+AirKit.swift */,
 				5B3408092714AC9900BC79E8 /* UIBarButtonItem+AirKit.swift */,
 				5B60C4B3270A0A2300D2E190 /* UIBezierPath+AirKit.swift */,
@@ -784,6 +789,7 @@
 		5B7660B6270778C900CC0ABA /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				5BCC641327B41B1A00C29E01 /* NSDirectionalEdgeInsetsTests.swift */,
 				5BBCA008271AFF5E0025828C /* UIApplicationTests.swift */,
 				5B06BF602715908B00CDB5C9 /* UIBarButtonItemTests.swift */,
 				5B60C4B5270A0A3600D2E190 /* UIBezierPathTests.swift */,
@@ -968,6 +974,7 @@
 		5B510BEE26F24AB200C21CDF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Yurii Lysytsia";
@@ -1066,6 +1073,7 @@
 				5B9D3BF927031BEB00FD822F /* Bundle+AirKit.swift in Sources */,
 				5B8C1CFB27045FB50021B48E /* FileManager+AirKit.swift in Sources */,
 				5B19FEF927071F8C00F76EBD /* CAGradientLayer+AirKit.swift in Sources */,
+				5BCC641227B41A6000C29E01 /* NSDirectionalEdgeInsets+AirKit.swift in Sources */,
 				5B639D71270869B00028B543 /* CIFilter+AirKit.swift in Sources */,
 				5B09638C26FB47EB00879AE7 /* Result+AirKit.swift in Sources */,
 				5BBC9FD1271AD3500025828C /* UIWindow+AirKit.swift in Sources */,
@@ -1149,6 +1157,7 @@
 				5B8C1D072704A6CD0021B48E /* NumberFormatterTests.swift in Sources */,
 				5B96CA062718216500261CFE /* NibView.swift in Sources */,
 				5B0ED07026FCC80300473155 /* RangeReplaceableCollectionTests.swift in Sources */,
+				5BCC641427B41B1A00C29E01 /* NSDirectionalEdgeInsetsTests.swift in Sources */,
 				5B19FF0227075C0F00F76EBD /* CATransform3DTests.swift in Sources */,
 				5B9D3C0E27034F2600FD822F /* URLComponentsTests.swift in Sources */,
 				5BD0FB4D271C66D400DA3C5C /* MKMapViewTests.swift in Sources */,
