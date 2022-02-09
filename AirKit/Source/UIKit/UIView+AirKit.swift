@@ -21,6 +21,7 @@ import func UIKit.objc_getAssociatedObject
 import func UIKit.objc_setAssociatedObject
 import class UIKit.Bundle
 import struct UIKit.TimeInterval
+import class UIKit.NSKeyValueObservation
 
 // MARK: - Extensions | Static Values
 
@@ -192,6 +193,7 @@ public extension UIView {
 
 public extension UIView {
     private static var isCircledAssociatedKey = "\(Bundle.main.info.identifier).\(UIView.self).isCircled"
+    private static var isCircledObservationAssociatedKey = "\(Bundle.main.info.identifier).\(UIView.self).isCircled"
     
     /// A Boolean value that determines whether the view is permanently circled. Default is `false`.
     ///
@@ -203,6 +205,7 @@ public extension UIView {
         set {
             objc_setAssociatedObject(self, &UIView.isCircledAssociatedKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             newValue ? roundCornersToCircle() : roundCorners(cornerRadius: 0)
+            newValue ? beginObserveCircle() : endObserveCircle()
         }
     }
     
@@ -210,6 +213,23 @@ public extension UIView {
     func roundCornersToCircle() {
         layer.cornerRadius = max(frame.size.minDimension / 2, 0)
         layer.maskedCorners = .allCorners
+    }
+    
+    private var isCircledObservation: NSKeyValueObservation? {
+        get { objc_getAssociatedObject(self, &UIView.isCircledObservationAssociatedKey) as? NSKeyValueObservation }
+        set { objc_setAssociatedObject(self, &UIView.isCircledObservationAssociatedKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
+    }
+    
+    private func beginObserveCircle() {
+        // TODO: - Check is frame changing also works
+        isCircledObservation = observe(\.bounds) { [weak self] _, _ in
+            self?.roundCornersToCircle()
+        }
+    }
+    
+    private func endObserveCircle() {
+        isCircledObservation?.invalidate()
+        isCircledObservation = nil
     }
 }
 
@@ -386,33 +406,6 @@ public extension UIView {
     /// Returns `true` if user interface layout direction appropriate for arranging the immediate content of the view is in RTL (right to left) format.
     var isRightToLeft: Bool {
         effectiveUserInterfaceLayoutDirection == .rightToLeft
-    }
-}
-
-// MARK: - Extensions | Swizzling
-
-extension UIView {
-    /// Alternative to `class func initialize()`.
-    private static let initialization = Once {
-        try Swizzle.swizzleInstanceMethod(
-            classType: UIView.self,
-            original: #selector(layoutSubviews),
-            swizzled: #selector(swizzledLayoutSubviews)
-        )
-    }
-    
-    /// Swizzle needed methods.
-    ///
-    /// 1. `layoutSubviews()` method for `isCircled`.
-    static func swizzleView() throws {
-        try initialization.run()
-    }
-    
-    @objc private func swizzledLayoutSubviews() {
-        swizzledLayoutSubviews()
-        if isCircled {
-            roundCornersToCircle()
-        }
     }
 }
 

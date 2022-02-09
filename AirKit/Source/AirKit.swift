@@ -9,7 +9,6 @@ public enum AirKit {
     /// Swizzle all needed instance and class methods.
     public static func swizzle() throws {
         #if canImport(UIKit)
-        try UIView.swizzleView()
         try UIButton.swizzleButton()
         #endif
     }
