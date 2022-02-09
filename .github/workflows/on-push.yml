@@ -22,6 +22,6 @@ jobs:
 
     - name: Update podspec xcode-version
       run: |
-        bundle exec fastlane update_version git_branch:${HEAD_BRANCH}
+        bundle exec fastlane update_version git_branch:${GITHUB_BRANCH##*/}
       env:
-        HEAD_BRANCH: ${{ github.event.base_ref }}
+        HEAD_BRANCH: ${{ github.ref }}
