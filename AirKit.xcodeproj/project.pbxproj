@@ -61,7 +61,6 @@
 		5B19FF0227075C0F00F76EBD /* CATransform3DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FF0127075C0F00F76EBD /* CATransform3DTests.swift */; };
 		5B19FF042707611E00F76EBD /* CAGradientLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FF032707611E00F76EBD /* CAGradientLayerTests.swift */; };
 		5B1B388C270C63E300D9215B /* Once.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1B388B270C63E300D9215B /* Once.swift */; };
-		5B1B3895270C9D0700D9215B /* AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1B3894270C9D0700D9215B /* AirKit.swift */; };
 		5B239FB52700ED790045382F /* DateFormatComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B239FB42700ED790045382F /* DateFormatComponents.swift */; };
 		5B2ADD422710CAE2003D4C1C /* UIButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2ADD412710CAE2003D4C1C /* UIButtonTests.swift */; };
 		5B2ADD442710D595003D4C1C /* UIStackViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2ADD432710D595003D4C1C /* UIStackViewTests.swift */; };
@@ -135,7 +134,6 @@
 		5B96CA0C2718278700261CFE /* UITableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96CA0B2718278700261CFE /* UITableViewTests.swift */; };
 		5B96CA0E27182B7C00261CFE /* UICollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96CA0D27182B7C00261CFE /* UICollectionViewTests.swift */; };
 		5B96CA1027182CF200261CFE /* UITextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96CA0F27182CF200261CFE /* UITextViewTests.swift */; };
-		5B96CA1227182FA100261CFE /* AirKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96CA1127182FA100261CFE /* AirKitTests.swift */; };
 		5B96CA14271832C900261CFE /* UINavigationController+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96CA13271832C900261CFE /* UINavigationController+AirKit.swift */; };
 		5B96CA162718371800261CFE /* UINavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96CA152718371800261CFE /* UINavigationControllerTests.swift */; };
 		5B9BAFCD26F77B1D00731991 /* BinaryInteger+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */; };
@@ -248,7 +246,6 @@
 		5B19FF0127075C0F00F76EBD /* CATransform3DTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATransform3DTests.swift; sourceTree = "<group>"; };
 		5B19FF032707611E00F76EBD /* CAGradientLayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAGradientLayerTests.swift; sourceTree = "<group>"; };
 		5B1B388B270C63E300D9215B /* Once.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Once.swift; sourceTree = "<group>"; };
-		5B1B3894270C9D0700D9215B /* AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirKit.swift; sourceTree = "<group>"; };
 		5B239FB42700ED790045382F /* DateFormatComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatComponents.swift; sourceTree = "<group>"; };
 		5B2ADD412710CAE2003D4C1C /* UIButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonTests.swift; sourceTree = "<group>"; };
 		5B2ADD432710D595003D4C1C /* UIStackViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewTests.swift; sourceTree = "<group>"; };
@@ -326,7 +323,6 @@
 		5B96CA0B2718278700261CFE /* UITableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewTests.swift; sourceTree = "<group>"; };
 		5B96CA0D27182B7C00261CFE /* UICollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewTests.swift; sourceTree = "<group>"; };
 		5B96CA0F27182CF200261CFE /* UITextViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewTests.swift; sourceTree = "<group>"; };
-		5B96CA1127182FA100261CFE /* AirKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirKitTests.swift; sourceTree = "<group>"; };
 		5B96CA13271832C900261CFE /* UINavigationController+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+AirKit.swift"; sourceTree = "<group>"; };
 		5B96CA152718371800261CFE /* UINavigationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerTests.swift; sourceTree = "<group>"; };
 		5B9BAFCC26F77B1D00731991 /* BinaryInteger+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryInteger+AirKit.swift"; sourceTree = "<group>"; };
@@ -641,7 +637,6 @@
 		5B510C0226F24B0E00C21CDF /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				5B1B3894270C9D0700D9215B /* AirKit.swift */,
 				5BBB16B526F625040094B14C /* Swift */,
 				5B09638826FB42F400879AE7 /* Foundation */,
 				5B07F3E426F9000600976D89 /* CoreGraphics */,
@@ -714,7 +709,6 @@
 		5B6A059026FA7E2A001A59C8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				5B96CA1127182FA100261CFE /* AirKitTests.swift */,
 				5B6A059126FA7E31001A59C8 /* Swift */,
 				5B0ED07D26FCD45500473155 /* Foundation */,
 				5B0ED08226FCD48F00473155 /* CoreGraphics */,
@@ -1112,7 +1106,6 @@
 				5B0273A7271040D800DAA072 /* UIButton+AirKit.swift in Sources */,
 				5B07F3F126F9038000976D89 /* Int+AirKit.swift in Sources */,
 				5BD4AE76270B66ED00D65DBC /* UIView+AirKit.swift in Sources */,
-				5B1B3895270C9D0700D9215B /* AirKit.swift in Sources */,
 				5BAD269B27170E0700AE9E4F /* UITableView+AirKit.swift in Sources */,
 				5BC747DF279F177C007F02CA /* ConfigurableView.swift in Sources */,
 				5B1B388C270C63E300D9215B /* Once.swift in Sources */,
@@ -1192,7 +1185,6 @@
 				5BD4AE79270B66FE00D65DBC /* UIViewTests.swift in Sources */,
 				5B1016FD271C704D005C9BE4 /* MKPolygonTests.swift in Sources */,
 				5BEAB5BA2719AB06007E74E1 /* UIPageViewControllerTests.swift in Sources */,
-				5B96CA1227182FA100261CFE /* AirKitTests.swift in Sources */,
 				5B19FF042707611E00F76EBD /* CAGradientLayerTests.swift in Sources */,
 				5BBC9FCD271AB3600025828C /* UIViewControllerTests.swift in Sources */,
 				5B0ED07826FCD42200473155 /* FloatTests.swift in Sources */,

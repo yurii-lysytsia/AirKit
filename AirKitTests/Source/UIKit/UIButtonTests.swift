@@ -5,10 +5,6 @@ import XCTest
 
 final class UIButtonTests: XCTestCase {
     
-    override class func setUp() {
-        try! UIButton.swizzleButton()
-    }
-    
     func testImageSpacing() {
         let button = UIButton()
         button.setImage(UIImage(color: .red, size: CGSize(20)), for: .normal)

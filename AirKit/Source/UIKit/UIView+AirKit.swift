@@ -221,7 +221,6 @@ public extension UIView {
     }
     
     private func beginObserveCircle() {
-        // TODO: - Check is frame changing also works
         isCircledObservation = observe(\.bounds) { [weak self] _, _ in
             self?.roundCornersToCircle()
         }

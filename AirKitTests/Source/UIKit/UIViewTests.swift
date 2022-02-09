@@ -4,10 +4,6 @@ import XCTest
 @testable import AirKit
 
 final class UIViewTests: XCTestCase {
-
-    override class func setUp() {
-        try! UIButton.swizzleButton()
-    }
     
     func testStaticValues() {
         let spacingView = UIView.spacingView
