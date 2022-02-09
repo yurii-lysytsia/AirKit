@@ -59,6 +59,7 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `CLLocationCoordinate2D`;
 
 ### Extensions for [`UIKit`](AirKit/Source/UIKit)
+- [X] Extensions for `NSDirectionalEdgeInsets`;
 - [X] Extensions for `UIGraphicsImageRenderer`, `UIGraphicsImageRendererFormat` and `UIImage`;
 - [X] Extensions for `UIColor`;
 - [X] Extensions for `UIEdgeInsets`;
@@ -120,30 +121,12 @@ This is sugar framework that contains many different extensions for native Swift
 ### [CocoaPods](https://cocoapods.org) 
 For usage and installation instructions, visit their website. To integrate AirKit into your Xcode project using CocoaPods, specify it in your `Podfile`:
 ```ruby
-pod 'AirKit', '~> 0.8'
+pod 'AirKit', '~> 0.7'
 ```
 
 ## 💻 Usage 
 
-### 1. Swizzle (not mandatory)
-Some features of `AirKit` are needed of method swizzling. So you can use code below to swizzle easily.
-
-```swift
-import AirKit
-
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    ...
-    do {
-        try AirKit.swizzle()
-    } catch {
-        // Catch some error of `AirKit` swizzling if needed.
-        // You can use `try? AirKit.swizzle()` if you don't need catch error
-    }
-    ...
-}
-```
-
-### 2. Import `AirKit` to the file and use extensions that you need.
+### Import `AirKit` to the file and use extensions that you need.
 ```swift
 import AirKit
 ```

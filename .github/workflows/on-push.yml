@@ -1,0 +1,25 @@
+name: On push
+
+on: 
+  push:
+    branches:
+      - 'rc/**'
+
+jobs:      
+  updating:
+    runs-on: macOS-latest
+    timeout-minutes: 5
+    steps:
+    
+    - name: Checkout pull request branch
+      uses: actions/checkout@v2
+
+    - name: Setup ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.6
+        bundler-cache: true
+
+    - name: Update podspec xcode-version
+      run: |
+        bundle exec fastlane update_version git_branch:$GITHUB_REF_NAME

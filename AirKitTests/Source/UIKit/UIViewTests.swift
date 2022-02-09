@@ -4,11 +4,6 @@ import XCTest
 @testable import AirKit
 
 final class UIViewTests: XCTestCase {
-
-    override class func setUp() {
-        try! UIView.swizzleView()
-        try! UIButton.swizzleButton()
-    }
     
     func testStaticValues() {
         let spacingView = UIView.spacingView
@@ -110,7 +105,7 @@ final class UIViewTests: XCTestCase {
         let views = [UIView(), UIControl(), UIImageView(), UITextView(), UITextField(), UILabel(), UIButton()]
         
         views.forEach { view in
-            view.frame.size = CGSize(width: 200, height: 200)
+            view.bounds.size = CGSize(width: 200, height: 200)
             
             // Round top corners
             view.roundCorners(.topCorners, cornerRadius: 20)
@@ -123,8 +118,7 @@ final class UIViewTests: XCTestCase {
             XCTAssertEqual(view.layer.maskedCorners, .allCorners)
             
             // Change view's size
-            view.frame.size = CGSize(width: 300, height: 300)
-            view.layoutSubviews() // Not called automatically
+            view.bounds.size = CGSize(width: 300, height: 300)
             XCTAssertEqual(view.layer.cornerRadius, view.frame.size.minDimension / 2)
             XCTAssertEqual(view.layer.maskedCorners, .allCorners)
             
@@ -144,14 +138,13 @@ final class UIViewTests: XCTestCase {
             XCTAssertEqual(view.layer.maskedCorners, .allCorners)
             
             // Change view's size again
-            view.frame.size = CGSize(width: 100, height: 100)
-            view.layoutSubviews() // Not called automatically
+            view.bounds.size = CGSize(width: 100, height: 100)
             XCTAssertEqual(view.layer.cornerRadius, 0)
             XCTAssertEqual(view.layer.maskedCorners, .allCorners)
         }
     }
     
-    func testCirlce() {
+    func testCircle() {
         let view = UIView()
         view.frame.size = CGSize(width: 200, height: 200)
         

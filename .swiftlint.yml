@@ -27,7 +27,8 @@ disabled_rules:
 
 # Custom configurations
 line_length:
-  warning: 200
+  warning: 220
+  error: 250
   ignores_comments: true
 
 force_unwrapping: warning
