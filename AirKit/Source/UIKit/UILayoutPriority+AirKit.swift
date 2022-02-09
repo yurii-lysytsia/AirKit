@@ -3,6 +3,13 @@
 #if canImport(UIKit)
 import struct UIKit.UILayoutPriority
 
+// MARK: - Extensions | Values
+
+extension UILayoutPriority {
+    /// Returns the layout priority with `999` value. It's the same as required, but it can helps to fix warnings.
+    public static let requiredFixWarnings: UILayoutPriority = 999
+}
+
 // MARK: - Extensions | ExpressibleByFloatLiteral
 
 extension UILayoutPriority: ExpressibleByFloatLiteral {
