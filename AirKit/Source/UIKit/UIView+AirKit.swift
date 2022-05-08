@@ -408,6 +408,30 @@ public extension UIView {
     }
 }
 
+// MARK: - Extensions | Converted Point
+
+public extension UIView {
+    /// Returns coordinates (origin points) of the current view relative to `baseView`.
+    func convertedPoint(relativeTo baseView: UIView) -> CGPoint {
+        var origin = frame.origin
+        guard var superview = superview else {
+            return origin
+        }
+        
+        while superview != baseView {
+            origin = superview.convert(origin, to: superview.superview)
+            if let targetSuperview = superview.superview {
+                superview = targetSuperview
+            } else {
+                break
+            }
+        }
+        
+        return superview.convert(origin, to: baseView)
+    }
+}
+
+
 // MARK: - Extensions | AnimationOptions | Inits
 
 public extension UIView.AnimationOptions {
