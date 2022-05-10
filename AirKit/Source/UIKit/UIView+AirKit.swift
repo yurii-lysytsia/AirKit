@@ -431,7 +431,6 @@ public extension UIView {
     }
 }
 
-
 // MARK: - Extensions | AnimationOptions | Inits
 
 public extension UIView.AnimationOptions {
