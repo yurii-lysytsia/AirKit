@@ -1,7 +1,21 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 #if canImport(UIKit)
-import UIKit
+import typealias Foundation.TimeInterval
+import class QuartzCore.CATransaction
+import class QuartzCore.CATransition
+import class QuartzCore.CAMediaTimingFunction
+import var QuartzCore.kCATransition
+import var QuartzCore.CATransform3DIdentity
+import func QuartzCore.CATransform3DMakeScale
+import func QuartzCore.CATransform3DMakeTranslation
+import struct CoreGraphics.CGFloat
+import struct CoreGraphics.CGSize
+import struct CoreGraphics.CGRect
+import class UIKit.UIWindow
+import class UIKit.UIView
+import class UIKit.UIImageView
+import class UIKit.UIViewController
 
 // MARK: - Extensions | Transition
 

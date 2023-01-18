@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -76,6 +76,7 @@
 		5B35BD212705FD8E0031AED3 /* CGColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD202705FD8E0031AED3 /* CGColorTests.swift */; };
 		5B361EEC2719ED00005803BE /* UIViewController+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B361EEB2719ED00005803BE /* UIViewController+AirKit.swift */; };
 		5B46AD7326F88FC8002BC409 /* Optional+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B46AD7226F88FC8002BC409 /* Optional+AirKit.swift */; };
+		5B50744229696ED400103596 /* Mirror+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B50744129696ED400103596 /* Mirror+AirKit.swift */; };
 		5B510BFC26F24AB200C21CDF /* AirKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B510BFA26F24AB200C21CDF /* AirKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B60C4B02709B61A00D2E190 /* UIEdgeInsets+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60C4AF2709B61A00D2E190 /* UIEdgeInsets+AirKit.swift */; };
 		5B60C4B22709B62500D2E190 /* UIEdgeInsetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60C4B12709B62500D2E190 /* UIEdgeInsetsTests.swift */; };
@@ -261,6 +262,7 @@
 		5B35BD202705FD8E0031AED3 /* CGColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGColorTests.swift; sourceTree = "<group>"; };
 		5B361EEB2719ED00005803BE /* UIViewController+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AirKit.swift"; sourceTree = "<group>"; };
 		5B46AD7226F88FC8002BC409 /* Optional+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+AirKit.swift"; sourceTree = "<group>"; };
+		5B50744129696ED400103596 /* Mirror+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mirror+AirKit.swift"; sourceTree = "<group>"; };
 		5B510BF726F24AB200C21CDF /* AirKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B510BFA26F24AB200C21CDF /* AirKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirKit.h; sourceTree = "<group>"; };
 		5B510BFB26F24AB200C21CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -869,6 +871,7 @@
 				5B07F3DF26F8F28300976D89 /* Float+AirKit.swift */,
 				5B07F3F026F9038000976D89 /* Int+AirKit.swift */,
 				5B09638D26FB50FC00879AE7 /* KeyedDecodingContainer+AirKit.swift */,
+				5B50744129696ED400103596 /* Mirror+AirKit.swift */,
 				5B46AD7226F88FC8002BC409 /* Optional+AirKit.swift */,
 				5B6A057726FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift */,
 				5B09638B26FB47EB00879AE7 /* Result+AirKit.swift */,
@@ -1024,12 +1027,14 @@
 /* Begin PBXShellScriptBuildPhase section */
 		5BBB16B626F625FC0094B14C /* [SwiftLint] Run */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				$SRCROOT/.swiftlint.yml,
 			);
 			name = "[SwiftLint] Run";
 			outputFileListPaths = (
@@ -1038,7 +1043,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/.swiftlint\" --config \"${SRCROOT}/.swiftlint.yml\" --path \"${SRCROOT}/AirKit\"\n";
+			shellScript = "\"$SRCROOT/.swiftlint\" --config \"$SRCROOT/.swiftlint.yml\" --path \"$SRCROOT/$TARGET_NAME\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1077,6 +1082,7 @@
 				5B60C4B02709B61A00D2E190 /* UIEdgeInsets+AirKit.swift in Sources */,
 				5B07F3DC26F8F0ED00976D89 /* Bool+AirKit.swift in Sources */,
 				5B09639126FB585300879AE7 /* TopLevelDecoder+AirKit.swift in Sources */,
+				5B50744229696ED400103596 /* Mirror+AirKit.swift in Sources */,
 				5BD0FB4F271C68BF00DA3C5C /* MKMapView+AirKit.swift in Sources */,
 				5B93EDBA2700D6E500A9BEDA /* Date+AirKit.swift in Sources */,
 				5B639D7427086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift in Sources */,
