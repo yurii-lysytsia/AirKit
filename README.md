@@ -40,7 +40,11 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `DispatchQueue`;
 - [X] `Swizzle` - suggar for use ObjC swizzle methods;
 
-### Extensions for [`CoreGraphics`](AirKit/Source/CoreGraphics)
+### Extensions for [`QuartzCore`](AirKit/Source/CoreGraphics)
+- [X] Extensions for `CACornerMask`;
+- [X] Extensions for `CAGradientLayer`;
+- [X] Extensions for `CATransform3D`;
+- [X] Extensions for `CAMediaTimingFunction`;
 - [X] Extensions for `CGFloat`;
 - [X] Extensions for `CGPoint`;
 - [X] Extensions for `CGSize`;
@@ -49,12 +53,6 @@ This is sugar framework that contains many different extensions for native Swift
 ### Extensions for [`CoreImage`](AirKit/Source/CoreImage)
 - [X] Extensions for `CIContext`;
 - [X] Extensions for `CIFilter`;
-
-### Extensions for [`CoreAnimation`](AirKit/Source/CoreAnimation)
-- [X] Extensions for `CACornerMask`;
-- [X] Extensions for `CAGradientLayer`;
-- [X] Extensions for `CATransform3D`;
-- [X] Extensions for `CAMediaTimingFunction`;
 
 ### Extensions for [`CoreLocation`](AirKit/Source/CoreLocation)
 - [X] Extensions for `CLLocation`;

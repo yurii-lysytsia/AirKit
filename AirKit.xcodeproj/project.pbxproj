@@ -38,9 +38,6 @@
 		5B101703271C84B1005C9BE4 /* WKWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B101702271C84B1005C9BE4 /* WKWebViewTests.swift */; };
 		5B101706271C8AC0005C9BE4 /* LAContext+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B101705271C8AC0005C9BE4 /* LAContext+AirKit.swift */; };
 		5B101709271C8AE8005C9BE4 /* LAContextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B101708271C8AE8005C9BE4 /* LAContextTests.swift */; };
-		5B19FEF727071B6100F76EBD /* CACornerMask+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEF627071B6100F76EBD /* CACornerMask+AirKit.swift */; };
-		5B19FEF927071F8C00F76EBD /* CAGradientLayer+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEF827071F8C00F76EBD /* CAGradientLayer+AirKit.swift */; };
-		5B19FEFB270721C400F76EBD /* CATransform3D+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEFA270721C400F76EBD /* CATransform3D+AirKit.swift */; };
 		5B19FEFF27072F2C00F76EBD /* CGAffineTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEFE27072F2C00F76EBD /* CGAffineTransformTests.swift */; };
 		5B19FF0227075C0F00F76EBD /* CATransform3DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FF0127075C0F00F76EBD /* CATransform3DTests.swift */; };
 		5B19FF042707611E00F76EBD /* CAGradientLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FF032707611E00F76EBD /* CAGradientLayerTests.swift */; };
@@ -133,7 +130,7 @@
 		5B7C2CD5297C5C86007B4CD6 /* TopLevelDecoder+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09639026FB585300879AE7 /* TopLevelDecoder+AirKit.swift */; };
 		5B7C2CD6297C5C86007B4CD6 /* AirCombine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2CD0297C5C78007B4CD6 /* AirCombine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B7C2CDA297C5CE7007B4CD6 /* Combine+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C2CD8297C5CA8007B4CD6 /* Combine+AirKit.swift */; };
-		5B7C2CE9297C5E3D007B4CD6 /* AirCoreGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2CE4297C5DCA007B4CD6 /* AirCoreGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B7C2CE9297C5E3D007B4CD6 /* AirQuartzCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2CE4297C5DCA007B4CD6 /* AirQuartzCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B7C2CEA297C5EA6007B4CD6 /* AirSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2C64297C4C0D007B4CD6 /* AirSwift.framework */; };
 		5B7C2CEB297C5EA6007B4CD6 /* AirSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2C64297C4C0D007B4CD6 /* AirSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B7C2CF0297C5F30007B4CD6 /* CGFloatConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F3EE26F9024A00976D89 /* CGFloatConvertible.swift */; };
@@ -141,10 +138,12 @@
 		5B7C2CF2297C5F30007B4CD6 /* CGAffineTransform+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEFC27072B0F00F76EBD /* CGAffineTransform+AirKit.swift */; };
 		5B7C2CF4297C5F30007B4CD6 /* CGFloat+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F3E526F9001B00976D89 /* CGFloat+AirKit.swift */; };
 		5B7C2CF5297C5F30007B4CD6 /* CGPoint+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD162705AAFE0031AED3 /* CGPoint+AirKit.swift */; };
-		5B7C2D0D297C6691007B4CD6 /* AirCoreImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2D08297C6635007B4CD6 /* AirCoreImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B7C2D0E297C66BF007B4CD6 /* CIContext+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D86270894D80028B543 /* CIContext+AirKit.swift */; };
-		5B7C2D0F297C66BF007B4CD6 /* CICategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D6D270868C30028B543 /* CICategory.swift */; };
-		5B7C2D10297C66BF007B4CD6 /* CIFilter+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D70270869B00028B543 /* CIFilter+AirKit.swift */; };
+		5B7C2D18297C6904007B4CD6 /* CACornerMask+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEF627071B6100F76EBD /* CACornerMask+AirKit.swift */; };
+		5B7C2D1A297C6904007B4CD6 /* CATransform3D+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEFA270721C400F76EBD /* CATransform3D+AirKit.swift */; };
+		5B7C2D29297C6A73007B4CD6 /* CIFilter+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D70270869B00028B543 /* CIFilter+AirKit.swift */; };
+		5B7C2D2A297C6A73007B4CD6 /* AirCoreImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2D08297C6635007B4CD6 /* AirCoreImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B7C2D2B297C6A73007B4CD6 /* CIContext+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D86270894D80028B543 /* CIContext+AirKit.swift */; };
+		5B7C2D2C297C6A73007B4CD6 /* CICategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D6D270868C30028B543 /* CICategory.swift */; };
 		5B7FF729270234F800C28795 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7FF728270234F800C28795 /* DateFormatterTests.swift */; };
 		5B7FF72B270237FD00C28795 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7FF72A270237FD00C28795 /* DateTests.swift */; };
 		5B8C1CFD270460AC0021B48E /* UserDefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1CFC270460AC0021B48E /* UserDefaultsTests.swift */; };
@@ -177,7 +176,6 @@
 		5BBC9FCD271AB3600025828C /* UIViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBC9FCC271AB3600025828C /* UIViewControllerTests.swift */; };
 		5BBC9FCF271AD32F0025828C /* UIWindowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBC9FCE271AD32F0025828C /* UIWindowTests.swift */; };
 		5BBC9FD1271AD3500025828C /* UIWindow+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBC9FD0271AD3500025828C /* UIWindow+AirKit.swift */; };
-		5BBC9FD3271AD3760025828C /* CAMediaTimingFunction+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBC9FD2271AD3760025828C /* CAMediaTimingFunction+AirKit.swift */; };
 		5BBCA005271AFD4B0025828C /* UIApplication+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCA004271AFD4B0025828C /* UIApplication+AirKit.swift */; };
 		5BBCA007271AFEDA0025828C /* CAMediaTimingFunctionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCA006271AFEDA0025828C /* CAMediaTimingFunctionTests.swift */; };
 		5BBCA009271AFF5E0025828C /* UIApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCA008271AFF5E0025828C /* UIApplicationTests.swift */; };
@@ -293,7 +291,6 @@
 		5B14C696270F34310093C881 /* Swizzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swizzle.swift; sourceTree = "<group>"; };
 		5B188341270D808200CC2F3C /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
 		5B19FEF627071B6100F76EBD /* CACornerMask+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CACornerMask+AirKit.swift"; sourceTree = "<group>"; };
-		5B19FEF827071F8C00F76EBD /* CAGradientLayer+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+AirKit.swift"; sourceTree = "<group>"; };
 		5B19FEFA270721C400F76EBD /* CATransform3D+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CATransform3D+AirKit.swift"; sourceTree = "<group>"; };
 		5B19FEFC27072B0F00F76EBD /* CGAffineTransform+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGAffineTransform+AirKit.swift"; sourceTree = "<group>"; };
 		5B19FEFE27072F2C00F76EBD /* CGAffineTransformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAffineTransformTests.swift; sourceTree = "<group>"; };
@@ -368,11 +365,11 @@
 		5B7C2CCE297C5C78007B4CD6 /* AirCombine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirCombine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7C2CD0297C5C78007B4CD6 /* AirCombine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirCombine.h; sourceTree = "<group>"; };
 		5B7C2CD8297C5CA8007B4CD6 /* Combine+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+AirKit.swift"; sourceTree = "<group>"; };
-		5B7C2CE2297C5DCA007B4CD6 /* AirCoreGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirCoreGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B7C2CE4297C5DCA007B4CD6 /* AirCoreGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirCoreGraphics.h; sourceTree = "<group>"; };
+		5B7C2CE2297C5DCA007B4CD6 /* AirQuartzCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirQuartzCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B7C2CE4297C5DCA007B4CD6 /* AirQuartzCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirQuartzCore.h; sourceTree = "<group>"; };
 		5B7C2CFF297C65CA007B4CD6 /* CGColor+AirKit+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGColor+AirKit+UIKit.swift"; sourceTree = "<group>"; };
-		5B7C2D06297C6634007B4CD6 /* AirCoreImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirCoreImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7C2D08297C6635007B4CD6 /* AirCoreImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirCoreImage.h; sourceTree = "<group>"; };
+		5B7C2D22297C6A6B007B4CD6 /* AirCoreImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirCoreImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7FF728270234F800C28795 /* DateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
 		5B7FF72A270237FD00C28795 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		5B8C1CF8270454660021B48E /* UserDefaults+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+AirKit.swift"; sourceTree = "<group>"; };
@@ -488,7 +485,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B7C2D03297C6634007B4CD6 /* Frameworks */ = {
+		5B7C2D1F297C6A6B007B4CD6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -508,17 +505,19 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		5B07F3E426F9000600976D89 /* CoreGraphics */ = {
+		5B07F3E426F9000600976D89 /* QuartzCore */ = {
 			isa = PBXGroup;
 			children = (
-				5B7C2CE4297C5DCA007B4CD6 /* AirCoreGraphics.h */,
+				5B7C2CE4297C5DCA007B4CD6 /* AirQuartzCore.h */,
+				5B19FEF627071B6100F76EBD /* CACornerMask+AirKit.swift */,
+				5B19FEFA270721C400F76EBD /* CATransform3D+AirKit.swift */,
 				5B19FEFC27072B0F00F76EBD /* CGAffineTransform+AirKit.swift */,
 				5B07F3E526F9001B00976D89 /* CGFloat+AirKit.swift */,
 				5B35BD162705AAFE0031AED3 /* CGPoint+AirKit.swift */,
 				5B35BD182705B3010031AED3 /* CGSize+AirKit.swift */,
 				5B07F3ED26F9023D00976D89 /* Protocols */,
 			);
-			path = CoreGraphics;
+			path = QuartzCore;
 			sourceTree = "<group>";
 		};
 		5B07F3ED26F9023D00976D89 /* Protocols */ = {
@@ -660,17 +659,6 @@
 			path = LocalAuthentication;
 			sourceTree = "<group>";
 		};
-		5B19FEF427071A3200F76EBD /* CoreAnimation */ = {
-			isa = PBXGroup;
-			children = (
-				5B19FEF627071B6100F76EBD /* CACornerMask+AirKit.swift */,
-				5B19FEF827071F8C00F76EBD /* CAGradientLayer+AirKit.swift */,
-				5BBC9FD2271AD3760025828C /* CAMediaTimingFunction+AirKit.swift */,
-				5B19FEFA270721C400F76EBD /* CATransform3D+AirKit.swift */,
-			);
-			path = CoreAnimation;
-			sourceTree = "<group>";
-		};
 		5B19FEF527071A5B00F76EBD /* CoreAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -729,8 +717,8 @@
 				5B7C2C64297C4C0D007B4CD6 /* AirSwift.framework */,
 				5B7C2C88297C4E12007B4CD6 /* AirFoundation.framework */,
 				5B7C2CCE297C5C78007B4CD6 /* AirCombine.framework */,
-				5B7C2CE2297C5DCA007B4CD6 /* AirCoreGraphics.framework */,
-				5B7C2D06297C6634007B4CD6 /* AirCoreImage.framework */,
+				5B7C2CE2297C5DCA007B4CD6 /* AirQuartzCore.framework */,
+				5B7C2D22297C6A6B007B4CD6 /* AirCoreImage.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -742,12 +730,11 @@
 				5B7C2C56297C47FE007B4CD6 /* Swift */,
 				5B09638826FB42F400879AE7 /* Foundation */,
 				5B09638F26FB584300879AE7 /* Combine */,
-				5B07F3E426F9000600976D89 /* CoreGraphics */,
+				5B07F3E426F9000600976D89 /* QuartzCore */,
 				5B639D6C270868A50028B543 /* CoreImage */,
-				5B19FEF427071A3200F76EBD /* CoreAnimation */,
-				5B19FF0527076A6900F76EBD /* CoreLocation */,
 				5B7660B5270778C000CC0ABA /* UIKit */,
 				5B1016FE271C82AB005C9BE4 /* WebKit */,
+				5B19FF0527076A6900F76EBD /* CoreLocation */,
 				5BD0FB4A271C5C2300DA3C5C /* MapKit */,
 				5B101704271C8AB1005C9BE4 /* LocalAuthentication */,
 				5B510BFB26F24AB200C21CDF /* Info.plist */,
@@ -853,7 +840,7 @@
 		5B7660B5270778C000CC0ABA /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				5B7C2CFE297C65AD007B4CD6 /* CoreGraphics+UIKit */,
+				5B7C2CFE297C65AD007B4CD6 /* QuartzCore+UIKit */,
 				5BCC641127B41A6000C29E01 /* NSDirectionalEdgeInsets+AirKit.swift */,
 				5BBCA004271AFD4B0025828C /* UIApplication+AirKit.swift */,
 				5B3408092714AC9900BC79E8 /* UIBarButtonItem+AirKit.swift */,
@@ -959,12 +946,13 @@
 			path = "Swift+Foundation";
 			sourceTree = "<group>";
 		};
-		5B7C2CFE297C65AD007B4CD6 /* CoreGraphics+UIKit */ = {
+		5B7C2CFE297C65AD007B4CD6 /* QuartzCore+UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				5BBC9FD2271AD3760025828C /* CAMediaTimingFunction+AirKit.swift */,
 				5B7C2CFF297C65CA007B4CD6 /* CGColor+AirKit+UIKit.swift */,
 			);
-			path = "CoreGraphics+UIKit";
+			path = "QuartzCore+UIKit";
 			sourceTree = "<group>";
 		};
 		5B96CA032718214900261CFE /* UIKit */ = {
@@ -1081,15 +1069,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B7C2CE9297C5E3D007B4CD6 /* AirCoreGraphics.h in Headers */,
+				5B7C2CE9297C5E3D007B4CD6 /* AirQuartzCore.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B7C2D01297C6634007B4CD6 /* Headers */ = {
+		5B7C2D1D297C6A6B007B4CD6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B7C2D0D297C6691007B4CD6 /* AirCoreImage.h in Headers */,
+				5B7C2D2A297C6A73007B4CD6 /* AirCoreImage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1189,9 +1177,9 @@
 			productReference = 5B7C2CCE297C5C78007B4CD6 /* AirCombine.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5B7C2CE1297C5DCA007B4CD6 /* AirCoreGraphics */ = {
+		5B7C2CE1297C5DCA007B4CD6 /* AirQuartzCore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B7C2CE6297C5DCA007B4CD6 /* Build configuration list for PBXNativeTarget "AirCoreGraphics" */;
+			buildConfigurationList = 5B7C2CE6297C5DCA007B4CD6 /* Build configuration list for PBXNativeTarget "AirQuartzCore" */;
 			buildPhases = (
 				5B7C2CDD297C5DCA007B4CD6 /* Headers */,
 				5B7C2CDE297C5DCA007B4CD6 /* Sources */,
@@ -1204,19 +1192,19 @@
 			dependencies = (
 				5B7C2CED297C5EA6007B4CD6 /* PBXTargetDependency */,
 			);
-			name = AirCoreGraphics;
+			name = AirQuartzCore;
 			productName = AirCoreGraphics;
-			productReference = 5B7C2CE2297C5DCA007B4CD6 /* AirCoreGraphics.framework */;
+			productReference = 5B7C2CE2297C5DCA007B4CD6 /* AirQuartzCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5B7C2D05297C6634007B4CD6 /* AirCoreImage */ = {
+		5B7C2D21297C6A6B007B4CD6 /* AirCoreImage */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5B7C2D0A297C6635007B4CD6 /* Build configuration list for PBXNativeTarget "AirCoreImage" */;
+			buildConfigurationList = 5B7C2D26297C6A6B007B4CD6 /* Build configuration list for PBXNativeTarget "AirCoreImage" */;
 			buildPhases = (
-				5B7C2D01297C6634007B4CD6 /* Headers */,
-				5B7C2D02297C6634007B4CD6 /* Sources */,
-				5B7C2D03297C6634007B4CD6 /* Frameworks */,
-				5B7C2D04297C6634007B4CD6 /* Resources */,
+				5B7C2D1D297C6A6B007B4CD6 /* Headers */,
+				5B7C2D1E297C6A6B007B4CD6 /* Sources */,
+				5B7C2D1F297C6A6B007B4CD6 /* Frameworks */,
+				5B7C2D20297C6A6B007B4CD6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1224,7 +1212,7 @@
 			);
 			name = AirCoreImage;
 			productName = AirCoreImage;
-			productReference = 5B7C2D06297C6634007B4CD6 /* AirCoreImage.framework */;
+			productReference = 5B7C2D22297C6A6B007B4CD6 /* AirCoreImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1257,7 +1245,7 @@
 					5B7C2CE1297C5DCA007B4CD6 = {
 						CreatedOnToolsVersion = 14.2;
 					};
-					5B7C2D05297C6634007B4CD6 = {
+					5B7C2D21297C6A6B007B4CD6 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -1280,8 +1268,8 @@
 				5B7C2C63297C4C0D007B4CD6 /* AirSwift */,
 				5B7C2C87297C4E12007B4CD6 /* AirFoundation */,
 				5B7C2CCD297C5C78007B4CD6 /* AirCombine */,
-				5B7C2CE1297C5DCA007B4CD6 /* AirCoreGraphics */,
-				5B7C2D05297C6634007B4CD6 /* AirCoreImage */,
+				5B7C2CE1297C5DCA007B4CD6 /* AirQuartzCore */,
+				5B7C2D21297C6A6B007B4CD6 /* AirCoreImage */,
 			);
 		};
 /* End PBXProject section */
@@ -1332,7 +1320,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B7C2D04297C6634007B4CD6 /* Resources */ = {
+		5B7C2D20297C6A6B007B4CD6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1371,14 +1359,11 @@
 			files = (
 				5BD0FB51271C6DDD00DA3C5C /* MKPolyline+AirKit.swift in Sources */,
 				5B96CA14271832C900261CFE /* UINavigationController+AirKit.swift in Sources */,
-				5B19FEF727071B6100F76EBD /* CACornerMask+AirKit.swift in Sources */,
 				5B06BF672715A16600CDB5C9 /* UIScrollView+AirKit.swift in Sources */,
 				5B3408062714A82500BC79E8 /* UISwitch+AirKit.swift in Sources */,
 				5B7660AC27076FF300CC0ABA /* CLLocation+AirKit.swift in Sources */,
-				5B19FEF927071F8C00F76EBD /* CAGradientLayer+AirKit.swift in Sources */,
 				5BCC641227B41A6000C29E01 /* NSDirectionalEdgeInsets+AirKit.swift in Sources */,
 				5BBC9FD1271AD3500025828C /* UIWindow+AirKit.swift in Sources */,
-				5BBC9FD3271AD3760025828C /* CAMediaTimingFunction+AirKit.swift in Sources */,
 				5B60C4B02709B61A00D2E190 /* UIEdgeInsets+AirKit.swift in Sources */,
 				5BD0FB4F271C68BF00DA3C5C /* MKMapView+AirKit.swift in Sources */,
 				5B639D7427086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift in Sources */,
@@ -1407,7 +1392,6 @@
 				5BEAB5B82719A88C007E74E1 /* UIPageViewController+AirKit.swift in Sources */,
 				5B34080C2714B21300BC79E8 /* UITextView+AirKit.swift in Sources */,
 				5BAD26992716F04B00AE9E4F /* UICollectionView+AirKit.swift in Sources */,
-				5B19FEFB270721C400F76EBD /* CATransform3D+AirKit.swift in Sources */,
 				5B0273A3271033CF00DAA072 /* UIStackView+AirKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1571,19 +1555,21 @@
 			files = (
 				5B7C2CF5297C5F30007B4CD6 /* CGPoint+AirKit.swift in Sources */,
 				5B7C2CF2297C5F30007B4CD6 /* CGAffineTransform+AirKit.swift in Sources */,
+				5B7C2D18297C6904007B4CD6 /* CACornerMask+AirKit.swift in Sources */,
+				5B7C2D1A297C6904007B4CD6 /* CATransform3D+AirKit.swift in Sources */,
 				5B7C2CF4297C5F30007B4CD6 /* CGFloat+AirKit.swift in Sources */,
 				5B7C2CF1297C5F30007B4CD6 /* CGSize+AirKit.swift in Sources */,
 				5B7C2CF0297C5F30007B4CD6 /* CGFloatConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B7C2D02297C6634007B4CD6 /* Sources */ = {
+		5B7C2D1E297C6A6B007B4CD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B7C2D0E297C66BF007B4CD6 /* CIContext+AirKit.swift in Sources */,
-				5B7C2D10297C66BF007B4CD6 /* CIFilter+AirKit.swift in Sources */,
-				5B7C2D0F297C66BF007B4CD6 /* CICategory.swift in Sources */,
+				5B7C2D29297C6A73007B4CD6 /* CIFilter+AirKit.swift in Sources */,
+				5B7C2D2B297C6A73007B4CD6 /* CIContext+AirKit.swift in Sources */,
+				5B7C2D2C297C6A73007B4CD6 /* CICategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2154,77 +2140,61 @@
 			};
 			name = Release;
 		};
-		5B7C2D0B297C6635007B4CD6 /* Debug */ = {
+		5B7C2D27297C6A6B007B4CD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yurii Lysytsia. All rights reserved.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.coreimage;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.AirCoreImage;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TVOS_DEPLOYMENT_TARGET = "$(inherited)";
-				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		5B7C2D0C297C6635007B4CD6 /* Release */ = {
+		5B7C2D28297C6A6B007B4CD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yurii Lysytsia. All rights reserved.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.coreimage;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.AirCoreImage;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-				TVOS_DEPLOYMENT_TARGET = "$(inherited)";
-				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -2285,7 +2255,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B7C2CE6297C5DCA007B4CD6 /* Build configuration list for PBXNativeTarget "AirCoreGraphics" */ = {
+		5B7C2CE6297C5DCA007B4CD6 /* Build configuration list for PBXNativeTarget "AirQuartzCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5B7C2CE7297C5DCA007B4CD6 /* Debug */,
@@ -2294,11 +2264,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5B7C2D0A297C6635007B4CD6 /* Build configuration list for PBXNativeTarget "AirCoreImage" */ = {
+		5B7C2D26297C6A6B007B4CD6 /* Build configuration list for PBXNativeTarget "AirCoreImage" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5B7C2D0B297C6635007B4CD6 /* Debug */,
-				5B7C2D0C297C6635007B4CD6 /* Release */,
+				5B7C2D27297C6A6B007B4CD6 /* Debug */,
+				5B7C2D28297C6A6B007B4CD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

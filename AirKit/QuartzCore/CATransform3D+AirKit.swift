@@ -1,23 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(QuartzCore)
-import struct QuartzCore.CATransform3D
-import func QuartzCore.CATransform3DIsIdentity
-import var QuartzCore.CATransform3DIdentity
-import func QuartzCore.CATransform3DMakeTranslation
-import func QuartzCore.CATransform3DMakeScale
-import func QuartzCore.CATransform3DMakeRotation
-import func QuartzCore.CATransform3DTranslate
-import func QuartzCore.CATransform3DScale
-import func QuartzCore.CATransform3DRotate
-import func QuartzCore.CATransform3DInvert
-import func QuartzCore.CATransform3DConcat
-import func QuartzCore.CATransform3DEqualToTransform
-import func QuartzCore.CATransform3DIsAffine
-import func QuartzCore.CATransform3DGetAffineTransform
-import struct QuartzCore.CGAffineTransform
-import struct QuartzCore.CGFloat
-
 // MARK: - Extensions | Identity
 
 public extension CATransform3D {
@@ -98,4 +80,3 @@ public extension CATransform3D {
     /// - Note: If the receiver can not be represented exactly by an affine transform the returned value is undefined.
     func toAffineTransform() -> CGAffineTransform { CATransform3DGetAffineTransform(self) }
 }
-#endif

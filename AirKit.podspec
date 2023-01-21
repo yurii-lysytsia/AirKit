@@ -100,23 +100,13 @@ Pod::Spec.new do |spec|
 
   # ――― Source Code (CoreUI) ――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   
-  spec.subspec "CoreGraphics" do |subspec|
-    subspec.framework = "CoreGraphics"
-
+  spec.subspec "QuartzCore" do |subspec|
     subspec.dependency "AirKit/Swift"
-    subspec.source_files = "AirKit/CoreGraphics/**/*.swift"
+    subspec.source_files = "AirKit/QuartzCore/**/*.swift"
   end
 
   spec.subspec "CoreImage" do |subspec|
     subspec.source_files = "AirKit/CoreImage/**/*.swift"
-  end
-
-  spec.subspec "CoreAnimation" do |subspec|
-    subspec.source_files = "AirKit/CoreAnimation/**/*.swift"
-  end
-
-  spec.subspec "CoreLocation" do |subspec|
-    subspec.source_files = "AirKit/CoreLocation/**/*.swift"
   end
   
   spec.subspec "UIKit" do |subspec|
@@ -128,15 +118,17 @@ Pod::Spec.new do |spec|
   end
   
   spec.subspec 'CoreUI' do |subspec|
-    subspec.dependency 'AirKit/CoreGraphics'
+    subspec.dependency 'AirKit/QuartzCore'
     subspec.dependency 'AirKit/CoreImage'
-    subspec.dependency 'AirKit/CoreAnimation'
-    subspec.dependency 'AirKit/CoreLocation'
     subspec.dependency 'AirKit/UIKit'
     subspec.dependency 'AirKit/WebKit'
   end
 
   # ――― Source Code (Other) ―――――――――――――――――――――――――――――――――――――――――――――――――――――- #
+
+  spec.subspec "CoreLocation" do |subspec|
+    subspec.source_files = "AirKit/CoreLocation/**/*.swift"
+  end
 
   spec.subspec "MapKit" do |subspec|
     subspec.source_files = "AirKit/MapKit/**/*.swift"
@@ -147,6 +139,7 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'Other' do |subspec|
+    subspec.dependency 'AirKit/CoreLocation'
     subspec.dependency 'AirKit/MapKit'
     subspec.dependency 'AirKit/LocalAuthentication'
   end

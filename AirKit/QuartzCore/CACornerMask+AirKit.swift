@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(QuartzCore)
-import struct QuartzCore.CACornerMask
-
 public extension CACornerMask {
     /// Returns a collection of corner masks which equal to all top cornenrs (`[.layerMaxXMinYCorner, .layerMinXMinYCorner]`).
     static let topCorners: CACornerMask = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
@@ -19,4 +16,3 @@ public extension CACornerMask {
     /// Returns a collection of corner masks which equal to all cornenrs (`[.layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMinYCorner, .layerMaxXMaxYCorner]`).
     static let allCorners: CACornerMask = [.layerMinXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMinYCorner, .layerMaxXMaxYCorner]
 }
-#endif
