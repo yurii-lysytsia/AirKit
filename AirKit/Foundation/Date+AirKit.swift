@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 // MARK: - Extensions | Values
 
 public extension Date {
@@ -105,4 +102,3 @@ public extension Date {
     /// Returns current date. The same as `Date()`
     static var current: Date { Date() }
 }
-#endif

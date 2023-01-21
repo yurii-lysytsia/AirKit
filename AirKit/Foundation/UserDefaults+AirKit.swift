@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 // MARK: - Extensions | Values
 
 public extension UserDefaults {
@@ -89,4 +86,3 @@ public extension UserDefaults {
         set { set(newValue, forKey: key) }
     }
 }
-#endif

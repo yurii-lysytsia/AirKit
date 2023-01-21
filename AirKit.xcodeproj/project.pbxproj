@@ -14,8 +14,6 @@
 		5B06BF652715925F00CDB5C9 /* UISearchBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B06BF642715925F00CDB5C9 /* UISearchBarTests.swift */; };
 		5B06BF672715A16600CDB5C9 /* UIScrollView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B06BF662715A16600CDB5C9 /* UIScrollView+AirKit.swift */; };
 		5B06BF6A2715B16A00CDB5C9 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B06BF692715B16A00CDB5C9 /* ReusableView.swift */; };
-		5B07F3E626F9001B00976D89 /* CGFloat+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F3E526F9001B00976D89 /* CGFloat+AirKit.swift */; };
-		5B07F3EF26F9024A00976D89 /* CGFloatConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F3EE26F9024A00976D89 /* CGFloatConvertible.swift */; };
 		5B09639726FB873900879AE7 /* BinaryFloatingPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09639626FB873900879AE7 /* BinaryFloatingPointTests.swift */; };
 		5B09639926FB88FC00879AE7 /* BinaryIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09639826FB88FC00879AE7 /* BinaryIntegerTests.swift */; };
 		5B09639C26FB97F600879AE7 /* BoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09639B26FB97F600879AE7 /* BoolTests.swift */; };
@@ -43,7 +41,6 @@
 		5B19FEF727071B6100F76EBD /* CACornerMask+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEF627071B6100F76EBD /* CACornerMask+AirKit.swift */; };
 		5B19FEF927071F8C00F76EBD /* CAGradientLayer+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEF827071F8C00F76EBD /* CAGradientLayer+AirKit.swift */; };
 		5B19FEFB270721C400F76EBD /* CATransform3D+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEFA270721C400F76EBD /* CATransform3D+AirKit.swift */; };
-		5B19FEFD27072B0F00F76EBD /* CGAffineTransform+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEFC27072B0F00F76EBD /* CGAffineTransform+AirKit.swift */; };
 		5B19FEFF27072F2C00F76EBD /* CGAffineTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEFE27072F2C00F76EBD /* CGAffineTransformTests.swift */; };
 		5B19FF0227075C0F00F76EBD /* CATransform3DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FF0127075C0F00F76EBD /* CATransform3DTests.swift */; };
 		5B19FF042707611E00F76EBD /* CAGradientLayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FF032707611E00F76EBD /* CAGradientLayerTests.swift */; };
@@ -53,9 +50,6 @@
 		5B3408082714AA9200BC79E8 /* UISearchBar+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3408072714AA9200BC79E8 /* UISearchBar+AirKit.swift */; };
 		5B34080A2714AC9900BC79E8 /* UIBarButtonItem+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3408092714AC9900BC79E8 /* UIBarButtonItem+AirKit.swift */; };
 		5B34080C2714B21300BC79E8 /* UITextView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B34080B2714B21300BC79E8 /* UITextView+AirKit.swift */; };
-		5B35BD172705AAFE0031AED3 /* CGPoint+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD162705AAFE0031AED3 /* CGPoint+AirKit.swift */; };
-		5B35BD192705B3010031AED3 /* CGSize+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD182705B3010031AED3 /* CGSize+AirKit.swift */; };
-		5B35BD1B2705C44C0031AED3 /* CGColor+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD1A2705C44C0031AED3 /* CGColor+AirKit.swift */; };
 		5B35BD1D2705F8220031AED3 /* CGSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD1C2705F8220031AED3 /* CGSizeTests.swift */; };
 		5B35BD1F2705FC3C0031AED3 /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD1E2705FC3C0031AED3 /* CGPointTests.swift */; };
 		5B35BD212705FD8E0031AED3 /* CGColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD202705FD8E0031AED3 /* CGColorTests.swift */; };
@@ -142,6 +136,14 @@
 		5B7C2CD5297C5C86007B4CD6 /* TopLevelDecoder+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09639026FB585300879AE7 /* TopLevelDecoder+AirKit.swift */; };
 		5B7C2CD6297C5C86007B4CD6 /* AirCombine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2CD0297C5C78007B4CD6 /* AirCombine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B7C2CDA297C5CE7007B4CD6 /* Combine+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C2CD8297C5CA8007B4CD6 /* Combine+AirKit.swift */; };
+		5B7C2CE9297C5E3D007B4CD6 /* AirCoreGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2CE4297C5DCA007B4CD6 /* AirCoreGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B7C2CEA297C5EA6007B4CD6 /* AirSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2C64297C4C0D007B4CD6 /* AirSwift.framework */; };
+		5B7C2CEB297C5EA6007B4CD6 /* AirSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2C64297C4C0D007B4CD6 /* AirSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B7C2CF0297C5F30007B4CD6 /* CGFloatConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F3EE26F9024A00976D89 /* CGFloatConvertible.swift */; };
+		5B7C2CF1297C5F30007B4CD6 /* CGSize+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD182705B3010031AED3 /* CGSize+AirKit.swift */; };
+		5B7C2CF2297C5F30007B4CD6 /* CGAffineTransform+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEFC27072B0F00F76EBD /* CGAffineTransform+AirKit.swift */; };
+		5B7C2CF4297C5F30007B4CD6 /* CGFloat+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B07F3E526F9001B00976D89 /* CGFloat+AirKit.swift */; };
+		5B7C2CF5297C5F30007B4CD6 /* CGPoint+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD162705AAFE0031AED3 /* CGPoint+AirKit.swift */; };
 		5B7FF729270234F800C28795 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7FF728270234F800C28795 /* DateFormatterTests.swift */; };
 		5B7FF72B270237FD00C28795 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7FF72A270237FD00C28795 /* DateTests.swift */; };
 		5B8C1CFD270460AC0021B48E /* UserDefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1CFC270460AC0021B48E /* UserDefaultsTests.swift */; };
@@ -208,6 +210,13 @@
 			remoteGlobalIDString = 5B7C2C63297C4C0D007B4CD6;
 			remoteInfo = AirSwift;
 		};
+		5B7C2CEC297C5EA6007B4CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B510BEE26F24AB200C21CDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B7C2C63297C4C0D007B4CD6;
+			remoteInfo = AirSwift;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -218,6 +227,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				5B7C2CBC297C59A3007B4CD6 /* AirSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7C2CEE297C5EA6007B4CD6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5B7C2CEB297C5EA6007B4CD6 /* AirSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +308,6 @@
 		5B34080B2714B21300BC79E8 /* UITextView+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+AirKit.swift"; sourceTree = "<group>"; };
 		5B35BD162705AAFE0031AED3 /* CGPoint+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+AirKit.swift"; sourceTree = "<group>"; };
 		5B35BD182705B3010031AED3 /* CGSize+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+AirKit.swift"; sourceTree = "<group>"; };
-		5B35BD1A2705C44C0031AED3 /* CGColor+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGColor+AirKit.swift"; sourceTree = "<group>"; };
 		5B35BD1C2705F8220031AED3 /* CGSizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSizeTests.swift; sourceTree = "<group>"; };
 		5B35BD1E2705FC3C0031AED3 /* CGPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointTests.swift; sourceTree = "<group>"; };
 		5B35BD202705FD8E0031AED3 /* CGColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGColorTests.swift; sourceTree = "<group>"; };
@@ -348,6 +367,9 @@
 		5B7C2CCE297C5C78007B4CD6 /* AirCombine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirCombine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7C2CD0297C5C78007B4CD6 /* AirCombine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirCombine.h; sourceTree = "<group>"; };
 		5B7C2CD8297C5CA8007B4CD6 /* Combine+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Combine+AirKit.swift"; sourceTree = "<group>"; };
+		5B7C2CE2297C5DCA007B4CD6 /* AirCoreGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirCoreGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B7C2CE4297C5DCA007B4CD6 /* AirCoreGraphics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirCoreGraphics.h; sourceTree = "<group>"; };
+		5B7C2CFF297C65CA007B4CD6 /* CGColor+AirKit+UIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGColor+AirKit+UIKit.swift"; sourceTree = "<group>"; };
 		5B7FF728270234F800C28795 /* DateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
 		5B7FF72A270237FD00C28795 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		5B8C1CF8270454660021B48E /* UserDefaults+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+AirKit.swift"; sourceTree = "<group>"; };
@@ -455,6 +477,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B7C2CDF297C5DCA007B4CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7C2CEA297C5EA6007B4CD6 /* AirSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -471,8 +501,8 @@
 		5B07F3E426F9000600976D89 /* CoreGraphics */ = {
 			isa = PBXGroup;
 			children = (
+				5B7C2CE4297C5DCA007B4CD6 /* AirCoreGraphics.h */,
 				5B19FEFC27072B0F00F76EBD /* CGAffineTransform+AirKit.swift */,
-				5B35BD1A2705C44C0031AED3 /* CGColor+AirKit.swift */,
 				5B07F3E526F9001B00976D89 /* CGFloat+AirKit.swift */,
 				5B35BD162705AAFE0031AED3 /* CGPoint+AirKit.swift */,
 				5B35BD182705B3010031AED3 /* CGSize+AirKit.swift */,
@@ -689,6 +719,7 @@
 				5B7C2C64297C4C0D007B4CD6 /* AirSwift.framework */,
 				5B7C2C88297C4E12007B4CD6 /* AirFoundation.framework */,
 				5B7C2CCE297C5C78007B4CD6 /* AirCombine.framework */,
+				5B7C2CE2297C5DCA007B4CD6 /* AirCoreGraphics.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -810,6 +841,7 @@
 		5B7660B5270778C000CC0ABA /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				5B7C2CFE297C65AD007B4CD6 /* CoreGraphics+UIKit */,
 				5BCC641127B41A6000C29E01 /* NSDirectionalEdgeInsets+AirKit.swift */,
 				5BBCA004271AFD4B0025828C /* UIApplication+AirKit.swift */,
 				5B3408092714AC9900BC79E8 /* UIBarButtonItem+AirKit.swift */,
@@ -913,6 +945,14 @@
 				5B7C2CC4297C5A6C007B4CD6 /* BinaryInteger+AirKit+Foundation.swift */,
 			);
 			path = "Swift+Foundation";
+			sourceTree = "<group>";
+		};
+		5B7C2CFE297C65AD007B4CD6 /* CoreGraphics+UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5B7C2CFF297C65CA007B4CD6 /* CGColor+AirKit+UIKit.swift */,
+			);
+			path = "CoreGraphics+UIKit";
 			sourceTree = "<group>";
 		};
 		5B96CA032718214900261CFE /* UIKit */ = {
@@ -1025,6 +1065,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B7C2CDD297C5DCA007B4CD6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7C2CE9297C5E3D007B4CD6 /* AirCoreGraphics.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -1121,6 +1169,26 @@
 			productReference = 5B7C2CCE297C5C78007B4CD6 /* AirCombine.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		5B7C2CE1297C5DCA007B4CD6 /* AirCoreGraphics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B7C2CE6297C5DCA007B4CD6 /* Build configuration list for PBXNativeTarget "AirCoreGraphics" */;
+			buildPhases = (
+				5B7C2CDD297C5DCA007B4CD6 /* Headers */,
+				5B7C2CDE297C5DCA007B4CD6 /* Sources */,
+				5B7C2CDF297C5DCA007B4CD6 /* Frameworks */,
+				5B7C2CE0297C5DCA007B4CD6 /* Resources */,
+				5B7C2CEE297C5EA6007B4CD6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B7C2CED297C5EA6007B4CD6 /* PBXTargetDependency */,
+			);
+			name = AirCoreGraphics;
+			productName = AirCoreGraphics;
+			productReference = 5B7C2CE2297C5DCA007B4CD6 /* AirCoreGraphics.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1148,6 +1216,9 @@
 					5B7C2CCD297C5C78007B4CD6 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					5B7C2CE1297C5DCA007B4CD6 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = 5B510BF126F24AB200C21CDF /* Build configuration list for PBXProject "AirKit" */;
@@ -1168,6 +1239,7 @@
 				5B7C2C63297C4C0D007B4CD6 /* AirSwift */,
 				5B7C2C87297C4E12007B4CD6 /* AirFoundation */,
 				5B7C2CCD297C5C78007B4CD6 /* AirCombine */,
+				5B7C2CE1297C5DCA007B4CD6 /* AirCoreGraphics */,
 			);
 		};
 /* End PBXProject section */
@@ -1211,6 +1283,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B7C2CE0297C5DCA007B4CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1241,13 +1320,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B35BD172705AAFE0031AED3 /* CGPoint+AirKit.swift in Sources */,
 				5BD0FB51271C6DDD00DA3C5C /* MKPolyline+AirKit.swift in Sources */,
 				5B96CA14271832C900261CFE /* UINavigationController+AirKit.swift in Sources */,
 				5B19FEF727071B6100F76EBD /* CACornerMask+AirKit.swift in Sources */,
 				5B06BF672715A16600CDB5C9 /* UIScrollView+AirKit.swift in Sources */,
 				5B3408062714A82500BC79E8 /* UISwitch+AirKit.swift in Sources */,
-				5B35BD1B2705C44C0031AED3 /* CGColor+AirKit.swift in Sources */,
 				5B7660AC27076FF300CC0ABA /* CLLocation+AirKit.swift in Sources */,
 				5B639D87270894D80028B543 /* CIContext+AirKit.swift in Sources */,
 				5B19FEF927071F8C00F76EBD /* CAGradientLayer+AirKit.swift in Sources */,
@@ -1266,7 +1343,6 @@
 				5B06BF6A2715B16A00CDB5C9 /* ReusableView.swift in Sources */,
 				5B361EEC2719ED00005803BE /* UIViewController+AirKit.swift in Sources */,
 				5B1016FB271C6FA2005C9BE4 /* MKPolygon+AirKit.swift in Sources */,
-				5B07F3E626F9001B00976D89 /* CGFloat+AirKit.swift in Sources */,
 				5B101706271C8AC0005C9BE4 /* LAContext+AirKit.swift in Sources */,
 				5B60C4B4270A0A2300D2E190 /* UIBezierPath+AirKit.swift in Sources */,
 				5B0273A7271040D800DAA072 /* UIButton+AirKit.swift in Sources */,
@@ -1280,16 +1356,13 @@
 				5B34080A2714AC9900BC79E8 /* UIBarButtonItem+AirKit.swift in Sources */,
 				5BBCA005271AFD4B0025828C /* UIApplication+AirKit.swift in Sources */,
 				5BC747E1279F1982007F02CA /* UIFont+AirKit.swift in Sources */,
-				5B19FEFD27072B0F00F76EBD /* CGAffineTransform+AirKit.swift in Sources */,
 				5BAD26972716ED1F00AE9E4F /* NibLoadableView.swift in Sources */,
 				5BEAB5B82719A88C007E74E1 /* UIPageViewController+AirKit.swift in Sources */,
-				5B07F3EF26F9024A00976D89 /* CGFloatConvertible.swift in Sources */,
 				5B34080C2714B21300BC79E8 /* UITextView+AirKit.swift in Sources */,
 				5BAD26992716F04B00AE9E4F /* UICollectionView+AirKit.swift in Sources */,
 				5B639D6E270868C30028B543 /* CICategory.swift in Sources */,
 				5B19FEFB270721C400F76EBD /* CATransform3D+AirKit.swift in Sources */,
 				5B0273A3271033CF00DAA072 /* UIStackView+AirKit.swift in Sources */,
-				5B35BD192705B3010031AED3 /* CGSize+AirKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1446,6 +1519,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B7C2CDE297C5DCA007B4CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7C2CF5297C5F30007B4CD6 /* CGPoint+AirKit.swift in Sources */,
+				5B7C2CF2297C5F30007B4CD6 /* CGAffineTransform+AirKit.swift in Sources */,
+				5B7C2CF4297C5F30007B4CD6 /* CGFloat+AirKit.swift in Sources */,
+				5B7C2CF1297C5F30007B4CD6 /* CGSize+AirKit.swift in Sources */,
+				5B7C2CF0297C5F30007B4CD6 /* CGFloatConvertible.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1459,6 +1544,11 @@
 			isa = PBXTargetDependency;
 			target = 5B7C2C63297C4C0D007B4CD6 /* AirSwift */;
 			targetProxy = 5B7C2CBD297C59A3007B4CD6 /* PBXContainerItemProxy */;
+		};
+		5B7C2CED297C5EA6007B4CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B7C2C63297C4C0D007B4CD6 /* AirSwift */;
+			targetProxy = 5B7C2CEC297C5EA6007B4CD6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1857,12 +1947,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yurii Lysytsia. All rights reserved.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.AirCombine;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -1870,6 +1961,8 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = "$(inherited)";
+				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
 			};
 			name = Debug;
 		};
@@ -1886,12 +1979,13 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yurii Lysytsia. All rights reserved.";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.AirCombine;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -1899,6 +1993,72 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = "$(inherited)";
+				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
+			};
+			name = Release;
+		};
+		5B7C2CE7297C5DCA007B4CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yurii Lysytsia. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.AirCoreGraphics;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = "$(inherited)";
+				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
+			};
+			name = Debug;
+		};
+		5B7C2CE8297C5DCA007B4CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yurii Lysytsia. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.AirCoreGraphics;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = "$(inherited)";
+				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
 			};
 			name = Release;
 		};
@@ -1955,6 +2115,15 @@
 			buildConfigurations = (
 				5B7C2CD3297C5C78007B4CD6 /* Debug */,
 				5B7C2CD4297C5C78007B4CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B7C2CE6297C5DCA007B4CD6 /* Build configuration list for PBXNativeTarget "AirCoreGraphics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B7C2CE7297C5DCA007B4CD6 /* Debug */,
+				5B7C2CE8297C5DCA007B4CD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 // MARK: - Extensions | Contents
 
 public extension FileManager {
@@ -21,4 +18,3 @@ public extension FileManager {
         try contentsOfDirectory(at: url).files.filter { $0.pathExtension == ext }
     }
 }
-#endif

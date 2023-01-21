@@ -1,8 +1,5 @@
 //  Copyright © 2023 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 public extension BinaryFloatingPoint where Self: CVarArg {
     /// The object's value expressed as a human-readable string with entered integer digits.
     ///
@@ -14,4 +11,3 @@ public extension BinaryFloatingPoint where Self: CVarArg {
     /// - Parameter fractionDigits: Number of digits after the decimal separator.
     func toString(fractionDigits: Int) -> String { .init(format: "%.\(fractionDigits)f", self) }
 }
-#endif

@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 // MARK: - Extensions | Init
 
 public extension DateFormatter {
@@ -37,4 +34,3 @@ public extension DateFormatter {
         self.init(dateFormat: DateFormatComponents.build(block: block))
     }
 }
-#endif

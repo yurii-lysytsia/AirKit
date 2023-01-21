@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 // MARK: - Extensions | Async
 
 public extension DispatchQueue {
@@ -70,4 +67,3 @@ public extension DispatchQueue {
         }
     }
 }
-#endif

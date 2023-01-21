@@ -1,8 +1,5 @@
 //  Copyright © 2023 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 public extension TimeZone {
     /// Returns Coordinated Universal Time (UTC).
     static let utc: TimeZone = {
@@ -13,4 +10,3 @@ public extension TimeZone {
         }
     }()
 }
-#endif

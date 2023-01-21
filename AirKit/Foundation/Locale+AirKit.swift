@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 // MARK: - Extensions | Emoji
 
 public extension Locale {
@@ -27,4 +24,3 @@ public extension Locale {
         }
     }
 }
-#endif

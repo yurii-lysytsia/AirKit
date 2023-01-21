@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 // MARK: - Extensions | Path Components
 
 public extension URL {
@@ -40,4 +37,3 @@ public extension URL {
     /// - Parameter resolvingAgainstBaseURL: If is `true` and url is a relative URL, the components of url.absoluteURL are used. If the url string from the URL is malformed, nil is returned.
     func toURLComponents(resolvingAgainstBaseURL: Bool) -> URLComponents? { URLComponents(url: self, resolvingAgainstBaseURL: resolvingAgainstBaseURL) }
 }
-#endif

@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 // MARK: - Extensions | Resources
 
 public extension Bundle {
@@ -98,4 +95,3 @@ public extension Bundle {
         #endif
     }
 }
-#endif

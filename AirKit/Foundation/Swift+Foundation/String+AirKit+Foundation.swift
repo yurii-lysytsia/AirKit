@@ -1,8 +1,5 @@
 //  Copyright © 2023 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 // MARK: - Extensions | Conditions
 
 public extension String {
@@ -304,4 +301,3 @@ public extension String {
         self = newString.replacingCharacters(in: newStringRange, with: replacementString)
     }
 }
-#endif

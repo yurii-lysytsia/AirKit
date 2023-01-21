@@ -1,9 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(CoreGraphics)
-import struct CoreGraphics.CGSize
-import struct CoreGraphics.CGFloat
-
 // MARK: - Extensions | Dimension
 
 public extension CGSize {
@@ -149,5 +145,3 @@ extension CGSize: ExpressibleByIntegerLiteral {
         self.init(value.toCGFloat())
     }
 }
-
-#endif

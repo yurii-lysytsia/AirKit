@@ -75,6 +75,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
+  spec.prefix_header_file = false
+
   spec.default_subspecs = "Core", "CoreUI", "Other"
 
   # ――― Source Code (Core) ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -99,6 +101,9 @@ Pod::Spec.new do |spec|
   # ――― Source Code (CoreUI) ――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   
   spec.subspec "CoreGraphics" do |subspec|
+    subspec.framework = "CoreGraphics"
+
+    subspec.dependency "AirKit/Swift"
     subspec.source_files = "AirKit/CoreGraphics/**/*.swift"
   end
 

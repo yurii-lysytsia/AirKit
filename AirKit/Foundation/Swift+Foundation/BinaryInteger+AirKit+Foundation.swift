@@ -1,8 +1,5 @@
 //  Copyright © 2023 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 public extension BinaryInteger where Self: CVarArg {
     /// The object's value expressed as a human-readable string with entered integer digits.
     ///
@@ -13,4 +10,3 @@ public extension BinaryInteger where Self: CVarArg {
     /// - Parameter integerDigits: Number of digits before the decimal separator.
     func toString(integerDigits: Int) -> String { .init(format: "%0\(integerDigits)d", self) }
 }
-#endif

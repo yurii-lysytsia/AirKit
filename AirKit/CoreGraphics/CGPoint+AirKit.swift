@@ -1,10 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(CoreGraphics)
-import Darwin
-import struct CoreGraphics.CGPoint
-import struct CoreGraphics.CGFloat
-
 // MARK: - Extensions | Distance
 
 public extension CGPoint {
@@ -152,4 +147,3 @@ public extension CGPoint {
     ///
     static func /= (lhs: inout CGPoint, rhs: CGFloat) { lhs = lhs / rhs }
 }
-#endif

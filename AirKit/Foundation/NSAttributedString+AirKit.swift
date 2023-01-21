@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 // MARK: - Extensions | Regex | NSAttributedString
 
 public extension NSAttributedString {
@@ -80,4 +77,3 @@ public extension NSMutableAttributedString {
     /// Add a string to another attributed string.
     static func += (lhs: NSMutableAttributedString, rhs: String) { lhs += NSAttributedString(string: rhs) }
 }
-#endif

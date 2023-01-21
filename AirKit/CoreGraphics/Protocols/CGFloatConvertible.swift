@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(CoreGraphics)
-import struct CoreGraphics.CGFloat
-
 public protocol CGFloatConvertible {
     /// Returns `CGFloat` value.
     func toCGFloat() -> CGFloat
@@ -27,5 +24,3 @@ extension Double: CGFloatConvertible { }
 extension Float: CGFloatConvertible { }
 
 extension Int: CGFloatConvertible { }
-
-#endif

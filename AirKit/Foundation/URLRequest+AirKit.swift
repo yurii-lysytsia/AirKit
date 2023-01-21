@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 // MARK: - Extensions | Values
 
 public extension URLRequest {
@@ -54,4 +51,3 @@ public extension URLRequest {
         self.init(url: url)
     }
 }
-#endif

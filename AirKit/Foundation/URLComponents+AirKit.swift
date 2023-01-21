@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 // MARK: - Extensions | Query
 
 public extension URLComponents {
@@ -14,4 +11,3 @@ public extension URLComponents {
     ///
     func queryValue(forKey key: String) -> String? { queryItems?.first(where: { $0.name == key })?.value }
 }
-#endif

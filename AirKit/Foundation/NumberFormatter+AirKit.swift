@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 // MARK: - Extensions | NumberConvertible
 
 public extension NumberFormatter {
@@ -34,4 +31,3 @@ public extension NumberFormatter {
         self.numberStyle = numberStyle
     }
 }
-#endif

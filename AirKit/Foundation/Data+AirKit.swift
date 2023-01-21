@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 // MARK: - Extensions | Bytes
 
 public extension Data {
@@ -24,4 +21,3 @@ public extension Data {
     ///
     func string(encoding: String.Encoding) -> String? { String(data: self, encoding: encoding) }
 }
-#endif

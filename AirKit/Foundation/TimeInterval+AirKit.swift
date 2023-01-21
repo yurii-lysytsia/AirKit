@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 // MARK: - Extenions | Values
 
 public extension TimeInterval {
@@ -54,4 +51,3 @@ public extension TimeInterval {
         .random(in: range.lowerBound.timeIntervalSinceReferenceDate...range.upperBound.timeIntervalSinceReferenceDate)
     }
 }
-#endif

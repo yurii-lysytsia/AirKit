@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 // MARK: - Extensions | Conditions
 
 public extension Calendar {
@@ -119,4 +116,3 @@ public extension Calendar {
         return self.date(from: components) ?? date
     }
 }
-#endif

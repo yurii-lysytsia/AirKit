@@ -1,8 +1,5 @@
 //  Copyright © 2023 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import Foundation
-
 public extension Optional where Wrapped == String {
     /// Returns `true` if the string `isBlank` or `nil` otherwise returns `false`.
     ///
@@ -20,4 +17,3 @@ public extension Optional where Wrapped == String {
     ///
     var isBlankOrNil: Bool { self?.isBlank != false }
 }
-#endif
