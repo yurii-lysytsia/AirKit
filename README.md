@@ -38,6 +38,7 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `Bundle`;
 - [X] Extensions for `Locale`;
 - [X] Extensions for `DispatchQueue`;
+- [X] `Swizzle` - suggar for use ObjC swizzle methods;
 
 ### Extensions for [`CoreGraphics`](AirKit/Source/CoreGraphics)
 - [X] Extensions for `CGFloat`;
@@ -104,18 +105,14 @@ This is sugar framework that contains many different extensions for native Swift
 - [ ] `CICategory` (https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference);
 
 ### v 1.X | Helpers
-- [ ] Common blocks typealias to convinient usage;
-- [ ] Actions blocks instead target for different UI elements, like button actions with blocks;
-- [ ] Closures for different components with old target (simple version of https://github.com/vhesener/Closures);
-- [ ] Multicast delegate (model which can collect multiple delegate);
-- [ ] Convenience swizzling methods;
-- [ ] AsyncOperationQueue (model bases on `OperationsQueue` and `DispatchSemaphore` to make it async and sireal)
-- [ ] Then, like https://github.com/devxoul/Then;
-- [ ] Extensions for `UIView` and `NSLayoutConstraint`;
-- [ ] Extensions for keyboard observing with many helpers;
-- [ ] Extensions for change screen on multitasking;
-- [ ] Extensions for `UIApplication` to open schemes, such as `mailto` or popular apps;
-- [ ] Nibless view in the independent module 
+- Actions blocks instead target for different UI elements, like button actions with blocks (including Combine);
+- Closures for different components with old target (simple version of https://github.com/vhesener/Closures);
+- Then, like https://github.com/devxoul/Then;
+- Extensions for keyboard observing with many helpers;
+- Extensions for change screen on multitasking;
+- Extensions for `UIApplication` to open schemes, such as `mailto` or popular apps;
+- Nibless view in the independent module;
+- Anything else?
 
 ## 🚀 Installation
 
