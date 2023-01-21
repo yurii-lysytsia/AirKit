@@ -48,8 +48,6 @@ extension Int: FloatConvertible { }
 
 extension Int: DoubleConvertible { }
 
-extension Int: CGFloatConvertible { }
-
 // MARK: - Convertible | Implementations
 
 extension Int8: IntConvertible { }

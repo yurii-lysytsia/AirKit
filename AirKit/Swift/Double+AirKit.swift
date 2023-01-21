@@ -5,5 +5,3 @@
 extension Double: IntConvertible { }
 
 extension Double: FloatConvertible { }
-
-extension Double: CGFloatConvertible { }

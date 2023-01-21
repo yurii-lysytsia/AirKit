@@ -19,4 +19,13 @@ extension CGFloatConvertible where Self: BinaryInteger {
 extension CGFloatConvertible where Self: BinaryFloatingPoint {
     public func toCGFloat() -> CGFloat { .init(self) }
 }
+
+// MARK: - Implementations
+
+extension Double: CGFloatConvertible { }
+
+extension Float: CGFloatConvertible { }
+
+extension Int: CGFloatConvertible { }
+
 #endif

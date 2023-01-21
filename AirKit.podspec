@@ -75,7 +75,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.default_subspecs = :none
+  spec.default_subspecs = "Core", "CoreUI", "Other"
 
   # ――― Source Code (Core) ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.subspec "Swift" do |subspec|
@@ -117,6 +117,10 @@ Pod::Spec.new do |spec|
   spec.subspec "UIKit" do |subspec|
     subspec.source_files = "AirKit/UIKit/**/*.swift"
   end
+
+  spec.subspec "WebKit" do |subspec|
+    subspec.source_files = "AirKit/WebKit/**/*.swift"
+  end
   
   spec.subspec 'CoreUI' do |subspec|
     subspec.dependency 'AirKit/CoreGraphics'
@@ -124,19 +128,21 @@ Pod::Spec.new do |spec|
     subspec.dependency 'AirKit/CoreAnimation'
     subspec.dependency 'AirKit/CoreLocation'
     subspec.dependency 'AirKit/UIKit'
+    subspec.dependency 'AirKit/WebKit'
   end
 
   # ――― Source Code (Other) ―――――――――――――――――――――――――――――――――――――――――――――――――――――- #
-  
+
   spec.subspec "MapKit" do |subspec|
     subspec.source_files = "AirKit/MapKit/**/*.swift"
-  end
-  
-  spec.subspec "WebKit" do |subspec|
-    subspec.source_files = "AirKit/WebKit/**/*.swift"
   end
 
   spec.subspec "LocalAuthentication" do |subspec|
     subspec.source_files = "AirKit/LocalAuthentication/**/*.swift"
+  end
+
+  spec.subspec 'Other' do |subspec|
+    subspec.dependency 'AirKit/MapKit'
+    subspec.dependency 'AirKit/LocalAuthentication'
   end
 end
