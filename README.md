@@ -25,11 +25,12 @@ This is sugar framework that contains many different extensions for native Swift
 - [X] Extensions for `Result`;
 - [X] Extensions for `Codable` and `KeyedDecodingContainer`;
 - [X] Extensions for `KeyPath`;
+- [X] Extensions for `Mirror`;
 - [X] `Once` - class than manages only one execution block of code;
 
 ### Extensions for [`Foundation`](AirKit/Source/Foundation)
 - [X] Extensions for `NSAttributedString`;
-- [X] Extensions for `Calendar`, `Date`, `DateFormatter` and `TimeInterval`;
+- [X] Extensions for `Calendar`, `Date`, `DateFormatter`, `TimeInterval` and `TimeZone`;
 - [X] Extensions for `URL`, `URLComponents` and `URLRequest`;
 - [X] Extensions for `UserDefaults` and `FileManagers`;
 - [X] Extensions for `NumberFormatter`;
