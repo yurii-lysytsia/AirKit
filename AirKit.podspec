@@ -48,7 +48,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.author             = { "Yurii Lysytsia" => "developer.yurii.lysytsia@gmail.com" }
-  spec.social_media_url   = "https://www.yurii-lysytsia.site"
+  spec.social_media_url   = "https://www.linkedin.com/in/yurii-lysytsia/"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

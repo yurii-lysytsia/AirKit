@@ -426,7 +426,7 @@ extension String {
     ///     string.grouping(by: 4, separator: " ") // String("1234 5678 90")
     ///     string.grouping(by: 5, separator: "-") // String("12345-67890")
     ///
-    func grouping(by step: String.IndexDistance, separator: Character) -> String {
+    func grouping(by step: Int, separator: Character) -> String {
         // Remove all separators to avoid multiple separation
         let cleanedUpCopy = removing(string: String(separator))
         return String(cleanedUpCopy.enumerated().map {
@@ -441,10 +441,10 @@ extension String {
     ///     string.grouping(by: [3, 5], separator: "-") // String("123-45678-90")
     ///     string.grouping(by: [1, 6, 10], separator: " ") // String("1 234567 890")
     ///
-    func grouping(by steps: [String.IndexDistance], separator: Character) -> String {
+    func grouping(by steps: [Int], separator: Character) -> String {
         let cleanedUpCopy = removing(string: String(separator))
         var stepsCopy = steps
-        var previousStep: String.IndexDistance = 0
+        var previousStep: Int = 0
         return String(cleanedUpCopy.enumerated().map { (offset, element) -> [String.Element] in
             // Get step where need set separator and add previos step
             // Check is not first symbol (because first step will skip)
