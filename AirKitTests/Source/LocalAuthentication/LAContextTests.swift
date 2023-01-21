@@ -2,7 +2,7 @@
 
 import XCTest
 import LocalAuthentication
-@testable import AirKit
+@testable import AirLocalAuthentication
 
 final class LAContextTests: XCTestCase {
     

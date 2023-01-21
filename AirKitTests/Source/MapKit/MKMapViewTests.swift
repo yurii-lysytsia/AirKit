@@ -2,7 +2,7 @@
 
 import XCTest
 import MapKit
-@testable import AirKit
+@testable import AirMapKit
 
 final class MKMapViewTests: XCTestCase {
     

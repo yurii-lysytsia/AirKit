@@ -2,7 +2,7 @@
 
 import XCTest
 import CoreLocation
-@testable import AirKit
+@testable import AirCoreLocation
 
 class CLLocationCoordinate2DTests: XCTestCase {
 

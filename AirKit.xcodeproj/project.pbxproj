@@ -28,7 +28,6 @@
 		5B0ED08126FCD48100473155 /* TimeIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08026FCD48100473155 /* TimeIntervalTests.swift */; };
 		5B0ED08426FCD4A400473155 /* CGFloatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08326FCD4A400473155 /* CGFloatTests.swift */; };
 		5B0ED08726FCD4C500473155 /* TopLevelDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08626FCD4C500473155 /* TopLevelDecoderTests.swift */; };
-		5B1016FB271C6FA2005C9BE4 /* MKPolygon+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1016FA271C6FA2005C9BE4 /* MKPolygon+AirKit.swift */; };
 		5B1016FD271C704D005C9BE4 /* MKPolygonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1016FC271C704D005C9BE4 /* MKPolygonTests.swift */; };
 		5B101703271C84B1005C9BE4 /* WKWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B101702271C84B1005C9BE4 /* WKWebViewTests.swift */; };
 		5B101709271C8AE8005C9BE4 /* LAContextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B101708271C8AE8005C9BE4 /* LAContextTests.swift */; };
@@ -104,7 +103,6 @@
 		5B7C2CBC297C59A3007B4CD6 /* AirSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2C64297C4C0D007B4CD6 /* AirSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B7C2CC1297C59DA007B4CD6 /* AirFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2CC0297C59DA007B4CD6 /* AirFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B7C2CC3297C5A28007B4CD6 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D3BFA270326D600FD822F /* Version.swift */; };
-		5B7C2CC5297C5A6C007B4CD6 /* BinaryInteger+AirKit+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C2CC4297C5A6C007B4CD6 /* BinaryInteger+AirKit+Foundation.swift */; };
 		5B7C2CC7297C5B9C007B4CD6 /* AirSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2CC6297C5B9C007B4CD6 /* AirSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B7C2CD5297C5C86007B4CD6 /* TopLevelDecoder+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B09639026FB585300879AE7 /* TopLevelDecoder+AirKit.swift */; };
 		5B7C2CD6297C5C86007B4CD6 /* AirCombine.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2CD0297C5C78007B4CD6 /* AirCombine.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -165,11 +163,6 @@
 		5B7C2DA0297C6EAB007B4CD6 /* CLLocationCoordinate2D+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7660AD2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift */; };
 		5B7C2DA1297C6EAB007B4CD6 /* CLLocation+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7660AB27076FF300CC0ABA /* CLLocation+AirKit.swift */; };
 		5B7C2DA2297C6EAB007B4CD6 /* AirCoreLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2D97297C6E81007B4CD6 /* AirCoreLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B7C2DA3297C6EB1007B4CD6 /* AirMapKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2D7F297C6E5C007B4CD6 /* AirMapKit.h */; };
-		5B7C2DA4297C6EB3007B4CD6 /* MKMapView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0FB4E271C68BF00DA3C5C /* MKMapView+AirKit.swift */; };
-		5B7C2DA5297C6EB3007B4CD6 /* MKPolygon+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1016FA271C6FA2005C9BE4 /* MKPolygon+AirKit.swift */; };
-		5B7C2DA6297C6EB3007B4CD6 /* AirMapKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2D7F297C6E5C007B4CD6 /* AirMapKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B7C2DA7297C6EB3007B4CD6 /* MKPolyline+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0FB50271C6DDD00DA3C5C /* MKPolyline+AirKit.swift */; };
 		5B7C2DA9297C6EBA007B4CD6 /* AirLocalAuthentication.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2D8B297C6E71007B4CD6 /* AirLocalAuthentication.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B7C2DAA297C6EBA007B4CD6 /* LAContext+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B101705271C8AC0005C9BE4 /* LAContext+AirKit.swift */; };
 		5B7C2DAB297C70D1007B4CD6 /* AirUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D32297C6AE7007B4CD6 /* AirUIKit.framework */; };
@@ -194,6 +187,11 @@
 		5B7C2DD1297C715E007B4CD6 /* AirWebKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D71297C6E54007B4CD6 /* AirWebKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B7C2DD4297C715F007B4CD6 /* AirCoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D95297C6E81007B4CD6 /* AirCoreLocation.framework */; };
 		5B7C2DD5297C715F007B4CD6 /* AirCoreLocation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D95297C6E81007B4CD6 /* AirCoreLocation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B7C2DF7297C8D3C007B4CD6 /* AirMapKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2D7F297C6E5C007B4CD6 /* AirMapKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B7C2DF8297C8D3C007B4CD6 /* MKPolygon+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1016FA271C6FA2005C9BE4 /* MKPolygon+AirKit.swift */; };
+		5B7C2DF9297C8D3C007B4CD6 /* MKMapView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0FB4E271C68BF00DA3C5C /* MKMapView+AirKit.swift */; };
+		5B7C2DFA297C8D3C007B4CD6 /* MKPolyline+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0FB50271C6DDD00DA3C5C /* MKPolyline+AirKit.swift */; };
+		5B7C2E14297C8D4F007B4CD6 /* BinaryInteger+AirKit+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C2CC4297C5A6C007B4CD6 /* BinaryInteger+AirKit+Foundation.swift */; };
 		5B7FF729270234F800C28795 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7FF728270234F800C28795 /* DateFormatterTests.swift */; };
 		5B7FF72B270237FD00C28795 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7FF72A270237FD00C28795 /* DateTests.swift */; };
 		5B8C1CFD270460AC0021B48E /* UserDefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1CFC270460AC0021B48E /* UserDefaultsTests.swift */; };
@@ -224,8 +222,6 @@
 		5BBCA009271AFF5E0025828C /* UIApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBCA008271AFF5E0025828C /* UIApplicationTests.swift */; };
 		5BCC641427B41B1A00C29E01 /* NSDirectionalEdgeInsetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCC641327B41B1A00C29E01 /* NSDirectionalEdgeInsetsTests.swift */; };
 		5BD0FB4D271C66D400DA3C5C /* MKMapViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0FB4C271C66D400DA3C5C /* MKMapViewTests.swift */; };
-		5BD0FB4F271C68BF00DA3C5C /* MKMapView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0FB4E271C68BF00DA3C5C /* MKMapView+AirKit.swift */; };
-		5BD0FB51271C6DDD00DA3C5C /* MKPolyline+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0FB50271C6DDD00DA3C5C /* MKPolyline+AirKit.swift */; };
 		5BD0FB53271C6E0600DA3C5C /* MKPolylineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0FB52271C6E0600DA3C5C /* MKPolylineTests.swift */; };
 		5BD4AE79270B66FE00D65DBC /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD4AE78270B66FE00D65DBC /* UIViewTests.swift */; };
 		5BDC3CE4270F0BE2006DC5A0 /* OnceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDC3CE3270F0BE2006DC5A0 /* OnceTests.swift */; };
@@ -843,11 +839,12 @@
 				5B9D3C0F27034F8F00FD822F /* URLRequestTests.swift */,
 				5B9D3C0727034C2200FD822F /* URLTests.swift */,
 				5B8C1CFC270460AC0021B48E /* UserDefaultsTests.swift */,
+				5B50E46C297C8FE900CD9263 /* Models */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
 		};
-		5B0ED08226FCD48F00473155 /* CoreGraphics */ = {
+		5B0ED08226FCD48F00473155 /* QuartzCore */ = {
 			isa = PBXGroup;
 			children = (
 				5B19FEFE27072F2C00F76EBD /* CGAffineTransformTests.swift */,
@@ -855,8 +852,10 @@
 				5B0ED08326FCD4A400473155 /* CGFloatTests.swift */,
 				5B35BD1E2705FC3C0031AED3 /* CGPointTests.swift */,
 				5B35BD1C2705F8220031AED3 /* CGSizeTests.swift */,
+				5BBCA006271AFEDA0025828C /* CAMediaTimingFunctionTests.swift */,
+				5B19FF0127075C0F00F76EBD /* CATransform3DTests.swift */,
 			);
-			path = CoreGraphics;
+			path = QuartzCore;
 			sourceTree = "<group>";
 		};
 		5B0ED08526FCD4B200473155 /* Combine */ = {
@@ -901,15 +900,6 @@
 			path = LocalAuthentication;
 			sourceTree = "<group>";
 		};
-		5B19FEF527071A5B00F76EBD /* CoreAnimation */ = {
-			isa = PBXGroup;
-			children = (
-				5BBCA006271AFEDA0025828C /* CAMediaTimingFunctionTests.swift */,
-				5B19FF0127075C0F00F76EBD /* CATransform3DTests.swift */,
-			);
-			path = CoreAnimation;
-			sourceTree = "<group>";
-		};
 		5B19FF0527076A6900F76EBD /* CoreLocation */ = {
 			isa = PBXGroup;
 			children = (
@@ -935,6 +925,14 @@
 				5B239FB42700ED790045382F /* DateFormatComponents.swift */,
 				5B14C696270F34310093C881 /* Swizzle.swift */,
 				5B9D3BFA270326D600FD822F /* Version.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B50E46C297C8FE900CD9263 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B9D3C142703539500FD822F /* VersionTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1050,9 +1048,8 @@
 			children = (
 				5B6A059126FA7E31001A59C8 /* Swift */,
 				5B0ED07D26FCD45500473155 /* Foundation */,
-				5B0ED08226FCD48F00473155 /* CoreGraphics */,
+				5B0ED08226FCD48F00473155 /* QuartzCore */,
 				5B639D6F270868E30028B543 /* CoreImage */,
-				5B19FEF527071A5B00F76EBD /* CoreAnimation */,
 				5B19FF0627076A7900F76EBD /* CoreLocation */,
 				5B7660B6270778C900CC0ABA /* UIKit */,
 				5BD0FB4B271C5C2D00DA3C5C /* MapKit */,
@@ -1235,7 +1232,6 @@
 			isa = PBXGroup;
 			children = (
 				5BDC3CE3270F0BE2006DC5A0 /* OnceTests.swift */,
-				5B9D3C142703539500FD822F /* VersionTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1289,7 +1285,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B510BFC26F24AB200C21CDF /* AirKit.h in Headers */,
-				5B7C2DA3297C6EB1007B4CD6 /* AirMapKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1353,7 +1348,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B7C2DA6297C6EB3007B4CD6 /* AirMapKit.h in Headers */,
+				5B7C2DF7297C8D3C007B4CD6 /* AirMapKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1811,10 +1806,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BD0FB51271C6DDD00DA3C5C /* MKPolyline+AirKit.swift in Sources */,
-				5BD0FB4F271C68BF00DA3C5C /* MKMapView+AirKit.swift in Sources */,
-				5B7C2CC5297C5A6C007B4CD6 /* BinaryInteger+AirKit+Foundation.swift in Sources */,
-				5B1016FB271C6FA2005C9BE4 /* MKPolygon+AirKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1954,6 +1945,7 @@
 				5B7C2CA2297C4E82007B4CD6 /* DateFormatter+AirKit.swift in Sources */,
 				5B7C2C9C297C4E82007B4CD6 /* TimeInterval+AirKit.swift in Sources */,
 				5B7C2C95297C4E82007B4CD6 /* TimeZone+AirKit.swift in Sources */,
+				5B7C2E14297C8D4F007B4CD6 /* BinaryInteger+AirKit+Foundation.swift in Sources */,
 				5B7C2C98297C4E82007B4CD6 /* URL+AirKit.swift in Sources */,
 				5B7C2C93297C4E82007B4CD6 /* FileManager+AirKit.swift in Sources */,
 				5B7C2CC3297C5A28007B4CD6 /* Version.swift in Sources */,
@@ -2043,9 +2035,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B7C2DA5297C6EB3007B4CD6 /* MKPolygon+AirKit.swift in Sources */,
-				5B7C2DA7297C6EB3007B4CD6 /* MKPolyline+AirKit.swift in Sources */,
-				5B7C2DA4297C6EB3007B4CD6 /* MKMapView+AirKit.swift in Sources */,
+				5B7C2DF8297C8D3C007B4CD6 /* MKPolygon+AirKit.swift in Sources */,
+				5B7C2DFA297C8D3C007B4CD6 /* MKPolyline+AirKit.swift in Sources */,
+				5B7C2DF9297C8D3C007B4CD6 /* MKMapView+AirKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
