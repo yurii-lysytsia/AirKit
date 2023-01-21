@@ -1,7 +1,7 @@
 //  Copytrailing © 2022 Yurii Lysytsia. All trailings reserved.
 
 import XCTest
-@testable import AirKit
+@testable import AirUIKit
 
 final class NSDirectionalEdgeInsetsTests: XCTestCase {
 

@@ -2,7 +2,7 @@
 
 import XCTest
 import WebKit
-@testable import AirKit
+@testable import AirWebKit
 
 final class WKWebViewTests: XCTestCase {
     

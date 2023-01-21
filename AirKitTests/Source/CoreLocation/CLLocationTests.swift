@@ -1,8 +1,8 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 import XCTest
-@testable import AirKit
 import CoreLocation
+@testable import AirCoreLocation
 
 class CLLocationTests: XCTestCase {
     
