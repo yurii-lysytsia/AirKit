@@ -10,7 +10,7 @@ public extension UIPageViewController {
     /// Sets the view controller to be displayed.
     /// - Parameters:
     ///   - direction: The navigation direction.
-    func scrollToNextViewController(direction: UIPageViewController.NavigationDirection, animated: Bool, completion: BoolBlock? = nil) {
+    func scrollToNextViewController(direction: UIPageViewController.NavigationDirection, animated: Bool, completion: ((_ finished: Bool) -> Void)? = nil) {
         guard let currentViewController = self.viewControllers?.first else { return }
         
         // Define next view controller

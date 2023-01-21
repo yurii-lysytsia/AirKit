@@ -24,6 +24,16 @@ lane :update_version do |options|
 
   UI.message "Current branch version is `#{branch_version}`"
 
+  # Get current version and check with a new version
+	current_version = get_version_number(
+  	xcodeproj: PROJECT_FILE,
+  	target: PROJECT_NAME
+	)
+  if branch_version == current_version
+  	UI.message "Current branch version is the same as project. No update needed"
+  	next
+  end
+
   # Upgrade Xcode project version number with given branch version.
   increment_version_number(
     version_number: branch_version,

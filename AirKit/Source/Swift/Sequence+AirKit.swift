@@ -16,6 +16,11 @@ public extension Sequence {
         return count
     }
     
+    /// Returns the first element of the sequence that satisfies the given class type.
+    func first<T>(_ classType: T.Type) -> T? {
+        first(where: { $0 is T }) as? T
+    }
+    
     /// Separates all items into 2 lists based on a given predicate.
     ///
     /// The first list contains all items for which the specified condition evaluates to true. The second list contains those that don't.

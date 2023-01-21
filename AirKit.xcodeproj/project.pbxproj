@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -76,6 +76,7 @@
 		5B35BD212705FD8E0031AED3 /* CGColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD202705FD8E0031AED3 /* CGColorTests.swift */; };
 		5B361EEC2719ED00005803BE /* UIViewController+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B361EEB2719ED00005803BE /* UIViewController+AirKit.swift */; };
 		5B46AD7326F88FC8002BC409 /* Optional+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B46AD7226F88FC8002BC409 /* Optional+AirKit.swift */; };
+		5B50744229696ED400103596 /* Mirror+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B50744129696ED400103596 /* Mirror+AirKit.swift */; };
 		5B510BFC26F24AB200C21CDF /* AirKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B510BFA26F24AB200C21CDF /* AirKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B60C4B02709B61A00D2E190 /* UIEdgeInsets+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60C4AF2709B61A00D2E190 /* UIEdgeInsets+AirKit.swift */; };
 		5B60C4B22709B62500D2E190 /* UIEdgeInsetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B60C4B12709B62500D2E190 /* UIEdgeInsetsTests.swift */; };
@@ -113,6 +114,7 @@
 		5B7660B4270773B100CC0ABA /* CLLocationCoordinate2DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7660B3270773B100CC0ABA /* CLLocationCoordinate2DTests.swift */; };
 		5B7687F926F7C08600C388C1 /* String+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7687F826F7C08600C388C1 /* String+AirKit.swift */; };
 		5B792AE22701C1EF00CE2841 /* Calendar+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B792AE12701C1EF00CE2841 /* Calendar+AirKit.swift */; };
+		5B7C2C42297C1323007B4CD6 /* TimeZone+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C2C41297C1323007B4CD6 /* TimeZone+AirKit.swift */; };
 		5B7FF729270234F800C28795 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7FF728270234F800C28795 /* DateFormatterTests.swift */; };
 		5B7FF72B270237FD00C28795 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7FF72A270237FD00C28795 /* DateTests.swift */; };
 		5B8C1CF9270454660021B48E /* UserDefaults+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1CF8270454660021B48E /* UserDefaults+AirKit.swift */; };
@@ -261,6 +263,7 @@
 		5B35BD202705FD8E0031AED3 /* CGColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGColorTests.swift; sourceTree = "<group>"; };
 		5B361EEB2719ED00005803BE /* UIViewController+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AirKit.swift"; sourceTree = "<group>"; };
 		5B46AD7226F88FC8002BC409 /* Optional+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+AirKit.swift"; sourceTree = "<group>"; };
+		5B50744129696ED400103596 /* Mirror+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mirror+AirKit.swift"; sourceTree = "<group>"; };
 		5B510BF726F24AB200C21CDF /* AirKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B510BFA26F24AB200C21CDF /* AirKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirKit.h; sourceTree = "<group>"; };
 		5B510BFB26F24AB200C21CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -302,6 +305,7 @@
 		5B7660B3270773B100CC0ABA /* CLLocationCoordinate2DTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLocationCoordinate2DTests.swift; sourceTree = "<group>"; };
 		5B7687F826F7C08600C388C1 /* String+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+AirKit.swift"; sourceTree = "<group>"; };
 		5B792AE12701C1EF00CE2841 /* Calendar+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+AirKit.swift"; sourceTree = "<group>"; };
+		5B7C2C41297C1323007B4CD6 /* TimeZone+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+AirKit.swift"; sourceTree = "<group>"; };
 		5B7FF728270234F800C28795 /* DateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
 		5B7FF72A270237FD00C28795 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		5B8C1CF8270454660021B48E /* UserDefaults+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+AirKit.swift"; sourceTree = "<group>"; };
@@ -437,6 +441,7 @@
 				5B632B7826FE218500C3645D /* NSAttributedString+AirKit.swift */,
 				5B8C1D02270489360021B48E /* NumberFormatter+AirKit.swift */,
 				5B09638926FB430800879AE7 /* TimeInterval+AirKit.swift */,
+				5B7C2C41297C1323007B4CD6 /* TimeZone+AirKit.swift */,
 				5B9D3C032703411A00FD822F /* URL+AirKit.swift */,
 				5B9D3C012703402400FD822F /* URLComponents+AirKit.swift */,
 				5B9D3C0527034BAB00FD822F /* URLRequest+AirKit.swift */,
@@ -869,6 +874,7 @@
 				5B07F3DF26F8F28300976D89 /* Float+AirKit.swift */,
 				5B07F3F026F9038000976D89 /* Int+AirKit.swift */,
 				5B09638D26FB50FC00879AE7 /* KeyedDecodingContainer+AirKit.swift */,
+				5B50744129696ED400103596 /* Mirror+AirKit.swift */,
 				5B46AD7226F88FC8002BC409 /* Optional+AirKit.swift */,
 				5B6A057726FA0125001A59C8 /* RangeReplaceableCollection+AirKit.swift */,
 				5B09638B26FB47EB00879AE7 /* Result+AirKit.swift */,
@@ -970,7 +976,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1420;
 				ORGANIZATIONNAME = "Yurii Lysytsia";
 				TargetAttributes = {
 					5B510BF626F24AB200C21CDF = {
@@ -1024,12 +1030,14 @@
 /* Begin PBXShellScriptBuildPhase section */
 		5BBB16B626F625FC0094B14C /* [SwiftLint] Run */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				$SRCROOT/.swiftlint.yml,
 			);
 			name = "[SwiftLint] Run";
 			outputFileListPaths = (
@@ -1038,7 +1046,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/.swiftlint\" --config \"${SRCROOT}/.swiftlint.yml\" --path \"${SRCROOT}/AirKit\"\n";
+			shellScript = "\"$SRCROOT/.swiftlint\" --config \"$SRCROOT/.swiftlint.yml\" --path \"$SRCROOT/$TARGET_NAME\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1077,6 +1085,7 @@
 				5B60C4B02709B61A00D2E190 /* UIEdgeInsets+AirKit.swift in Sources */,
 				5B07F3DC26F8F0ED00976D89 /* Bool+AirKit.swift in Sources */,
 				5B09639126FB585300879AE7 /* TopLevelDecoder+AirKit.swift in Sources */,
+				5B50744229696ED400103596 /* Mirror+AirKit.swift in Sources */,
 				5BD0FB4F271C68BF00DA3C5C /* MKMapView+AirKit.swift in Sources */,
 				5B93EDBA2700D6E500A9BEDA /* Date+AirKit.swift in Sources */,
 				5B639D7427086CF60028B543 /* UIGraphicsImageRendererFormat+AirKit.swift in Sources */,
@@ -1132,6 +1141,7 @@
 				5B34080C2714B21300BC79E8 /* UITextView+AirKit.swift in Sources */,
 				5BAD26992716F04B00AE9E4F /* UICollectionView+AirKit.swift in Sources */,
 				5B639D6E270868C30028B543 /* CICategory.swift in Sources */,
+				5B7C2C42297C1323007B4CD6 /* TimeZone+AirKit.swift in Sources */,
 				5B19FEFB270721C400F76EBD /* CATransform3D+AirKit.swift in Sources */,
 				5B09638E26FB50FC00879AE7 /* KeyedDecodingContainer+AirKit.swift in Sources */,
 				5B0273A3271033CF00DAA072 /* UIStackView+AirKit.swift in Sources */,
@@ -1288,7 +1298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1296,7 +1306,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -1349,14 +1359,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1368,7 +1378,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -1377,8 +1387,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AirKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = "$(inherited)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1386,7 +1396,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = "${inherited}";
 				MARKETING_VERSION = 0.2.3;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.air.kit;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
@@ -1404,7 +1414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -1413,8 +1423,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AirKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = "$(inherited)";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1422,7 +1432,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = "${inherited}";
 				MARKETING_VERSION = 0.2.3;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.air.kit;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
@@ -1449,7 +1459,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.air.kit.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
@@ -1474,7 +1484,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.air.kit.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";

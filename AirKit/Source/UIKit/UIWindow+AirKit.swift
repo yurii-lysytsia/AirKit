@@ -1,7 +1,21 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 #if canImport(UIKit)
-import UIKit
+import typealias Foundation.TimeInterval
+import class QuartzCore.CATransaction
+import class QuartzCore.CATransition
+import class QuartzCore.CAMediaTimingFunction
+import var QuartzCore.kCATransition
+import var QuartzCore.CATransform3DIdentity
+import func QuartzCore.CATransform3DMakeScale
+import func QuartzCore.CATransform3DMakeTranslation
+import struct CoreGraphics.CGFloat
+import struct CoreGraphics.CGSize
+import struct CoreGraphics.CGRect
+import class UIKit.UIWindow
+import class UIKit.UIView
+import class UIKit.UIImageView
+import class UIKit.UIViewController
 
 // MARK: - Extensions | Transition
 
@@ -75,7 +89,7 @@ public extension UIWindow {
     // swiftlint:disable cyclomatic_complexity
     // swiftlint:disable function_body_length
     /// Sets the root view controller for this window with transition's options.
-    func setRootViewController(_ viewController: UIViewController, transition: Transition, completion: BoolBlock? = nil) {
+    func setRootViewController(_ viewController: UIViewController, transition: Transition, completion: ((_ finished: Bool) -> Void)? = nil) {
         switch transition.style {
         case .crossDissolve, .flipFromLeft, .flipFromRight, .flipFromTop, .flipFromBottom, .curlUp, .curlDown:
             var transitionOptions: UIView.AnimationOptions = {
@@ -200,7 +214,7 @@ public extension UIWindow {
     // swiftlint:enable function_body_length
     
     /// Sets the root view controller for this window with transition's style and default options.
-    func setRootViewController(_ viewController: UIViewController, style: TransitionStyle, completion: BoolBlock? = nil) {
+    func setRootViewController(_ viewController: UIViewController, style: TransitionStyle, completion: ((_ finished: Bool) -> Void)? = nil) {
         let transition = Transition(style: style)
         setRootViewController(viewController, transition: transition, completion: completion)
     }

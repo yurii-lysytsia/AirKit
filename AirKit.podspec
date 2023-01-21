@@ -13,7 +13,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AirKit"
-  spec.version      = "0.7.4"
+  spec.version      = "0.7.5"
   spec.summary      = "Many extensions to speed up your coding time!"
 
   # This description is used to generate tags and improve search results.
@@ -48,7 +48,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.author             = { "Yurii Lysytsia" => "developer.yurii.lysytsia@gmail.com" }
-  spec.social_media_url   = "https://www.yurii-lysytsia.site"
+  spec.social_media_url   = "https://www.linkedin.com/in/yurii-lysytsia/"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

@@ -7,8 +7,8 @@ final class BundleTests: XCTestCase {
     
     // MARK: - Properties
     
-    private let bundle = Bundle(identifier: "dev.lysytsia.air.kit")!
-    private let testsBundle = Bundle(identifier: "dev.lysytsia.air.kit.tests")!
+    private let bundle = Bundle(identifier: "dev.lysytsia.airkit")!
+    private let testsBundle = Bundle(identifier: "dev.lysytsia.airkit.tests")!
     
     // MARK: - Tests
     
@@ -21,7 +21,7 @@ final class BundleTests: XCTestCase {
         let info = bundle.info
         XCTAssertEqual(info.name, "AirKit")
         XCTAssertEqual(info.displayName, "Unknown")
-        XCTAssertEqual(info.identifier, "dev.lysytsia.air.kit")
+        XCTAssertEqual(info.identifier, "dev.lysytsia.airkit")
         XCTAssertNotEqual(info.buildVersion, "0")
         XCTAssertNotEqual(info.buildVersionShort, "0.0.0")
         

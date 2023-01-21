@@ -30,7 +30,7 @@ public extension UIApplication {
     /// Sets the root view controller for this window with transition’s options.
     ///
     /// - Returns: A Boolean indicator of the transition was successful.
-    @discardableResult func setRootViewController(_ viewController: UIViewController, transition: UIWindow.Transition, completion: BoolBlock? = nil) -> Bool {
+    @discardableResult func setRootViewController(_ viewController: UIViewController, transition: UIWindow.Transition, completion: ((_ finished: Bool) -> Void)? = nil) -> Bool {
         guard let window = legacyKeyWindow else { return false }
         window.setRootViewController(viewController, transition: transition, completion: completion)
         return true
@@ -39,7 +39,7 @@ public extension UIApplication {
     /// Sets the root view controller for this window with transition’s style and default options.
     ///
     /// - Returns: A Boolean indicator of the transition was successful.
-    @discardableResult func setRootViewController(_ viewController: UIViewController, style: UIWindow.TransitionStyle, completion: BoolBlock? = nil) -> Bool {
+    @discardableResult func setRootViewController(_ viewController: UIViewController, style: UIWindow.TransitionStyle, completion: ((_ finished: Bool) -> Void)? = nil) -> Bool {
         guard let window = legacyKeyWindow else { return false }
         window.setRootViewController(viewController, style: style, completion: completion)
         return true
