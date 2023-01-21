@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   This is sugar framework that contains many different extensions for native Swift and iOS frameworks
                    DESC
 
-  spec.homepage = "https://github.com/yurii-lysytsia/AirKit"
+  spec.homepage = "https://github.com/yurii-lysytsia/#{spec.name}"
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -64,7 +64,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source = { :git => "https://github.com/yurii-lysytsia/AirKit.git", :tag => "#{spec.version}" }
+  spec.source = { :git => "https://github.com/yurii-lysytsia/#{spec.name}.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -77,93 +77,93 @@ Pod::Spec.new do |spec|
 
   # Remove prefix header file and select custom module map to avoid redundant UIKit import
   spec.prefix_header_file = false
-  spec.module_map = "AirKit.modulemap"
+  spec.module_map = "#{spec.name}.modulemap"
 
   spec.default_subspecs = "Core", "CoreUI", "Other"
 
   # ――― Source Code (Umbrella) ――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   spec.subspec "Umbrella" do |subspec|
-    subspec.source_files = "AirKit-umbrella.h"
+    subspec.source_files = "#{spec.name}-umbrella.h"
   end
 
   # ――― Source Code (Core) ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   spec.subspec "Swift" do |subspec|
-    subspec.dependency "AirKit/Umbrella"
-    subspec.source_files = "AirKit/Swift/**/*.swift"
+    subspec.dependency "#{spec.name}/Umbrella"
+    subspec.source_files = "#{spec.name}/Swift/**/*.swift"
   end
 
   spec.subspec "Foundation" do |subspec|
-    subspec.dependency "AirKit/Umbrella"
-    subspec.dependency "AirKit/Swift"
-    subspec.source_files = "AirKit/Foundation/**/*.swift"
+    subspec.dependency "#{spec.name}/Umbrella"
+    subspec.dependency "#{spec.name}/Swift"
+    subspec.source_files = "#{spec.name}/Foundation/**/*.swift"
   end
 
   spec.subspec "Combine" do |subspec|
-    subspec.dependency "AirKit/Umbrella"
-    subspec.source_files = "AirKit/Combine/**/*.swift"
+    subspec.dependency "#{spec.name}/Umbrella"
+    subspec.source_files = "#{spec.name}/Combine/**/*.swift"
   end
 
   spec.subspec 'Core' do |subspec|
-    subspec.dependency 'AirKit/Foundation'
-    subspec.dependency 'AirKit/Combine'
+    subspec.dependency "#{spec.name}/Foundation"
+    subspec.dependency "#{spec.name}/Combine"
   end
 
   # ――― Source Code (CoreUI) ――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   
   spec.subspec "QuartzCore" do |subspec|
-    subspec.dependency "AirKit/Umbrella"
-    subspec.dependency "AirKit/Swift"
-    subspec.source_files = "AirKit/QuartzCore/**/*.swift"
+    subspec.dependency "#{spec.name}/Umbrella"
+    subspec.dependency "#{spec.name}/Swift"
+    subspec.source_files = "#{spec.name}/QuartzCore/**/*.swift"
   end
 
   spec.subspec "CoreImage" do |subspec|
-    subspec.dependency "AirKit/Umbrella"
-    subspec.source_files = "AirKit/CoreImage/**/*.swift"
+    subspec.dependency "#{spec.name}/Umbrella"
+    subspec.source_files = "#{spec.name}/CoreImage/**/*.swift"
   end
   
   spec.subspec "UIKit" do |subspec|
-    subspec.dependency "AirKit/Umbrella"
-    subspec.dependency "AirKit/Swift"
-    subspec.dependency 'AirKit/Foundation'
-    subspec.dependency 'AirKit/QuartzCore'
-    subspec.dependency 'AirKit/CoreImage'
-    subspec.source_files = "AirKit/UIKit/**/*.swift"
+    subspec.dependency "#{spec.name}/Umbrella"
+    subspec.dependency "#{spec.name}/Swift"
+    subspec.dependency "#{spec.name}/Foundation"
+    subspec.dependency "#{spec.name}/QuartzCore"
+    subspec.dependency "#{spec.name}/CoreImage"
+    subspec.source_files = "#{spec.name}/UIKit/**/*.swift"
   end
 
   spec.subspec "WebKit" do |subspec|
-    subspec.dependency "AirKit/Umbrella"
-    subspec.dependency 'AirKit/UIKit'
-    subspec.source_files = "AirKit/WebKit/**/*.swift"
+    subspec.dependency "#{spec.name}/Umbrella"
+    subspec.dependency "#{spec.name}/UIKit"
+    subspec.source_files = "#{spec.name}/WebKit/**/*.swift"
   end
   
-  spec.subspec 'CoreUI' do |subspec|
-    subspec.dependency 'AirKit/UIKit'
-    subspec.dependency 'AirKit/WebKit'
+  spec.subspec "CoreUI" do |subspec|
+    subspec.dependency "#{spec.name}/UIKit"
+    subspec.dependency "#{spec.name}/WebKit"
   end
 
   # ――― Source Code (Other) ―――――――――――――――――――――――――――――――――――――――――――――――――――――- #
 
   spec.subspec "CoreLocation" do |subspec|
-    subspec.dependency "AirKit/Umbrella"
-    subspec.source_files = "AirKit/CoreLocation/**/*.swift"
+    subspec.dependency "#{spec.name}/Umbrella"
+    subspec.source_files = "#{spec.name}/CoreLocation/**/*.swift"
   end
 
   spec.subspec "MapKit" do |subspec|
-    subspec.dependency "AirKit/Umbrella"
-    subspec.dependency 'AirKit/UIKit'
-    subspec.source_files = "AirKit/MapKit/**/*.swift"
+    subspec.dependency "#{spec.name}/Umbrella"
+    subspec.dependency "#{spec.name}/UIKit"
+    subspec.source_files = "#{spec.name}/MapKit/**/*.swift"
   end
 
   spec.subspec "LocalAuthentication" do |subspec|
-    subspec.dependency "AirKit/Umbrella"
-    subspec.source_files = "AirKit/LocalAuthentication/**/*.swift"
+    subspec.dependency "#{spec.name}/Umbrella"
+    subspec.source_files = "#{spec.name}/LocalAuthentication/**/*.swift"
   end
 
-  spec.subspec 'Other' do |subspec|
-    subspec.dependency 'AirKit/CoreLocation'
-    subspec.dependency 'AirKit/MapKit'
-    subspec.dependency 'AirKit/LocalAuthentication'
+  spec.subspec "Other" do |subspec|
+    subspec.dependency "#{spec.name}/CoreLocation"
+    subspec.dependency "#{spec.name}/MapKit"
+    subspec.dependency "#{spec.name}/LocalAuthentication"
   end
 end
