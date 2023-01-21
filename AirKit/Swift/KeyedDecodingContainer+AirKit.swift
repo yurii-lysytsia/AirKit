@@ -249,6 +249,7 @@ public extension KeyedDecodingContainer {
         if let int = try? decodeIfPresent(Int.self, forKey: key) {
             return int == 1 ? true : false
         }
+        
         if let string = try? decodeIfPresent(String.self, forKey: key) {
             if let bool = Bool(string) {
                 return bool

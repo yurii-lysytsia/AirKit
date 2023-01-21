@@ -18,7 +18,7 @@ public extension DispatchQueue {
     ///   - qos: Quality of service at which the work item should be executed.
     ///   - flags: Flags that control the execution environment of the work item.
     ///   - work: The closure to run after certain time interval.
-    func asyncAfter(delay: TimeInterval, qos: DispatchQoS = .unspecified, flags: DispatchWorkItemFlags = [], execute work: @escaping VoidBlock) {
+    func asyncAfter(delay: TimeInterval, qos: DispatchQoS = .unspecified, flags: DispatchWorkItemFlags = [], execute work: @escaping () -> Void) {
         asyncAfter(deadline: DispatchTime.now() + delay, qos: qos, flags: flags, execute: work)
     }
 }
@@ -69,7 +69,7 @@ public extension DispatchQueue {
     /// - Parameters:
     ///   - token: A unique token name such as `<domain>.<name>` or a GUID.
     ///   - block: Block to execute once
-    class func once(token: String, block: VoidThrowsBlock) rethrows {
+    class func once(token: String, block: () throws -> Void) rethrows {
         try synchronizeQueue.sync {
             if onceTracker.contains(token) { return }
             onceTracker.insert(token)

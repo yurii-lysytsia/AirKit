@@ -1,8 +1,8 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation)
-import class Foundation.FileManager
-import struct Foundation.URL
+#if canImport(Foundation) && canImport(AirSwift)
+import Foundation
+import AirSwift
 
 // MARK: - Extensions | Contents
 
