@@ -108,7 +108,7 @@ public extension Sequence where Element: Optionable {
 
 // MARK: - Extensions | Sequence
 
-extension Sequence where Element: Sequence {
+public extension Sequence where Element: Sequence {
     
     /// Returns an array of element's element.
     ///

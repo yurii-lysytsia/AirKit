@@ -1,0 +1,6 @@
+framework module AirKit {
+  umbrella header "AirKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

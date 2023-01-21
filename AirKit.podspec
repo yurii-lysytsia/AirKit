@@ -75,21 +75,33 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
+  # Remove prefix header file and select custom module map to avoid redundant UIKit import
   spec.prefix_header_file = false
+  spec.module_map = "AirKit.modulemap"
 
   spec.default_subspecs = "Core", "CoreUI", "Other"
 
+  # ――― Source Code (Umbrella) ――――――――――――――――――――――――――――――――――――――――――――――――――― #
+
+  spec.subspec "Umbrella" do |subspec|
+    subspec.source_files = "AirKit-umbrella.h"
+  end
+
   # ――― Source Code (Core) ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+
   spec.subspec "Swift" do |subspec|
+    subspec.dependency "AirKit/Umbrella"
     subspec.source_files = "AirKit/Swift/**/*.swift"
   end
 
   spec.subspec "Foundation" do |subspec|
+    subspec.dependency "AirKit/Umbrella"
     subspec.dependency "AirKit/Swift"
     subspec.source_files = "AirKit/Foundation/**/*.swift"
   end
 
   spec.subspec "Combine" do |subspec|
+    subspec.dependency "AirKit/Umbrella"
     subspec.source_files = "AirKit/Combine/**/*.swift"
   end
 
@@ -101,15 +113,18 @@ Pod::Spec.new do |spec|
   # ――― Source Code (CoreUI) ――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   
   spec.subspec "QuartzCore" do |subspec|
+    subspec.dependency "AirKit/Umbrella"
     subspec.dependency "AirKit/Swift"
     subspec.source_files = "AirKit/QuartzCore/**/*.swift"
   end
 
   spec.subspec "CoreImage" do |subspec|
+    subspec.dependency "AirKit/Umbrella"
     subspec.source_files = "AirKit/CoreImage/**/*.swift"
   end
   
   spec.subspec "UIKit" do |subspec|
+    subspec.dependency "AirKit/Umbrella"
     subspec.dependency "AirKit/Swift"
     subspec.dependency 'AirKit/Foundation'
     subspec.dependency 'AirKit/QuartzCore'
@@ -118,6 +133,7 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec "WebKit" do |subspec|
+    subspec.dependency "AirKit/Umbrella"
     subspec.dependency 'AirKit/UIKit'
     subspec.source_files = "AirKit/WebKit/**/*.swift"
   end
@@ -130,15 +146,18 @@ Pod::Spec.new do |spec|
   # ――― Source Code (Other) ―――――――――――――――――――――――――――――――――――――――――――――――――――――- #
 
   spec.subspec "CoreLocation" do |subspec|
+    subspec.dependency "AirKit/Umbrella"
     subspec.source_files = "AirKit/CoreLocation/**/*.swift"
   end
 
   spec.subspec "MapKit" do |subspec|
+    subspec.dependency "AirKit/Umbrella"
     subspec.dependency 'AirKit/UIKit'
     subspec.source_files = "AirKit/MapKit/**/*.swift"
   end
 
   spec.subspec "LocalAuthentication" do |subspec|
+    subspec.dependency "AirKit/Umbrella"
     subspec.source_files = "AirKit/LocalAuthentication/**/*.swift"
   end
 
