@@ -1,15 +1,10 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Dispatch)
-import Dispatch
 #if canImport(Foundation)
-import class Foundation.Bundle
-import typealias Foundation.TimeInterval
-#endif
+import Foundation
 
 // MARK: - Extensions | Async
 
-#if canImport(Foundation)
 public extension DispatchQueue {
     /// Runs passed closure asynchronous after certain time interval.
     ///
@@ -22,7 +17,6 @@ public extension DispatchQueue {
         asyncAfter(deadline: DispatchTime.now() + delay, qos: qos, flags: flags, execute: work)
     }
 }
-#endif
 
 // MARK: - Extensions | Static Conditions
 
@@ -54,7 +48,6 @@ public extension DispatchQueue {
     }
 }
 
-#if canImport(Foundation)
 // MARK: - Extensions | Dispatch Once
 
 public extension DispatchQueue {
@@ -77,5 +70,4 @@ public extension DispatchQueue {
         }
     }
 }
-#endif
 #endif

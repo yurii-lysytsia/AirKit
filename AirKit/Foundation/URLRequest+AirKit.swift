@@ -1,8 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 #if canImport(Foundation)
-import struct Foundation.URL
-import struct Foundation.URLRequest
+import Foundation
 
 // MARK: - Extensions | Values
 

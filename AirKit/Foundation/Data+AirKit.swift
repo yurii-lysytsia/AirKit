@@ -1,7 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 #if canImport(Foundation)
-import struct Foundation.Data
+import Foundation
 
 // MARK: - Extensions | Bytes
 

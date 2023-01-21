@@ -1,10 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 #if canImport(Foundation)
-import class Foundation.Bundle
-import struct Foundation.Data
-import class Foundation.NSError
-import var Foundation.NSLocalizedDescriptionKey
+import Foundation
 
 // MARK: - Extensions | Resources
 

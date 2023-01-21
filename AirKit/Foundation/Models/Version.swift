@@ -1,5 +1,8 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+#if canImport(Foundation)
+import Foundation
+
 /// Value representation model for versions.
 public struct Version: Comparable {
     public let major: Int
@@ -57,3 +60,4 @@ public struct Version: Comparable {
     ///
     public static func < (lhs: Version, rhs: Version) -> Bool { lhs.rawValue < rhs.rawValue }
 }
+#endif

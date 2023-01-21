@@ -1,8 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 #if canImport(Foundation)
-import class Foundation.DateFormatter
-import struct Foundation.TimeZone
+import Foundation
 
 // MARK: - Extensions | Init
 

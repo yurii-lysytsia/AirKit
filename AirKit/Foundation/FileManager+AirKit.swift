@@ -1,8 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(Foundation) && canImport(AirSwift)
+#if canImport(Foundation)
 import Foundation
-import AirSwift
 
 // MARK: - Extensions | Contents
 

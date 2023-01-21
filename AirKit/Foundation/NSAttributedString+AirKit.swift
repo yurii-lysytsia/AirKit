@@ -1,10 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 #if canImport(Foundation)
-import class Foundation.NSAttributedString
-import class Foundation.NSMutableAttributedString
-import class Foundation.NSRegularExpression
-import struct Foundation.NSRange
+import Foundation
 
 // MARK: - Extensions | Regex | NSAttributedString
 

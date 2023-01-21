@@ -1,8 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 #if canImport(Foundation)
-import struct Foundation.URL
-import struct Foundation.URLComponents
+import Foundation
 
 // MARK: - Extensions | Path Components
 

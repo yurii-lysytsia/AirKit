@@ -1,16 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 #if canImport(Foundation)
-import protocol Foundation.LocalizedError
-import struct Foundation.Selector
-import func Foundation.object_getClass
-import func Foundation.class_getInstanceMethod
-import func Foundation.class_addMethod
-import func Foundation.class_getInstanceMethod
-import func Foundation.class_replaceMethod
-import func Foundation.method_getImplementation
-import func Foundation.method_getTypeEncoding
-import func Foundation.method_exchangeImplementations
+import Foundation
 
 public enum Swizzle {
     /// Swizzle original instance or class method.

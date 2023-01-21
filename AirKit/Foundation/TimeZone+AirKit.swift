@@ -1,7 +1,7 @@
 //  Copyright © 2023 Yurii Lysytsia. All rights reserved.
 
 #if canImport(Foundation)
-import struct Foundation.TimeZone
+import Foundation
 
 public extension TimeZone {
     /// Returns Coordinated Universal Time (UTC).

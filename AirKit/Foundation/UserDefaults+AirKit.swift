@@ -1,9 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 #if canImport(Foundation)
-import class Foundation.UserDefaults
-import struct Foundation.Data
-import struct Foundation.Date
+import Foundation
 
 // MARK: - Extensions | Values
 

@@ -1,7 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 #if canImport(Foundation)
-import struct Foundation.DateComponents
+import Foundation
 
 // MARK: - Extensions | Helpers
 

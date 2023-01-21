@@ -1,7 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 #if canImport(Foundation)
-import class Foundation.NSNumber
+import Foundation
 
 public protocol NumberConvertible {
     /// Returns an NSNumber object initialized to contain a current value.

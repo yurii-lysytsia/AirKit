@@ -1,8 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 #if canImport(Foundation)
-import typealias Foundation.TimeInterval
-import typealias Foundation.Date
+import Foundation
 
 // MARK: - Extenions | Values
 

@@ -1,10 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
 #if canImport(Foundation)
-import struct Foundation.Calendar
-import struct Foundation.Date
-import struct Foundation.DateComponents
-import struct Foundation.TimeZone
+import Foundation
 
 // MARK: - Extensions | Conditions
 

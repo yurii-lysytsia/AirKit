@@ -83,6 +83,7 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec "Foundation" do |subspec|
+    subspec.dependency "AirKit/Swift"
     subspec.source_files = "AirKit/Foundation/**/*.swift"
   end
 
@@ -91,7 +92,6 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec 'Core' do |subspec|
-    subspec.dependency 'AirKit/Swift'
     subspec.dependency 'AirKit/Foundation'
     subspec.dependency 'AirKit/Combine'
   end
