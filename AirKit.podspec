@@ -125,22 +125,14 @@ Pod::Spec.new do |spec|
   
   spec.subspec "UIKit" do |subspec|
     subspec.dependency "#{spec.name}/Umbrella"
-    subspec.dependency "#{spec.name}/Swift"
     subspec.dependency "#{spec.name}/Foundation"
     subspec.dependency "#{spec.name}/QuartzCore"
     subspec.dependency "#{spec.name}/CoreImage"
     subspec.source_files = "#{spec.name}/UIKit/**/*.swift"
   end
-
-  spec.subspec "WebKit" do |subspec|
-    subspec.dependency "#{spec.name}/Umbrella"
-    subspec.dependency "#{spec.name}/UIKit"
-    subspec.source_files = "#{spec.name}/WebKit/**/*.swift"
-  end
   
   spec.subspec "CoreUI" do |subspec|
     subspec.dependency "#{spec.name}/UIKit"
-    subspec.dependency "#{spec.name}/WebKit"
   end
 
   # ――― Source Code (Other) ―――――――――――――――――――――――――――――――――――――――――――――――――――――- #
@@ -156,6 +148,11 @@ Pod::Spec.new do |spec|
     subspec.source_files = "#{spec.name}/MapKit/**/*.swift"
   end
 
+  spec.subspec "WebKit" do |subspec|
+    subspec.dependency "#{spec.name}/Umbrella"
+    subspec.source_files = "#{spec.name}/WebKit/**/*.swift"
+  end
+
   spec.subspec "LocalAuthentication" do |subspec|
     subspec.dependency "#{spec.name}/Umbrella"
     subspec.source_files = "#{spec.name}/LocalAuthentication/**/*.swift"
@@ -164,6 +161,7 @@ Pod::Spec.new do |spec|
   spec.subspec "Other" do |subspec|
     subspec.dependency "#{spec.name}/CoreLocation"
     subspec.dependency "#{spec.name}/MapKit"
+    subspec.dependency "#{spec.name}/WebKit"
     subspec.dependency "#{spec.name}/LocalAuthentication"
   end
 end

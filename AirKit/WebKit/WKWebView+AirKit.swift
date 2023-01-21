@@ -10,7 +10,9 @@ public extension WKWebView {
     /// - Returns: A new navigation object for tracking the URL.
     @discardableResult func load(_ url: URL, timeoutInterval: TimeInterval? = nil) -> WKNavigation? {
         var request: URLRequest = URLRequest(url: url)
-        request.timeoutInterval ??= timeoutInterval
+        if let timeoutInterval {
+            request.timeoutInterval = timeoutInterval
+        }
         return load(request)
     }
 
