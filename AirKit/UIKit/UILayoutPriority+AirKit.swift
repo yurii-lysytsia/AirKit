@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import struct UIKit.UILayoutPriority
-
 // MARK: - Extensions | Values
 
 extension UILayoutPriority {
@@ -38,4 +35,3 @@ extension UILayoutPriority: ExpressibleByIntegerLiteral {
         self.init(rawValue: value.toFloat())
     }
 }
-#endif

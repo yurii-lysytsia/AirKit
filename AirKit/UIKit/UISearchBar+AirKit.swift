@@ -1,9 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UISearchBar
-import class UIKit.UITextField
-
 // MARK: - Extensions | Values
 
 public extension UISearchBar {
@@ -15,4 +11,3 @@ public extension UISearchBar {
         return firstRecursiveSubview(of: UITextField.self)
     }
 }
-#endif

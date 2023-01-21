@@ -1,9 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UIPageViewController
-import class UIKit.UIViewController
-
 // MARK: - Extensions | Scroll
 
 public extension UIPageViewController {
@@ -30,4 +26,3 @@ public extension UIPageViewController {
         }
     }
 }
-#endif

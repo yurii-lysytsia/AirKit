@@ -1,28 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UIView
-import class UIKit.UIImage
-import class UIKit.UIColor
-import class UIKit.UIGraphicsImageRenderer
-import class UIKit.UIGestureRecognizer
-import func UIKit.UIRectClip
-import struct UIKit.CGSize
-import struct UIKit.CGPoint
-import struct UIKit.CGRect
-import struct UIKit.CGFloat
-import class UIKit.CALayer
-import struct UIKit.CACornerMask
-import class UIKit.CATransaction
-import class UIKit.CABasicAnimation
-import class UIKit.CAMediaTimingFunction
-import struct UIKit.CAMediaTimingFunctionName
-import func UIKit.objc_getAssociatedObject
-import func UIKit.objc_setAssociatedObject
-import class UIKit.Bundle
-import struct UIKit.TimeInterval
-import class UIKit.NSKeyValueObservation
-
 // MARK: - Extensions | Static Values
 
 public extension UIView {
@@ -450,4 +427,3 @@ public extension UIView.AnimationOptions {
         }
     }
 }
-#endif

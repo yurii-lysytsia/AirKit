@@ -1,22 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UIImage
-import class UIKit.UIGraphicsImageRenderer
-import class UIKit.UIBezierPath
-import class UIKit.UIColor
-import func UIKit.UIRectFill
-import struct UIKit.CGRect
-import struct UIKit.CGSize
-import struct UIKit.CGPoint
-import struct UIKit.CGFloat
-import struct UIKit.CGAffineTransform
-import class UIKit.CIContext
-import class UIKit.CIFilter
-import class UIKit.CIImage
-import struct UIKit.Measurement
-import class UIKit.UnitAngle
-
 // MARK: - Extensions | Rendering
 
 public extension UIImage {
@@ -159,4 +142,3 @@ public extension UIImage {
         )
     }
 }
-#endif

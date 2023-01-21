@@ -1,15 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UIButton
-import struct UIKit.UIEdgeInsets
-import enum UIKit.UISemanticContentAttribute
-import class UIKit.Bundle
-import struct UIKit.CGFloat
-import func UIKit.objc_getAssociatedObject
-import func UIKit.objc_setAssociatedObject
-import class UIKit.NSKeyValueObservation
-
 // MARK: - Methods
 
 public extension UIButton {
@@ -69,4 +59,3 @@ public extension UIButton {
         imageSpacingObservation = nil
     }
 }
-#endif

@@ -1,12 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UIScrollView
-import struct UIKit.CGPoint
-import struct UIKit.CGSize
-import struct UIKit.CGRect
-import struct UIKit.CGFloat
-
 // MARK: - Extensions | Scrolls
 
 public extension UIScrollView {
@@ -46,4 +39,3 @@ public extension UIScrollView {
         setContentOffset(offset, animated: animated)
     }
 }
-#endif

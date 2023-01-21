@@ -1,9 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UIBarButtonItem
-import struct UIKit.CGFloat
-
 // MARK: - Extensions | Static Values
 
 public extension UIBarButtonItem {
@@ -25,4 +21,3 @@ public extension UIBarButtonItem {
         return item
     }
 }
-#endif

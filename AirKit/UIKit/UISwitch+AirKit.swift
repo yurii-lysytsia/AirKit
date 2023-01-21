@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UISwitch
-
 // MARK: - Extensions | On
 
 public extension UISwitch {
@@ -11,4 +8,3 @@ public extension UISwitch {
         setOn(!isOn, animated: animated)
     }
 }
-#endif

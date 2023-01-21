@@ -1,9 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UIColor
-import struct UIKit.CGFloat
-
 // MARK: - Extensions | Random
 
 public extension UIColor {
@@ -300,4 +296,3 @@ public extension UIColor {
         }
     }
 }
-#endif

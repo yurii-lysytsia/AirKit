@@ -1,10 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UINavigationController
-import class UIKit.UIViewController
-import class UIKit.CATransaction
-
 // MARK: - Extensions | Navigation
 
 public extension UINavigationController {
@@ -24,4 +19,3 @@ public extension UINavigationController {
         CATransaction.commit()
     }
 }
-#endif

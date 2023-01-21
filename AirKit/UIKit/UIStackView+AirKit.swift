@@ -1,12 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UIStackView
-import class UIKit.UIView
-import class UIKit.NSLayoutConstraint
-import struct UIKit.UIEdgeInsets
-import struct UIKit.CGFloat
-
 // MARK: - Extensions | Inits
 
 public extension UIStackView {
@@ -80,4 +73,3 @@ public extension UIStackView {
         }
     }
 }
-#endif

@@ -110,6 +110,7 @@ Pod::Spec.new do |spec|
   end
   
   spec.subspec "UIKit" do |subspec|
+    subspec.dependency "AirKit/Swift"
     subspec.source_files = "AirKit/UIKit/**/*.swift"
   end
 

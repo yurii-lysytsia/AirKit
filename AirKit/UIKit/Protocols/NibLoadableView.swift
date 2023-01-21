@@ -1,9 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UINib
-import class UIKit.Bundle
-
 /// Protocol is needed for implement nib loadable view and defines only one property `viewNib`.
 public protocol NibLoadableView: ReusableView {
     /// Returns a new nib instance for this view.
@@ -31,4 +27,3 @@ public extension NibLoadableView {
         return view
     }
 }
-#endif

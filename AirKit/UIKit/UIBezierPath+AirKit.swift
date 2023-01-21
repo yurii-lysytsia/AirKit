@@ -1,11 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UIBezierPath
-import struct UIKit.CGPoint
-import struct UIKit.CGSize
-import struct UIKit.CGRect
-
 // MARK: - Extensions | Inits
 
 public extension UIBezierPath {
@@ -51,4 +45,3 @@ public extension UIBezierPath {
         self.init(rect: rect)
     }
 }
-#endif

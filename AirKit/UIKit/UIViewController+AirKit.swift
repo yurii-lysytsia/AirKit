@@ -1,9 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UIViewController
-import class UIKit.UIView
-
 // MARK: - Extensions | Values
 
 public extension UIViewController {
@@ -34,4 +30,3 @@ public extension UIViewController {
         removeFromParent()
     }
 }
-#endif

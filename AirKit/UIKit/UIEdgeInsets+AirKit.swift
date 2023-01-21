@@ -1,9 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import struct UIKit.UIEdgeInsets
-import struct UIKit.CGFloat
-
 // MARK: - Extensions | Values
 
 public extension UIEdgeInsets {
@@ -229,4 +225,3 @@ public extension UIEdgeInsets {
     ///
     static func /= (lhs: inout UIEdgeInsets, rhs: CGFloat) { lhs = lhs / rhs }
 }
-#endif

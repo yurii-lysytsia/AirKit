@@ -1,11 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UICollectionView
-import class UIKit.UICollectionViewCell
-import class UIKit.UICollectionReusableView
-import struct UIKit.IndexPath
-
 // MARK: - Extensions | Index Paths
 
 public extension UICollectionView {
@@ -184,4 +178,3 @@ public extension UICollectionView {
         }
     }
 }
-#endif

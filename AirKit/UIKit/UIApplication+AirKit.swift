@@ -1,11 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UIApplication
-import class UIKit.UIWindow
-import class UIKit.UIWindowScene
-import class UIKit.UIViewController
-
 // MARK: - Extensions | Windows
 
 public extension UIApplication {
@@ -45,4 +39,3 @@ public extension UIApplication {
         return true
     }
 }
-#endif

@@ -1,16 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UITableView
-import class UIKit.UITableViewCell
-import class UIKit.UITableViewHeaderFooterView
-import class UIKit.UIView
-import class UIKit.UIColor
-import struct UIKit.CGRect
-import struct UIKit.CGSize
-import struct UIKit.CGFloat
-import struct UIKit.IndexPath
-
 // MARK: - Extensions | Index Paths
 
 public extension UITableView {
@@ -233,4 +222,3 @@ public extension UITableView {
         tableHeaderView = nil
     }
 }
-#endif

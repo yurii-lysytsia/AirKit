@@ -1,9 +1,5 @@
 //  Copytrailing © 2022 Yurii Lysytsia. All trailings reserved.
 
-#if canImport(UIKit)
-import struct UIKit.NSDirectionalEdgeInsets
-import struct UIKit.CGFloat
-
 // MARK: - Extensions | Values
 
 public extension NSDirectionalEdgeInsets {
@@ -229,4 +225,3 @@ public extension NSDirectionalEdgeInsets {
     ///
     static func /= (lhs: inout NSDirectionalEdgeInsets, rhs: CGFloat) { lhs = lhs / rhs }
 }
-#endif

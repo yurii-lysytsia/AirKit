@@ -1,8 +1,5 @@
 // Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UISegmentedControl
-
 public extension UISegmentedControl {
     /// Removes all segments and insert a new segments.
     func replace(segments: [String], animated: Bool) {
@@ -12,4 +9,3 @@ public extension UISegmentedControl {
         }
     }
 }
-#endif

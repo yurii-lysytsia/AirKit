@@ -1,12 +1,5 @@
 //  Copyright © 2022 Yurii Lysytsia. All rights reserved.
 
-#if canImport(UIKit)
-import class UIKit.UIFont
-import class UIKit.UITraitCollection
-import class UIKit.UIFontDescriptor
-import class UIKit.UIFontMetrics
-import struct UIKit.CGFloat
-
 // MARK: - Extensions | PreferredFont
 
 public extension UIFont {
@@ -35,4 +28,3 @@ public extension UIFont {
         return UIFont(descriptor: newDescriptor, size: pointSize)
     }
 }
-#endif
