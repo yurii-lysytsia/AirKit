@@ -353,7 +353,6 @@
 		5BAD269D27171AED00AE9E4F /* ReusableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableViewTests.swift; sourceTree = "<group>"; };
 		5BB703A72725A54200DD1777 /* UISegmentedControl+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+AirKit.swift"; sourceTree = "<group>"; };
 		5BBB16B326F6237F0094B14C /* NumberConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConvertible.swift; sourceTree = "<group>"; };
-		5BBB16C026F6308E0094B14C /* AirKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = AirKit.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5BBC9FCC271AB3600025828C /* UIViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerTests.swift; sourceTree = "<group>"; };
 		5BBC9FCE271AD32F0025828C /* UIWindowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIWindowTests.swift; sourceTree = "<group>"; };
 		5BBC9FD0271AD3500025828C /* UIWindow+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+AirKit.swift"; sourceTree = "<group>"; };
@@ -613,7 +612,6 @@
 			children = (
 				5B9BAFD626F7881D00731991 /* README.md */,
 				5B6A057F26FA65B6001A59C8 /* AirKit.podspec */,
-				5BBB16C026F6308E0094B14C /* AirKit.playground */,
 				5B510BF926F24AB200C21CDF /* AirKit */,
 				5B6A058626FA7E18001A59C8 /* AirKitTests */,
 				5B510BF826F24AB200C21CDF /* Products */,
