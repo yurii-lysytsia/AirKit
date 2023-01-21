@@ -1,5 +1,7 @@
 //  Copyright © 2023 Yurii Lysytsia. All rights reserved.
 
+import Foundation
+
 public extension BinaryFloatingPoint where Self: CVarArg {
     /// The object's value expressed as a human-readable string with entered integer digits.
     ///

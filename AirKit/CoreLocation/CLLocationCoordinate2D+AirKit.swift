@@ -1,5 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+import CoreLocation
+
 // MARK: - Extensions | Zero
 
 public extension CLLocationCoordinate2D {

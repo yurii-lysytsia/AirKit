@@ -1,5 +1,7 @@
 //  Copytrailing © 2022 Yurii Lysytsia. All trailings reserved.
 
+import UIKit
+
 // MARK: - Extensions | Values
 
 public extension NSDirectionalEdgeInsets {

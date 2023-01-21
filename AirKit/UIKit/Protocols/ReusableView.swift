@@ -1,5 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+import UIKit
+
 /// Protocol is needed for implement reusable view class identifier and defines only one property `reuseIdentifier`.
 public protocol ReusableView: AnyObject {
     /// Returns unique view class identefier.

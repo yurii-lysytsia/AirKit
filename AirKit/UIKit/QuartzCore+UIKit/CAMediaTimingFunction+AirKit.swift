@@ -1,5 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+import UIKit
+
 public extension CAMediaTimingFunction {
     /// Create new media timing function with animation curve.
     convenience init(curve: UIView.AnimationCurve) {

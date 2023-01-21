@@ -1,5 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+import UIKit
+
 // MARK: - Extensions | Static Values
 
 public extension UIView {

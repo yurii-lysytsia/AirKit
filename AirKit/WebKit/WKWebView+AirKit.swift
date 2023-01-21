@@ -1,5 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+import WebKit
+
 // MARK: - Extensions | Load
 
 public extension WKWebView {

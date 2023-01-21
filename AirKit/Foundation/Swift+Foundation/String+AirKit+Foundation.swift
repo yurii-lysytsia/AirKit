@@ -1,5 +1,7 @@
 //  Copyright © 2023 Yurii Lysytsia. All rights reserved.
 
+import Foundation
+
 // MARK: - Extensions | Conditions
 
 public extension String {
@@ -157,7 +159,6 @@ public extension String {
     /// - Parameter prefix: Prefix to add to the string.
     mutating func prepend(prefix: String) { self = prepending(prefix: prefix) }
 }
-
 
 // MARK: - Extensions | Suffix
 

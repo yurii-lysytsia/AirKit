@@ -1,5 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+import Foundation
+
 /// Value representation model for versions.
 public struct Version: Comparable {
     public let major: Int

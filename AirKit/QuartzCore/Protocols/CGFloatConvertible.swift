@@ -1,5 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+import QuartzCore
+
 public protocol CGFloatConvertible {
     /// Returns `CGFloat` value.
     func toCGFloat() -> CGFloat

@@ -1,5 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+import UIKit
+
 public extension UIGraphicsImageRenderer {
     /// Ceate a new instance if a set of drawing attributes that represents the configuration of an image renderer context.
     convenience init(bounds: CGRect, scale: CGFloat, opaque: Bool = false) {

@@ -1,5 +1,7 @@
 //  Copyright © 2023 Yurii Lysytsia. All rights reserved.
 
+import UIKit
+
 // MARK: - Extensions | Convertible
 
 public extension CGColor {

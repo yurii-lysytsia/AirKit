@@ -1,5 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+import Foundation
+
 /// Model that contains available date format components.
 public enum DateFormatComponents {    
     public static func year(_ year: Year) -> String { year.rawValue }

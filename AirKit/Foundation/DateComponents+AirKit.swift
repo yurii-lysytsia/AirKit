@@ -1,5 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+import Foundation
+
 // MARK: - Extensions | Helpers
 
 public extension DateComponents {

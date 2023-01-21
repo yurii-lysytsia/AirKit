@@ -1,5 +1,7 @@
 //  Copyright © 2023 Yurii Lysytsia. All rights reserved.
 
+import Foundation
+
 public extension Optional where Wrapped == String {
     /// Returns `true` if the string `isBlank` or `nil` otherwise returns `false`.
     ///

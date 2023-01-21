@@ -1,5 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+import MapKit
+
 // MARK: - Extensions | Dequeue Reusable Cell
 
 public extension MKMapView {

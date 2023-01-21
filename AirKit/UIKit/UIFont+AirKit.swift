@@ -1,5 +1,7 @@
 //  Copyright © 2022 Yurii Lysytsia. All rights reserved.
 
+import UIKit
+
 // MARK: - Extensions | PreferredFont
 
 public extension UIFont {

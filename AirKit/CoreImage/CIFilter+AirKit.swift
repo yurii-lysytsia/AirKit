@@ -1,5 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+import CoreImage
+
 // MARK: - Extensions | Inits
 
 public extension CIFilter {

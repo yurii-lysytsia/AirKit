@@ -1,5 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+import UIKit
+
 /// Protocol is needed for implement nib loadable view and defines only one property `viewNib`.
 public protocol NibLoadableView: ReusableView {
     /// Returns a new nib instance for this view.

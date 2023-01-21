@@ -1,5 +1,7 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
+import Foundation
+
 public enum Swizzle {
     /// Swizzle original instance or class method.
     private static func swizzleMethod(classType: AnyClass, original originalSelector: Selector, swizzled swizzledSelector: Selector, isClassMethod: Bool) throws {
