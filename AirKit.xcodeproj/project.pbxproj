@@ -976,7 +976,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1420;
 				ORGANIZATIONNAME = "Yurii Lysytsia";
 				TargetAttributes = {
 					5B510BF626F24AB200C21CDF = {
@@ -1378,7 +1378,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -1396,7 +1396,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = "${inherited}";
 				MARKETING_VERSION = 0.2.3;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.air.kit;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
@@ -1414,7 +1414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
@@ -1432,7 +1432,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = "${inherited}";
 				MARKETING_VERSION = 0.2.3;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.air.kit;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
