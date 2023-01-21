@@ -1,10 +1,10 @@
 # 🍃 AirKit
 > Many extensions to speed up your coding time!
 
-[![Languages](https://img.shields.io/github/languages/top/yurii-lysytsia/AirKit?color=orange)]()
-[![Platforms](https://img.shields.io/cocoapods/p/AirKit)]()
-[![CocoaPods](https://img.shields.io/cocoapods/v/AirKit?color=red)]()
-[![Build](https://img.shields.io/github/workflow/status/yurii-lysytsia/AirKit/Prepare%20to%20deploy)]()
+![Languages](https://img.shields.io/github/languages/top/yurii-lysytsia/AirKit?color=orange)
+![Platforms](https://img.shields.io/cocoapods/p/AirKit)
+![CocoaPods](https://img.shields.io/cocoapods/v/AirKit?color=red)
+![GitHub](https://img.shields.io/github/actions/workflow/status/yurii-lysytsia/AirKit/on-pull-request.yml)
 
 This is sugar framework that contains many different extensions for native Swift and iOS frameworks
 
