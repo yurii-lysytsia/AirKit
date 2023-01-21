@@ -1,10 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(CoreLocation)
-import struct CoreLocation.CLLocationCoordinate2D
-import class CoreLocation.CLLocation
-import typealias CoreLocation.CLLocationDistance
-
 // MARK: - Extensions | Zero
 
 public extension CLLocationCoordinate2D {
@@ -36,4 +31,3 @@ extension CLLocationCoordinate2D: Equatable {
     /// Returns `true` if `latitude` and `longitude` will be equal.
     public static func == (lhs: CLLocationCoordinate2D, rhs: CLLocationCoordinate2D) -> Bool { lhs.latitude == rhs.latitude && lhs.longitude == rhs.longitude }
 }
-#endif

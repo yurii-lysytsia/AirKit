@@ -1,10 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(MapKit)
-import class MapKit.MKPolygon
-import struct MapKit.MKMapPoint
-import struct MapKit.CLLocationCoordinate2D
-
 // MARK: - Extensions | Inits
 
 public extension MKPolygon {
@@ -18,4 +13,3 @@ public extension MKPolygon {
         self.init(coordinates: coordinates, count: coordinates.count, interiorPolygons: interiorPolygons)
     }
 }
-#endif

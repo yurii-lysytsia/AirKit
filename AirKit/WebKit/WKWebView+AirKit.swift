@@ -1,12 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(WebKit)
-import class WebKit.WKWebView
-import class WebKit.WKNavigation
-import struct WebKit.URLRequest
-import struct WebKit.URL
-import struct WebKit.TimeInterval
-
 // MARK: - Extensions | Load
 
 public extension WKWebView {
@@ -27,4 +20,3 @@ public extension WKWebView {
         return load(url, timeoutInterval: timeoutInterval)
     }
 }
-#endif

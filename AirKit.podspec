@@ -111,16 +111,18 @@ Pod::Spec.new do |spec|
   
   spec.subspec "UIKit" do |subspec|
     subspec.dependency "AirKit/Swift"
+    subspec.dependency 'AirKit/Foundation'
+    subspec.dependency 'AirKit/QuartzCore'
+    subspec.dependency 'AirKit/CoreImage'
     subspec.source_files = "AirKit/UIKit/**/*.swift"
   end
 
   spec.subspec "WebKit" do |subspec|
+    subspec.dependency 'AirKit/UIKit'
     subspec.source_files = "AirKit/WebKit/**/*.swift"
   end
   
   spec.subspec 'CoreUI' do |subspec|
-    subspec.dependency 'AirKit/QuartzCore'
-    subspec.dependency 'AirKit/CoreImage'
     subspec.dependency 'AirKit/UIKit'
     subspec.dependency 'AirKit/WebKit'
   end
@@ -132,6 +134,7 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec "MapKit" do |subspec|
+    subspec.dependency 'AirKit/UIKit'
     subspec.source_files = "AirKit/MapKit/**/*.swift"
   end
 

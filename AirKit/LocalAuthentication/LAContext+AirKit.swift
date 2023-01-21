@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(LocalAuthentication)
-import LocalAuthentication
-
 // MARK: - Extensions | Evaluate
 
 public extension LAContext {
@@ -11,7 +8,8 @@ public extension LAContext {
     func canEvaluate(policy: LAPolicy) throws {
         var error: NSError?
         canEvaluatePolicy(policy, error: &error)
-        try error.run { throw $0 }
+        if let error = error {
+            throw error
+        }
     }
 }
-#endif

@@ -30,9 +30,7 @@
 		5B0ED08726FCD4C500473155 /* TopLevelDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0ED08626FCD4C500473155 /* TopLevelDecoderTests.swift */; };
 		5B1016FB271C6FA2005C9BE4 /* MKPolygon+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1016FA271C6FA2005C9BE4 /* MKPolygon+AirKit.swift */; };
 		5B1016FD271C704D005C9BE4 /* MKPolygonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1016FC271C704D005C9BE4 /* MKPolygonTests.swift */; };
-		5B101700271C82B7005C9BE4 /* WKWebView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1016FF271C82B7005C9BE4 /* WKWebView+AirKit.swift */; };
 		5B101703271C84B1005C9BE4 /* WKWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B101702271C84B1005C9BE4 /* WKWebViewTests.swift */; };
-		5B101706271C8AC0005C9BE4 /* LAContext+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B101705271C8AC0005C9BE4 /* LAContext+AirKit.swift */; };
 		5B101709271C8AE8005C9BE4 /* LAContextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B101708271C8AE8005C9BE4 /* LAContextTests.swift */; };
 		5B19FEFF27072F2C00F76EBD /* CGAffineTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEFE27072F2C00F76EBD /* CGAffineTransformTests.swift */; };
 		5B19FF0227075C0F00F76EBD /* CATransform3DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FF0127075C0F00F76EBD /* CATransform3DTests.swift */; };
@@ -56,8 +54,6 @@
 		5B639D8F2708A4B00028B543 /* UIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B639D8E2708A4B00028B543 /* UIColorTests.swift */; };
 		5B6A058A26FA7E18001A59C8 /* AirKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B510BF726F24AB200C21CDF /* AirKit.framework */; platformFilter = ios; };
 		5B6A059326FA7E44001A59C8 /* ComparableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A059226FA7E44001A59C8 /* ComparableTests.swift */; };
-		5B7660AC27076FF300CC0ABA /* CLLocation+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7660AB27076FF300CC0ABA /* CLLocation+AirKit.swift */; };
-		5B7660AE2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7660AD2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift */; };
 		5B7660B22707731C00CC0ABA /* CLLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7660B12707731C00CC0ABA /* CLLocationTests.swift */; };
 		5B7660B4270773B100CC0ABA /* CLLocationCoordinate2DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7660B3270773B100CC0ABA /* CLLocationCoordinate2DTests.swift */; };
 		5B7C2C6C297C4CE0007B4CD6 /* String+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7687F826F7C08600C388C1 /* String+AirKit.swift */; };
@@ -165,6 +161,40 @@
 		5B7C2D65297C6D51007B4CD6 /* AirCoreImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D22297C6A6B007B4CD6 /* AirCoreImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B7C2D68297C6D74007B4CD6 /* AirQuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2CE2297C5DCA007B4CD6 /* AirQuartzCore.framework */; };
 		5B7C2D69297C6D74007B4CD6 /* AirQuartzCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2CE2297C5DCA007B4CD6 /* AirQuartzCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B7C2D9D297C6E9D007B4CD6 /* AirWebKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2D73297C6E54007B4CD6 /* AirWebKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B7C2D9E297C6E9D007B4CD6 /* WKWebView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1016FF271C82B7005C9BE4 /* WKWebView+AirKit.swift */; };
+		5B7C2DA0297C6EAB007B4CD6 /* CLLocationCoordinate2D+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7660AD2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift */; };
+		5B7C2DA1297C6EAB007B4CD6 /* CLLocation+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7660AB27076FF300CC0ABA /* CLLocation+AirKit.swift */; };
+		5B7C2DA2297C6EAB007B4CD6 /* AirCoreLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2D97297C6E81007B4CD6 /* AirCoreLocation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B7C2DA3297C6EB1007B4CD6 /* AirMapKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2D7F297C6E5C007B4CD6 /* AirMapKit.h */; };
+		5B7C2DA4297C6EB3007B4CD6 /* MKMapView+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0FB4E271C68BF00DA3C5C /* MKMapView+AirKit.swift */; };
+		5B7C2DA5297C6EB3007B4CD6 /* MKPolygon+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1016FA271C6FA2005C9BE4 /* MKPolygon+AirKit.swift */; };
+		5B7C2DA6297C6EB3007B4CD6 /* AirMapKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2D7F297C6E5C007B4CD6 /* AirMapKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B7C2DA7297C6EB3007B4CD6 /* MKPolyline+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BD0FB50271C6DDD00DA3C5C /* MKPolyline+AirKit.swift */; };
+		5B7C2DA9297C6EBA007B4CD6 /* AirLocalAuthentication.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C2D8B297C6E71007B4CD6 /* AirLocalAuthentication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B7C2DAA297C6EBA007B4CD6 /* LAContext+AirKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B101705271C8AC0005C9BE4 /* LAContext+AirKit.swift */; };
+		5B7C2DAB297C70D1007B4CD6 /* AirUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D32297C6AE7007B4CD6 /* AirUIKit.framework */; };
+		5B7C2DAC297C70D1007B4CD6 /* AirUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D32297C6AE7007B4CD6 /* AirUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B7C2DB0297C715D007B4CD6 /* AirCombine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2CCE297C5C78007B4CD6 /* AirCombine.framework */; };
+		5B7C2DB1297C715D007B4CD6 /* AirCombine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2CCE297C5C78007B4CD6 /* AirCombine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B7C2DB4297C715D007B4CD6 /* AirCoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D22297C6A6B007B4CD6 /* AirCoreImage.framework */; };
+		5B7C2DB5297C715D007B4CD6 /* AirCoreImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D22297C6A6B007B4CD6 /* AirCoreImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B7C2DB8297C715D007B4CD6 /* AirFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2C88297C4E12007B4CD6 /* AirFoundation.framework */; };
+		5B7C2DB9297C715D007B4CD6 /* AirFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2C88297C4E12007B4CD6 /* AirFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B7C2DBC297C715D007B4CD6 /* AirLocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D89297C6E71007B4CD6 /* AirLocalAuthentication.framework */; };
+		5B7C2DBD297C715D007B4CD6 /* AirLocalAuthentication.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D89297C6E71007B4CD6 /* AirLocalAuthentication.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B7C2DC0297C715D007B4CD6 /* AirMapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D7D297C6E5C007B4CD6 /* AirMapKit.framework */; };
+		5B7C2DC1297C715D007B4CD6 /* AirMapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D7D297C6E5C007B4CD6 /* AirMapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B7C2DC4297C715E007B4CD6 /* AirQuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2CE2297C5DCA007B4CD6 /* AirQuartzCore.framework */; };
+		5B7C2DC5297C715E007B4CD6 /* AirQuartzCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2CE2297C5DCA007B4CD6 /* AirQuartzCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B7C2DC8297C715E007B4CD6 /* AirSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2C64297C4C0D007B4CD6 /* AirSwift.framework */; };
+		5B7C2DC9297C715E007B4CD6 /* AirSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2C64297C4C0D007B4CD6 /* AirSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B7C2DCC297C715E007B4CD6 /* AirUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D32297C6AE7007B4CD6 /* AirUIKit.framework */; };
+		5B7C2DCD297C715E007B4CD6 /* AirUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D32297C6AE7007B4CD6 /* AirUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B7C2DD0297C715E007B4CD6 /* AirWebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D71297C6E54007B4CD6 /* AirWebKit.framework */; };
+		5B7C2DD1297C715E007B4CD6 /* AirWebKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D71297C6E54007B4CD6 /* AirWebKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5B7C2DD4297C715F007B4CD6 /* AirCoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D95297C6E81007B4CD6 /* AirCoreLocation.framework */; };
+		5B7C2DD5297C715F007B4CD6 /* AirCoreLocation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5B7C2D95297C6E81007B4CD6 /* AirCoreLocation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5B7FF729270234F800C28795 /* DateFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7FF728270234F800C28795 /* DateFormatterTests.swift */; };
 		5B7FF72B270237FD00C28795 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7FF72A270237FD00C28795 /* DateTests.swift */; };
 		5B8C1CFD270460AC0021B48E /* UserDefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1CFC270460AC0021B48E /* UserDefaultsTests.swift */; };
@@ -246,6 +276,83 @@
 			remoteGlobalIDString = 5B7C2CE1297C5DCA007B4CD6;
 			remoteInfo = AirQuartzCore;
 		};
+		5B7C2DAD297C70D1007B4CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B510BEE26F24AB200C21CDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B7C2D31297C6AE7007B4CD6;
+			remoteInfo = AirUIKit;
+		};
+		5B7C2DB2297C715D007B4CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B510BEE26F24AB200C21CDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B7C2CCD297C5C78007B4CD6;
+			remoteInfo = AirCombine;
+		};
+		5B7C2DB6297C715D007B4CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B510BEE26F24AB200C21CDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B7C2D21297C6A6B007B4CD6;
+			remoteInfo = AirCoreImage;
+		};
+		5B7C2DBA297C715D007B4CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B510BEE26F24AB200C21CDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B7C2C87297C4E12007B4CD6;
+			remoteInfo = AirFoundation;
+		};
+		5B7C2DBE297C715D007B4CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B510BEE26F24AB200C21CDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B7C2D88297C6E71007B4CD6;
+			remoteInfo = AirLocalAuthentication;
+		};
+		5B7C2DC2297C715E007B4CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B510BEE26F24AB200C21CDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B7C2D7C297C6E5C007B4CD6;
+			remoteInfo = AirMapKit;
+		};
+		5B7C2DC6297C715E007B4CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B510BEE26F24AB200C21CDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B7C2CE1297C5DCA007B4CD6;
+			remoteInfo = AirQuartzCore;
+		};
+		5B7C2DCA297C715E007B4CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B510BEE26F24AB200C21CDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B7C2C63297C4C0D007B4CD6;
+			remoteInfo = AirSwift;
+		};
+		5B7C2DCE297C715E007B4CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B510BEE26F24AB200C21CDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B7C2D31297C6AE7007B4CD6;
+			remoteInfo = AirUIKit;
+		};
+		5B7C2DD2297C715F007B4CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B510BEE26F24AB200C21CDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B7C2D70297C6E54007B4CD6;
+			remoteInfo = AirWebKit;
+		};
+		5B7C2DD6297C715F007B4CD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B510BEE26F24AB200C21CDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B7C2D94297C6E81007B4CD6;
+			remoteInfo = AuthCoreLocation;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -280,6 +387,37 @@
 				5B7C2D65297C6D51007B4CD6 /* AirCoreImage.framework in Embed Frameworks */,
 				5B7C2D69297C6D74007B4CD6 /* AirQuartzCore.framework in Embed Frameworks */,
 				5B7C2D61297C6D1F007B4CD6 /* AirFoundation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7C2DAF297C70D1007B4CD6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5B7C2DAC297C70D1007B4CD6 /* AirUIKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7C2DD8297C715F007B4CD6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5B7C2DCD297C715E007B4CD6 /* AirUIKit.framework in Embed Frameworks */,
+				5B7C2DB5297C715D007B4CD6 /* AirCoreImage.framework in Embed Frameworks */,
+				5B7C2DC5297C715E007B4CD6 /* AirQuartzCore.framework in Embed Frameworks */,
+				5B7C2DB9297C715D007B4CD6 /* AirFoundation.framework in Embed Frameworks */,
+				5B7C2DD5297C715F007B4CD6 /* AirCoreLocation.framework in Embed Frameworks */,
+				5B7C2DBD297C715D007B4CD6 /* AirLocalAuthentication.framework in Embed Frameworks */,
+				5B7C2DC9297C715E007B4CD6 /* AirSwift.framework in Embed Frameworks */,
+				5B7C2DB1297C715D007B4CD6 /* AirCombine.framework in Embed Frameworks */,
+				5B7C2DC1297C715D007B4CD6 /* AirMapKit.framework in Embed Frameworks */,
+				5B7C2DD1297C715E007B4CD6 /* AirWebKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +553,14 @@
 		5B7C2D22297C6A6B007B4CD6 /* AirCoreImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirCoreImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7C2D32297C6AE7007B4CD6 /* AirUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7C2D34297C6AE7007B4CD6 /* AirUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirUIKit.h; sourceTree = "<group>"; };
+		5B7C2D71297C6E54007B4CD6 /* AirWebKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirWebKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B7C2D73297C6E54007B4CD6 /* AirWebKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirWebKit.h; sourceTree = "<group>"; };
+		5B7C2D7D297C6E5C007B4CD6 /* AirMapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirMapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B7C2D7F297C6E5C007B4CD6 /* AirMapKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirMapKit.h; sourceTree = "<group>"; };
+		5B7C2D89297C6E71007B4CD6 /* AirLocalAuthentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirLocalAuthentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B7C2D8B297C6E71007B4CD6 /* AirLocalAuthentication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirLocalAuthentication.h; sourceTree = "<group>"; };
+		5B7C2D95297C6E81007B4CD6 /* AirCoreLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AirCoreLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B7C2D97297C6E81007B4CD6 /* AirCoreLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AirCoreLocation.h; sourceTree = "<group>"; };
 		5B7FF728270234F800C28795 /* DateFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterTests.swift; sourceTree = "<group>"; };
 		5B7FF72A270237FD00C28795 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 		5B8C1CF8270454660021B48E /* UserDefaults+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+AirKit.swift"; sourceTree = "<group>"; };
@@ -489,6 +635,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B7C2DCC297C715E007B4CD6 /* AirUIKit.framework in Frameworks */,
+				5B7C2DB4297C715D007B4CD6 /* AirCoreImage.framework in Frameworks */,
+				5B7C2DC4297C715E007B4CD6 /* AirQuartzCore.framework in Frameworks */,
+				5B7C2DB8297C715D007B4CD6 /* AirFoundation.framework in Frameworks */,
+				5B7C2DD4297C715F007B4CD6 /* AirCoreLocation.framework in Frameworks */,
+				5B7C2DBC297C715D007B4CD6 /* AirLocalAuthentication.framework in Frameworks */,
+				5B7C2DC8297C715E007B4CD6 /* AirSwift.framework in Frameworks */,
+				5B7C2DB0297C715D007B4CD6 /* AirCombine.framework in Frameworks */,
+				5B7C2DC0297C715D007B4CD6 /* AirMapKit.framework in Frameworks */,
+				5B7C2DD0297C715E007B4CD6 /* AirWebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +700,35 @@
 				5B7C2D64297C6D51007B4CD6 /* AirCoreImage.framework in Frameworks */,
 				5B7C2D68297C6D74007B4CD6 /* AirQuartzCore.framework in Frameworks */,
 				5B7C2D60297C6D1F007B4CD6 /* AirFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7C2D6E297C6E54007B4CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7C2D7A297C6E5C007B4CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7C2DAB297C70D1007B4CD6 /* AirUIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7C2D86297C6E71007B4CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7C2D92297C6E81007B4CD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,6 +870,7 @@
 		5B1016FE271C82AB005C9BE4 /* WebKit */ = {
 			isa = PBXGroup;
 			children = (
+				5B7C2D73297C6E54007B4CD6 /* AirWebKit.h */,
 				5B1016FF271C82B7005C9BE4 /* WKWebView+AirKit.swift */,
 			);
 			path = WebKit;
@@ -701,6 +887,7 @@
 		5B101704271C8AB1005C9BE4 /* LocalAuthentication */ = {
 			isa = PBXGroup;
 			children = (
+				5B7C2D8B297C6E71007B4CD6 /* AirLocalAuthentication.h */,
 				5B101705271C8AC0005C9BE4 /* LAContext+AirKit.swift */,
 			);
 			path = LocalAuthentication;
@@ -727,6 +914,7 @@
 		5B19FF0527076A6900F76EBD /* CoreLocation */ = {
 			isa = PBXGroup;
 			children = (
+				5B7C2D97297C6E81007B4CD6 /* AirCoreLocation.h */,
 				5B7660AB27076FF300CC0ABA /* CLLocation+AirKit.swift */,
 				5B7660AD2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift */,
 			);
@@ -775,6 +963,10 @@
 				5B7C2CE2297C5DCA007B4CD6 /* AirQuartzCore.framework */,
 				5B7C2D22297C6A6B007B4CD6 /* AirCoreImage.framework */,
 				5B7C2D32297C6AE7007B4CD6 /* AirUIKit.framework */,
+				5B7C2D71297C6E54007B4CD6 /* AirWebKit.framework */,
+				5B7C2D7D297C6E5C007B4CD6 /* AirMapKit.framework */,
+				5B7C2D89297C6E71007B4CD6 /* AirLocalAuthentication.framework */,
+				5B7C2D95297C6E81007B4CD6 /* AirCoreLocation.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1070,6 +1262,7 @@
 		5BD0FB4A271C5C2300DA3C5C /* MapKit */ = {
 			isa = PBXGroup;
 			children = (
+				5B7C2D7F297C6E5C007B4CD6 /* AirMapKit.h */,
 				5BD0FB4E271C68BF00DA3C5C /* MKMapView+AirKit.swift */,
 				5B1016FA271C6FA2005C9BE4 /* MKPolygon+AirKit.swift */,
 				5BD0FB50271C6DDD00DA3C5C /* MKPolyline+AirKit.swift */,
@@ -1095,6 +1288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B510BFC26F24AB200C21CDF /* AirKit.h in Headers */,
+				5B7C2DA3297C6EB1007B4CD6 /* AirMapKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1146,6 +1340,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B7C2D6C297C6E54007B4CD6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7C2D9D297C6E9D007B4CD6 /* AirWebKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7C2D78297C6E5C007B4CD6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7C2DA6297C6EB3007B4CD6 /* AirMapKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7C2D84297C6E71007B4CD6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7C2DA9297C6EBA007B4CD6 /* AirLocalAuthentication.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7C2D90297C6E81007B4CD6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7C2DA2297C6EAB007B4CD6 /* AirCoreLocation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -1158,10 +1384,21 @@
 				5BBB16B626F625FC0094B14C /* [SwiftLint] Run */,
 				5B510BF426F24AB200C21CDF /* Frameworks */,
 				5B510BF526F24AB200C21CDF /* Resources */,
+				5B7C2DD8297C715F007B4CD6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5B7C2DB3297C715D007B4CD6 /* PBXTargetDependency */,
+				5B7C2DB7297C715D007B4CD6 /* PBXTargetDependency */,
+				5B7C2DBB297C715D007B4CD6 /* PBXTargetDependency */,
+				5B7C2DBF297C715D007B4CD6 /* PBXTargetDependency */,
+				5B7C2DC3297C715E007B4CD6 /* PBXTargetDependency */,
+				5B7C2DC7297C715E007B4CD6 /* PBXTargetDependency */,
+				5B7C2DCB297C715E007B4CD6 /* PBXTargetDependency */,
+				5B7C2DCF297C715E007B4CD6 /* PBXTargetDependency */,
+				5B7C2DD3297C715F007B4CD6 /* PBXTargetDependency */,
+				5B7C2DD7297C715F007B4CD6 /* PBXTargetDependency */,
 			);
 			name = AirKit;
 			productName = AirKit;
@@ -1302,6 +1539,80 @@
 			productReference = 5B7C2D32297C6AE7007B4CD6 /* AirUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		5B7C2D70297C6E54007B4CD6 /* AirWebKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B7C2D75297C6E54007B4CD6 /* Build configuration list for PBXNativeTarget "AirWebKit" */;
+			buildPhases = (
+				5B7C2D6C297C6E54007B4CD6 /* Headers */,
+				5B7C2D6D297C6E54007B4CD6 /* Sources */,
+				5B7C2D6E297C6E54007B4CD6 /* Frameworks */,
+				5B7C2D6F297C6E54007B4CD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirWebKit;
+			productName = AirWebKit;
+			productReference = 5B7C2D71297C6E54007B4CD6 /* AirWebKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5B7C2D7C297C6E5C007B4CD6 /* AirMapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B7C2D81297C6E5C007B4CD6 /* Build configuration list for PBXNativeTarget "AirMapKit" */;
+			buildPhases = (
+				5B7C2D78297C6E5C007B4CD6 /* Headers */,
+				5B7C2D79297C6E5C007B4CD6 /* Sources */,
+				5B7C2D7A297C6E5C007B4CD6 /* Frameworks */,
+				5B7C2D7B297C6E5C007B4CD6 /* Resources */,
+				5B7C2DAF297C70D1007B4CD6 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B7C2DAE297C70D1007B4CD6 /* PBXTargetDependency */,
+			);
+			name = AirMapKit;
+			productName = AirMapKit;
+			productReference = 5B7C2D7D297C6E5C007B4CD6 /* AirMapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5B7C2D88297C6E71007B4CD6 /* AirLocalAuthentication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B7C2D8D297C6E71007B4CD6 /* Build configuration list for PBXNativeTarget "AirLocalAuthentication" */;
+			buildPhases = (
+				5B7C2D84297C6E71007B4CD6 /* Headers */,
+				5B7C2D85297C6E71007B4CD6 /* Sources */,
+				5B7C2D86297C6E71007B4CD6 /* Frameworks */,
+				5B7C2D87297C6E71007B4CD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirLocalAuthentication;
+			productName = AirLocalAuthentication;
+			productReference = 5B7C2D89297C6E71007B4CD6 /* AirLocalAuthentication.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5B7C2D94297C6E81007B4CD6 /* AirCoreLocation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B7C2D99297C6E81007B4CD6 /* Build configuration list for PBXNativeTarget "AirCoreLocation" */;
+			buildPhases = (
+				5B7C2D90297C6E81007B4CD6 /* Headers */,
+				5B7C2D91297C6E81007B4CD6 /* Sources */,
+				5B7C2D92297C6E81007B4CD6 /* Frameworks */,
+				5B7C2D93297C6E81007B4CD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirCoreLocation;
+			productName = AuthCoreLocation;
+			productReference = 5B7C2D95297C6E81007B4CD6 /* AirCoreLocation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1338,6 +1649,18 @@
 					5B7C2D31297C6AE7007B4CD6 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					5B7C2D70297C6E54007B4CD6 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					5B7C2D7C297C6E5C007B4CD6 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					5B7C2D88297C6E71007B4CD6 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					5B7C2D94297C6E81007B4CD6 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = 5B510BF126F24AB200C21CDF /* Build configuration list for PBXProject "AirKit" */;
@@ -1361,6 +1684,10 @@
 				5B7C2CE1297C5DCA007B4CD6 /* AirQuartzCore */,
 				5B7C2D21297C6A6B007B4CD6 /* AirCoreImage */,
 				5B7C2D31297C6AE7007B4CD6 /* AirUIKit */,
+				5B7C2D70297C6E54007B4CD6 /* AirWebKit */,
+				5B7C2D7C297C6E5C007B4CD6 /* AirMapKit */,
+				5B7C2D94297C6E81007B4CD6 /* AirCoreLocation */,
+				5B7C2D88297C6E71007B4CD6 /* AirLocalAuthentication */,
 			);
 		};
 /* End PBXProject section */
@@ -1425,6 +1752,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B7C2D6F297C6E54007B4CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7C2D7B297C6E5C007B4CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7C2D87297C6E71007B4CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7C2D93297C6E81007B4CD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1456,13 +1811,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BD0FB51271C6DDD00DA3C5C /* MKPolyline+AirKit.swift in Sources */,
-				5B7660AC27076FF300CC0ABA /* CLLocation+AirKit.swift in Sources */,
 				5BD0FB4F271C68BF00DA3C5C /* MKMapView+AirKit.swift in Sources */,
-				5B7660AE2707703A00CC0ABA /* CLLocationCoordinate2D+AirKit.swift in Sources */,
 				5B7C2CC5297C5A6C007B4CD6 /* BinaryInteger+AirKit+Foundation.swift in Sources */,
 				5B1016FB271C6FA2005C9BE4 /* MKPolygon+AirKit.swift in Sources */,
-				5B101706271C8AC0005C9BE4 /* LAContext+AirKit.swift in Sources */,
-				5B101700271C82B7005C9BE4 /* WKWebView+AirKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1680,6 +2031,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B7C2D6D297C6E54007B4CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7C2D9E297C6E9D007B4CD6 /* WKWebView+AirKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7C2D79297C6E5C007B4CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7C2DA5297C6EB3007B4CD6 /* MKPolygon+AirKit.swift in Sources */,
+				5B7C2DA7297C6EB3007B4CD6 /* MKPolyline+AirKit.swift in Sources */,
+				5B7C2DA4297C6EB3007B4CD6 /* MKMapView+AirKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7C2D85297C6E71007B4CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7C2DAA297C6EBA007B4CD6 /* LAContext+AirKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7C2D91297C6E81007B4CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B7C2DA0297C6EAB007B4CD6 /* CLLocationCoordinate2D+AirKit.swift in Sources */,
+				5B7C2DA1297C6EAB007B4CD6 /* CLLocation+AirKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1713,6 +2099,61 @@
 			isa = PBXTargetDependency;
 			target = 5B7C2CE1297C5DCA007B4CD6 /* AirQuartzCore */;
 			targetProxy = 5B7C2D6A297C6D74007B4CD6 /* PBXContainerItemProxy */;
+		};
+		5B7C2DAE297C70D1007B4CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B7C2D31297C6AE7007B4CD6 /* AirUIKit */;
+			targetProxy = 5B7C2DAD297C70D1007B4CD6 /* PBXContainerItemProxy */;
+		};
+		5B7C2DB3297C715D007B4CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B7C2CCD297C5C78007B4CD6 /* AirCombine */;
+			targetProxy = 5B7C2DB2297C715D007B4CD6 /* PBXContainerItemProxy */;
+		};
+		5B7C2DB7297C715D007B4CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B7C2D21297C6A6B007B4CD6 /* AirCoreImage */;
+			targetProxy = 5B7C2DB6297C715D007B4CD6 /* PBXContainerItemProxy */;
+		};
+		5B7C2DBB297C715D007B4CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B7C2C87297C4E12007B4CD6 /* AirFoundation */;
+			targetProxy = 5B7C2DBA297C715D007B4CD6 /* PBXContainerItemProxy */;
+		};
+		5B7C2DBF297C715D007B4CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B7C2D88297C6E71007B4CD6 /* AirLocalAuthentication */;
+			targetProxy = 5B7C2DBE297C715D007B4CD6 /* PBXContainerItemProxy */;
+		};
+		5B7C2DC3297C715E007B4CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B7C2D7C297C6E5C007B4CD6 /* AirMapKit */;
+			targetProxy = 5B7C2DC2297C715E007B4CD6 /* PBXContainerItemProxy */;
+		};
+		5B7C2DC7297C715E007B4CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B7C2CE1297C5DCA007B4CD6 /* AirQuartzCore */;
+			targetProxy = 5B7C2DC6297C715E007B4CD6 /* PBXContainerItemProxy */;
+		};
+		5B7C2DCB297C715E007B4CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B7C2C63297C4C0D007B4CD6 /* AirSwift */;
+			targetProxy = 5B7C2DCA297C715E007B4CD6 /* PBXContainerItemProxy */;
+		};
+		5B7C2DCF297C715E007B4CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B7C2D31297C6AE7007B4CD6 /* AirUIKit */;
+			targetProxy = 5B7C2DCE297C715E007B4CD6 /* PBXContainerItemProxy */;
+		};
+		5B7C2DD3297C715F007B4CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B7C2D70297C6E54007B4CD6 /* AirWebKit */;
+			targetProxy = 5B7C2DD2297C715F007B4CD6 /* PBXContainerItemProxy */;
+		};
+		5B7C2DD7297C715F007B4CD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B7C2D94297C6E81007B4CD6 /* AirCoreLocation */;
+			targetProxy = 5B7C2DD6297C715F007B4CD6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -2410,6 +2851,302 @@
 			};
 			name = Release;
 		};
+		5B7C2D76297C6E54007B4CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yurii Lysytsia. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.webkit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TVOS_DEPLOYMENT_TARGET = "$(inherited)";
+				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
+			};
+			name = Debug;
+		};
+		5B7C2D77297C6E54007B4CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yurii Lysytsia. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.webkit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TVOS_DEPLOYMENT_TARGET = "$(inherited)";
+				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
+			};
+			name = Release;
+		};
+		5B7C2D82297C6E5C007B4CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yurii Lysytsia. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.mapkit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TVOS_DEPLOYMENT_TARGET = "$(inherited)";
+				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
+			};
+			name = Debug;
+		};
+		5B7C2D83297C6E5C007B4CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yurii Lysytsia. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.mapkit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TVOS_DEPLOYMENT_TARGET = "$(inherited)";
+				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
+			};
+			name = Release;
+		};
+		5B7C2D8E297C6E71007B4CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yurii Lysytsia. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.localauthentication;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TVOS_DEPLOYMENT_TARGET = "$(inherited)";
+				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
+			};
+			name = Debug;
+		};
+		5B7C2D8F297C6E71007B4CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yurii Lysytsia. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.localauthentication;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TVOS_DEPLOYMENT_TARGET = "$(inherited)";
+				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
+			};
+			name = Release;
+		};
+		5B7C2D9A297C6E81007B4CD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yurii Lysytsia. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.corelocation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TVOS_DEPLOYMENT_TARGET = "$(inherited)";
+				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
+			};
+			name = Debug;
+		};
+		5B7C2D9B297C6E81007B4CD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2023 Yurii Lysytsia. All rights reserved.";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = "$(inherited)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.corelocation;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TVOS_DEPLOYMENT_TARGET = "$(inherited)";
+				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2490,6 +3227,42 @@
 			buildConfigurations = (
 				5B7C2D37297C6AE7007B4CD6 /* Debug */,
 				5B7C2D38297C6AE7007B4CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B7C2D75297C6E54007B4CD6 /* Build configuration list for PBXNativeTarget "AirWebKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B7C2D76297C6E54007B4CD6 /* Debug */,
+				5B7C2D77297C6E54007B4CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B7C2D81297C6E5C007B4CD6 /* Build configuration list for PBXNativeTarget "AirMapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B7C2D82297C6E5C007B4CD6 /* Debug */,
+				5B7C2D83297C6E5C007B4CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B7C2D8D297C6E71007B4CD6 /* Build configuration list for PBXNativeTarget "AirLocalAuthentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B7C2D8E297C6E71007B4CD6 /* Debug */,
+				5B7C2D8F297C6E71007B4CD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B7C2D99297C6E81007B4CD6 /* Build configuration list for PBXNativeTarget "AirCoreLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B7C2D9A297C6E81007B4CD6 /* Debug */,
+				5B7C2D9B297C6E81007B4CD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

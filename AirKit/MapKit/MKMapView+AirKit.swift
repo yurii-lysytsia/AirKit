@@ -1,14 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(MapKit)
-import class MapKit.MKMapView
-import protocol MapKit.MKAnnotation
-import class MapKit.MKAnnotationView
-import class MapKit.MKPolygon
-import struct MapKit.MKCoordinateRegion
-import struct MapKit.MKCoordinateSpan
-import struct MapKit.CLLocationCoordinate2D
-
 // MARK: - Extensions | Dequeue Reusable Cell
 
 public extension MKMapView {
@@ -76,4 +67,3 @@ public extension MKMapView {
         setRegion(region, animated: animated)
     }
 }
-#endif
