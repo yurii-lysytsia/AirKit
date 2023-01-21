@@ -2,6 +2,8 @@
 
 #if canImport(Foundation)
 import struct Foundation.Date
+import struct Foundation.Calendar
+import struct Foundation.TimeZone
 import struct Foundation.TimeInterval
 
 // MARK: - Extensions | Values
@@ -74,6 +76,30 @@ public extension Date {
     /// - Parameter range: The range in which to create a random date.
     /// - Returns: A random date within the bounds of `range`.
     static func random(in range: ClosedRange<Date>) -> Date { Date(timeIntervalSinceReferenceDate: .random(in: range)) }
+}
+
+// MARK: - Extensions | Modifiers
+
+public extension Date {
+    /// Returns the given date with midnight time (12am or 00:00).
+    func midnight(in timeZone: TimeZone = .utc, calendar: Calendar = .current) -> Date {
+        calendar.date(from: self, in: timeZone) {
+            $0.hour = 0
+            $0.minute = 0
+            $0.second = 0
+            $0.nanosecond = 0
+        }
+    }
+    
+    /// Returns the given date with noon time (12pm or 12:00).
+    func noon(in timeZone: TimeZone = .utc, calendar: Calendar = .current) -> Date {
+        calendar.date(from: self, in: timeZone) {
+            $0.hour = 12
+            $0.minute = 0
+            $0.second = 0
+            $0.nanosecond = 0
+        }
+    }
 }
 
 // MARK: - Extensions | Init

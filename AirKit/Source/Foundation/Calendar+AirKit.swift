@@ -4,6 +4,7 @@
 import struct Foundation.Calendar
 import struct Foundation.Date
 import struct Foundation.DateComponents
+import struct Foundation.TimeZone
 
 // MARK: - Extensions | Conditions
 
@@ -109,5 +110,16 @@ public extension Calendar {
     ///     let tomorrow = date.tomorrow // "Oct 4, 2018, 10:57:11"
     ///
     func tomorrowDate(_ date: Date) -> Date { self.date(byAdding: .day, value: 1, to: date) ?? date }
+}
+
+// MARK: - Extensions | Date
+
+public extension Calendar {
+    /// Returns date with modified date components. All the date components of a date, as if in a given time zone (instead of the Calendar time zone).
+    func date(from date: Date, in timeZone: TimeZone, transfrom: (inout DateComponents) -> Void) -> Date {
+        var components = dateComponents(in: timeZone, from: date)
+        transfrom(&components)
+        return self.date(from: components) ?? date
+    }
 }
 #endif

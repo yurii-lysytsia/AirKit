@@ -5,11 +5,15 @@ public extension Mirror {
     func extract<T>(variable name: MirrorPath) -> T? {
         descendant("\(name)") as? T
     }
+}
 
+/// Returns some descendant of the reflected subject, or nil if no such descendant exists.
+public func descendant(variable name: MirrorPath, reflecting subject: Any) -> Any? {
+    let mirror = Mirror(reflecting: subject)
+    return mirror.descendant(name)
 }
 
 /// Returns a specific descendant of the reflected subject, or nil if no such descendant exists.
 public func extract<T>(variable name: MirrorPath, reflecting subject: Any) -> T? {
-    let mirror = Mirror(reflecting: subject)
-    return mirror.extract(variable: name)
+    descendant(variable: name, reflecting: subject) as? T
 }

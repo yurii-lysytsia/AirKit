@@ -53,7 +53,6 @@ final class CalendarTests: XCTestCase {
         XCTAssertEqual(calendar.yesterdayDate(date(month: 9, day: 28)), date(month: 9, day: 27))
         XCTAssertEqual(calendar.tomorrowDate(date(month: 9, day: 28)), date(month: 9, day: 29))
     }
-    
 }
 
 // MARK: - Private
