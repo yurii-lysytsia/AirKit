@@ -1,8 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(CoreImage)
-import class CoreImage.CIFilter
-
 // MARK: - Extensions | Inits
 
 public extension CIFilter {
@@ -11,4 +8,3 @@ public extension CIFilter {
         self.init(name: category.name, parameters: category.parameters)
     }
 }
-#endif

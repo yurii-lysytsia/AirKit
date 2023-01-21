@@ -1,14 +1,5 @@
 //  Copyright © 2021 Yurii Lysytsia. All rights reserved.
 
-#if canImport(CoreImage)
-import class CoreImage.CIContext
-import class CoreImage.CIImage
-import struct CoreImage.CIFormat
-import class CoreImage.CIFilter
-import struct CoreImage.CGRect
-import struct CoreImage.CGFloat
-import class CoreImage.CGColorSpace
-
 // MARK: - Extensions | Rendering
 
 public extension CIContext {
@@ -26,4 +17,3 @@ public extension CIContext {
         return bitmap
     }
 }
-#endif
