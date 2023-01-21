@@ -89,7 +89,7 @@ public extension UIWindow {
     // swiftlint:disable cyclomatic_complexity
     // swiftlint:disable function_body_length
     /// Sets the root view controller for this window with transition's options.
-    func setRootViewController(_ viewController: UIViewController, transition: Transition, completion: BoolBlock? = nil) {
+    func setRootViewController(_ viewController: UIViewController, transition: Transition, completion: ((_ finished: Bool) -> Void)? = nil) {
         switch transition.style {
         case .crossDissolve, .flipFromLeft, .flipFromRight, .flipFromTop, .flipFromBottom, .curlUp, .curlDown:
             var transitionOptions: UIView.AnimationOptions = {
@@ -214,7 +214,7 @@ public extension UIWindow {
     // swiftlint:enable function_body_length
     
     /// Sets the root view controller for this window with transition's style and default options.
-    func setRootViewController(_ viewController: UIViewController, style: TransitionStyle, completion: BoolBlock? = nil) {
+    func setRootViewController(_ viewController: UIViewController, style: TransitionStyle, completion: ((_ finished: Bool) -> Void)? = nil) {
         let transition = Transition(style: style)
         setRootViewController(viewController, transition: transition, completion: completion)
     }

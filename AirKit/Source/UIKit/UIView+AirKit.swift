@@ -314,7 +314,7 @@ public extension UIView {
     ///   - delay: The amount of time (measured in seconds) to wait before beginning the animations. Specify a value of 0 to begin the animations immediately
     ///   - curve: Curve to perform the animations
     ///   - completion: A block object to be executed when the animation sequence ends.
-    func setHidden(_ hidden: Bool, duration: TimeInterval = CATransaction.animationDuration(), delay: TimeInterval = 0, curve: AnimationCurve = .linear, completion: BoolBlock? = nil) {
+    func setHidden(_ hidden: Bool, duration: TimeInterval = CATransaction.animationDuration(), delay: TimeInterval = 0, curve: AnimationCurve = .linear, completion: ((_ finished: Bool) -> Void)? = nil) {
         // Don't execute if `isHidden` value is the same as `hidden` (new value).
         if isHidden == hidden {
             completion?(true)
