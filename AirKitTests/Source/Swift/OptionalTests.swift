@@ -41,7 +41,7 @@ final class OptionalTests: XCTestCase {
         
         let string: String? = "Some text"
         var stringTested = false
-        string.run { _ in stringTested = true }
+        string.iflet { _ in stringTested = true }
         XCTAssertTrue(stringTested)
     }
     

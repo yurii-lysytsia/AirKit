@@ -4,24 +4,32 @@
 
 public extension String {
     /// Returns value limited within the provided `Int` range, i.e. between `Int.min` and `Int.max` or `nil`.
-    func toInt() -> Int? { Int(self) }
+    func toInt() -> Int? {
+        Int(self)
+    }
 }
 
 // MARK: - Convertible | BinaryFloatingPoint
 
 public extension String {
     /// Returns value limited within the provided `Float` range or `nil`.
-    func toFloat() -> Float? { Float(self) }
+    func toFloat() -> Float? {
+        Float(self)
+    }
     
     /// Returns value limited within the provided `Double` range or `nil`.
-    func toDouble() -> Double? { Double(self) }
+    func toDouble() -> Double? {
+        Double(self)
+    }
 }
 
 // MARK: - Convertible | String.SubSequence
 
 public extension String.SubSequence {
     /// Returns an instance of the conforming type from a string representation.
-    func toString() -> String { .init(self) }
+    func toString() -> String {
+        .init(self)
+    }
 }
 
 // MARK: - Extensions | Conditions
@@ -32,7 +40,9 @@ public extension String {
     ///     let whitespace = " "
     ///     whitespace.notEmptyOrNil // String(" ")
     ///
-    var notEmptyOrNil: String? { isEmpty ? nil : self }
+    var notEmptyOrNil: String? {
+        isEmpty ? nil : self
+    }
 }
 
 // MARK: - Extensions | Truncate
@@ -47,10 +57,17 @@ public extension String {
     ///
     /// - Parameters:
     ///   - maxLength: The maximum number of elements to return. maxLength must be greater than or equal to zero.
-    ///   - addEllipsis: Ellipsis will be added if `length` less than `count` and `addEllipsis` is true.
-    func truncating(to maxLength: Int, addEllipsis: Bool = false) -> String {
+    ///   - suffix: A strings will be added if `maxLength` greater than `count` and `suffix` is not nil or empty.
+    func truncating(to maxLength: Int, suffix: String?) -> String {
+        guard count > maxLength else { return self }
+        
         let string = prefix(maxLength)
-        return addEllipsis ? "\(string)..." : string.toString()
+        
+        guard let suffix = suffix?.notEmptyOrNil else {
+            return string.toString()
+        }
+        
+        return "\(string)\(suffix)"
     }
     
     /// Truncate current string, up to the specified maximum length, containing the initial elements of the collection
@@ -60,8 +77,10 @@ public extension String {
     ///
     /// - Parameters:
     ///   - maxLength: The maximum number of elements to return. maxLength must be greater than or equal to zero.
-    ///   - addEllipsis: Ellipsis will be added if `length` less than `count` and `addEllipsis` is true.
-    mutating func truncate(to maxLength: Int, addEllipsis: Bool = false) { self = truncating(to: maxLength, addEllipsis: addEllipsis) }
+    ///   - suffix: A strings will be added if `maxLength` greater than `count` and `suffix` is not nil or empty.
+    mutating func truncate(to maxLength: Int, suffix: String?) {
+        self = truncating(to: maxLength, suffix: suffix)
+    }
 }
 
 // MARK: - Extensions | Prefix
@@ -73,7 +92,9 @@ public extension String {
     ///     string.removing(prefix: "Hello ") // String("world!")
     ///
     /// - Parameter prefix: Prefix to remove from the string.
-    func removing(prefix: String) -> String { hasPrefix(prefix) ? dropFirst(prefix.count).toString() : self }
+    func removing(prefix: String) -> String {
+        hasPrefix(prefix) ? dropFirst(prefix.count).toString() : self
+    }
     
     /// Remove given prefix from the string.
     ///
@@ -81,7 +102,9 @@ public extension String {
     ///     string.remove(prefix: "Hello ") // string == String("world!")
     ///
     /// - Parameter prefix: Prefix to remove from the string.
-    mutating func remove(prefix: String) { self = removing(prefix: prefix) }
+    mutating func remove(prefix: String) {
+        self = removing(prefix: prefix)
+    }
 }
 
 // MARK: - Extensions | Suffix
@@ -93,7 +116,9 @@ public extension String {
     ///     string.removing(suffix: " world!") // String("Hello")
     ///
     /// - Parameter suffix: Prefix to remove from the string.
-    func removing(suffix: String) -> String { hasSuffix(suffix) ? dropLast(suffix.count).toString() : self }
+    func removing(suffix: String) -> String {
+        hasSuffix(suffix) ? dropLast(suffix.count).toString() : self
+    }
     
     /// Remove given suffix from the string.
     ///
@@ -101,7 +126,9 @@ public extension String {
     ///     string.remove(suffix: " world!") // self == String("Hello")
     ///
     /// - Parameter suffix: Prefix to remove from the string.
-    mutating func remove(suffix: String) { self = removing(suffix: suffix) }
+    mutating func remove(suffix: String) {
+        self = removing(suffix: suffix)
+    }
 }
 
 // MARK: - Extensions | Capitalize first letter
@@ -112,14 +139,18 @@ public extension String {
     ///     let string = "hello world"
     ///     string.capitalizingFirstLetter() // String("Hello world")
     ///
-    func capitalizingFirstLetter() -> String { prefix(1).uppercased() + dropFirst() }
+    func capitalizingFirstLetter() -> String {
+        prefix(1).uppercased() + dropFirst()
+    }
     
     /// Capitalize first character of current string.
     ///
     ///     var string = "hello world"
     ///     string.capitalizeFirstLetter() // string == String("Hello world")
     ///
-    mutating func capitalizeFirstLetter() { self = capitalizingFirstLetter() }
+    mutating func capitalizeFirstLetter() {
+        self = capitalizingFirstLetter()
+    }
 }
 
 // MARK: - Extensions | Abbreviated
@@ -249,6 +280,6 @@ public extension String {
     static func loremIpsum(maxLength: Int = 445, addEllipsis: Bool = false) -> String {
         // swiftlint:disable:next line_length
         let text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        return text.truncating(to: maxLength, addEllipsis: addEllipsis)
+        return text.truncating(to: maxLength, suffix: addEllipsis ? "..." : nil)
     }
 }

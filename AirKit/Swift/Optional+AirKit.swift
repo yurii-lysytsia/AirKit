@@ -11,7 +11,9 @@ public extension Optional where Wrapped: Collection {
     ///     let array: [String]? = nil
     ///     array.isEmptyOrNil
     ///
-    var isEmptyOrNil: Bool { self?.isEmpty != false }
+    var isEmptyOrNil: Bool {
+        self?.isEmpty != false
+    }
 }
 
 // MARK: - Extensions | Conditions

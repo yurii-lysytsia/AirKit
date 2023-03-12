@@ -64,12 +64,23 @@ final class StringTests: XCTestCase {
     }
     
     func testTruncate() {
-        var string = "Hello world!"
-        XCTAssertEqual(string.truncating(to: 5, addEllipsis: false), "Hello")
-        XCTAssertEqual(string.truncating(to: 5, addEllipsis: true), "Hello...")
+        let baseString = "Hello world!"
         
-        string.truncate(to: 20)
-        XCTAssertEqual(string, "Hello world!")
+        var currentString = baseString
+        currentString.truncate(to: 5, suffix: nil)
+        XCTAssertEqual(currentString, "Hello")
+        
+        currentString = baseString
+        currentString.truncate(to: 5, suffix: "...")
+        XCTAssertEqual(currentString, "Hello...")
+        
+        currentString = baseString
+        currentString.truncate(to: 20, suffix: nil)
+        XCTAssertEqual(currentString, "Hello world!")
+        
+        currentString = baseString
+        currentString.truncate(to: 20, suffix: "...")
+        XCTAssertEqual(currentString, "Hello world!")
     }
     
     func testPrefix() {
