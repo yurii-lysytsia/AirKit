@@ -8,7 +8,7 @@ public protocol ReusableView: AnyObject {
     static var reuseIdentifier: String { get }
 }
 
-// MARK: - Extensions | Default Implementation
+// MARK: - Default
 
 public extension ReusableView {
     /// Returns unique view class identefier. Default is `String(describing: self)`.

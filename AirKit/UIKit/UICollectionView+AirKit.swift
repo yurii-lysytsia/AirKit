@@ -2,6 +2,8 @@
 
 import UIKit
 
+// TODO: Deprecate identifiable view starting from ios 14, to use a new cell registration
+
 // MARK: - Extensions | Index Paths
 
 public extension UICollectionView {
@@ -79,9 +81,9 @@ public extension UICollectionView {
     ///     let cell = collectionView.dequeueReusableCell(SomeCollectionViewCell.self, viewModel: someViewModel, for: indexPath)
     ///     cell is SomeCollectionViewCell // true
     ///
-    func dequeueReusableCell<T: UICollectionViewCell>(_ className: T.Type, viewModel: T.ViewModel, for indexPath: IndexPath) -> T where T: ReusableView & ConfigurableView {
+    func dequeueReusableCell<T: UICollectionViewCell>(_ className: T.Type, configuration: T.Configuration, for indexPath: IndexPath) -> T where T: ReusableView & ConfigurableView {
         let cell: T = dequeueReusableCell(for: indexPath)
-        cell.configure(viewModel: viewModel)
+        cell.configuration = configuration
         return cell
     }
     
@@ -90,8 +92,8 @@ public extension UICollectionView {
     ///     let cell: SomeCollectionViewCell = collectionView.dequeueReusableCell(viewModel: someViewModel, for: indexPath)
     ///     cell is SomeCollectionViewCell // true
     ///
-    func dequeueReusableCell<T: UICollectionViewCell>(viewModel: T.ViewModel, for indexPath: IndexPath) -> T where T: ReusableView & ConfigurableView {
-        dequeueReusableCell(T.self, viewModel: viewModel, for: indexPath)
+    func dequeueReusableCell<T: UICollectionViewCell>(configuration: T.Configuration, for indexPath: IndexPath) -> T where T: ReusableView & ConfigurableView {
+        dequeueReusableCell(T.self, configuration: configuration, for: indexPath)
     }
 }
 
@@ -143,9 +145,9 @@ public extension UICollectionView {
     ///     let footerView = collectionView.dequeueReusableSupplementaryView(SomeFooterView.self, viewModel: someViewModel, of: .footer, for: indexPath)
     ///     footerView is SomeFooterView // true
     ///
-    func dequeueReusableSupplementaryView<T: UICollectionReusableView>(_ viewClass: T.Type, viewModel: T.ViewModel, of kind: ElementKindSection, for indexPath: IndexPath) -> T where T: ReusableView & ConfigurableView {
+    func dequeueReusableSupplementaryView<T: UICollectionReusableView>(_ viewClass: T.Type, configuration: T.Configuration, of kind: ElementKindSection, for indexPath: IndexPath) -> T where T: ReusableView & ConfigurableView {
         let view: T = dequeueReusableSupplementaryView(viewClass, of: kind, for: indexPath)
-        view.configure(viewModel: viewModel)
+        view.configuration = configuration
         return view
     }
     
@@ -157,8 +159,8 @@ public extension UICollectionView {
     ///     let footerView: SomeFooterView = collectionView.dequeueReusableSupplementaryView(viewModel: someViewModel, of: .footer, for: indexPath)
     ///     footerView is SomeFooterView // true
     ///
-    func dequeueReusableSupplementaryView<T: UICollectionReusableView>(viewModel: T.ViewModel, of kind: ElementKindSection, for indexPath: IndexPath) -> T where T: ReusableView & ConfigurableView {
-        dequeueReusableSupplementaryView(T.self, viewModel: viewModel, of: kind, for: indexPath)
+    func dequeueReusableSupplementaryView<T: UICollectionReusableView>(configuration: T.Configuration, of kind: ElementKindSection, for indexPath: IndexPath) -> T where T: ReusableView & ConfigurableView {
+        dequeueReusableSupplementaryView(T.self, configuration: configuration, of: kind, for: indexPath)
     }
     
     /// A supplementary view that identifies the header or footer for a given section
@@ -178,5 +180,33 @@ public extension UICollectionView {
                 return UICollectionView.elementKindSectionFooter
             }
         }
+    }
+}
+
+// TODO: - Add docs
+
+extension UICollectionView {
+    @available(iOS 14.0, *)
+    public typealias ConfigurableCellRegistration<Cell: UICollectionViewCell & ConfigurableView> = CellRegistration<Cell, Cell.Configuration>
+}
+
+@available(iOS 14.0, *)
+extension UICollectionView.CellRegistration where Cell: ConfigurableView, Item == Cell.Configuration {
+    public init() {
+        self.init { cell, _, configuration in
+            cell.configuration = configuration
+        }
+    }
+}
+
+
+@available(iOS 14.0, *)
+extension UICollectionView.SupplementaryRegistration {
+    public init(elementKind: UICollectionView.ElementKindSection, handler: @escaping UICollectionView.SupplementaryRegistration<Supplementary>.Handler) {
+        self.init(elementKind: elementKind.rawValue, handler: handler)
+    }
+        
+    public init(supplementaryNib: UINib, elementKind: UICollectionView.ElementKindSection, handler: @escaping UICollectionView.SupplementaryRegistration<Supplementary>.Handler) {
+        self.init(supplementaryNib: supplementaryNib, elementKind: elementKind.rawValue, handler: handler)
     }
 }
