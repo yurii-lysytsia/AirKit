@@ -2,17 +2,21 @@
 
 import UIKit
 
-// MARK: - Extensions | Rendering
+// MARK: - Rendering
 
 public extension UIImage {
     /// Returns a new image with `.alwaysOriginal` rendering mode.
-    var originalRendered: UIImage { withRenderingMode(.alwaysOriginal) }
+    var originalRendered: UIImage {
+        withRenderingMode(.alwaysOriginal)
+    }
 
     /// Returns a new image with `.alwaysTemplate` rendering mode.
-    var templateRendered: UIImage { withRenderingMode(.alwaysTemplate) }
+    var templateRendered: UIImage {
+        withRenderingMode(.alwaysTemplate)
+    }
 }
 
-// MARK: - Extensions | Resize
+// MARK: - Resize
 
 public extension UIImage {
     /// Returns a new resized to target size image.
@@ -32,17 +36,21 @@ public extension UIImage {
     ///     image.resizedScaleAspectFit(to: CGSize(width: 20, height: 40)) // CGSize(width: 20, height: 16)
     ///     image.resizedScaleAspectFit(to: CGSize(width: 40, height: 20)) // CGSize(width: 25, height: 20)
     ///
-    func resizedScaleAspectFit(to targetSize: CGSize, opaque: Bool = false) -> UIImage { resized(to: size.aspectFitted(to: targetSize), opaque: opaque) }
+    func resizedScaleAspectFit(to targetSize: CGSize, opaque: Bool = false) -> UIImage {
+        resized(to: size.aspectFitted(to: targetSize), opaque: opaque)
+    }
     
     /// Returns a new image resized to target size with `.saleAspectFill` (save image aspect ratio and fill to the biggest side) mode.
     ///
     ///     let image = UIImage(color: .red, size: CGSize(width: 100, height: 80)) // CGSize(width: 100, height: 80)
     ///     image.resizedScaleAspectFill(to: CGSize(width: 40, height: 20)) // CGSize(width: 40, height: 32)
     ///
-    func resizedScaleAspectFill(to targetSize: CGSize, opaque: Bool = false) -> UIImage { resized(to: size.aspectFilled(to: targetSize), opaque: opaque) }
+    func resizedScaleAspectFill(to targetSize: CGSize, opaque: Bool = false) -> UIImage {
+        resized(to: size.aspectFilled(to: targetSize), opaque: opaque)
+    }
 }
 
-// MARK: - Extensions | Rotate
+// MARK: - Rotate
 
 public extension UIImage {
     /// Returns a new image rotated by the given angle (in radians).
@@ -74,7 +82,7 @@ public extension UIImage {
     }
 }
 
-// MARK: - Extensions | Rounded Corners
+// MARK: - Rounded Corners
 
 public extension UIImage {
     /// Returns a new image with rounded corners.
@@ -91,7 +99,7 @@ public extension UIImage {
     }
 }
 
-// MARK: - Extensions | Inits
+// MARK: - Inits
 
 public extension UIImage {
     /// Create a new image instance from color and size.
@@ -105,11 +113,7 @@ public extension UIImage {
         // swiftlint:disable:next force_unwrapping
         self.init(data: imageData)!
     }
-}
-
-// MARK: - Extensions | CoreImage | Inits
-
-public extension UIImage {
+    
     /// Create a new image instance from core image filter.
     convenience init?(filter: CIFilter) {
         guard let ciImage = filter.outputImage else { return nil }
@@ -123,7 +127,7 @@ public extension UIImage {
     }
 }
 
-// MARK: - Extensions | CoreImage | Average
+// MARK: - Average Color
 
 public extension UIImage {
     /// Returns a color instance with an average color for the image.
@@ -142,5 +146,25 @@ public extension UIImage {
             blue: CGFloat(bitmap[2]) / 255.0,
             alpha: CGFloat(bitmap[3]) / 255.0
         )
+    }
+}
+
+// MARK: - Background
+
+public extension UIImage {
+    /// Replaces its color values with the provided `color`
+    /// - Parameters:
+    ///   - color: The color to fill the transparent areas of the image
+    ///   - backgroundSize: The size of the output image (the size doesn't affect to the given image size)
+    /// - Returns: An image with the original content and the transparent areas filled with the desired background color
+    func backgrounded(color: UIColor, backgroundSize: CGSize) -> UIImage {
+        let rect = CGRect(origin: .zero, size: backgroundSize)
+        let renderer = UIGraphicsImageRenderer(bounds: rect, scale: scale, opaque: true)
+        
+        return renderer.image { context in
+            context.cgContext.setFillColor(color.cgColor)
+            context.cgContext.fill(rect)
+            draw(in: rect.center(for: size))
+        }
     }
 }

@@ -2,7 +2,7 @@
 
 import UIKit
 
-// MARK: - Extensions | Random
+// MARK: - Random
 
 public extension UIColor {
     /// Returns a new random color with given alpha.
@@ -16,16 +16,24 @@ public extension UIColor {
     }
 }
 
-// MARK: - Extensions | Values
+// MARK: - Values
 
 public extension UIColor {
     /// Returns alpha of the color.
     var alpha: CGFloat { cgColor.alpha }
 }
 
-// MARK: - Extensions | GrayscaleComponents
+// MARK: - GrayscaleComponents
 
 public extension UIColor {
+    /// Represented grayscale components values as `CGFloat` numbers between 0 and 1.
+    struct GrayscaleComponents: Equatable, CustomStringConvertible, CustomDebugStringConvertible {
+        public let white, alpha: CGFloat
+        
+        public var description: String { "\(GrayscaleComponents.self)(white: \(white), alpha: \(alpha))" }
+        public var debugDescription: String { "\(GrayscaleComponents.self)(white: \(white), alpha: \(alpha))" }
+    }
+    
     /// Returns grayscale components for the color.
     ///
     ///     let components = UIColor.systemRed.grayscaleComponents
@@ -38,41 +46,11 @@ public extension UIColor {
         getWhite(&white, alpha: &alpha)
         return GrayscaleComponents(white: white, alpha: alpha)
     }
-    
-    /// Represented grayscale components values as `CGFloat` numbers between 0 and 1.
-    struct GrayscaleComponents: Equatable, CustomStringConvertible, CustomDebugStringConvertible {
-        public let white, alpha: CGFloat
-        
-        public var description: String { "\(GrayscaleComponents.self)(white: \(white), alpha: \(alpha))" }
-        public var debugDescription: String { "\(GrayscaleComponents.self)(white: \(white), alpha: \(alpha))" }
-    }
 }
 
-// MARK: - Extensions | RGBA
+// MARK: - RGBA
 
 public extension UIColor {
-    /// Returns RGBA components for the color.
-    ///
-    ///     let components = UIColor.systemRed.rgbaComponents
-    ///     components.red // CGFloat(1.0)
-    ///     components.green // CGFloat(0.2313725490196079)
-    ///     components.blue // CGFloat(0.1882352941176471)
-    ///     components.alpha // CGFloat(1.0)
-    ///
-    var rgbaComponents: RGBAComponents {
-        var red: CGFloat = 0
-        var green: CGFloat = 0
-        var blue: CGFloat = 0
-        var alpha: CGFloat = 0
-        getRed(&red, green: &green, blue: &blue, alpha: &alpha)
-        return RGBAComponents(red: red, green: green, blue: blue, alpha: alpha)
-    }
-    
-    /// Creates a color object using the specified opacity and RGB component values.
-    convenience init(components: RGBAComponents) {
-        self.init(red: components.red, green: components.green, blue: components.blue, alpha: components.alpha)
-    }
-    
     /// Represented RGBA components values as `CGFloat` numbers between 0 and 1.
     struct RGBAComponents: Equatable, CustomStringConvertible, CustomDebugStringConvertible {
         public let red, green, blue, alpha: CGFloat
@@ -96,32 +74,33 @@ public extension UIColor {
             )
         }
     }
+    
+    /// Returns RGBA components for the color.
+    ///
+    ///     let components = UIColor.systemRed.rgbaComponents
+    ///     components.red // CGFloat(1.0)
+    ///     components.green // CGFloat(0.2313725490196079)
+    ///     components.blue // CGFloat(0.1882352941176471)
+    ///     components.alpha // CGFloat(1.0)
+    ///
+    var rgbaComponents: RGBAComponents {
+        var red: CGFloat = 0
+        var green: CGFloat = 0
+        var blue: CGFloat = 0
+        var alpha: CGFloat = 0
+        getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        return RGBAComponents(red: red, green: green, blue: blue, alpha: alpha)
+    }
+    
+    /// Creates a color object using the specified opacity and RGB component values.
+    convenience init(components: RGBAComponents) {
+        self.init(red: components.red, green: components.green, blue: components.blue, alpha: components.alpha)
+    }
 }
 
-// MARK: - Extensions | RGBA255
+// MARK: - RGBA255
 
 public extension UIColor {
-    /// Returns RGBA(255) components for the color.
-    ///
-    ///     let components = UIColor.systemRed.rgba255Components
-    ///     components.red // Int(255)
-    ///     components.green // Int(59)
-    ///     components.blue // Int(48)
-    ///     components.alpha // CGFloat(1)
-    ///
-    var rgba255Components: RGBA255Components { RGBA255Components(components: rgbaComponents) }
-    
-    /// Creates a new color object using the specified opacity and RGB (255) component values.
-    convenience init(components: RGBA255Components) {
-        self.init(components: RGBAComponents(components: components))
-    }
-    
-    /// Create a new color object using the specified opacity and RGB (255) component values.
-    convenience init(red: Int, green: Int, blue: Int, alpha: CGFloat = 1) {
-        let components = RGBA255Components(red: red, green: green, blue: blue, alpha: alpha)
-        self.init(components: components)
-    }
-    
     /// Represented RGBA(255) components values as `Int` numbers between 0 and 255.
     struct RGBA255Components: Equatable, CustomStringConvertible, CustomDebugStringConvertible {
         public let red, green, blue: Int
@@ -167,11 +146,40 @@ public extension UIColor {
         /// Devider to represent Apple RBGA colors (red, green, blue) to common RGBA(255). Equal to `255`.
         public static let colorDivider: CGFloat = 255
     }
+    
+    /// Returns RGBA(255) components for the color.
+    ///
+    ///     let components = UIColor.systemRed.rgba255Components
+    ///     components.red // Int(255)
+    ///     components.green // Int(59)
+    ///     components.blue // Int(48)
+    ///     components.alpha // CGFloat(1)
+    ///
+    var rgba255Components: RGBA255Components { RGBA255Components(components: rgbaComponents) }
+    
+    /// Creates a new color object using the specified opacity and RGB (255) component values.
+    convenience init(components: RGBA255Components) {
+        self.init(components: RGBAComponents(components: components))
+    }
+    
+    /// Create a new color object using the specified opacity and RGB (255) component values.
+    convenience init(red: Int, green: Int, blue: Int, alpha: CGFloat = 1) {
+        let components = RGBA255Components(red: red, green: green, blue: blue, alpha: alpha)
+        self.init(components: components)
+    }
 }
 
-// MARK: - Extensions | HSBA
+// MARK: - HSBA
 
 public extension UIColor {
+    /// Represented HSBA components values as `CGFloat` numbers between 0 and 1.
+    struct HSBAComponents: Equatable, CustomStringConvertible, CustomDebugStringConvertible {
+        public let hue, saturation, brightness, alpha: CGFloat
+        
+        public var description: String { "\(HSBAComponents.self)(hue: \(hue), saturation: \(saturation), brightness: \(brightness), alpha: \(alpha))" }
+        public var debugDescription: String { "\(HSBAComponents.self)(hue: \(hue), saturation: \(saturation), brightness: \(brightness), alpha: \(alpha))" }
+    }
+    
     /// Returns HSBA components of the color.
     ///
     ///     let components = UIColor.systemRed.hsbaComponents
@@ -193,17 +201,9 @@ public extension UIColor {
     convenience init(components: HSBAComponents) {
         self.init(hue: components.hue, saturation: components.saturation, brightness: components.brightness, alpha: components.alpha)
     }
-    
-    /// Represented HSBA components values as `CGFloat` numbers between 0 and 1.
-    struct HSBAComponents: Equatable, CustomStringConvertible, CustomDebugStringConvertible {
-        public let hue, saturation, brightness, alpha: CGFloat
-        
-        public var description: String { "\(HSBAComponents.self)(hue: \(hue), saturation: \(saturation), brightness: \(brightness), alpha: \(alpha))" }
-        public var debugDescription: String { "\(HSBAComponents.self)(hue: \(hue), saturation: \(saturation), brightness: \(brightness), alpha: \(alpha))" }
-    }
 }
 
-// MARK: - Extensions | HEX
+// MARK: - HEX
 
 public extension UIColor {
     /// Creates a new color object using the hexadecimal value with alpha.
@@ -220,7 +220,7 @@ public extension UIColor {
     
     /// Creates a new color object using the hexadecimal string.
     ///
-    /// - Note: `alpha` component will ignore if `hex` has 8 digits format and contais alpha.
+    /// - Note: `alpha` component will ignore if `hex` has 8 digits format and contains alpha.
     convenience init?(hexString: String, alpha: CGFloat = 1) {
         // Remove prefix if needed
         var rawString: String = hexString.removing(prefix: "0x").removing(prefix: "#")
@@ -286,7 +286,7 @@ public extension UIColor {
     }
 }
 
-// MARK: - Extensions | Inits
+// MARK: - Inits
 
 public extension UIColor {
     /// Create a new color with different colors for light and dark mode.

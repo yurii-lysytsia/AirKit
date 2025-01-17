@@ -2,7 +2,7 @@
 
 import UIKit
 
-// TODO: Deprecate identifiable view starting from ios 14, to use a new cell registration
+// TODO: Deprecate identifiable view starting from iOS 14, to use a new cell registration
 
 // MARK: - Extensions | Index Paths
 

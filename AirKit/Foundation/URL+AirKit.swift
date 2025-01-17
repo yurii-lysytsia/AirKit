@@ -1,14 +1,19 @@
-//  Copyright © 2021 Yurii Lysytsia. All rights reserved.
+//  Copyright © 2025 Yurii Lysytsia. All rights reserved.
 
 import Foundation
 
-// MARK: - Extensions | Path Components
+// MARK: - Path Components
 
 public extension URL {
-    /// Returns a new URL by removing all the path components.
+    /// Returns a new URL with all path components removed, preserving only the base URL.
     ///
-    ///     let url = URL(string: "https://domain.com/path/other")!
-    ///     url.deletingAllPathComponents() // URL("https://domain.com/")
+    /// - Returns: A new URL instance with only the scheme, host, and port (if present).
+    ///
+    /// - Example:
+    /// ```swift
+    /// let url = URL(string: "https://domain.com/path/other")!
+    /// let result = url.deletingAllPathComponents()
+    /// print(result) // "https://domain.com/"
     ///
     func deletingAllPathComponents() -> URL {
         var url: URL = self
@@ -16,10 +21,13 @@ public extension URL {
         return url
     }
 
-    /// Remove all path components from the URL.
+    /// Removes all path components from the URL in place, preserving only the base URL.
     ///
-    ///     var url = URL(string: "https://domain.com/path/other")!
-    ///     url.deleteAllPathComponents() // url == URL("https://domain.com/")
+    /// - Example:
+    /// ```swift
+    /// var url = URL(string: "https://domain.com/path/other")!
+    /// url.deleteAllPathComponents()
+    /// print(url) // "https://domain.com/"
     ///
     mutating func deleteAllPathComponents() {
         while lastPathComponent != "/" && lastPathComponent != ".." {
@@ -28,14 +36,21 @@ public extension URL {
     }
 }
 
-// MARK: - Extensions | Convertible
+// MARK: - Convertible
 
 public extension URL {
-    /// Returns a new instance of the URL's components.
-    func toURLComponents() -> URLComponents? { URLComponents(string: absoluteString) }
-    
-    /// Returns a new instance of the URL's components.
+    /// Creates and returns a URLComponents instance from the URL's absolute string representation.
     ///
-    /// - Parameter resolvingAgainstBaseURL: If is `true` and url is a relative URL, the components of url.absoluteURL are used. If the url string from the URL is malformed, nil is returned.
-    func toURLComponents(resolvingAgainstBaseURL: Bool) -> URLComponents? { URLComponents(url: self, resolvingAgainstBaseURL: resolvingAgainstBaseURL) }
+    /// - Returns: A URLComponents instance if the URL's string representation is valid, nil otherwise.
+    func toURLComponents() -> URLComponents? { 
+        URLComponents(string: absoluteString) 
+    }
+    
+    /// Creates and returns a URLComponents instance from the URL.
+    ///
+    /// - Parameter resolvingAgainstBaseURL: If true and the URL is relative, the components of the absolute URL are used.
+    /// - Returns: A URLComponents instance if the URL is valid, nil otherwise.
+    func toURLComponents(resolvingAgainstBaseURL: Bool) -> URLComponents? { 
+        URLComponents(url: self, resolvingAgainstBaseURL: resolvingAgainstBaseURL) 
+    }
 }
