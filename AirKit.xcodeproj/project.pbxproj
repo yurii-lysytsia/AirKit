@@ -35,7 +35,6 @@
 		5B101709271C8AE8005C9BE4 /* LAContextTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B101708271C8AE8005C9BE4 /* LAContextTests.swift */; };
 		5B19FEFF27072F2C00F76EBD /* CGAffineTransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FEFE27072F2C00F76EBD /* CGAffineTransformTests.swift */; };
 		5B19FF0227075C0F00F76EBD /* CATransform3DTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B19FF0127075C0F00F76EBD /* CATransform3DTests.swift */; };
-		5B2ADD422710CAE2003D4C1C /* UIButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2ADD412710CAE2003D4C1C /* UIButtonTests.swift */; };
 		5B2ADD442710D595003D4C1C /* UIStackViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2ADD432710D595003D4C1C /* UIStackViewTests.swift */; };
 		5B35BD1D2705F8220031AED3 /* CGSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD1C2705F8220031AED3 /* CGSizeTests.swift */; };
 		5B35BD1F2705FC3C0031AED3 /* CGPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B35BD1E2705FC3C0031AED3 /* CGPointTests.swift */; };
@@ -197,7 +196,6 @@
 		5B7FF72B270237FD00C28795 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7FF72A270237FD00C28795 /* DateTests.swift */; };
 		5B8C1CFD270460AC0021B48E /* UserDefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1CFC270460AC0021B48E /* UserDefaultsTests.swift */; };
 		5B8C1D0127047D1C0021B48E /* FileManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1D0027047D1C0021B48E /* FileManagerTests.swift */; };
-		5B8C1D072704A6CD0021B48E /* NumberFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1D062704A6CD0021B48E /* NumberFormatterTests.swift */; };
 		5B8C1D092704A7DB0021B48E /* DispatchQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1D082704A7DB0021B48E /* DispatchQueueTests.swift */; };
 		5B8C1D0B2704ACA10021B48E /* SwiftDecodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8C1D0A2704ACA10021B48E /* SwiftDecodeModel.swift */; };
 		5B96CA022718213500261CFE /* NibLoadableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B96CA012718213500261CFE /* NibLoadableViewTests.swift */; };
@@ -477,7 +475,6 @@
 		5B19FF0127075C0F00F76EBD /* CATransform3DTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CATransform3DTests.swift; sourceTree = "<group>"; };
 		5B1B388B270C63E300D9215B /* Once.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Once.swift; sourceTree = "<group>"; };
 		5B239FB42700ED790045382F /* DateFormatComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatComponents.swift; sourceTree = "<group>"; };
-		5B2ADD412710CAE2003D4C1C /* UIButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonTests.swift; sourceTree = "<group>"; };
 		5B2ADD432710D595003D4C1C /* UIStackViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackViewTests.swift; sourceTree = "<group>"; };
 		5B3408052714A82500BC79E8 /* UISwitch+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+AirKit.swift"; sourceTree = "<group>"; };
 		5B3408072714AA9200BC79E8 /* UISearchBar+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISearchBar+AirKit.swift"; sourceTree = "<group>"; };
@@ -570,7 +567,6 @@
 		5B8C1D0027047D1C0021B48E /* FileManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerTests.swift; sourceTree = "<group>"; };
 		5B8C1D02270489360021B48E /* NumberFormatter+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NumberFormatter+AirKit.swift"; sourceTree = "<group>"; };
 		5B8C1D0427049B9E0021B48E /* DispatchQueue+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+AirKit.swift"; sourceTree = "<group>"; };
-		5B8C1D062704A6CD0021B48E /* NumberFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatterTests.swift; sourceTree = "<group>"; };
 		5B8C1D082704A7DB0021B48E /* DispatchQueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueTests.swift; sourceTree = "<group>"; };
 		5B8C1D0A2704ACA10021B48E /* SwiftDecodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDecodeModel.swift; sourceTree = "<group>"; };
 		5B93EDB72700D23000A9BEDA /* DateFormatter+AirKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+AirKit.swift"; sourceTree = "<group>"; };
@@ -840,7 +836,6 @@
 				5B8C1D0027047D1C0021B48E /* FileManagerTests.swift */,
 				5B9D3C0927034CE500FD822F /* LocaleTests.swift */,
 				5B632B7A26FE28D500C3645D /* NSAttributedStringTests.swift */,
-				5B8C1D062704A6CD0021B48E /* NumberFormatterTests.swift */,
 				5B0ED08026FCD48100473155 /* TimeIntervalTests.swift */,
 				5B9D3C0D27034F2600FD822F /* URLComponentsTests.swift */,
 				5B9D3C0F27034F8F00FD822F /* URLRequestTests.swift */,
@@ -1132,7 +1127,6 @@
 				5BBCA008271AFF5E0025828C /* UIApplicationTests.swift */,
 				5B06BF602715908B00CDB5C9 /* UIBarButtonItemTests.swift */,
 				5B60C4B5270A0A3600D2E190 /* UIBezierPathTests.swift */,
-				5B2ADD412710CAE2003D4C1C /* UIButtonTests.swift */,
 				5B96CA0D27182B7C00261CFE /* UICollectionViewTests.swift */,
 				5B639D8E2708A4B00028B543 /* UIColorTests.swift */,
 				5B60C4B12709B62500D2E190 /* UIEdgeInsetsTests.swift */,
@@ -1624,7 +1618,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1620;
 				ORGANIZATIONNAME = "Yurii Lysytsia";
 				TargetAttributes = {
 					5B510BF626F24AB200C21CDF = {
@@ -1824,7 +1818,6 @@
 				5B0ED07A26FCD43000473155 /* IntTests.swift in Sources */,
 				5B639D7C27087DB50028B543 /* CICategoryTests.swift in Sources */,
 				5B60C4B22709B62500D2E190 /* UIEdgeInsetsTests.swift in Sources */,
-				5B8C1D072704A6CD0021B48E /* NumberFormatterTests.swift in Sources */,
 				5B96CA062718216500261CFE /* NibView.swift in Sources */,
 				5B0ED07026FCC80300473155 /* RangeReplaceableCollectionTests.swift in Sources */,
 				5BCC641427B41B1A00C29E01 /* NSDirectionalEdgeInsetsTests.swift in Sources */,
@@ -1848,7 +1841,6 @@
 				5B0ED07626FCD40C00473155 /* DoubleTests.swift in Sources */,
 				5B639D85270888C60028B543 /* UIImageTests.swift in Sources */,
 				5B35BD1D2705F8220031AED3 /* CGSizeTests.swift in Sources */,
-				5B2ADD422710CAE2003D4C1C /* UIButtonTests.swift in Sources */,
 				5BAD269E27171AED00AE9E4F /* ReusableViewTests.swift in Sources */,
 				5B9D3C152703539500FD822F /* VersionTests.swift in Sources */,
 				5B9D3C0A27034CE500FD822F /* LocaleTests.swift in Sources */,
@@ -2198,6 +2190,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2265,6 +2258,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -2308,8 +2302,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "${inherited}";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 0.2.3;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2346,8 +2341,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "${inherited}";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 0.2.3;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2376,7 +2372,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2404,7 +2400,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2423,6 +2419,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2438,8 +2435,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.swift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2455,6 +2453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2470,8 +2469,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.swift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -2487,6 +2487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2503,8 +2504,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.foundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2524,6 +2526,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2540,8 +2543,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.foundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2561,6 +2565,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2577,8 +2582,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.combine;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2598,6 +2604,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2614,8 +2621,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.combine;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2635,6 +2643,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2651,8 +2660,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.coregraphics;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2672,6 +2682,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2688,8 +2699,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.coregraphics;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2709,6 +2721,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2725,8 +2738,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.coreimage;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2746,6 +2760,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2762,8 +2777,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.coreimage;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2783,6 +2799,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2801,6 +2818,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.uikit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2813,6 +2831,7 @@
 				TARGETED_DEVICE_FAMILY = 1;
 				TVOS_DEPLOYMENT_TARGET = "$(inherited)";
 				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
+				XROS_DEPLOYMENT_TARGET = "$(inherited)";
 			};
 			name = Debug;
 		};
@@ -2820,6 +2839,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2838,6 +2858,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.uikit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2850,6 +2871,7 @@
 				TARGETED_DEVICE_FAMILY = 1;
 				TVOS_DEPLOYMENT_TARGET = "$(inherited)";
 				WATCHOS_DEPLOYMENT_TARGET = "$(inherited)";
+				XROS_DEPLOYMENT_TARGET = "$(inherited)";
 			};
 			name = Release;
 		};
@@ -2857,6 +2879,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2873,8 +2896,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.webkit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2894,6 +2918,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2910,8 +2935,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.webkit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2931,6 +2957,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2947,8 +2974,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.mapkit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2968,6 +2996,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -2984,8 +3013,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.mapkit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3005,6 +3035,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -3021,8 +3052,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.localauthentication;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3042,6 +3074,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -3058,8 +3091,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.localauthentication;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3079,6 +3113,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -3095,8 +3130,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.corelocation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3116,6 +3152,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -3132,8 +3169,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.lysytsia.airkit.corelocation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

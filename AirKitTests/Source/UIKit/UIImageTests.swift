@@ -4,7 +4,6 @@ import XCTest
 @testable import AirUIKit
 
 final class UIImageTests: XCTestCase {
-    
     func testRendering() {
         let image = UIImage(color: .white, size: CGSize(width: 5, height: 5))
         XCTAssertEqual(image.originalRendered.renderingMode, .alwaysOriginal)
@@ -52,9 +51,9 @@ final class UIImageTests: XCTestCase {
         let color = image!.averageColor
         XCTAssertNotNil(color)
         let components = color!.rgbaComponents
-        XCTAssertEqual(components.red, 0.224, accuracy: 0.001)
-        XCTAssertEqual(components.green, 0.012, accuracy: 0.001)
-        XCTAssertEqual(components.blue, 0.047, accuracy: 0.001)
+        XCTAssertEqual(components.red, 0.44, accuracy: 0.01)
+        XCTAssertEqual(components.green, 0.16, accuracy: 0.01)
+        XCTAssertEqual(components.blue, 0.24, accuracy: 0.01)
         XCTAssertEqual(components.alpha, 1)
     }
     

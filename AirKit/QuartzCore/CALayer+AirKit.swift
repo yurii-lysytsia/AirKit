@@ -4,22 +4,17 @@ import QuartzCore
 
 // MARK: - Corner Style
 
-//public extension CALayer {
-//    /// Defines how corner radius should be calculated for a CALayer
-//    static var fuck = ""
+public enum CornerStyle: Hashable {
+    /// Specifies a fixed corner radius value in points
+    case absolute(CGFloat)
     
-    public enum CornerStyle: Hashable {
-        /// Specifies a fixed corner radius value in points
-        case absolute(CGFloat)
-        
-        /// Specifies a corner radius as a fraction of the layer's minimum dimension
-        case fractional(CGFloat)
-        
-        /// Fractional corner radius that equals to **0.5 multiplier**,
-        /// creating a perfect circle when applied to a square layer
-        public static let rounded = CornerStyle.fractional(0.5)
-    }
-//}
+    /// Specifies a corner radius as a fraction of the layer's minimum dimension
+    case fractional(CGFloat)
+    
+    /// Fractional corner radius that equals to **0.5 multiplier**,
+    /// creating a perfect circle when applied to a square layer
+    public static let rounded = CornerStyle.fractional(0.5)
+}
 
 extension CALayer {
     private static var cornerStyleKey = Int8()

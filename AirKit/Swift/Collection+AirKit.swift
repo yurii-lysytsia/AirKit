@@ -1,6 +1,6 @@
-//  Copyright © 2021 Yurii Lysytsia. All rights reserved.
+//  Copyright © 2021-2025 Yurii Lysytsia. All rights reserved.
 
-// MARK: - Extensions | Safe
+// MARK: - Safe
 
 public extension Collection {
     /// Returns safe protects the array from out of bounds by use of optional.
@@ -20,7 +20,7 @@ public extension Collection {
     subscript(safe index: Index) -> Element? { element(at: index) }
 }
 
-// MARK: - Extensions | Equatable
+// MARK: - Equatable
 
 public extension Collection where Element: Equatable {
     /// Returns all indices of specified item.
@@ -32,7 +32,7 @@ public extension Collection where Element: Equatable {
     func indices(of item: Element) -> [Index] { indices.filter { self[$0] == item } }
 }
 
-// MARK: - Extensions | FloatingPoint
+// MARK: - FloatingPoint
 
 public extension Collection where Element: FloatingPoint {
     /// Returns an average value of all elements in array.

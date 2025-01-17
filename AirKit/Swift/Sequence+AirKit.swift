@@ -45,6 +45,22 @@ public extension Sequence {
     ///     ["James", "Wade", "Bryant"].sum { $0.count } // Int(15)
     ///
     func sum<T: AdditiveArithmetic>(block: (Element) -> T) -> T { reduce(.zero) { $0 + block($1) } }
+    
+    func first(_ count: Int, where predicate: (Element) throws -> Bool) rethrows -> [Element] {
+        var array = [Element]()
+        
+        for element in self {
+            guard try predicate(element) else { continue }
+            
+            array.append(element)
+            
+            if array.count == count {
+                break
+            }
+        }
+        
+        return array
+    }
 }
 
 // MARK: - Extensions | Equatable
@@ -109,7 +125,6 @@ public extension Sequence where Element: Optionable {
 // MARK: - Extensions | Sequence
 
 public extension Sequence where Element: Sequence {
-    
     /// Returns an array of element's element.
     ///
     ///     let array = [["A"], ["B"], ["C"], ["D"]]
@@ -119,7 +134,7 @@ public extension Sequence where Element: Sequence {
     
 }
 
-// MARK: - Extensions | AdditiveArithmetic
+// MARK: - AdditiveArithmetic
 
 public extension Sequence where Element: AdditiveArithmetic {
     /// Returns total sum of all elements in the array.

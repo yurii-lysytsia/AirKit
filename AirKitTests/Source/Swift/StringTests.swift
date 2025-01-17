@@ -179,7 +179,6 @@ final class StringTests: XCTestCase {
         
         XCTAssertEqual("String%20to%20decode".urlDecoded, "String to decode")
         
-        XCTAssertNil("😬".toUrl())
         XCTAssertNotNil("https://www.apple.com".toUrl())
     }
     

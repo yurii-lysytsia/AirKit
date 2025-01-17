@@ -75,30 +75,6 @@ final class UIViewTests: XCTestCase {
         // Is view clear?
         XCTAssertEqual(view.layer.cornerRadius, 0)
         XCTAssertEqual(view.layer.maskedCorners, .allCorners)
-        
-        // Round all corners
-        view.layerCornerRadius = 20
-        XCTAssertEqual(view.layerCornerRadius, view.layer.cornerRadius)
-        XCTAssertEqual(view.layer.cornerRadius, 20)
-        XCTAssertEqual(view.layer.maskedCorners, .allCorners)
-        
-        // Remove corner radius
-        view.roundCorners(cornerRadius: 0)
-        XCTAssertEqual(view.layerCornerRadius, view.layer.cornerRadius)
-        XCTAssertEqual(view.layer.cornerRadius, 0)
-        XCTAssertEqual(view.layer.maskedCorners, .allCorners)
-        
-        // Round specific corners
-        view.roundCorners(.topCorners, cornerRadius: 25)
-        XCTAssertEqual(view.layerCornerRadius, view.layer.cornerRadius)
-        XCTAssertEqual(view.layer.cornerRadius, 25)
-        XCTAssertEqual(view.layer.maskedCorners, .topCorners)
-        
-        // Remove corner radius
-        view.roundCorners(cornerRadius: 0)
-        XCTAssertEqual(view.layerCornerRadius, view.layer.cornerRadius)
-        XCTAssertEqual(view.layer.cornerRadius, 0)
-        XCTAssertEqual(view.layer.maskedCorners, .allCorners)
     }
     
     func testIsCircled() throws {
@@ -107,66 +83,22 @@ final class UIViewTests: XCTestCase {
         views.forEach { view in
             view.bounds.size = CGSize(width: 200, height: 200)
             
-            // Round top corners
-            view.roundCorners(.topCorners, cornerRadius: 20)
-            XCTAssertEqual(view.layer.cornerRadius, 20)
-            XCTAssertEqual(view.layer.maskedCorners, .topCorners)
-            
-            // Set view is circle
-            view.isCircled = true
+            // Set view is rounded
+            view.layer.cornerStyle = .rounded
             XCTAssertEqual(view.layer.cornerRadius, view.frame.size.minDimension / 2)
-            XCTAssertEqual(view.layer.maskedCorners, .allCorners)
             
             // Change view's size
             view.bounds.size = CGSize(width: 300, height: 300)
             XCTAssertEqual(view.layer.cornerRadius, view.frame.size.minDimension / 2)
-            XCTAssertEqual(view.layer.maskedCorners, .allCorners)
-            
-            // Try to change corner radius
-            view.layerCornerRadius = 10
-            XCTAssertEqual(view.layer.cornerRadius, view.frame.size.minDimension / 2)
-            XCTAssertEqual(view.layer.maskedCorners, .allCorners)
-            
-            // Try to change corner radius with method
-            view.roundCorners(.topCorners, cornerRadius: 25)
-            XCTAssertEqual(view.layer.cornerRadius, view.frame.size.minDimension / 2)
-            XCTAssertEqual(view.layer.maskedCorners, .allCorners)
             
             // Set view is not circle
-            view.isCircled = false
+            view.layer.cornerStyle = .absolute(0)
             XCTAssertEqual(view.layer.cornerRadius, 0)
-            XCTAssertEqual(view.layer.maskedCorners, .allCorners)
             
             // Change view's size again
             view.bounds.size = CGSize(width: 100, height: 100)
             XCTAssertEqual(view.layer.cornerRadius, 0)
-            XCTAssertEqual(view.layer.maskedCorners, .allCorners)
         }
-    }
-    
-    func testCircle() {
-        let view = UIView()
-        view.frame.size = CGSize(width: 200, height: 200)
-        
-        // Round top corners
-        view.roundCorners(.topCorners, cornerRadius: 20)
-        XCTAssertEqual(view.layer.cornerRadius, 20)
-        XCTAssertEqual(view.layer.maskedCorners, .topCorners)
-        
-        // Round to circle once
-        view.roundCornersToCircle()
-        XCTAssertEqual(view.layer.cornerRadius, view.frame.size.minDimension / 2)
-        XCTAssertEqual(view.layer.maskedCorners, .allCorners)
-        
-        // Change view's size
-        view.frame.size = CGSize(width: 300, height: 300)
-        XCTAssertNotEqual(view.layer.cornerRadius, view.frame.size.minDimension / 2)
-        XCTAssertEqual(view.layer.maskedCorners, .allCorners)
-        
-        // Round to circle again
-        view.roundCornersToCircle()
-        XCTAssertEqual(view.layer.cornerRadius, view.frame.size.minDimension / 2)
-        XCTAssertEqual(view.layer.maskedCorners, .allCorners)
     }
     
     func testBorders() {

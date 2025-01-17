@@ -28,6 +28,19 @@ final class SequenceTests: XCTestCase {
         XCTAssertEqual(odd, [1, 3, 5])
     }
     
+    func testFirstCount() {
+        let array = ["Hello", "World", "!", "iOS", "Development"]
+        
+        let arrayOfTwo = array.first(2) { $0.count <= 3 }
+        XCTAssertEqual(arrayOfTwo, ["!", "iOS"])
+        
+        let arrayOfThree = array.first(2) { $0.count >= 5 }
+        XCTAssertEqual(arrayOfThree, ["Hello", "World"])
+        
+        let arrayOfOne = array.first(5) { $0.count > 5 }
+        XCTAssertEqual(arrayOfOne, ["Development"])
+    }
+    
     func testContainsEquatable() {
         XCTAssertTrue([1, 2, 3, 4, 5].contains([1, 3]))
         XCTAssertFalse([1.2, 2.3, 3.4].contains([1.2, 4]))

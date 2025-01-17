@@ -199,7 +199,6 @@ extension UICollectionView.CellRegistration where Cell: ConfigurableView, Item =
     }
 }
 
-
 @available(iOS 14.0, *)
 extension UICollectionView.SupplementaryRegistration {
     public init(elementKind: UICollectionView.ElementKindSection, handler: @escaping UICollectionView.SupplementaryRegistration<Supplementary>.Handler) {
